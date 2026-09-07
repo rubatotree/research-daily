@@ -1,10 +1,10 @@
 {
   "version": 1,
   "timezone": "Asia/Hong_Kong",
-  "scheduled_publish": "06:00",
-  "scheduled_cron": "0 6 * * *",
+  "scheduled_publish": "04:00",
+  "scheduled_cron": "0 4 * * *",
   "failover_grace_minutes": 30,
-  "failover_check_cron": "30 6 * * *",
+  "failover_check_cron": "30 4 * * *",
   "description": "Multi-bot maintainer roster + failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
@@ -12,7 +12,7 @@
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "06:00 publish + update this table on success; 06:30 self-heal if still owner and digests missing"
+      "duties": "04:00 publish + update this table on success; 04:30 self-heal if still owner and digests missing"
     }
   ],
   "active_owner": "Cream",
@@ -21,7 +21,7 @@
     "publish_date": "2026-09-08",
     "at": "2026-09-08T06:19:17+08:00",
     "commit": "a870ce4",
-    "note": "automated 06:00 publish"
+    "note": "automated 04:00 publish (schedule updated 2026-09-08)"
   },
   "events": [
     {
@@ -35,6 +35,12 @@
       "type": "publish",
       "bot": "Cream",
       "detail": "Published digests/2026-09-08.md covering 2026-09-07 backlog/promotions"
+    },
+    {
+      "at": "2026-09-08T07:31:08+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Schedule changed: publish 04:00 HKT; failover check 04:30; grace still 30min"
     }
   ]
 }

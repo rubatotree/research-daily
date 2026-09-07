@@ -31,11 +31,11 @@
 并用 GitHub 读取 rubatotree/blog、rubatotree/academic 的近期 commits 校准兴趣（不要只看网页）。
 
 【日期约定】
-- 文件 digests/YYYY-MM-DD.md 与站点选日 = 发布日 = 定时任务当天（通常 06:00 HKT）
+- 文件 digests/YYYY-MM-DD.md 与站点选日 = 发布日 = 定时任务当天（通常 04:00 HKT）
 - 内容覆盖 = 前一自然日新稿（例：9/7 日报写 9/6）
 - 文末「覆盖说明」同时写：日报日期、内容覆盖日；周末无独立 arXiv 公告时可纳入相邻公告日积压，发布日仍用当天
 - digests/index.json 条目含 date 与 content_day
-- 自 2026-09-08 起每天必须跑；cron：0 6 * * *（Asia/Hong_Kong）
+- 自 2026-09-08 起每天必须跑；cron：0 4 * * *（Asia/Hong_Kong）
 
 【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、failover、privacy、seen-papers；对照 blog/academic commits，有变则先更新 meta/ 再写日报。
 
@@ -75,7 +75,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；提交并推送到 rubatotree/research-daily 的 main；向维护者发送简报并附 Pages 链接 https://rubatotree.github.io/research-daily/#发布日 。
 
 【故障转移】
-读 meta/failover.json。你的 bot 代号只来自私有记忆（勿在公开仓写死「你是某某」）。06:00 成功发布后用自己的代号更新 active_owner/last_success 并追加 events。06:30：若今日未发布且按顺位轮到你，则接管并完整发布；否则不抢跑。宽限 30 分钟。
+读 meta/failover.json。你的 bot 代号只来自私有记忆（勿在公开仓写死「你是某某」）。04:00 成功发布后用自己的代号更新 active_owner/last_success 并追加 events。04:30：若今日未发布且按顺位轮到你，则接管并完整发布；否则不抢跑。宽限 30 分钟。
 
 【诚实】
 禁止编造论文、作者、录用状态或链接。信息不足就少收，并在覆盖说明写数据完备性。
@@ -88,7 +88,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 若平台限制 prompt 长度，可用短版，并要求「每次先读 meta/ 下上述文件」：
 
 ```text
-每天 06:00（Asia/Hong_Kong）为 rubatotree 生成图形学&具身智能科研日报：发布日=当天，内容=前一自然日；严格遵守 meta/privacy.md 与 meta/digest-spec.md；论文标题用「短名 · Venue/arXiv · 日期」以便目录；推送到 rubatotree/research-daily 并通知维护者。完整说明见 meta/bot-handoff-prompt.md。禁止编造与泄露密钥/未公开研究。
+每天 04:00（Asia/Hong_Kong）为 rubatotree 生成图形学&具身智能科研日报：发布日=当天，内容=前一自然日；严格遵守 meta/privacy.md 与 meta/digest-spec.md；论文标题用「短名 · Venue/arXiv · 日期」以便目录；推送到 rubatotree/research-daily 并通知维护者。完整说明见 meta/bot-handoff-prompt.md。禁止编造与泄露密钥/未公开研究。
 ```
 
 ---
@@ -99,7 +99,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 - [ ] 能读 blog / academic commits
 - [ ] 用最近一篇 digest 对照字段与标题栏格式
 - [ ] 试跑不把额度、路径、密钥写进 diff
-- [ ] 定时 `0 6 * * *` 已启用
+- [ ] 定时 `0 4 * * *` 已启用
 
 
 ## 多 Bot 故障转移（接管时必读）
@@ -107,9 +107,9 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 - 读 `meta/failover.md` + `meta/failover.json`。
 - **你的代号**只来自你自己的私有记忆；不要从公开仓「猜」或照抄别人的代号；不要把「我是某某」写进公开文件当作通用指令。
 - 日报文末「覆盖说明」最后一行：`**编写：** <你的代号>`。
-- 06:00 成功发布后：用**你的代号**更新 `active_owner` / `last_success`，追加 `events`（`publish`），与日报同一次推送。
-- 06:30：若今日尚未成功，且按顺位**你是应接管者**，则 `failover`/`claim` 后执行完整发布；否则不要抢跑。
-- 宽限：`failover_grace_minutes = 30`（计划 06:00 之后 30 分钟）。
+- 04:00 成功发布后：用**你的代号**更新 `active_owner` / `last_success`，追加 `events`（`publish`），与日报同一次推送。
+- 04:30：若今日尚未成功，且按顺位**你是应接管者**，则 `failover`/`claim` 后执行完整发布；否则不要抢跑。
+- 宽限：`failover_grace_minutes = 30`（计划 04:00 之后 30 分钟）。
 
 ## 协同文风（加入协同的 Bot）
 

@@ -32,7 +32,7 @@ assets/                     # 样式与脚本
 
 1. 读 [`meta/LONG_TERM_MEMORY.md`](meta/LONG_TERM_MEMORY.md)
 2. 复制 [`meta/bot-handoff-prompt.md`](meta/bot-handoff-prompt.md) 中的接管 Prompt
-3. 按 [`meta/bot-repro.md`](meta/bot-repro.md) 连接 GitHub 并启用每日 06:00（HKT）
+3. 按 [`meta/bot-repro.md`](meta/bot-repro.md) 连接 GitHub 并启用每日 04:00（HKT；故障转移检查 04:30）
 
 ## 本地预览
 
