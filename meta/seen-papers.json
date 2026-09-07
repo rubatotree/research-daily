@@ -4,74 +4,89 @@
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
   "entries": {
     "2609.02543": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.03304": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.03341": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.03349": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.03557": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.03563": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.03613": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.04602": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.05127": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.05178": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.05255": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.05382": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.05415": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     },
     "2609.05416": {
-      "first_seen": "2026-09-06",
-      "digest": "research-daily-2026-09-06-v5",
-      "reappearances": []
+      "first_seen": "2026-09-07",
+      "digest": "2026-09-07",
+      "reappearances": [],
+      "content_day": "2026-09-06"
     }
-  }
+  },
+  "dating": "Digest filename/date is publish day (HKT); content covers previous day."
 }
