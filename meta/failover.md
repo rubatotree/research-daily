@@ -36,7 +36,8 @@
    - `last_success` = `{ bot, publish_date, at (ISO HKT), commit }`  
 2. 向 `events` **追加**一条（不要删历史；可截断保留最近 ~100 条）：
    - `{ at, type: "publish", bot, detail }`  
-3. 与日报一并 `git push`（本 JSON 是公开运维状态，**不含密钥**）。
+3. 日报文末「覆盖说明」署 `**编写：** <自己的代号>`。
+4. 与日报一并 `git push`（本 JSON 是公开运维状态，**不含密钥**）。
 
 ### B. 06:30 故障转移检查（所有登记 Bot）
 1. 拉取最新 `main`，读 `failover.json` + 是否已有今日 digest。  
