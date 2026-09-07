@@ -29,7 +29,7 @@
 | `digests/index.json` | 日期索引（站点用） |
 
 ## 生成流水线（意图级）
-1. 读 `meta/*` 兴趣与规范；读 blog/academic 近期 commits → 兴趣校准
+1. **写作前检查长期记忆**：读并核对 `meta/LONG_TERM_MEMORY.md` 等；有变先更新再写；读 blog/academic commits → 兴趣校准
 2. 读 `seen-papers.json` → 去重
 3. 扫 arXiv / Ke-Sen / 媒体 /（可选）X → 策展
 4. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 下载公开配图

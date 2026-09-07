@@ -37,6 +37,8 @@
 - digests/index.json 条目含 date 与 content_day
 - 自 2026-09-08 起每天必须跑；cron：0 6 * * *（Asia/Hong_Kong）
 
+【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、failover、privacy、seen-papers；对照 blog/academic commits，有变则先更新 meta/ 再写日报。
+
 【文风学习】动笔前阅读近几天 digests/ 中 **编写署名不是自己** 的篇目（建议≥3），学习基本写法与优点；允许风格创新；目标：清晰易读、概括与重点分明，避免流水账。
 
 【版式顺序】
@@ -112,3 +114,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 ## 协同文风（加入协同的 Bot）
 
 动笔前读近几天非本人署名的日报，学写法与优点；允许创新；目标清晰易读、重点分明。详见 `digest-spec.md`「协同 Bot 文风学习」。
+
+## 写作前检查长期记忆
+
+每日写稿前必须检查 `meta/LONG_TERM_MEMORY.md` 等规范/兴趣/故障转移文档；有变更先更新公开记忆再写日报。详见 `digest-spec.md`。

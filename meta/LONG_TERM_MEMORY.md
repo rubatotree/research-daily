@@ -90,6 +90,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 8. 发布流水线（意图级）
 
+0. **写作前检查长期记忆：** 读 `LONG_TERM_MEMORY` / `digest-spec` / `research-interests` / `failover` / `privacy` / `seen-papers`；有变先更新 `meta/` 再写稿
 1. 读兴趣文件 + 近几日 blog/academic commits
 2. 读 `seen-papers.json` 去重
 3. 按覆盖窗口搜集候选；策展、下载公开配图
@@ -115,6 +116,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 11. 变更日志（公开记忆）
 
+- 2026-09：每日写作前必须检查并视需要更新长期记忆文档（meta/）；
 - 2026-09：协同 Bot 须先读非本人近稿学习文风，再写作（清晰易读、重点分明，允许创新）；
 - 2026-09：加入 `failover.json` 多 Bot 顺位与 30min 故障转移，并写入本记忆；
 - 2026-09：站点上线；完整字段 + 方法概要/值得关注；TOC；标题栏加入会议/时间；补齐长期记忆与接管 prompt；明确公开安全红线

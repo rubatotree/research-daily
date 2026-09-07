@@ -24,6 +24,13 @@
 - 正文**不要**标注 `[A]` / `[B]` / `[C]`（内部仍可按拆分绑定 / 正向效率 / 逆渲染加权）
 
 
+
+## 写作前检查长期记忆（每日必做）
+动笔写当日日报**之前**必须：
+1. 阅读并核对 `meta/LONG_TERM_MEMORY.md`、`digest-spec.md`、`research-interests.md`、`failover.json`、`privacy.md`、`seen-papers.json`
+2. 对照 `rubatotree/blog` / `academic` 近期 commits：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报
+3. 无变更则不必空改；有变更须写进公开记忆（遵守 `privacy.md`），避免只改私聊、仓内过时
+
 ## 协同 Bot 文风学习（必做）
 加入协同维护的 Bot，在撰写**当日**日报前必须：
 1. 打开近几天（建议至少 **3** 篇）`digests/`，优先读 **编写署名不是自己** 的篇目
