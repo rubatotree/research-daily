@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>科研日报 · rubatotree</title>
+  <link rel="stylesheet" href="assets/site.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <a class="title" href="./">科研日报</a>
+      <span class="sub">Graphics · Embodied · PTIR-GS</span>
+    </div>
+    <nav class="links">
+      <a href="https://github.com/rubatotree/research-daily">GitHub</a>
+      <a href="meta/digest-spec.md">规范</a>
+      <a href="meta/research-interests.md">兴趣</a>
+      <a href="https://rubatotree.github.io/blog/">博客</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <label class="lbl" for="dateSelect">选择日期</label>
+      <select id="dateSelect"></select>
+      <ul id="dateList" class="date-list"></ul>
+      <p class="hint">链接可直接点进 arXiv / 项目页。配图随正文展示。</p>
+    </aside>
+    <article id="content" class="content">
+      <p class="muted">加载中…</p>
+    </article>
+  </main>
+
+  <footer class="foot">
+    <span>Maintained for <a href="https://rubatotree.github.io/academic/">Yutian Zhu</a></span>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

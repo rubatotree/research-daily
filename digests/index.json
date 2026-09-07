@@ -1,0 +1,13 @@
+{
+  "site": "科研日报",
+  "owner": "rubatotree",
+  "base": "/research-daily/",
+  "digests": [
+    {
+      "date": "2026-09-06",
+      "title": "Real2Sim / PTIR-GS 兴趣策展",
+      "path": "digests/2026-09-06.md",
+      "figs": "digests/2026-09-06/figs/"
+    }
+  ]
+}
