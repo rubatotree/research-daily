@@ -69,7 +69,8 @@
 默认查阅 meta/seen-papers.json，已收录不重写。例外须写明原因：新版本、新录用、重要开源、圈内新影响。「新兴趣相关」可重复、可不限近日。
 
 【信息源】
-arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（估成本，过程与额度不写进任何公开文件）。
+arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键词检索（估成本，过程与额度不写进任何公开文件）。
+【圈内观点】媒体/公众号/X 条目须提炼有价值观点与判断，勿只贴标题+链接；可写与课题对照一句。
 
 【发布】
 写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；提交并推送到 rubatotree/research-daily 的 main；向维护者发送简报并附 Pages 链接 https://rubatotree.github.io/research-daily/#发布日 。
