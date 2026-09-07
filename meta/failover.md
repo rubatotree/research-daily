@@ -56,6 +56,7 @@
 2. 在 `bots` 数组追加 `{ code, order, role: "standby", status: "active" }`。  
 3. 追加 `events`：`type: "register"`。  
 4. 新 Bot 安装：每日 06:00（可选，若为 standby 可只跑 06:30 检查）+ **必须** 06:30 故障转移检查。
+5. 新 Bot **第一次写稿前**及每次执笔前：按 `digest-spec.md` 阅读近几天非本人署名日报，学习文风与优点；允许创新，目标清晰易读、重点分明。
 
 ## 事件类型约定
 
