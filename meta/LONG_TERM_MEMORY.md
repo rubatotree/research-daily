@@ -35,12 +35,22 @@
 | `meta/bot-repro.md` | 复现清单（连接与步骤） | 是 |
 | `meta/seen-papers.json` | 已收录论文去重账本 | 是（仅公开论文元数据） |
 | `meta/privacy.md` | 公开写作红线速查 | 是 |
+| `meta/failover.json` / `meta/failover.md` | 多 Bot 代号顺位、事件、30min 故障转移 | 是 |
 | `digests/YYYY-MM-DD.md` | 当日正文 | 是 |
 | `digests/YYYY-MM-DD/figs/` | 配图（来自论文公开图） | 是 |
 | `digests/index.json` | 站点日期索引（含 `content_day`） | 是 |
 | `index.html` + `assets/` | 白底站点、侧栏日历、折叠目录、KaTeX | 是 |
 
 Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同步内容仅限公开论文字段**（id、title、arxiv、首次收录日、可选 venue）。
+
+
+## 3b. 多 Bot 故障转移（自动维护）
+
+- **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
+- **计划发布：** 每天 06:00 HKT；**宽限 30 分钟** → 06:30 仍无今日成功发布则下一顺位 Bot 启动
+- **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot **私有**记忆。禁止在公开接管文案里写死某个读者的代号。
+- **每次成功发布必须**更新 `last_success`、`active_owner`，并追加 `events`
+- **06:30 检查：** 仅应接管者执行完整日报；他人不抢跑；已成功则安静
 
 ## 4. 日期与节奏
 
@@ -103,6 +113,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 11. 变更日志（公开记忆）
 
+- 2026-09：加入 `failover.json` 多 Bot 顺位与 30min 故障转移，并写入本记忆；
 - 2026-09：站点上线；完整字段 + 方法概要/值得关注；TOC；标题栏加入会议/时间；补齐长期记忆与接管 prompt；明确公开安全红线
 - 日期约定：发布日 vs 内容覆盖日（前一自然日）
 - 定时：每日 06:00 HKT，自 2026-09-08 起强制执行

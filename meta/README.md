@@ -11,5 +11,6 @@
 | [research-interests.md](./research-interests.md) | 公开研究兴趣 |
 | [privacy.md](./privacy.md) | 公开安全与隐私红线 |
 | [seen-papers.json](./seen-papers.json) | 去重账本 |
+| [failover.json](./failover.json) / [failover.md](./failover.md) | 多 Bot 故障转移表与机制 |
 
 写作前先读 `privacy.md`。

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "timezone": "Asia/Hong_Kong",
+  "scheduled_publish": "06:00",
+  "scheduled_cron": "0 6 * * *",
+  "failover_grace_minutes": 30,
+  "failover_check_cron": "30 6 * * *",
+  "description": "Multi-bot maintainer roster + failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
+  "bots": [
+    {
+      "code": "Cream",
+      "order": 1,
+      "role": "primary",
+      "status": "active",
+      "duties": "06:00 publish + update this table on success; 06:30 self-heal if still owner and digests missing"
+    }
+  ],
+  "active_owner": "Cream",
+  "last_success": {
+    "bot": "Cream",
+    "publish_date": "2026-09-07",
+    "at": null,
+    "commit": "baa6eea",
+    "note": "seeded from existing site; timestamps filled by subsequent automated runs"
+  },
+  "events": [
+    {
+      "at": "2026-09-08T01:12:29+08:00",
+      "type": "init",
+      "bot": "Cream",
+      "detail": "Failover table created; primary=Cream; grace=30min after 06:00 HKT"
+    }
+  ]
+}

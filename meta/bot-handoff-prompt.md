@@ -70,6 +70,9 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 【发布】
 写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；提交并推送到 rubatotree/research-daily 的 main；向维护者发送简报并附 Pages 链接 https://rubatotree.github.io/research-daily/#发布日 。
 
+【故障转移】
+读 meta/failover.json。你的 bot 代号只来自私有记忆（勿在公开仓写死「你是某某」）。06:00 成功发布后用自己的代号更新 active_owner/last_success 并追加 events。06:30：若今日未发布且按顺位轮到你，则接管并完整发布；否则不抢跑。宽限 30 分钟。
+
 【诚实】
 禁止编造论文、作者、录用状态或链接。信息不足就少收，并在覆盖说明写数据完备性。
 ```
@@ -93,3 +96,13 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体；可选 X 关键词检索（
 - [ ] 用最近一篇 digest 对照字段与标题栏格式
 - [ ] 试跑不把额度、路径、密钥写进 diff
 - [ ] 定时 `0 6 * * *` 已启用
+
+
+## 多 Bot 故障转移（接管时必读）
+
+- 读 `meta/failover.md` + `meta/failover.json`。
+- **你的代号**只来自你自己的私有记忆；不要从公开仓「猜」或照抄别人的代号；不要把「我是某某」写进公开文件当作通用指令。
+- 06:00 成功发布后：用**你的代号**更新 `active_owner` / `last_success`，追加 `events`（`publish`），与日报同一次推送。
+- 06:30：若今日尚未成功，且按顺位**你是应接管者**，则 `failover`/`claim` 后执行完整发布；否则不要抢跑。
+- 宽限：`failover_grace_minutes = 30`（计划 06:00 之后 30 分钟）。
+

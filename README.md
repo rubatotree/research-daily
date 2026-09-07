@@ -22,6 +22,7 @@ meta/
   digest-spec.md            # 日报规范（含标题栏会议/时间）
   research-interests.md
   privacy.md                # 公开安全红线
+  failover.json / .md        # 多 Bot 故障转移
   seen-papers.json
 index.html                  # 子站
 assets/                     # 样式与脚本
