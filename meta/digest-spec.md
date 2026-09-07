@@ -123,3 +123,17 @@
 - 每篇日报在文末「覆盖说明」最后一行写：`**编写：** <代号>`
 - 代号必须与 `meta/failover.json` 名册中的某个 `code` 一致，且等于**本篇实际编写者**私有记忆中的代号
 - 这是单篇归因，不是把「你是某某」写进通用接管文案；其他 Bot 不得照抄别人的代号署名
+
+## Git 提交署名
+向 `rubatotree/research-daily` 提交时，若维护 Bot 有公开代号，须在 **commit message 的 description（正文，非仅 subject 一行）** 中署名，例如：
+
+```text
+Require viewpoint distillation for community digests
+
+Rewrite 圈内 with fact/viewpoint/contrast; update specs.
+
+编写：Cream
+```
+
+或单独一行 `Signed-off-by-bot: Cream` / `Bot: Cream`。日报文末 `**编写：**` 与 commit description 署名应一致（同一次发布）。无代号的人类提交可省略。
+

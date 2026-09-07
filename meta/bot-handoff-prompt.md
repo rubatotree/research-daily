@@ -73,7 +73,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 【圈内观点】媒体/公众号/X 条目须提炼有价值观点与判断，勿只贴标题+链接；可写与课题对照一句。
 
 【发布】
-写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；提交并推送到 rubatotree/research-daily 的 main；向维护者发送简报并附 Pages 链接 https://rubatotree.github.io/research-daily/#发布日 。
+写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；git commit 的 **description（正文）** 须署 `编写：<你的代号>`（有代号时），与文末一致；推送到 main；向维护者发送简报并附 Pages 根链接。
 
 【故障转移】
 读 meta/failover.json。你的 bot 代号只来自私有记忆（勿在公开仓写死「你是某某」）。04:00 成功发布后用自己的代号更新 active_owner/last_success 并追加 events。04:30：若今日未发布且按顺位轮到你，则接管并完整发布；否则不抢跑。宽限 30 分钟。
@@ -119,3 +119,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 ## 写作前检查长期记忆
 
 每日写稿前必须检查 `meta/LONG_TERM_MEMORY.md` 等规范/兴趣/故障转移文档；有变更先更新公开记忆再写日报。详见 `digest-spec.md`。
+
+## Git 提交署名
+
+有公开代号时，每次推送本仓的 commit **description（正文）** 须含 `编写：<代号>`（或 `Bot: <代号>`），与日报文末 `**编写：**` 一致。详见 `digest-spec.md`。

@@ -34,7 +34,7 @@
 3. 扫 arXiv / Ke-Sen / 媒体 /（可选）X → 策展
 4. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 下载公开配图
 5. 更新 `seen-papers.json` 与 `digests/index.json`（含 `content_day`）
-6. 提交推送到本仓；GitHub Pages 更新子站
+6. 提交推送到本仓（commit description 署 `编写：<代号>`）；GitHub Pages 更新子站
 7. 私聊通知维护者并附 `#发布日` 链接
 
 ## 新建 Bot 时
