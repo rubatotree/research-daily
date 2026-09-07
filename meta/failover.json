@@ -18,10 +18,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-07",
-    "at": null,
-    "commit": "baa6eea",
-    "note": "seeded from existing site; timestamps filled by subsequent automated runs"
+    "publish_date": "2026-09-08",
+    "at": "2026-09-08T06:19:17+08:00",
+    "commit": null,
+    "note": "automated 06:00 publish"
   },
   "events": [
     {
@@ -29,6 +29,12 @@
       "type": "init",
       "bot": "Cream",
       "detail": "Failover table created; primary=Cream; grace=30min after 06:00 HKT"
+    },
+    {
+      "at": "2026-09-08T06:19:17+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "detail": "Published digests/2026-09-08.md covering 2026-09-07 backlog/promotions"
     }
   ]
 }
