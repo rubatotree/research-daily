@@ -1,6 +1,4 @@
-
 const BASE = (() => {
-  // Support both /research-daily/ and repo-root preview
   const p = location.pathname;
   if (p.includes('/research-daily')) {
     const i = p.indexOf('/research-daily');
@@ -9,41 +7,130 @@ const BASE = (() => {
   return './';
 })();
 
+const DOW = ['一', '二', '三', '四', '五', '六', '日'];
+
+let digests = [];
+let byDate = new Map();
+let viewYear, viewMonth; // month 0-11
+let currentDate = null;
+
 async function loadIndex() {
   const res = await fetch(BASE + 'digests/index.json', { cache: 'no-store' });
   if (!res.ok) throw new Error('无法加载 digests/index.json');
   return res.json();
 }
 
-function setActive(date) {
-  document.querySelectorAll('#dateList button').forEach(b => {
-    b.classList.toggle('active', b.dataset.date === date);
+function ymd(d) {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
+function parseYmd(s) {
+  const [y, m, d] = s.split('-').map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function setMonthLabel() {
+  document.getElementById('monthLabel').textContent =
+    `${viewYear} 年 ${String(viewMonth + 1).padStart(2, '0')} 月`;
+}
+
+function renderCalendar() {
+  const el = document.getElementById('calendar');
+  el.innerHTML = '';
+  DOW.forEach(d => {
+    const s = document.createElement('div');
+    s.className = 'cal-dow';
+    s.textContent = d;
+    el.appendChild(s);
   });
-  const sel = document.getElementById('dateSelect');
-  if (sel) sel.value = date;
+
+  const first = new Date(viewYear, viewMonth, 1);
+  // Monday-first
+  let startPad = (first.getDay() + 6) % 7;
+  const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+  const prevDays = new Date(viewYear, viewMonth, 0).getDate();
+
+  for (let i = 0; i < startPad; i++) {
+    const day = prevDays - startPad + i + 1;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cal-cell muted';
+    btn.textContent = String(day);
+    btn.disabled = true;
+    el.appendChild(btn);
+  }
+
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${viewYear}-${String(viewMonth + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cal-cell';
+    btn.textContent = String(day);
+    if (byDate.has(dateStr)) {
+      btn.classList.add('has');
+      btn.title = byDate.get(dateStr).title || dateStr;
+      btn.onclick = () => showDigest(byDate.get(dateStr));
+    } else {
+      btn.classList.add('muted');
+      btn.disabled = true;
+    }
+    if (dateStr === currentDate) btn.classList.add('active');
+    el.appendChild(btn);
+  }
+
+  const total = startPad + daysInMonth;
+  const rem = (7 - (total % 7)) % 7;
+  for (let i = 1; i <= rem; i++) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cal-cell muted';
+    btn.textContent = String(i);
+    btn.disabled = true;
+    el.appendChild(btn);
+  }
+}
+
+function renderTimeline() {
+  const list = document.getElementById('timeline');
+  list.innerHTML = '';
+  digests.forEach(d => {
+    const li = document.createElement('li');
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.dataset.date = d.date;
+    btn.textContent = d.date;
+    if (d.date === currentDate) btn.classList.add('active');
+    btn.onclick = () => showDigest(d);
+    li.appendChild(btn);
+    list.appendChild(li);
+  });
+}
+
+function syncChrome() {
+  setMonthLabel();
+  renderCalendar();
+  renderTimeline();
 }
 
 async function showDigest(entry) {
   const content = document.getElementById('content');
   content.innerHTML = '<p class="muted">加载中…</p>';
-  setActive(entry.date);
+  currentDate = entry.date;
+  const dt = parseYmd(entry.date);
+  viewYear = dt.getFullYear();
+  viewMonth = dt.getMonth();
+  syncChrome();
   history.replaceState(null, '', `#${entry.date}`);
+
   const res = await fetch(BASE + entry.path, { cache: 'no-store' });
   if (!res.ok) {
-    content.innerHTML = `<p>找不到 ${entry.path}</p>`;
+    content.innerHTML = `<p class="muted">找不到 ${entry.path}</p>`;
     return;
   }
   let md = await res.text();
-  // Rewrite relative image paths so they resolve under digests/
-  const digestDir = entry.path.replace(/[^/]+$/, '');
-  marked.setOptions({
-    baseUrl: BASE + digestDir,
-  });
-  // Fix common relative figs paths
-  md = md.replace(/\]\((?:\.\/)?((?:2026-\d{2}-\d{2}\/)?figs\/[^)]+)\)/g, (m, rel) => {
-    return `](${BASE}digests/${rel.includes('figs/') && !rel.startsWith('20') ? entry.date + '/' + rel.replace(/^\.\//,'') : rel})`;
-  });
-  // Simpler: if path is 2026-09-06/figs/... it's already under digests/
   md = md.replace(/\]\((20\d{2}-\d{2}-\d{2}\/figs\/[^)]+)\)/g, `](${BASE}digests/$1)`);
   content.innerHTML = marked.parse(md);
   content.querySelectorAll('a').forEach(a => {
@@ -52,44 +139,41 @@ async function showDigest(entry) {
       a.rel = 'noopener noreferrer';
     }
   });
-}
-
-function fillSidebar(data) {
-  const sel = document.getElementById('dateSelect');
-  const list = document.getElementById('dateList');
-  sel.innerHTML = '';
-  list.innerHTML = '';
-  const digests = [...data.digests].sort((a, b) => b.date.localeCompare(a.date));
-  digests.forEach(d => {
-    const opt = document.createElement('option');
-    opt.value = d.date;
-    opt.textContent = `${d.date} · ${d.title || '日报'}`;
-    sel.appendChild(opt);
-    const li = document.createElement('li');
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.dataset.date = d.date;
-    btn.textContent = d.date;
-    btn.onclick = () => showDigest(d);
-    li.appendChild(btn);
-    list.appendChild(li);
-  });
-  sel.onchange = () => {
-    const d = digests.find(x => x.date === sel.value);
-    if (d) showDigest(d);
-  };
-  return digests;
+  content.scrollIntoView({ block: 'start' });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 (async () => {
   try {
     const data = await loadIndex();
-    const digests = fillSidebar(data);
+    digests = [...data.digests].sort((a, b) => b.date.localeCompare(a.date));
+    byDate = new Map(digests.map(d => [d.date, d]));
+
     const hash = location.hash.replace(/^#/, '');
     const initial = digests.find(d => d.date === hash) || digests[0];
+    const seed = initial ? parseYmd(initial.date) : new Date();
+    viewYear = seed.getFullYear();
+    viewMonth = seed.getMonth();
+
+    document.getElementById('prevMonth').onclick = () => {
+      viewMonth -= 1;
+      if (viewMonth < 0) { viewMonth = 11; viewYear -= 1; }
+      setMonthLabel();
+      renderCalendar();
+    };
+    document.getElementById('nextMonth').onclick = () => {
+      viewMonth += 1;
+      if (viewMonth > 11) { viewMonth = 0; viewYear += 1; }
+      setMonthLabel();
+      renderCalendar();
+    };
+
     if (initial) await showDigest(initial);
-    else document.getElementById('content').innerHTML = '<p>还没有日报。</p>';
+    else {
+      syncChrome();
+      document.getElementById('content').innerHTML = '<p class="muted">还没有日报。</p>';
+    }
   } catch (e) {
-    document.getElementById('content').innerHTML = `<p>加载失败：${e.message}</p>`;
+    document.getElementById('content').innerHTML = `<p class="muted">加载失败：${e.message}</p>`;
   }
 })();
