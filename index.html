@@ -4,14 +4,50 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>科研日报</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
   <link rel="stylesheet" href="assets/site.css" />
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
 </head>
 <body>
-  <div class="shell">
-    <aside class="rail" aria-label="日期导航">
+  <!-- Mobile sticky top bar -->
+  <header class="mobile-bar" aria-label="移动导航">
+    <button type="button" id="mobileDateToggle" class="mbar-btn" aria-expanded="false" aria-controls="mobileDatePanel" title="选择日期">
+      <span class="mbar-icon" aria-hidden="true">▦</span>
+      <span id="mobileDateLabel" class="mbar-date">—</span>
+    </button>
+    <div class="mbar-nav">
+      <button type="button" id="mobilePrev" class="mbar-btn" aria-label="上一篇" title="上一篇">‹</button>
+      <button type="button" id="mobileNext" class="mbar-btn" aria-label="下一篇" title="下一篇">›</button>
+    </div>
+  </header>
+
+  <div id="mobileDatePanel" class="mobile-date-panel" hidden>
+    <div class="mdp-inner">
+      <div class="month-nav">
+        <button type="button" id="mobilePrevMonth" aria-label="上一月">‹</button>
+        <span id="mobileMonthLabel"></span>
+        <button type="button" id="mobileNextMonth" aria-label="下一月">›</button>
+      </div>
+      <div class="calendar" id="mobileCalendar"></div>
+      <div class="timeline-label">时间轴</div>
+      <ul class="timeline" id="mobileTimeline"></ul>
+    </div>
+  </div>
+
+  <div class="shell" id="shell">
+    <!-- Left rail: dates -->
+    <aside class="rail rail-left" id="leftRail" aria-label="日期导航">
       <div class="rail-head">
-        <div class="logo">科研日报</div>
+        <div class="logo-row">
+          <div class="logo">科研日报</div>
+          <button type="button" class="rail-collapse" id="collapseLeft" aria-label="收起左侧栏" title="收起">‹</button>
+        </div>
+        <div class="digest-nav">
+          <button type="button" id="prevDigest" aria-label="上一篇">‹ 上一篇</button>
+          <button type="button" id="nextDigest" aria-label="下一篇">下一篇 ›</button>
+        </div>
         <div class="month-nav">
           <button type="button" id="prevMonth" aria-label="上一月">‹</button>
           <span id="monthLabel"></span>
@@ -25,17 +61,20 @@
       <ul class="timeline" id="timeline"></ul>
 
       <div class="rail-foot">
-        <a href="https://github.com/rubatotree/research-daily">GitHub</a>
-        <a href="meta/digest-spec.md">规范</a>
+        <a href="https://github.com/rubatotree/research-daily" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </aside>
 
+    <button type="button" class="rail-expand rail-expand-left" id="expandLeft" aria-label="展开左侧栏" title="展开日期" hidden>›</button>
+
+    <!-- Main content -->
     <main class="stage">
       <article id="content" class="content">
         <p class="muted">加载中…</p>
       </article>
     </main>
   </div>
+
   <script src="assets/app.js"></script>
 </body>
 </html>
