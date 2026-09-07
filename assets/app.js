@@ -207,7 +207,7 @@ function buildArticleToc(content) {
     a.addEventListener('click', (e) => {
       e.preventDefault();
       h.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      history.replaceState(null, '', `#${currentDate}`);
+      // keep digest URL as-is (bare path = latest; #date = deep link)
     });
     li.appendChild(a);
     ol.appendChild(li);
@@ -249,6 +249,18 @@ function setLeftCollapsed(collapsed) {
   if (expand) expand.hidden = !collapsed;
 }
 
+function syncUrlForDigest(date) {
+  // Bare /research-daily/ means "latest". Only put #YYYY-MM-DD in the URL
+  // when the open digest is not the newest (shareable deep link).
+  const latest = digests[0] && digests[0].date;
+  const path = location.pathname + location.search;
+  if (date && latest && date !== latest) {
+    if (location.hash !== `#${date}`) history.replaceState(null, '', `#${date}`);
+  } else if (location.hash) {
+    history.replaceState(null, '', path);
+  }
+}
+
 async function showDigest(entry) {
   const content = document.getElementById('content');
   content.innerHTML = '<p class="muted">加载中…</p>';
@@ -257,7 +269,7 @@ async function showDigest(entry) {
   viewYear = dt.getFullYear();
   viewMonth = dt.getMonth();
   syncChrome();
-  history.replaceState(null, '', `#${entry.date}`);
+  syncUrlForDigest(entry.date);
 
   const res = await fetch(BASE + entry.path, { cache: 'no-store' });
   if (!res.ok) {
