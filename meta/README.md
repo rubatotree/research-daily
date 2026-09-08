@@ -9,6 +9,7 @@
 | [bot-repro.md](./bot-repro.md) | 连接与发布清单 |
 | [digest-spec.md](./digest-spec.md) | 日报字段与版式（含标题栏 venue·时间） |
 | [research-interests.md](./research-interests.md) | 公开研究兴趣 |
+| [interest-notes.md](./interest-notes.md) | 随手兴趣笔记（轻度加权） |
 | [privacy.md](./privacy.md) | 公开安全与隐私红线 |
 | [seen-papers.json](./seen-papers.json) | 去重账本 |
 | [failover.json](./failover.json) / [failover.md](./failover.md) | 多 Bot 故障转移表与机制 |

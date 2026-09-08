@@ -21,6 +21,7 @@ meta/
   bot-repro.md              # 复现清单
   digest-spec.md            # 日报规范（含标题栏会议/时间）
   research-interests.md
+  interest-notes.md         # 随手兴趣笔记
   privacy.md                # 公开安全红线
   failover.json / .md        # 多 Bot 故障转移
   seen-papers.json

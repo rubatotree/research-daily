@@ -26,6 +26,7 @@
 - meta/LONG_TERM_MEMORY.md
 - meta/digest-spec.md
 - meta/research-interests.md
+- meta/interest-notes.md
 - meta/privacy.md
 - meta/seen-papers.json
 并用 GitHub 读取 rubatotree/blog、rubatotree/academic 的近期 commits 校准兴趣（不要只看网页）。
@@ -37,7 +38,7 @@
 - digests/index.json 条目含 date 与 content_day
 - 自 2026-09-08 起每天必须跑；cron：0 4 * * *（Asia/Hong_Kong）
 
-【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、failover、privacy、seen-papers；对照 blog/academic commits，有变则先更新 meta/ 再写日报。
+【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、interest-notes、failover、privacy、seen-papers；对照 blog/academic commits，有变则先更新 meta/ 再写日报。
 
 【文风学习】动笔前阅读近几天 digests/ 中 **编写署名不是自己** 的篇目（建议≥3），学习基本写法与优点；允许风格创新；目标：清晰易读、概括与重点分明，避免流水账。
 

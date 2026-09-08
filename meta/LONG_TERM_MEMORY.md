@@ -30,6 +30,7 @@
 |------|------|--------|
 | `meta/digest-spec.md` | 字段、版式、标题栏、安全红线 | 是 |
 | `meta/research-interests.md` | 兴趣与加权 | 是 |
+| `meta/interest-notes.md` | 随手兴趣笔记（轻度加权 / 新兴趣扫描） | 是 |
 | `meta/LONG_TERM_MEMORY.md` | 本文件：产品记忆 | 是 |
 | `meta/bot-handoff-prompt.md` | **完整接管 prompt**（可粘贴给新 Bot） | 是 |
 | `meta/bot-repro.md` | 复现清单（连接与步骤） | 是 |
@@ -94,8 +95,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 8. 发布流水线（意图级）
 
-0. **写作前检查长期记忆：** 读 `LONG_TERM_MEMORY` / `digest-spec` / `research-interests` / `failover` / `privacy` / `seen-papers`；有变先更新 `meta/` 再写稿
-1. 读兴趣文件 + 近几日 blog/academic commits
+0. **写作前检查长期记忆：** 读 `LONG_TERM_MEMORY` / `digest-spec` / `research-interests` / `interest-notes` / `failover` / `privacy` / `seen-papers`；有变先更新 `meta/` 再写稿
+1. 读兴趣文件 + `interest-notes.md` + 近几日 blog/academic commits
 2. 读 `seen-papers.json` 去重
 3. 按覆盖窗口搜集候选；策展、下载公开配图
 4. 写 `digests/发布日.md`（标题栏含 venue·时间）
@@ -121,6 +122,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 11. 变更日志（公开记忆）
 
+- 2026-09-08：新增 `meta/interest-notes.md` 随手兴趣笔记（首条：试用 TripoAI 后对 3D 生成的轻度兴趣）；
 - 2026-09-08：Neon 升为 order 1 primary（04:00 HKT），Cream 改为 order 2 active standby（仅 04:30 CAS failover）；新增轻量守卫与无并发认领规则。
 
 - 2026-09-08：Git commit description 须署 bot 代号（有代号时）；

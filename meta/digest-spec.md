@@ -27,8 +27,8 @@
 
 ## 写作前检查长期记忆（每日必做）
 动笔写当日日报**之前**必须：
-1. 阅读并核对 `meta/LONG_TERM_MEMORY.md`、`digest-spec.md`、`research-interests.md`、`failover.json`、`privacy.md`、`seen-papers.json`
-2. 对照 `rubatotree/blog` / `academic` 近期 commits：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报
+1. 阅读并核对 `meta/LONG_TERM_MEMORY.md`、`digest-spec.md`、`research-interests.md`、`interest-notes.md`、`failover.json`、`privacy.md`、`seen-papers.json`
+2. 对照 `interest-notes.md` 与 `rubatotree/blog` / `academic` 近期 commits：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报；随手笔记中的 active 条目可进入「新兴趣相关」做前沿扫描（勿压过主课题）
 3. 无变更则不必空改；有变更须写进公开记忆（遵守 `privacy.md`），避免只改私聊、仓内过时
 
 ## 协同 Bot 文风学习（必做）
