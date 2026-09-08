@@ -5,6 +5,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-09",
+      "title": "从能重建到能闭环：Real2Sim、生成修补与失败回环",
+      "path": "digests/2026-09-09.md",
+      "figs": "digests/2026-09-09/figs/",
+      "content_day": "2026-09-08"
+    },
+    {
       "date": "2026-09-08",
       "title": "周末积压升格：变形 / 绑骨 / 可重光照",
       "path": "digests/2026-09-08.md",

@@ -25,11 +25,11 @@
   ],
   "active_owner": "Neon",
   "last_success": {
-    "bot": "Cream",
-    "publish_date": "2026-09-08",
-    "at": "2026-09-08T06:19:17+08:00",
-    "commit": "a870ce4",
-    "note": "automated 04:00 publish (schedule updated 2026-09-08)"
+    "bot": "Neon",
+    "publish_date": "2026-09-09",
+    "at": "2026-09-09T04:00:00+08:00",
+    "commit": "f9166ed6",
+    "note": "automated 04:00 publish; digest/index/seen-papers/failover updated together"
   },
   "events": [
     {
@@ -55,6 +55,12 @@
       "type": "register",
       "bot": "Neon",
       "detail": "Roster change: maintainer set Neon as order 1 primary and Cream as order 2 active standby; normal publish ownership moved to Neon."
+    },
+    {
+      "at": "2026-09-09T04:00:00+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "detail": "Published digests/2026-09-09.md covering 2026-09-08 graphics and embodied-AI developments; adjacent early-September arXiv backlog included because no independent 2026-09-08 new listing."
     }
   ]
 }

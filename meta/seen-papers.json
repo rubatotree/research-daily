@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-08",
+  "updated": "2026-09-09",
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
   "entries": {
     "2609.02543": {
@@ -146,6 +146,66 @@
       "digest": "2026-09-08",
       "reappearances": [],
       "content_day": "2026-09-07"
+    },
+    "2608.30821": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2608.23549": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2609.03657": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2603.21304": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2608.28718": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2609.04607": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2609.04355": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2609.04277": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2609.04552": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
+    },
+    "2609.04500": {
+      "first_seen": "2026-09-09",
+      "digest": "2026-09-09",
+      "reappearances": [],
+      "content_day": "2026-09-08"
     }
   },
   "dating": "Digest filename/date is publish day (HKT); content covers previous day."
