@@ -177,6 +177,48 @@ function slugify(text, used) {
   return id;
 }
 
+function parseDigestHash(hash) {
+  const raw = String(hash || '').replace(/^#/, '');
+  const match = raw.match(/^(20\d{2}-\d{2}-\d{2})(?:--(.+))?$/);
+  return match
+    ? { date: match[1], anchor: match[2] || null }
+    : { date: null, anchor: null };
+}
+
+function digestHash(date, anchor) {
+  return `#${date}--${anchor}`;
+}
+
+function updateArticleHash(date, anchor) {
+  const hash = digestHash(date, anchor);
+  const path = location.pathname + location.search;
+  if (location.hash !== hash) history.replaceState(null, '', `${path}${hash}`);
+}
+
+function jumpToArticleAnchor(anchor, behavior = 'smooth') {
+  const target = document.getElementById(anchor);
+  if (!target) return false;
+  target.scrollIntoView({ behavior, block: 'start' });
+  return true;
+}
+
+function qualifyDigestLinks(content, date) {
+  content.querySelectorAll('a[href^="#"]').forEach(a => {
+    const raw = a.getAttribute('href').slice(1);
+    const parsed = parseDigestHash(raw);
+    const anchor = parsed.date ? (parsed.date === date ? parsed.anchor : null) : raw;
+    if (!anchor) return;
+
+    const qualified = digestHash(date, anchor);
+    a.setAttribute('href', qualified);
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      updateArticleHash(date, anchor);
+      jumpToArticleAnchor(anchor);
+    });
+  });
+}
+
 function buildArticleToc(content) {
   const headings = content.querySelectorAll('h2, h3');
   if (!headings.length) return null;
@@ -201,13 +243,13 @@ function buildArticleToc(content) {
     else used.add(h.id);
     const li = document.createElement('li');
     const a = document.createElement('a');
-    a.href = `#${h.id}`;
+    a.href = digestHash(currentDate, h.id);
     a.textContent = h.textContent;
     a.className = h.tagName === 'H3' ? 'toc-h3' : 'toc-h2';
     a.addEventListener('click', (e) => {
       e.preventDefault();
-      h.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // keep digest URL as-is (bare path = latest; #date = deep link)
+      updateArticleHash(currentDate, h.id);
+      jumpToArticleAnchor(h.id);
     });
     li.appendChild(a);
     ol.appendChild(li);
@@ -249,19 +291,22 @@ function setLeftCollapsed(collapsed) {
   if (expand) expand.hidden = !collapsed;
 }
 
-function syncUrlForDigest(date) {
+function syncUrlForDigest(date, anchor = null) {
   // Bare /research-daily/ means "latest". Only put #YYYY-MM-DD in the URL
-  // when the open digest is not the newest (shareable deep link).
+  // when the open digest is not the newest (shareable deep link). Article
+  // anchors always include the digest date so opening them in a new tab does
+  // not fall back to the latest digest.
   const latest = digests[0] && digests[0].date;
   const path = location.pathname + location.search;
-  if (date && latest && date !== latest) {
-    if (location.hash !== `#${date}`) history.replaceState(null, '', `#${date}`);
-  } else if (location.hash) {
-    history.replaceState(null, '', path);
-  }
+  const hash = anchor
+    ? digestHash(date, anchor)
+    : (date && latest && date !== latest ? `#${date}` : '');
+  if (location.hash !== hash) history.replaceState(null, '', `${path}${hash}`);
 }
 
 async function showDigest(entry) {
+  const requested = parseDigestHash(location.hash);
+  const requestedAnchor = requested.date === entry.date ? requested.anchor : null;
   const content = document.getElementById('content');
   content.innerHTML = '<p class="muted">加载中…</p>';
   currentDate = entry.date;
@@ -269,7 +314,7 @@ async function showDigest(entry) {
   viewYear = dt.getFullYear();
   viewMonth = dt.getMonth();
   syncChrome();
-  syncUrlForDigest(entry.date);
+  syncUrlForDigest(entry.date, requestedAnchor);
 
   const res = await fetch(BASE + entry.path, { cache: 'no-store' });
   if (!res.ok) {
@@ -279,6 +324,7 @@ async function showDigest(entry) {
   let md = await res.text();
   md = md.replace(/\]\((20\d{2}-\d{2}-\d{2}\/figs\/[^)]+)\)/g, `](${BASE}digests/$1)`);
   content.innerHTML = marked.parse(md);
+  qualifyDigestLinks(content, entry.date);
 
   content.querySelectorAll('a').forEach(a => {
     if (a.hostname && a.hostname !== location.hostname) {
@@ -297,7 +343,11 @@ async function showDigest(entry) {
 
   renderMath(content);
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  if (requestedAnchor) {
+    requestAnimationFrame(() => jumpToArticleAnchor(requestedAnchor, 'auto'));
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
 
 function shiftMonth(delta) {
@@ -315,8 +365,8 @@ function shiftMonth(delta) {
     digests = [...data.digests].sort((a, b) => b.date.localeCompare(a.date));
     byDate = new Map(digests.map(d => [d.date, d]));
 
-    const hash = location.hash.replace(/^#/, '');
-    const initial = digests.find(d => d.date === hash) || digests[0];
+    const hash = parseDigestHash(location.hash);
+    const initial = digests.find(d => d.date === hash.date) || digests[0];
     const seed = initial ? parseYmd(initial.date) : new Date();
     viewYear = seed.getFullYear();
     viewMonth = seed.getMonth();
