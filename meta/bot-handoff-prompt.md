@@ -75,8 +75,12 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 【发布】
 写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；git commit 的 **description（正文）** 须署 `编写：<你的代号>`（有代号时），与文末一致；推送到 main；向维护者发送简报并附 Pages 根链接。
 
-【故障转移】
-读 meta/failover.json。你的 bot 代号只来自私有记忆（勿在公开仓写死「你是某某」）。04:00 成功发布后用自己的代号更新 active_owner/last_success 并追加 events。04:30：若今日未发布且按顺位轮到你，则接管并完整发布；否则不抢跑。宽限 30 分钟。
+【故障转移与轻量守卫】
+先读取 meta/failover.json、digests/index.json，并检查当日 digests/YYYY-MM-DD.md；以 failover.json 的 timezone、scheduled_publish、failover_grace_minutes、bots 与 active_owner 为权威。
+「今日已成功」必须综合：当日 digest 存在、index 有当日条目、last_success.publish_date=今日、publish event 基本一致。已成功立即结束：不搜索、不读 PDF、不写稿、不提交。
+若你不是当前 active primary，立即结束。只有自己是 order 最小的 active primary、且今日缺稿，才进入完整日报。
+standby 只在仓库规定的 failover 时刻检查。若今日缺稿，必须先读取最新状态并确认自己是下一 active bot，再基于刚读取的版本以 compare-and-swap 写入 claim/failover event 并将 active_owner 设为自己；写入冲突则重读重判，未成功 claim 不得开始检索或写稿。存在 active standby 时，primary 不在 failover 时刻后并发 self-heal。
+你的代号只来自私有记忆；勿在公开仓把「你就是某某」写成通用指令。成功发布后用实际执笔代号更新 active_owner/last_success/events，并在日报末与 commit 正文署名。
 
 【诚实】
 禁止编造论文、作者、录用状态或链接。信息不足就少收，并在覆盖说明写数据完备性。
@@ -89,7 +93,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 若平台限制 prompt 长度，可用短版，并要求「每次先读 meta/ 下上述文件」：
 
 ```text
-每天 04:00（Asia/Hong_Kong）为 rubatotree 生成图形学&具身智能科研日报：发布日=当天，内容=前一自然日；严格遵守 meta/privacy.md 与 meta/digest-spec.md；论文标题用「短名 · Venue/arXiv · 日期」以便目录；推送到 rubatotree/research-daily 并通知维护者。完整说明见 meta/bot-handoff-prompt.md。禁止编造与泄露密钥/未公开研究。
+为 rubatotree/research-daily 执行一次科研日报任务：先读取 failover.json、index 与当日 digest 做轻量成功守卫；仅在当前名册明确由你负责且今日缺稿时，才读完整 meta、检索、写作并推送。standby 必须先 CAS claim。严格遵守 meta/privacy.md 与 meta/digest-spec.md；完整说明见 meta/bot-handoff-prompt.md。
 ```
 
 ---

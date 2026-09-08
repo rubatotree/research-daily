@@ -1,21 +1,29 @@
 {
-  "version": 1,
+  "version": 2,
   "timezone": "Asia/Hong_Kong",
   "scheduled_publish": "04:00",
   "scheduled_cron": "0 4 * * *",
   "failover_grace_minutes": 30,
+  "failover_check_time": "04:30",
   "failover_check_cron": "30 4 * * *",
-  "description": "Multi-bot maintainer roster + failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
+  "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
-      "code": "Cream",
+      "code": "Neon",
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "04:00 publish + update this table on success; 04:30 self-heal if still owner and digests missing"
+      "duties": "At 04:00, perform the lightweight success guard; only if today is still missing, publish and update this table."
+    },
+    {
+      "code": "Cream",
+      "order": 2,
+      "role": "standby",
+      "status": "active",
+      "duties": "At 04:30, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work."
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Neon",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-09-08",
@@ -41,6 +49,12 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Schedule changed: publish 04:00 HKT; failover check 04:30; grace still 30min"
+    },
+    {
+      "at": "2026-09-08T07:50:53+08:00",
+      "type": "register",
+      "bot": "Neon",
+      "detail": "Roster change: maintainer set Neon as order 1 primary and Cream as order 2 active standby; normal publish ownership moved to Neon."
     }
   ]
 }

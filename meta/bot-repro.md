@@ -3,10 +3,10 @@
 本页是操作清单；**完整可粘贴 Prompt** 见 [`bot-handoff-prompt.md`](./bot-handoff-prompt.md)。  
 **不含任何密钥。** 公开安全见 [`privacy.md`](./privacy.md)。
 
-## 角色
-- 名称：科研日报
-- 时区：Asia/Hong_Kong
-- 定时：每天 04:00，cron `0 4 * * *`（自 2026-09-08 起须每日执行）
+## 角色与调度
+- 名称：科研日报；时区：Asia/Hong_Kong
+- 当前名册由 `meta/failover.json` 权威定义：Neon = order 1 active primary，04:00；Cream = order 2 active standby，仅 04:30 failover 检查。
+- 不要为同一 Bot 默认同时安装 04:00 主任务和 04:30 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
 
 ## 必备连接
 - **GitHub**：推送本仓；只读 `rubatotree/blog`、`rubatotree/academic`（看 commits）
@@ -29,13 +29,13 @@
 | `digests/index.json` | 日期索引（站点用） |
 
 ## 生成流水线（意图级）
-1. **写作前检查长期记忆**：读并核对 `meta/LONG_TERM_MEMORY.md` 等；有变先更新再写；读 blog/academic commits → 兴趣校准
-2. 读 `seen-papers.json` → 去重
-3. 扫 arXiv / Ke-Sen / 媒体 /（可选）X → 策展
-4. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 下载公开配图
-5. 更新 `seen-papers.json` 与 `digests/index.json`（含 `content_day`）
-6. 提交推送到本仓（commit description 署 `编写：<代号>`）；GitHub Pages 更新子站
-7. 私聊通知维护者并附 `#发布日` 链接
+0. **轻量守卫（所有任务先做）**：读最新 `failover.json`、`digests/index.json`、当日 digest；综合核验今日是否成功。成功则立即结束。
+1. primary 确认自己是 active owner 且今日缺稿后，读完整长期记忆、blog/academic commits 与 `seen-papers.json`。
+2. 扫 arXiv / Ke-Sen / 媒体 /（可选）X → 漏斗式策展。
+3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
+4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
+5. 以一个逻辑 commit 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
+6. standby 在 04:30 若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
 
 ## 新建 Bot 时
 1. 新建助手，名称「科研日报」
@@ -44,7 +44,7 @@
 4. 连接 GitHub（本仓写权限）；可选 X
 5. 用最近样例 digest 校验：标题栏会议/时间、速览锚点、方法概要、覆盖说明、编写署名、无隐私泄漏
 6. 阅读近几天**非本人**署名日报以学习文风（清晰易读、重点分明；允许创新）
-7. 启用 cron `0 4 * * *` 与 `30 4 * * *`
+7. 只按其名册角色启用一个任务：primary 使用 `0 4 * * *`；standby 使用 `30 4 * * *`，并实现 CAS claim
 
 ## 站点
 - https://rubatotree.github.io/research-daily/

@@ -30,9 +30,10 @@ assets/                     # 样式与脚本
 
 ## Bot 接手
 
-1. 读 [`meta/LONG_TERM_MEMORY.md`](meta/LONG_TERM_MEMORY.md)
-2. 复制 [`meta/bot-handoff-prompt.md`](meta/bot-handoff-prompt.md) 中的接管 Prompt
-3. 按 [`meta/bot-repro.md`](meta/bot-repro.md) 连接 GitHub 并启用每日 04:00（HKT；故障转移检查 04:30）
+1. 读 [`meta/LONG_TERM_MEMORY.md`](meta/LONG_TERM_MEMORY.md) 与 [`meta/failover.md`](meta/failover.md)
+2. 复制 [`meta/bot-handoff-prompt.md`](meta/bot-handoff-prompt.md) 中的通用接管 Prompt
+3. 当前名册：**Neon**（order 1, primary, 04:00 HKT）与 **Cream**（order 2, standby, 仅 04:30 failover 检查）
+4. 任务先按 `failover.json` 做轻量成功检查；仅确认负责且今日缺稿后才进入论文检索与发布
 
 ## 本地预览
 

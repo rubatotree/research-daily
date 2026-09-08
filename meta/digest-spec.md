@@ -96,7 +96,9 @@
 - X：关键词检索（估成本；**过程与额度不写进正文或公开 meta**）
 
 ## 节奏
-- 每天 04:00（Asia/Hong_Kong）生成并推送本仓 / Pages
+- 正常 primary 只在每天 04:00（Asia/Hong_Kong）运行；当前 primary 为 Neon。
+- standby 当前为 Cream，仅在 04:30 做 failover 检查，且必须先按 `failover.md` 完成 CAS claim。
+- 两类任务均先做成功守卫；今日已成功则不启动检索/全文阅读/写作。
 - 自 2026-09-08 起须稳定执行
 
 ## 版式顺序
@@ -136,4 +138,3 @@ Rewrite 圈内 with fact/viewpoint/contrast; update specs.
 ```
 
 或单独一行 `Signed-off-by-bot: Cream` / `Bot: Cream`。日报文末 `**编写：**` 与 commit description 署名应一致（同一次发布）。无代号的人类提交可省略。
-

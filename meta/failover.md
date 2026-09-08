@@ -1,85 +1,68 @@
 # 多 Bot 故障转移
 
-维护同一公开仓 `rubatotree/research-daily` 时，用本机制避免「主 Bot 当天没跑」导致断更。
+维护同一公开仓 `rubatotree/research-daily` 时，用本机制避免断更，并避免两个 Bot 为同一天并发写稿。
 
 **权威状态机：** [`failover.json`](./failover.json)（本说明是人读版；自动读写以 JSON 为准）。
 
 ## 原则
 
-1. **公开代号，私有认领**  
-   - 仓内只登记 **bot 代号**（如 `Cream`）与顺序。  
-   - 「我是哪个代号」只写在**该 Bot 自己的私有长期记忆**里。  
-   - **禁止**在公开仓 / 接管 Prompt 里写死「你就是 Cream」——继任者会误认身份。  
-   - 每个 Bot 更新本表时，只能用**自己私有记忆中的代号**签名事件。
+1. **公开代号，私有认领**
+   仓内只登记代号与顺位；「我是哪个代号」只存在该 Bot 的私有记忆。通用接管文案不得写死某个读者的代号。
+2. **名册与时间**
+   Neon 是 `order: 1` 的 active primary，正常任务仅在 **04:00 Asia/Hong_Kong** 启动；Cream 是 `order: 2` 的 active standby，仅在 **04:30** 做 failover 检查。计划字段以 `failover.json` 为准。
+3. **状态与日志**
+   `active_owner` 表示当前应对「今日发布」负责的代号。每次成功发布必须更新 `last_success`、`active_owner` 并**追加** `events`；不删除历史。
+4. **公开安全**
+   事件仅记录公开可述事实，绝不记录凭据、额度、内部自动化 ID、本机路径或调试细节。
 
-2. **主责 + 顺位**  
-   - `bots[].order` 越小越优先。  
-   - `active_owner` = 当前应对「今日发布」负责的代号。
+## 成功判定
 
-3. **定时与宽限**  
-   - 计划发布时间：每天 **04:00**（`Asia/Hong_Kong`），cron `0 4 * * *`。  
-   - **故障转移间隔：30 分钟**（`failover_grace_minutes: 30`）。  
-   - 若到 **04:30** 仍无「今日发布成功」记录（见判定），则由下一顺位 Bot **启动接管并发布**。
+对发布日（HKT）`YYYY-MM-DD`，应综合确认：
 
-## 成功判定（须同时尽量满足）
+- `digests/YYYY-MM-DD.md` 存在；
+- `digests/index.json` 有当日条目；
+- `last_success.publish_date` 等于当日；
+- 有与上述状态基本一致的 `type: "publish"` 事件。
 
-- 存在 `digests/YYYY-MM-DD.md`，其中 `YYYY-MM-DD` = **今日发布日（HKT）**  
-- `digests/index.json` 含该日条目  
-- `failover.json` 中 `last_success.publish_date` = 该日，且 `last_success.bot` 已写入  
-- 事件日志追加了 `type: publish`（或等价 `heartbeat` 且明确今日已发布）
+任一关键状态矛盾时视为**未确认成功**；先重新读取最新 main，不得凭单一信号重写日报。
 
-## 自动维护（每个参与 Bot 必须做）
+## 04:00 primary — Neon
 
-### A. 04:00 主发布任务成功后
-1. 用**自己的代号**写入：
-   - `active_owner` = 自己  
-   - `last_success` = `{ bot, publish_date, at (ISO HKT), commit }`  
-2. 向 `events` **追加**一条（不要删历史；可截断保留最近 ~100 条）：
-   - `{ at, type: "publish", bot, detail }`  
-3. 日报文末「覆盖说明」署 `**编写：** <自己的代号>`。
-4. 与日报一并 `git push`（本 JSON 是公开运维状态，**不含密钥**）。
+1. 任务启动后只做轻量守卫：读取最新 `failover.json`、`digests/index.json`，并检查当日 digest 是否存在。
+2. 若今天已经成功发布，立即结束。不得搜索论文、读 PDF、写稿、提交或做「确认正常」的无意义修改。
+3. 若 Neon 不再是 `order: 1` 的 active primary，立即结束。
+4. 仅当今天缺稿且 Neon 仍是 active primary 时，才进入完整日报流水线。
+5. 04:30 之后，只要存在 active standby，primary 不得与 standby 并发 self-heal。
 
-### B. 04:30 故障转移检查（所有登记 Bot）
-1. 拉取最新 `main`，读 `failover.json` + 是否已有今日 digest。  
-2. **已成功** → 保持安静，或仅在 JSON 损坏时修复；**不要**重复整篇日报。  
-3. **未成功** → 计算应接管者：
-   - 从 `active_owner` 的 `order` 起，找下一个 `status=active` 的 Bot；若 `active_owner` 当天已失败，则 `order+1`；若已是最大 order，可回到 order 1 做最后自愈（避免全灭），但须在 `events` 写明 `failover`。  
-4. **仅当自己的代号 == 应接管者** 时：
-   - 追加 `type: "failover"` / `claim`  
-   - 将 `active_owner` 设为自己  
-   - **执行完整日报发布流水线**（与主任务相同）  
-   - 成功后再写 `publish`  
-5. 若自己不是应接管者 → **不要抢跑**。
+## 04:30 standby failover — Cream
 
-### C. 登记新 Bot
-1. 维护者给新 Bot 一个**唯一代号**，只写入该 Bot 私有记忆。  
-2. 在 `bots` 数组追加 `{ code, order, role: "standby", status: "active" }`。  
-3. 追加 `events`：`type: "register"`。  
-4. 新 Bot 安装：每日 04:00（可选，若为 standby 可只跑 04:30 检查）+ **必须** 04:30 故障转移检查。
-5. 新 Bot **第一次写稿前**及每次执笔前：按 `digest-spec.md` 阅读近几天非本人署名日报，学习文风与优点；允许创新，目标清晰易读、重点分明。
-6. 每次执笔前检查并视需要更新 `meta/LONG_TERM_MEMORY.md` 等长期记忆/规范（有变先改 meta 再写稿）。
+Cream 的 04:30 任务只做检查；若今日已成功，立即结束。若仍缺稿，开始任何论文检索前必须取得 ownership：
 
-## 事件类型约定
+1. 读取最新 `failover.json`、`digests/index.json`、当日 digest，记录所读版本/commit。
+2. 重新确认今日仍未成功，且 Cream 是按名册顺位应接管的 active standby。
+3. 基于**刚读取**的版本，以 compare-and-swap / 乐观并发语义提交一个仅含 claim/failover 的状态更新：追加 `claim`（可同时追加 `failover`），并设 `active_owner: "Cream"`。
+4. 若版本已变而写入失败，必须重新读取、重新判断；**不得**直接继续重工作。
+5. 只有成功 claim 的 Bot 才能开始完整日报生成。发布成功后再追加 `publish` 并更新 `last_success`。
+
+此规则避免 Neon 与 Cream 同时生成同一天日报。
+
+## 发布后
+
+- 日报文末「覆盖说明」署实际执笔者：`**编写：** <代号>`。
+- 有代号时，git commit 的正文包含 `编写：<代号>`。
+- 每个任务运行都以仓库当前 `failover.json` 为权威；若平台唤醒时间和仓库计划发生漂移，只私聊提醒维护者同步调度器，不写入公开仓。
+
+## 事件类型
 
 | type | 含义 |
-|------|------|
+|---|---|
 | `init` | 表初始化 |
-| `register` | 新 Bot 入册 |
-| `publish` | 今日日报发布成功 |
-| `heartbeat` | 确认健康 / 表修复（非完整发布） |
+| `register` | 新 Bot 入册或名册调整 |
+| `claim` | 已用 CAS 成功认领当日 |
 | `failover` | 触发顺位转移 |
-| `claim` | 声明接管今日发布 |
-| `release` | 主动交还（少用） |
-| `fail` | 尝试失败（可写简短公开原因，勿含密钥/路径） |
+| `publish` | 今日日报发布成功 |
+| `heartbeat` | 公开健康确认 / 表修复 |
+| `release` | 主动交还 |
+| `fail` | 尝试失败（仅简短公开原因） |
 
-## 隐私
-
-- 事件 `detail` 只写公开可述原因（如 `missing digests/2026-09-08.md after grace`）。  
-- 禁止写入 token、额度、本机路径、私有 agent id。详见 `privacy.md`。
-
-## 与长期记忆
-
-机制摘要亦写入 `LONG_TERM_MEMORY.md`；接管 Prompt 只描述**机制与读表规则**，不写死某读者的代号。
-
-### Git 提交署名
-有代号时，每次 `git commit` 的 **description（正文）** 须含 `编写：<自己的代号>`，与日报文末署名一致。
+详见 `meta/privacy.md`。
