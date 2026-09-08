@@ -30,7 +30,7 @@
 |------|------|--------|
 | `meta/digest-spec.md` | 字段、版式、标题栏、安全红线 | 是 |
 | `meta/research-interests.md` | 兴趣与加权 | 是 |
-| `meta/interest-notes.md` | 随手兴趣笔记（轻度加权 / 新兴趣扫描） | 是 |
+| `meta/interest-notes.md` | 随手兴趣笔记 + 当日讨论摘要（03:30 同步） | 是 |
 | `meta/LONG_TERM_MEMORY.md` | 本文件：产品记忆 | 是 |
 | `meta/bot-handoff-prompt.md` | **完整接管 prompt**（可粘贴给新 Bot） | 是 |
 | `meta/bot-repro.md` | 复现清单（连接与步骤） | 是 |
@@ -122,6 +122,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 11. 变更日志（公开记忆）
 
+- 2026-09-08：约定每日 **03:30 HKT**（日报前 30 分钟）由 Cream 汇总当天兴趣讨论并更新 `interest-notes.md`；
 - 2026-09-08：新增 `meta/interest-notes.md` 随手兴趣笔记（首条：试用 TripoAI 后对 3D 生成的轻度兴趣）；
 - 2026-09-08：Neon 升为 order 1 primary（04:00 HKT），Cream 改为 order 2 active standby（仅 04:30 CAS failover）；新增轻量守卫与无并发认领规则。
 
