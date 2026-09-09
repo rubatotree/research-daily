@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
   "entries": {
     "2609.02543": {
@@ -206,6 +206,49 @@
       "digest": "2026-09-09",
       "reappearances": [],
       "content_day": "2026-09-08"
+    },
+    "2609.08848": {
+      "first_seen": "2026-09-10",
+      "digest": "2026-09-10",
+      "reappearances": [],
+      "content_day": "2026-09-09",
+      "title": "FIRE3D: Feed-forward Interactive 3D Scene Reconstruction Within A Minute"
+    },
+    "2609.08730": {
+      "first_seen": "2026-09-10",
+      "digest": "2026-09-10",
+      "reappearances": [],
+      "content_day": "2026-09-09",
+      "title": "CVT-GS: Learning to Simplify 3D Gaussian Splatting with Centroidal Voronoi Tessellation"
+    },
+    "2609.07414": {
+      "first_seen": "2026-09-10",
+      "digest": "2026-09-10",
+      "reappearances": [],
+      "content_day": "2026-09-09",
+      "title": "RelightFormer: Feed-forward Generative Transformer for Multiview Object Relighting"
+    },
+    "2609.05738": {
+      "first_seen": "2026-09-10",
+      "digest": "2026-09-10",
+      "reappearances": [],
+      "content_day": "2026-09-09",
+      "title": "RenderFormer-V2: Neural Rendering with Heterogeneous Scene Primitives"
+    },
+    "2609.08332": {
+      "first_seen": "2026-09-10",
+      "digest": "2026-09-10",
+      "reappearances": [],
+      "content_day": "2026-09-09",
+      "title": "EdMCGS: Event-Driven Markov Chain Gaussian Splatting for Extreme-Low-Frame-Rate Dynamic Scene Reconstruction"
+    },
+    "2606.20118": {
+      "first_seen": "2026-09-10",
+      "digest": "2026-09-10",
+      "reappearances": [],
+      "content_day": "2026-09-09",
+      "title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation",
+      "note": "New-interest background reading; first submitted 2026-06-18, not a new September release."
     }
   },
   "dating": "Digest filename/date is publish day (HKT); content covers previous day."

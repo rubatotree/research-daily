@@ -5,6 +5,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-10",
+      "title": "一分钟重建之后，瓶颈去了哪里",
+      "path": "digests/2026-09-10.md",
+      "figs": "digests/2026-09-10/figs/",
+      "content_day": "2026-09-09"
+    },
+    {
       "date": "2026-09-09",
       "title": "修好渲染，还不等于修好资产",
       "path": "digests/2026-09-09.md",

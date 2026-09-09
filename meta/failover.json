@@ -26,10 +26,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-09-09",
-    "at": "2026-09-09T04:00:00+08:00",
-    "commit": "f9166ed6",
-    "note": "automated 04:00 publish; digest/index/seen-papers/failover updated together"
+    "publish_date": "2026-09-10",
+    "at": "2026-09-10T05:39:04+08:00",
+    "commit": null,
+    "note": "Digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-10.md."
   },
   "events": [
     {
@@ -67,6 +67,12 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Schedule changed: publish 05:30 HKT; interest sync 05:00; failover check 06:00; grace still 30min"
+    },
+    {
+      "at": "2026-09-10T05:39:04+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "detail": "Published digests/2026-09-10.md covering 2026-09-09 graphics and embodied-AI developments: five recent papers and an explicitly labeled Pose6DAug background reading."
     }
   ]
 }
