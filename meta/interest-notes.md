@@ -12,6 +12,23 @@
 
 ---
 
+## 2026-09-10 · 当日讨论摘要（截至凌晨）
+
+1. **MiracleAug skill 开源与试跑（主线活动）** — 详见下方专题。用户发布 [rubatotree/miracle-aug-skill](https://github.com/rubatotree/miracle-aug-skill)，并拍摄较复杂具身场景试用该 skill。
+
+---
+
+## 2026-09-09 · MiracleAug：Astra → 机器人增强数据（强信号）
+
+- **仓库：** https://github.com/rubatotree/miracle-aug-skill  
+  - 简介：GPT-6 Astra → Robot Augmentation Data Generation  
+  - 定位：agent skill；单次示教 → 可编辑 Blender 重建 + 任务一致的增强示教（同步机器人轨迹）
+- **能力摘要（公开 README）：** 视频 / 本地数据集 / HF episode 入口；先存可审 scene checkpoint，再按配额生成并校验原生数据集；强调度量几何、CAD/URDF 运动学、标定相机与运动、光/材质/环境/物体/轨迹强弱变化；未见表面与无关节输入时的运动须标为推断，不冒充录制 GT。
+- **今日实践：** 拍摄**较复杂的具身场景**，尝试用该 skill 跑通管线（效果细节未公开写入；日报勿编造指标）。
+- **与主线关系：** 承接「Astra + Blender 跑具身管线」试玩，落到可复用的开源 skill；日报「新兴趣相关」可跟 agentic DCC / Real2Sim 数据引擎 / 示教增强交叉，**勿压过** PTIR 卡点策展，也勿写入未公开场景隐私或实验数字。
+- **状态：** active · strong · shipping
+
+
 ## 2026-09-08 · 当日讨论摘要
 
 与 Cream 聊天中触及的兴趣信号（供 9/9 日报参考）：
