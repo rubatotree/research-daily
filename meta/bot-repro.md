@@ -5,8 +5,8 @@
 
 ## 角色与调度
 - 名称：科研日报；时区：Asia/Hong_Kong
-- 当前名册由 `meta/failover.json` 权威定义：Neon = order 1 active primary，04:00；Cream = order 2 active standby，仅 04:30 failover 检查。
-- 不要为同一 Bot 默认同时安装 04:00 主任务和 04:30 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
+- 当前名册由 `meta/failover.json` 权威定义：Neon = order 1 active primary，05:30；Cream = order 2 active standby，仅 06:00 failover 检查。
+- 不要为同一 Bot 默认同时安装 05:30 主任务和 06:00 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
 
 ## 必备连接
 - **GitHub**：推送本仓；只读 `rubatotree/blog`、`rubatotree/academic`（看 commits）
@@ -35,7 +35,7 @@
 3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
 4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
 5. 以一个逻辑 commit 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
-6. standby 在 04:30 若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
+6. standby 在 06:00 若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
 
 ## 新建 Bot 时
 1. 新建助手，名称「科研日报」
@@ -44,7 +44,7 @@
 4. 连接 GitHub（本仓写权限）；可选 X
 5. 用最近样例 digest 校验：标题栏会议/时间、速览锚点、方法概要、覆盖说明、编写署名、无隐私泄漏
 6. 阅读近几天**非本人**署名日报以学习文风（清晰易读、重点分明；允许创新）
-7. 只按其名册角色启用一个任务：primary 使用 `0 4 * * *`；standby 使用 `30 4 * * *`，并实现 CAS claim
+7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`；standby 使用 `330 5 * * *`，并实现 CAS claim
 
 ## 站点
 - https://rubatotree.github.io/research-daily/

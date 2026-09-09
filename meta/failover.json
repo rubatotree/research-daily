@@ -1,11 +1,11 @@
 {
   "version": 2,
   "timezone": "Asia/Hong_Kong",
-  "scheduled_publish": "04:00",
-  "scheduled_cron": "0 4 * * *",
+  "scheduled_publish": "05:30",
+  "scheduled_cron": "30 5 * * *",
   "failover_grace_minutes": 30,
-  "failover_check_time": "04:30",
-  "failover_check_cron": "30 4 * * *",
+  "failover_check_time": "06:00",
+  "failover_check_cron": "0 6 * * *",
   "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
@@ -13,14 +13,14 @@
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "At 04:00, perform the lightweight success guard; only if today is still missing, publish and update this table."
+      "duties": "At 05:30, perform the lightweight success guard; only if today is still missing, publish and update this table."
     },
     {
       "code": "Cream",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 04:30, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work."
+      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00."
     }
   ],
   "active_owner": "Neon",
@@ -61,6 +61,12 @@
       "type": "publish",
       "bot": "Neon",
       "detail": "Published digests/2026-09-09.md covering 2026-09-08 graphics and embodied-AI developments; adjacent early-September arXiv backlog included because no independent 2026-09-08 new listing."
+    },
+    {
+      "at": "2026-09-09T09:03:19+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Schedule changed: publish 05:30 HKT; interest sync 05:00; failover check 06:00; grace still 30min"
     }
   ]
 }

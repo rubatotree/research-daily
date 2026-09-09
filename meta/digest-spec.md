@@ -28,7 +28,7 @@
 ## 写作前检查长期记忆（每日必做）
 动笔写当日日报**之前**必须：
 1. 阅读并核对 `meta/LONG_TERM_MEMORY.md`、`digest-spec.md`、`research-interests.md`、`interest-notes.md`、`failover.json`、`privacy.md`、`seen-papers.json`
-2. 对照 `interest-notes.md` 与 `rubatotree/blog` / `academic` 近期 commits：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报；随手笔记中的 active 条目可进入「新兴趣相关」做前沿扫描（勿压过主课题）；Cream 会在每日 03:30 HKT 把当天讨论摘要写入 `interest-notes.md`
+2. 对照 `interest-notes.md` 与 `rubatotree/blog` / `academic` 近期 commits：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报；随手笔记中的 active 条目可进入「新兴趣相关」做前沿扫描（勿压过主课题）；Cream 会在每日 05:00 HKT 把当天讨论摘要写入 `interest-notes.md`
 3. 无变更则不必空改；有变更须写进公开记忆（遵守 `privacy.md`），避免只改私聊、仓内过时
 
 ## 协同 Bot 文风学习（必做）
@@ -96,8 +96,8 @@
 - X：关键词检索（估成本；**过程与额度不写进正文或公开 meta**）
 
 ## 节奏
-- 正常 primary 只在每天 04:00（Asia/Hong_Kong）运行；当前 primary 为 Neon。
-- standby 当前为 Cream，仅在 04:30 做 failover 检查，且必须先按 `failover.md` 完成 CAS claim。
+- 正常 primary 只在每天 05:30（Asia/Hong_Kong）运行；当前 primary 为 Neon。
+- standby 当前为 Cream，仅在 06:00 做 failover 检查，且必须先按 `failover.md` 完成 CAS claim。
 - 两类任务均先做成功守卫；今日已成功则不启动检索/全文阅读/写作。
 - 自 2026-09-08 起须稳定执行
 
@@ -111,7 +111,7 @@
 7. 不要写「读者：…」；不要写「策展版 vN 生成：…」类水印页脚
 
 ## 日期约定
-- **日报日期**（文件名 `digests/YYYY-MM-DD.md`、站点选日）= **发布日**（通常为早上 4:00 HKT）
+- **日报日期**（文件名 `digests/YYYY-MM-DD.md`、站点选日）= **发布日**（通常为早上 5:30 HKT）
 - **内容覆盖** = **前一自然日**的新内容（例如 9 月 7 日日报写 9 月 6 日新稿）
 - 文末「覆盖说明」同时写明日报日期与内容覆盖日；周末等无独立 arXiv 公告时，可纳入相邻公告日积压，但发布日仍用当日
 - `digests/index.json` 条目建议含 `content_day`

@@ -30,7 +30,7 @@
 |------|------|--------|
 | `meta/digest-spec.md` | 字段、版式、标题栏、安全红线 | 是 |
 | `meta/research-interests.md` | 兴趣与加权 | 是 |
-| `meta/interest-notes.md` | 随手兴趣笔记 + 当日讨论摘要（03:30 同步） | 是 |
+| `meta/interest-notes.md` | 随手兴趣笔记 + 当日讨论摘要（05:00 同步） | 是 |
 | `meta/LONG_TERM_MEMORY.md` | 本文件：产品记忆 | 是 |
 | `meta/bot-handoff-prompt.md` | **完整接管 prompt**（可粘贴给新 Bot） | 是 |
 | `meta/bot-repro.md` | 复现清单（连接与步骤） | 是 |
@@ -49,17 +49,17 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
 - **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
-- **定时：** Neon 在 04:00 HKT 做主发布守卫；Cream 在 04:30 HKT 仅做 failover 检查。
+- **定时：** Neon 在 05:30 HKT 做主发布守卫；Cream 在 06:00 HKT 仅做 failover 检查。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
-- **无竞态接管：** 04:30 的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 04:30 后并发 self-heal。
+- **无竞态接管：** 06:00 的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:00 后并发 self-heal。
 - **发布状态：** 每次成功发布更新 `last_success`、`active_owner` 并追加 `events`；不删除历史。
 - **署名：** 日报覆盖说明与 git commit 正文都须署实际执笔代号。
 - 调度器实际唤醒与仓库配置若 drift，只在私聊提示维护者，绝不把内部 scheduler 信息写入公开仓。
 
 ## 4. 日期与节奏
 
-- **定时：** 每天 `04:00`，cron `0 4 * * *`，时区 Asia/Hong_Kong
+- **定时：** 每天 `05:30`，cron `30 5 * * *`，时区 Asia/Hong_Kong
 - **自 2026-09-08 起**须每日执行
 - **发布日** = 文件名日期 = 站点选日 = 早上跑任务的「今天」
 - **内容覆盖日** = **前一自然日**（例：`2026-09-07.md` 写 2026-09-06 的新稿）
@@ -116,22 +116,23 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 1. 阅读并遵守：`digest-spec.md`、`privacy.md`、`failover.json`、`failover.md` 与本文件
 2. 将 `bot-handoff-prompt.md` 全文设为新 Bot 的系统/定时任务说明（或按其裁剪）
 3. 按 `bot-repro.md` 连接 GitHub（本仓写权限）
-4. 确认私有代号，并只按当前名册的角色安装任务：primary 04:00；standby 04:30
+4. 确认私有代号，并只按当前名册的角色安装任务：primary 05:30；standby 06:00
 5. 用最近一篇 `digests/*.md` 做字段对照自检
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
 ## 11. 变更日志（公开记忆）
 
-- 2026-09-08：约定每日 **03:30 HKT**（日报前 30 分钟）由 Cream 汇总当天兴趣讨论并更新 `interest-notes.md`；
+- 2026-09-09：每日发布时间改为 **05:30 HKT**；兴趣同步 **05:00**；故障转移检查 **06:00**（宽限仍 30 分钟）；
+- 2026-09-08：约定每日 **05:00 HKT**（日报前 30 分钟）由 Cream 汇总当天兴趣讨论并更新 `interest-notes.md`；
 - 2026-09-08：新增 `meta/interest-notes.md` 随手兴趣笔记（首条：试用 TripoAI 后对 3D 生成的轻度兴趣）；
-- 2026-09-08：Neon 升为 order 1 primary（04:00 HKT），Cream 改为 order 2 active standby（仅 04:30 CAS failover）；新增轻量守卫与无并发认领规则。
+- 2026-09-08：Neon 升为 order 1 primary，Cream 改为 order 2 active standby；新增轻量守卫与无并发认领规则（当时发布窗为 04:00/04:30）。
 
 - 2026-09-08：Git commit description 须署 bot 代号（有代号时）；
 - 2026-09-08：圈内动态/公众号须提炼有价值观点，勿只列链；
-- 2026-09-08：每日发布时间改为 **04:00 HKT**，故障转移检查 **04:30**（宽限仍 30 分钟）；
+- 2026-09-08：每日发布时间曾改为 **04:00 HKT**，故障转移检查 **04:30**（宽限 30 分钟）；
 - 2026-09：每日写作前必须检查并视需要更新长期记忆文档（meta/）；
 - 2026-09：协同 Bot 须先读非本人近稿学习文风，再写作（清晰易读、重点分明，允许创新）；
 - 2026-09：加入 `failover.json` 多 Bot 顺位与 30min 故障转移，并写入本记忆；
 - 2026-09：站点上线；完整字段 + 方法概要/值得关注；TOC；标题栏加入会议/时间；补齐长期记忆与接管 prompt；明确公开安全红线
 - 日期约定：发布日 vs 内容覆盖日（前一自然日）
-- 定时：每日 04:00 HKT，自 2026-09-08 起强制执行
+- 定时：每日 05:30 HKT，自 2026-09-08 起强制执行
