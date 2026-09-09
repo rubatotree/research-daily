@@ -49,7 +49,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
 - **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
-- **定时：** Neon 在 05:30 HKT 做主发布守卫；Cream 在 06:00 HKT 仅做 failover 检查。
+- **定时：** Neon 在 05:30 HKT 做主发布守卫；Cream 在 06:00 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
+- **通知：** Cream 05:00 / 06:00 任务结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
 - **无竞态接管：** 06:00 的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:00 后并发 self-heal。
