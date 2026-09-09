@@ -15,6 +15,7 @@
 ## 2026-09-10 · 当日讨论摘要（截至凌晨）
 
 1. **MiracleAug skill 开源与试跑（主线活动）** — 详见下方专题。用户发布 [rubatotree/miracle-aug-skill](https://github.com/rubatotree/miracle-aug-skill)，并拍摄较复杂具身场景试用该 skill。
+2. **Agentic 数据增强 → 弱点驱动闭环（方向讨论）** — 将 skill 定位为 agentic data augmentation；下一步开放问题是自动测 policy 失败条件（视角/物体位姿/背景等），再按薄弱面定向调用增强并再训（「缺什么补什么」；与 DAgger 类回环同族）。**公开笔记不记录私人对话原文。**
 
 ---
 
@@ -25,8 +26,10 @@
   - 定位：agent skill；单次示教 → 可编辑 Blender 重建 + 任务一致的增强示教（同步机器人轨迹）
 - **能力摘要（公开 README）：** 视频 / 本地数据集 / HF episode 入口；先存可审 scene checkpoint，再按配额生成并校验原生数据集；强调度量几何、CAD/URDF 运动学、标定相机与运动、光/材质/环境/物体/轨迹强弱变化；未见表面与无关节输入时的运动须标为推断，不冒充录制 GT。
 - **今日实践：** 拍摄**较复杂的具身场景**，尝试用该 skill 跑通管线（效果细节未公开写入；日报勿编造指标）。
-- **与主线关系：** 承接「Astra + Blender 跑具身管线」试玩，落到可复用的开源 skill；日报「新兴趣相关」可跟 agentic DCC / Real2Sim 数据引擎 / 示教增强交叉，**勿压过** PTIR 卡点策展，也勿写入未公开场景隐私或实验数字。
-- **状态：** active · strong · shipping
+- **方向延展（公开概念层）：** 工作本质可概括为 **agentic data augmentation**。现版偏「人指定增强类型与范围」；开放路线是更自动的闭环——先测当前 policy 在哪些条件易失败，再让系统判断最值得补的数据并调用 MiracleAug 定向生成后重训（「根据模型弱点主动造最有价值的数据」）。与此前示意的 **DAgger 类回环**同族，公开笔记记为兴趣加权，**勿写成已实现系统或组内计划。**
+- **工程观察（定性、无数字）：** 复杂场景试跑中，几何复杂物体变多时，大模型侧迭代建模耗时明显上升——可作为 agentic reconstruction 瓶颈信号，供日报扫「复杂几何 / 部件级重建效率」时对照，**禁止编造耗时数字。**
+- **与主线关系：** 承接「Astra + Blender 跑具身管线」试玩，落到可复用的开源 skill；日报「新兴趣相关」可跟 agentic DCC / Real2Sim 数据引擎 / 示教增强 / failure-driven 数据闭环交叉，**勿压过** PTIR 卡点策展，也勿写入未公开场景隐私、私人对话或实验数字。
+- **状态：** active · strong · shipping · roadmap-open
 
 
 ## 2026-09-08 · 当日讨论摘要
