@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-09-10",
+  "updated": "2026-09-11",
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
   "entries": {
     "2609.02543": {
@@ -249,6 +249,41 @@
       "content_day": "2026-09-09",
       "title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation",
       "note": "New-interest background reading; first submitted 2026-06-18, not a new September release."
+    },
+    "2609.09828": {
+      "first_seen": "2026-09-11",
+      "digest": "2026-09-11",
+      "reappearances": [],
+      "content_day": "2026-09-10",
+      "title": "RealSimLoop: Online Real-to-Sim Adaptation via Differentiable Reduced-Order Simulation with Vision Feedback"
+    },
+    "2609.09821": {
+      "first_seen": "2026-09-11",
+      "digest": "2026-09-11",
+      "reappearances": [],
+      "content_day": "2026-09-10",
+      "title": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds"
+    },
+    "2609.10363": {
+      "first_seen": "2026-09-11",
+      "digest": "2026-09-11",
+      "reappearances": [],
+      "content_day": "2026-09-10",
+      "title": "SceneHI: High-Resolution 3D-Consistent Scene Texturing with Controllable Illumination"
+    },
+    "2609.10522": {
+      "first_seen": "2026-09-11",
+      "digest": "2026-09-11",
+      "reappearances": [],
+      "content_day": "2026-09-10",
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots"
+    },
+    "2609.10021": {
+      "first_seen": "2026-09-11",
+      "digest": "2026-09-11",
+      "reappearances": [],
+      "content_day": "2026-09-10",
+      "title": "RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility"
     }
   },
   "dating": "Digest filename/date is publish day (HKT); content covers previous day."

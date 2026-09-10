@@ -5,6 +5,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-11",
+      "title": "闭环接上以后，速度与可信度仍要分开验收",
+      "path": "digests/2026-09-11.md",
+      "figs": "digests/2026-09-11/figs/",
+      "content_day": "2026-09-10"
+    },
+    {
       "date": "2026-09-10",
       "title": "一分钟重建之后，瓶颈去了哪里",
       "path": "digests/2026-09-10.md",
