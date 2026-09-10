@@ -30,3 +30,6 @@
 
 ## 相关开源（维护者）
 - [MiracleAug skill](https://github.com/rubatotree/miracle-aug-skill)：GPT-6 Astra（或同级）驱动的机器人示教增强数据生成（Blender 重建 + 同步轨迹）；细节与试拍见 [`interest-notes.md`](./interest-notes.md)。
+
+## 圈内新闻关注（2026-09-10 起）
+除上述论文主线，每日关注 **LLM、Agent、图形学、具身智能** 圈内的新闻与社区反应，不限于与主课题直接相关的事件。重点看模型/产品、开源与工具、评测复现、会议和行业动态，以及实际使用反馈、认可与质疑。四领域均纳入检索，按重要性精选，不强求每日各有一条；事实与社区观点分别给来源。版式与证据规则见 `digest-spec.md`。
