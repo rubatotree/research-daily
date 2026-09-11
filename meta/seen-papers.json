@@ -1,290 +1,318 @@
 {
-  "version": 1,
-  "updated": "2026-09-11",
-  "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
+  "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
-    "2609.02543": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.03304": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.03341": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.03349": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.03557": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.03563": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.03613": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.04602": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.05127": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.05178": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.05255": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.05382": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.05415": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2609.05416": {
-      "first_seen": "2026-09-07",
-      "digest": "2026-09-07",
-      "reappearances": [],
-      "content_day": "2026-09-06"
-    },
-    "2608.29538": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.00994": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.00732": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.03897": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2608.29269": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.00625": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.03334": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.03534": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.02184": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2609.02134": {
-      "first_seen": "2026-09-08",
-      "digest": "2026-09-08",
-      "reappearances": [],
-      "content_day": "2026-09-07"
-    },
-    "2608.30821": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2608.23549": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.03657": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
     "2603.21304": {
-      "first_seen": "2026-09-09",
+      "content_day": "2026-09-08",
       "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2608.28718": {
       "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.04607": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.04355": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.04277": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.04552": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.04500": {
-      "first_seen": "2026-09-09",
-      "digest": "2026-09-09",
-      "reappearances": [],
-      "content_day": "2026-09-08"
-    },
-    "2609.08848": {
-      "first_seen": "2026-09-10",
-      "digest": "2026-09-10",
-      "reappearances": [],
-      "content_day": "2026-09-09",
-      "title": "FIRE3D: Feed-forward Interactive 3D Scene Reconstruction Within A Minute"
-    },
-    "2609.08730": {
-      "first_seen": "2026-09-10",
-      "digest": "2026-09-10",
-      "reappearances": [],
-      "content_day": "2026-09-09",
-      "title": "CVT-GS: Learning to Simplify 3D Gaussian Splatting with Centroidal Voronoi Tessellation"
-    },
-    "2609.07414": {
-      "first_seen": "2026-09-10",
-      "digest": "2026-09-10",
-      "reappearances": [],
-      "content_day": "2026-09-09",
-      "title": "RelightFormer: Feed-forward Generative Transformer for Multiview Object Relighting"
-    },
-    "2609.05738": {
-      "first_seen": "2026-09-10",
-      "digest": "2026-09-10",
-      "reappearances": [],
-      "content_day": "2026-09-09",
-      "title": "RenderFormer-V2: Neural Rendering with Heterogeneous Scene Primitives"
-    },
-    "2609.08332": {
-      "first_seen": "2026-09-10",
-      "digest": "2026-09-10",
-      "reappearances": [],
-      "content_day": "2026-09-09",
-      "title": "EdMCGS: Event-Driven Markov Chain Gaussian Splatting for Extreme-Low-Frame-Rate Dynamic Scene Reconstruction"
+      "reappearances": []
     },
     "2606.20118": {
-      "first_seen": "2026-09-10",
-      "digest": "2026-09-10",
-      "reappearances": [],
       "content_day": "2026-09-09",
-      "title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation",
-      "note": "New-interest background reading; first submitted 2026-06-18, not a new September release."
-    },
-    "2609.09828": {
-      "first_seen": "2026-09-11",
-      "digest": "2026-09-11",
+      "digest": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "note": "New-interest background reading; first submitted 2026-06-18, not a new September release.",
       "reappearances": [],
-      "content_day": "2026-09-10",
-      "title": "RealSimLoop: Online Real-to-Sim Adaptation via Differentiable Reduced-Order Simulation with Vision Feedback"
+      "title": "Pose6DAug: Physically Plausible Multi-view Object Swapping for Robot Data Augmentation"
+    },
+    "2608.23549": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2608.28718": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2608.29269": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2608.29538": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2608.30821": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.00625": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.00732": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.00994": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.02134": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.02184": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.02543": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03304": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03334": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.03341": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03349": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03534": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.03557": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03563": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03613": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.03657": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.03897": {
+      "content_day": "2026-09-07",
+      "digest": "2026-09-08",
+      "first_seen": "2026-09-08",
+      "reappearances": []
+    },
+    "2609.04277": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.04355": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.04500": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.04552": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.04602": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.04607": {
+      "content_day": "2026-09-08",
+      "digest": "2026-09-09",
+      "first_seen": "2026-09-09",
+      "reappearances": []
+    },
+    "2609.05127": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.05178": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.05255": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.05382": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.05415": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.05416": {
+      "content_day": "2026-09-06",
+      "digest": "2026-09-07",
+      "first_seen": "2026-09-07",
+      "reappearances": []
+    },
+    "2609.05738": {
+      "content_day": "2026-09-09",
+      "digest": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "reappearances": [],
+      "title": "RenderFormer-V2: Neural Rendering with Heterogeneous Scene Primitives"
+    },
+    "2609.07414": {
+      "content_day": "2026-09-09",
+      "digest": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "reappearances": [],
+      "title": "RelightFormer: Feed-forward Generative Transformer for Multiview Object Relighting"
+    },
+    "2609.08332": {
+      "content_day": "2026-09-09",
+      "digest": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "reappearances": [],
+      "title": "EdMCGS: Event-Driven Markov Chain Gaussian Splatting for Extreme-Low-Frame-Rate Dynamic Scene Reconstruction"
+    },
+    "2609.08730": {
+      "content_day": "2026-09-09",
+      "digest": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "reappearances": [],
+      "title": "CVT-GS: Learning to Simplify 3D Gaussian Splatting with Centroidal Voronoi Tessellation"
+    },
+    "2609.08848": {
+      "content_day": "2026-09-09",
+      "digest": "2026-09-10",
+      "first_seen": "2026-09-10",
+      "reappearances": [],
+      "title": "FIRE3D: Feed-forward Interactive 3D Scene Reconstruction Within A Minute"
     },
     "2609.09821": {
-      "first_seen": "2026-09-11",
-      "digest": "2026-09-11",
-      "reappearances": [],
       "content_day": "2026-09-10",
+      "digest": "2026-09-11",
+      "first_seen": "2026-09-11",
+      "reappearances": [],
       "title": "InstantMimic: A High Performance System for Learning Physics-based Skills in Seconds"
     },
-    "2609.10363": {
-      "first_seen": "2026-09-11",
-      "digest": "2026-09-11",
-      "reappearances": [],
+    "2609.09828": {
       "content_day": "2026-09-10",
+      "digest": "2026-09-11",
+      "first_seen": "2026-09-11",
+      "reappearances": [],
+      "title": "RealSimLoop: Online Real-to-Sim Adaptation via Differentiable Reduced-Order Simulation with Vision Feedback"
+    },
+    "2609.10021": {
+      "content_day": "2026-09-10",
+      "digest": "2026-09-11",
+      "first_seen": "2026-09-11",
+      "reappearances": [],
+      "title": "RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility"
+    },
+    "2609.10363": {
+      "content_day": "2026-09-10",
+      "digest": "2026-09-11",
+      "first_seen": "2026-09-11",
+      "reappearances": [],
       "title": "SceneHI: High-Resolution 3D-Consistent Scene Texturing with Controllable Illumination"
     },
     "2609.10522": {
-      "first_seen": "2026-09-11",
-      "digest": "2026-09-11",
-      "reappearances": [],
       "content_day": "2026-09-10",
+      "digest": "2026-09-11",
+      "first_seen": "2026-09-11",
+      "reappearances": [],
       "title": "Show-Harness: Just a VLM Agent Can Play Robots"
     },
-    "2609.10021": {
-      "first_seen": "2026-09-11",
-      "digest": "2026-09-11",
+    "2609.11445": {
+      "first_seen": "2026-09-12",
+      "digest": "2026-09-12",
       "reappearances": [],
-      "content_day": "2026-09-10",
-      "title": "RoboDrop: Curating VLA Post-Training Data via Local Gradient Compatibility"
+      "content_day": "2026-09-11",
+      "title": "FARM: Reading Failure Signals from the Internal Predictive States of a Frozen Robotic World Model"
+    },
+    "2609.11308": {
+      "first_seen": "2026-09-12",
+      "digest": "2026-09-12",
+      "reappearances": [],
+      "content_day": "2026-09-11",
+      "title": "2AM: Grounding Agent-Side Memory as Guidance for Steerable Action Models in Long-Horizon Manipulation"
+    },
+    "2609.11430": {
+      "first_seen": "2026-09-12",
+      "digest": "2026-09-12",
+      "reappearances": [],
+      "content_day": "2026-09-11",
+      "title": "Gaussian Light Transport"
+    },
+    "2609.10982": {
+      "first_seen": "2026-09-12",
+      "digest": "2026-09-12",
+      "reappearances": [],
+      "content_day": "2026-09-11",
+      "title": "ReCHOIR: Contact-guided Human Object Interaction Retargeting to Diverse Characters"
     }
   },
-  "dating": "Digest filename/date is publish day (HKT); content covers previous day."
+  "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
+  "updated": "2026-09-12",
+  "version": 1
 }

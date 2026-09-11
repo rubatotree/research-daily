@@ -1,43 +1,50 @@
 {
-  "site": "科研日报",
-  "owner": "rubatotree",
   "base": "/research-daily/",
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "content_day": "2026-09-11",
+      "date": "2026-09-12",
+      "figs": "digests/2026-09-12/figs/",
+      "path": "digests/2026-09-12.md",
+      "title": "重建之后，怎样判断失败、约束动作与降低成本"
+    },
+    {
+      "content_day": "2026-09-10",
       "date": "2026-09-11",
-      "title": "闭环接上以后，速度与可信度仍要分开验收",
-      "path": "digests/2026-09-11.md",
       "figs": "digests/2026-09-11/figs/",
-      "content_day": "2026-09-10"
+      "path": "digests/2026-09-11.md",
+      "title": "闭环接上以后，速度与可信度仍要分开验收"
     },
     {
+      "content_day": "2026-09-09",
       "date": "2026-09-10",
-      "title": "一分钟重建之后，瓶颈去了哪里",
-      "path": "digests/2026-09-10.md",
       "figs": "digests/2026-09-10/figs/",
-      "content_day": "2026-09-09"
+      "path": "digests/2026-09-10.md",
+      "title": "一分钟重建之后，瓶颈去了哪里"
     },
     {
+      "content_day": "2026-09-08",
       "date": "2026-09-09",
-      "title": "修好渲染，还不等于修好资产",
-      "path": "digests/2026-09-09.md",
       "figs": "digests/2026-09-09/figs/",
-      "content_day": "2026-09-08"
+      "path": "digests/2026-09-09.md",
+      "title": "修好渲染，还不等于修好资产"
     },
     {
+      "content_day": "2026-09-07",
       "date": "2026-09-08",
-      "title": "周末积压升格：变形 / 绑骨 / 可重光照",
-      "path": "digests/2026-09-08.md",
       "figs": "digests/2026-09-08/figs/",
-      "content_day": "2026-09-07"
+      "path": "digests/2026-09-08.md",
+      "title": "周末积压升格：变形 / 绑骨 / 可重光照"
     },
     {
+      "content_day": "2026-09-06",
       "date": "2026-09-07",
-      "title": "Real2Sim / PTIR-GS 兴趣策展",
-      "path": "digests/2026-09-07.md",
       "figs": "digests/2026-09-07/figs/",
-      "content_day": "2026-09-06"
+      "path": "digests/2026-09-07.md",
+      "title": "Real2Sim / PTIR-GS 兴趣策展"
     }
-  ]
+  ],
+  "owner": "rubatotree",
+  "site": "科研日报"
 }
