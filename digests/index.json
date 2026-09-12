@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "content_day": "2026-09-12",
+      "date": "2026-09-13",
+      "figs": "digests/2026-09-13/figs/",
+      "path": "digests/2026-09-13.md",
+      "title": "失败反馈怎样真正回到生成与控制"
+    },
+    {
       "content_day": "2026-09-11",
       "date": "2026-09-12",
       "figs": "digests/2026-09-12/figs/",

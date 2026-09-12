@@ -310,6 +310,30 @@
       "reappearances": [],
       "content_day": "2026-09-11",
       "title": "ReCHOIR: Contact-guided Human Object Interaction Retargeting to Diverse Characters"
+    },
+    "2609.08965": {
+      "content_day": "2026-09-12",
+      "digest": "2026-09-13",
+      "first_seen": "2026-09-13",
+      "note": "Weekend backlog; first submitted 2026-09-08, not a 2026-09-12 arXiv announcement.",
+      "reappearances": [],
+      "title": "PlannerForge: LLM Agents for Scenario-Based Testing of Motion Planners in Autonomous Driving"
+    },
+    "2609.08800": {
+      "content_day": "2026-09-12",
+      "digest": "2026-09-13",
+      "first_seen": "2026-09-13",
+      "note": "Weekend backlog; first submitted 2026-09-08, not a 2026-09-12 arXiv announcement.",
+      "reappearances": [],
+      "title": "Ostrich: Taking Large Strides Through Stiff Contact in Differentiable Dynamics"
+    },
+    "2609.10385": {
+      "content_day": "2026-09-12",
+      "digest": "2026-09-13",
+      "first_seen": "2026-09-13",
+      "note": "Weekend backlog; first submitted 2026-09-09, not a 2026-09-12 arXiv announcement.",
+      "reappearances": [],
+      "title": "MOONWALK: Mediating Operations with Intent-Evidence-Action Alignment Across Junior-Supervisor Review Workflows in Animation/VFX Pre-Production"
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",

@@ -26,10 +26,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-09-12",
-    "at": "2026-09-12T05:43:09+08:00",
+    "publish_date": "2026-09-13",
+    "at": "2026-09-13T05:42:18+08:00",
     "commit": null,
-    "note": "Digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-12.md."
+    "note": "Digest, figure, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-13.md."
   },
   "events": [
     {
@@ -87,6 +87,13 @@
       "bot": "Neon",
       "publish_date": "2026-09-12",
       "detail": "Published digests/2026-09-12.md covering 2026-09-11 graphics and embodied-AI papers, focused on failure monitoring, agent-policy interfaces and contact-aware transfer, with four dated news/community items."
+    },
+    {
+      "at": "2026-09-13T05:42:18+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-13",
+      "detail": "Published digests/2026-09-13.md covering 2026-09-12 with an explicitly labeled weekend backlog, focused on failure-driven agent loops, differentiable hard contact, evidence-linked review, and three dated cross-day news items."
     }
   ]
 }
