@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "content_day": "2026-09-13",
+      "date": "2026-09-14",
+      "figs": "digests/2026-09-14/figs/",
+      "path": "digests/2026-09-14.md",
+      "title": "把团队、子目标和接触写成可检查的结构"
+    },
+    {
       "content_day": "2026-09-12",
       "date": "2026-09-13",
       "figs": "digests/2026-09-13/figs/",

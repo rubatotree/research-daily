@@ -26,10 +26,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-09-13",
-    "at": "2026-09-13T05:42:18+08:00",
+    "publish_date": "2026-09-14",
+    "at": "2026-09-14T05:43:40+08:00",
     "commit": null,
-    "note": "Digest, figure, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-13.md."
+    "note": "Digest, figure, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-14.md."
   },
   "events": [
     {
@@ -94,6 +94,13 @@
       "bot": "Neon",
       "publish_date": "2026-09-13",
       "detail": "Published digests/2026-09-13.md covering 2026-09-12 with an explicitly labeled weekend backlog, focused on failure-driven agent loops, differentiable hard contact, evidence-linked review, and three dated cross-day news items."
+    },
+    {
+      "at": "2026-09-14T05:43:40+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-14",
+      "detail": "Published digests/2026-09-14.md covering 2026-09-13 with an explicitly labeled Sunday backlog, focused on organizational structure, mechanism-invariant subgoals, contact-valid transfer, editable radar simulation, and two dated community signals."
     }
   ]
 }

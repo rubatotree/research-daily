@@ -334,9 +334,41 @@
       "note": "Weekend backlog; first submitted 2026-09-09, not a 2026-09-12 arXiv announcement.",
       "reappearances": [],
       "title": "MOONWALK: Mediating Operations with Intent-Evidence-Action Alignment Across Junior-Supervisor Review Workflows in Animation/VFX Pre-Production"
+    },
+    "2609.11737": {
+      "content_day": "2026-09-13",
+      "digest": "2026-09-14",
+      "first_seen": "2026-09-14",
+      "note": "Weekend backlog; first submitted 2026-09-10, not a 2026-09-13 arXiv announcement.",
+      "reappearances": [],
+      "title": "Organizational Principles Enable Collective Intelligence in Embodied AI"
+    },
+    "2609.11014": {
+      "content_day": "2026-09-13",
+      "digest": "2026-09-14",
+      "first_seen": "2026-09-14",
+      "note": "Weekend backlog; first submitted 2026-09-10, not a 2026-09-13 arXiv announcement.",
+      "reappearances": [],
+      "title": "Topological Necessities: Mechanism-Invariant Strategic Subgoals for Cross-Embodiment Goal-Conditioned Control"
+    },
+    "2609.11361": {
+      "content_day": "2026-09-13",
+      "digest": "2026-09-14",
+      "first_seen": "2026-09-14",
+      "note": "Weekend backlog; first submitted 2026-09-10, not a 2026-09-13 arXiv announcement.",
+      "reappearances": [],
+      "title": "GeoTrussRover: Morphological Computation with Contact-Semantic Control Primitives"
+    },
+    "2609.11894": {
+      "content_day": "2026-09-13",
+      "digest": "2026-09-14",
+      "first_seen": "2026-09-14",
+      "note": "Weekend backlog; first submitted 2026-09-10, not a 2026-09-13 arXiv announcement.",
+      "reappearances": [],
+      "title": "3D Point Splatting for mmWave Radar Novel View Synthesis"
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "version": 1
 }
