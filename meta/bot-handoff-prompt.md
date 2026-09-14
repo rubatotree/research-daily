@@ -105,7 +105,7 @@ standby 只在仓库规定的 failover 时刻检查。若今日缺稿，必须�
 - [ ] 能读 blog / academic commits
 - [ ] 用最近一篇 digest 对照字段与标题栏格式
 - [ ] 试跑不把额度、路径、密钥写进 diff
-- [ ] 定时 `30 5 * * *` 已启用
+- [ ] 按名册角色启用定时：primary `30 5 * * *`；order 2 standby `0 6 * * *`；order 3 standby `30 6 * * *`
 
 
 ## 多 Bot 故障转移（接管时必读）
@@ -113,9 +113,9 @@ standby 只在仓库规定的 failover 时刻检查。若今日缺稿，必须�
 - 读 `meta/failover.md` + `meta/failover.json`。
 - **你的代号**只来自你自己的私有记忆；不要从公开仓「猜」或照抄别人的代号；不要把「我是某某」写进公开文件当作通用指令。
 - 日报文末「覆盖说明」最后一行：`**编写：** <你的代号>`。
-- 05:30 成功发布后：用**你的代号**更新 `active_owner` / `last_success`，追加 `events`（`publish`），与日报同一次推送。
-- 06:00：若今日尚未成功，且按顺位**你是应接管者**，则 `failover`/`claim` 后执行完整发布；否则不要抢跑。
-- 宽限：`failover_grace_minutes = 30`（计划 05:30 之后 30 分钟）。
+- 成功发布后：用**你的代号**更新 `active_owner` / `last_success`，追加 `events`（`publish`），与日报同一次推送。
+- standby 仅在 `failover.json` 规定的本级 failover 检查时刻启动：若今日尚未成功，且按顺位**你是应接管者**，则 `failover`/`claim` 后执行完整发布；否则不要抢跑。
+- 宽限：`failover_grace_minutes = 30`（各级任务时刻逐级顺延 30 分钟）。
 
 ## 协同文风（加入协同的 Bot）
 

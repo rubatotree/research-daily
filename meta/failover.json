@@ -1,29 +1,38 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "Asia/Hong_Kong",
   "scheduled_publish": "05:30",
   "scheduled_cron": "30 5 * * *",
   "failover_grace_minutes": 30,
   "failover_check_time": "06:00",
   "failover_check_cron": "0 6 * * *",
+  "failover_check_time_2": "06:30",
+  "failover_check_cron_2": "30 6 * * *",
   "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
-      "code": "Neon",
+      "code": "Cocoa",
       "order": 1,
       "role": "primary",
       "status": "active",
       "duties": "At 05:30, perform the lightweight success guard; only if today is still missing, publish and update this table."
     },
     {
-      "code": "Cream",
+      "code": "Neon",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00."
+      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work."
+    },
+    {
+      "code": "Cream",
+      "order": 3,
+      "role": "standby",
+      "status": "active",
+      "duties": "At 06:30, perform only the second failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00."
     }
   ],
-  "active_owner": "Neon",
+  "active_owner": "Cocoa",
   "last_success": {
     "bot": "Neon",
     "publish_date": "2026-09-14",
@@ -101,6 +110,12 @@
       "bot": "Neon",
       "publish_date": "2026-09-14",
       "detail": "Published digests/2026-09-14.md covering 2026-09-13 with an explicitly labeled Sunday backlog, focused on organizational structure, mechanism-invariant subgoals, contact-valid transfer, editable radar simulation, and two dated community signals."
+    },
+    {
+      "at": "2026-09-14T14:54:00+08:00",
+      "type": "register",
+      "bot": "Cocoa",
+      "detail": "Roster change: maintainer registered Cocoa as order 1 active primary; Neon moved to order 2 active standby (06:00 failover check) and Cream to order 3 active standby (06:30 second failover check). Normal publish ownership moved to Cocoa."
     }
   ]
 }

@@ -9,7 +9,7 @@
 1. **公开代号，私有认领**
    仓内只登记代号与顺位；「我是哪个代号」只存在该 Bot 的私有记忆。通用接管文案不得写死某个读者的代号。
 2. **名册与时间**
-   Neon 是 `order: 1` 的 active primary，正常任务仅在 **05:30 Asia/Hong_Kong** 启动；Cream 是 `order: 2` 的 active standby，仅在 **06:00** 做 failover 检查。计划字段以 `failover.json` 为准。Cream 另在 **05:00** 同步公开兴趣笔记（非发布任务）。
+   Cocoa 是 `order: 1` 的 active primary，正常任务仅在 **05:30 Asia/Hong_Kong** 启动；Neon 是 `order: 2` 的 active standby，仅在 **06:00** 做 failover 检查；Cream 是 `order: 3` 的 active standby，仅在 **06:30** 做第二次 failover 检查。计划字段以 `failover.json` 为准。Cream 另在 **05:00** 同步公开兴趣笔记（非发布任务）。
 3. **状态与日志**
    `active_owner` 表示当前应对「今日发布」负责的代号。每次成功发布必须更新 `last_success`、`active_owner` 并**追加** `events`；不删除历史。
 4. **公开安全**
@@ -26,29 +26,29 @@
 
 任一关键状态矛盾时视为**未确认成功**；先重新读取最新 main，不得凭单一信号重写日报。
 
-## 05:30 primary — Neon
+## 05:30 primary — Cocoa
 
 1. 任务启动后只做轻量守卫：读取最新 `failover.json`、`digests/index.json`，并检查当日 digest 是否存在。
 2. 若今天已经成功发布，立即结束。不得搜索论文、读 PDF、写稿、提交或做「确认正常」的无意义修改。
-3. 若 Neon 不再是 `order: 1` 的 active primary，立即结束。
-4. 仅当今天缺稿且 Neon 仍是 active primary 时，才进入完整日报流水线。
+3. 若 Cocoa 不再是 `order: 1` 的 active primary，立即结束。
+4. 仅当今天缺稿且 Cocoa 仍是 active primary 时，才进入完整日报流水线。
 5. 06:00 之后，只要存在 active standby，primary 不得与 standby 并发 self-heal。
 
-## 06:00 standby failover — Cream
+## standby failover 链 — Neon（06:00）→ Cream（06:30）
 
-Cream 的 06:00 任务只做检查；若今日已成功，立即结束。若仍缺稿，开始任何论文检索前必须取得 ownership：
+standby 任务只做检查；若今日已成功，立即结束。各级 standby 仅在自己的检查时刻启动：order 2（Neon）在 06:00，order 3（Cream）在 06:30。若仍缺稿，开始任何论文检索前必须取得 ownership：
 
 1. 读取最新 `failover.json`、`digests/index.json`、当日 digest，记录所读版本/commit。
-2. 重新确认今日仍未成功，且 Cream 是按名册顺位应接管的 active standby。
-3. 基于**刚读取**的版本，以 compare-and-swap / 乐观并发语义提交一个仅含 claim/failover 的状态更新：追加 `claim`（可同时追加 `failover`），并设 `active_owner: "Cream"`。
+2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby（order 最小且更早层级未 claim 成功）。
+3. 基于**刚读取**的版本，以 compare-and-swap / 乐观并发语义提交一个仅含 claim/failover 的状态更新：追加 `claim`（可同时追加 `failover`），并将 `active_owner` 设为自己的代号。
 4. 若版本已变而写入失败，必须重新读取、重新判断；**不得**直接继续重工作。
 5. 只有成功 claim 的 Bot 才能开始完整日报生成。发布成功后再追加 `publish` 并更新 `last_success`。
 
-此规则避免 Neon 与 Cream 同时生成同一天日报。
+此规则避免多个 Bot 同时生成同一天日报。
 
-## Cream 检查报告（须通知）
+## standby 检查报告（须通知）
 
-06:00 failover 检查结束后，无论是否改仓、是否接管，都向维护者发送简短检查报告（是否已有今日稿、`last_success`、本次动作）。已成功确认也要发，不要静默。
+每次 failover 检查结束后，无论是否改仓、是否接管，执行检查的 standby 都向维护者发送简短检查报告（是否已有今日稿、`last_success`、本次动作）。已成功确认也要发，不要静默。
 
 ## 发布后
 

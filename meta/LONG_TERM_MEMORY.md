@@ -48,12 +48,12 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 3b. 多 Bot 故障转移（自动维护）
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
-- **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
-- **定时：** Neon 在 05:30 HKT 做主发布守卫；Cream 在 06:00 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
-- **通知：** Cream 05:00 / 06:00 任务结束后均须私聊发简报（无改仓也要说）。
+- **名册：** Cocoa = order 1 active primary；Neon = order 2 active standby；Cream = order 3 active standby。
+- **定时：** Cocoa 在 05:30 HKT 做主发布守卫；Neon 在 06:00 HKT 仅做 failover 检查；Cream 在 06:30 HKT 仅做第二次 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
+- **通知：** Cream 05:00 与各 standby 的 failover 检查任务结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
-- **无竞态接管：** 06:00 的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:00 后并发 self-heal。
+- **无竞态接管：** failover 检查时刻的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:00 后并发 self-heal。
 - **发布状态：** 每次成功发布更新 `last_success`、`active_owner` 并追加 `events`；不删除历史。
 - **署名：** 日报覆盖说明与 git commit 正文都须署实际执笔代号。
 - 调度器实际唤醒与仓库配置若 drift，只在私聊提示维护者，绝不把内部 scheduler 信息写入公开仓。
@@ -125,6 +125,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
 ## 11. 变更日志（公开记忆）
+
+- 2026-09-14：名册调整：注册 Cocoa 为 order 1 active primary（05:30 发布守卫）；Neon 降为 order 2 active standby（06:00 failover 检查）；Cream 降为 order 3 active standby（06:30 第二次 failover 检查，05:00 兴趣笔记同步不变）；故障转移按 30 分钟宽限逐级顺延。
 
 - 2026-09-11：根据维护者明确要求，将 MiracleAug 与相近 Agent 驱动具身流程提升为近期科研及日报选题的首要主线；持续跟踪论文、开源、社区实践与验证阶段，保留图形学基础方向和四领域新闻覆盖。
 
