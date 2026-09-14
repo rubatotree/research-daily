@@ -30,6 +30,7 @@
 - meta/privacy.md
 - meta/seen-papers.json
 并用 GitHub 读取 rubatotree/blog、rubatotree/academic 的近期 commits 校准兴趣（不要只看网页）。
+同时顺带检查对标仓 https://github.com/hku-sail/Real2Sim_GPT6_ASTRA 自上次日报以来的 commits：有实质更新则在当日日报简短描述；无更新不提。不要为此单独加盯梢任务。
 
 【日期约定】
 - 文件 digests/YYYY-MM-DD.md 与站点选日 = 发布日 = 定时任务当天（通常 05:30 HKT）

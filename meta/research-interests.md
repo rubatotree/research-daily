@@ -24,7 +24,7 @@
 - 有实质更新时在速览优先提示，简述“较上次推进了什么、与 MiracleAug 公开流程重合在哪里、哪些部件或实验可借鉴、还缺什么验证”。不能仅因方向相近推断跟随关系，也不依据演示就宣布创新性已被覆盖。
 - 同一工作按开源、复现、新评测或真机结果等进展继续跟踪，注明原始日期与更新日期；无新证据时不重复展开，不制造竞争焦虑，不为固定数量注水。
 
-**初始检索线索（不是已经验证的能力清单）：** aDSL、Thinking with Visual Primitives、SimFoundry、World Labs Atlas / Real-to-Sim-to-Real，以及通用 Agent + Blender / Isaac Sim + 示教增强 / 策略训练的社区实践。每次核实具体项目、机构、版本与原始来源，避免名称混淆。详细公开基线以 [MiracleAug 仓库](https://github.com/rubatotree/miracle-aug-skill) 为准。
+**初始检索线索（不是已经验证的能力清单）：** aDSL、Thinking with Visual Primitives、SimFoundry、World Labs Atlas / Real-to-Sim-to-Real，以及通用 Agent + Blender / Isaac Sim + 示教增强 / 策略训练的社区实践；对标仓 [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA)（写稿时顺带扫，有更新再简写）。每次核实具体项目、机构、版本与原始来源，避免名称混淆。详细公开基线以 [MiracleAug 仓库](https://github.com/rubatotree/miracle-aug-skill) 为准。
 
 ## 图形学基础方向（持续关注，次于上述近期主线）
 围绕 **PTIR-GS / Real→Sim→Real**：手机等真实采集 → 可仿真资产 → 下游具身 / 控制。
@@ -46,8 +46,8 @@
 ## 近期博客校准
 - 2026-09-10：[MiracleAug 博文](https://rubatotree.github.io/blog/posts/miracle-aug-1/) — agentic 具身数据增强走通后的公开卡点（复杂几何建模成本、无示教轨迹校验、Mesh vs 3DGS 瑕疵感、**正向/批渲染开销**、防御性编程）；开放问题是图形学 ↔ LLM 互相替难点。批渲染项提高卡点②权重。细节见 [`interest-notes.md`](./interest-notes.md)。
 
-## 对标盯梢（公开）
-- [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA)：GPT-6 Astra 三视角 RGB→Blender Real2Sim／重放；与 MiracleAug 同族对照。Cream 盯 commits；有实质更新再进日报。见 [`interest-notes.md`](./interest-notes.md)。
+## 对标仓（公开 · 写日报时顺带扫）
+- [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA)：GPT-6 Astra 三视角 RGB→Blender Real2Sim／重放；与 MiracleAug 同族对照。**所有**日报 Bot 写稿时检查自上次日报以来的 commits；有实质更新则在日报中**简短描述**，无更新不提。**不另设盯梢任务。** 见 [`interest-notes.md`](./interest-notes.md)。
 
 ## 相关开源（维护者）
 - [MiracleAug skill](https://github.com/rubatotree/miracle-aug-skill)：GPT-6 Astra（或同级）驱动的机器人示教增强数据生成（Blender 重建 + 同步轨迹）；细节与试拍见 [`interest-notes.md`](./interest-notes.md)。

@@ -77,6 +77,7 @@
 ## 近期主线的相关工作跟踪
 
 按 `research-interests.md` 的近期首要主线，优先检索 Agent 驱动 Real2Sim2Real、同步示教增强、策略训练/评估与失败反馈迭代。来源同时覆盖论文、开源、产品和社区实测；有实质进展可进入速览，不强求每日固定数量。重点交代输入与额外先验、可编辑输出、人工干预、增强标签有效性和下游证据，明确区分重建重放、仿真训练/评估、真机迁移；作者自报不等于独立复现，视频效果不等于物理或策略验证。与 MiracleAug 的比较仅基于公开内容，简述重合、可借鉴环节和未验证问题，不推断跟随关系。延续报道标明较上次的新增证据与日期，无实质变化不重复展开。
+对标仓 `hku-sail/Real2Sim_GPT6_ASTRA` 由**所有**执行日报的 Bot 在写稿流水线中顺带检查（见信息源）；有实质 commit／文档／能力更新时简短写入当日日报，**不要**为此单独加盯梢 routine 或额外私聊刷屏。
 
 ## 去重
 - 清单：`meta/seen-papers.json`（与 Bot 侧 ledger 同步）
@@ -104,6 +105,7 @@
 - 新闻事实：官方公告、发布说明、开源仓库、作者原文
 - 社区反馈：X、Hacker News、Reddit、GitHub Issues/Discussions、Hugging Face 讨论与中文技术社区（须链接实际原帖）
 - GitHub：`rubatotree/blog`、`rubatotree/academic`（以 **commits** 校准兴趣，不只看 Pages）
+- GitHub 对标仓（写日报时顺带扫 commits，**不另设盯梢任务**）：[`hku-sail/Real2Sim_GPT6_ASTRA`](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA) — 与 MiracleAug 同族的 Astra Real2Sim／Blender 重建；自上次日报以来若有实质更新，在「圈内」或「新兴趣／主线追踪」**简短描述**即可；无更新则不提
 - 机器之心 / 量子位 / 新智元；PaperWeekly 类
 - 公开搜索（Scholar / 网页）
 - X：关键词检索（估成本；**过程与额度不写进正文或公开 meta**）
