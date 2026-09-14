@@ -12,6 +12,22 @@
 
 ---
 
+## 2026-09-14 · 当日讨论摘要（晚间）
+
+1. **对标盯梢：** [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA) — 与 MiracleAug 同族的 GPT-6 Astra Real2Sim / Blender 重建公开仓；Cream 持续盯 commits（有更新才通知）。详见下方专题。
+
+---
+
+## 2026-09-14 · 对标仓：hku-sail/Real2Sim_GPT6_ASTRA（强盯梢）
+
+- **仓库：** https://github.com/hku-sail/Real2Sim_GPT6_ASTRA  
+- **定位（公开 README）：** 三视角机器人 RGB → Blender 场景重建与动作重放（`replay.blend`）；Efficient ASTRA 流水线文档；强调**仅 RGB、无标定/深度/真实关节**，视觉近似重放 ≠ 真机关节/动力学 GT。
+- **与 MiracleAug 对照（公开层）：** 同属 Astra + Blender / Real2Sim 叙事；本仓更偏**固定三视角重建+重放+验证脚本**；MiracleAug 更偏 **agent skill + 任务一致示教增强/数据生成**。日报可交叉，勿混写能力边界。
+- **基线（Cream 开始盯梢时）：** 最新 commit `a1624d6`（2026-09-10）*Generalize ASTRA video reconstruction workflow*；此前有 three-stage ASTRA cascade、efficient pipeline 文档、bilingual README。★71 / forks 3（查询时快照，勿当长期指标）。无 GitHub Releases。
+- **日报怎么用：** 「新兴趣相关」/圈内可跟该仓**有实质 commit 时**再提；静默期不每日复读。禁止编造未公开实验对比。
+- **状态：** active · watch · strong · baseline=`a1624d6`
+
+
 ## 2026-09-10 · 当日讨论摘要
 
 1. **MiracleAug skill 开源与试跑（主线活动）** — 详见下方专题。用户发布 [rubatotree/miracle-aug-skill](https://github.com/rubatotree/miracle-aug-skill)，并拍摄较复杂具身场景试用该 skill。
