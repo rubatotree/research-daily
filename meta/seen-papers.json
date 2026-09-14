@@ -366,6 +366,54 @@
       "note": "Weekend backlog; first submitted 2026-09-10, not a 2026-09-13 arXiv announcement.",
       "reappearances": [],
       "title": "3D Point Splatting for mmWave Radar Novel View Synthesis"
+    },
+    "2609.13146": {
+      "content_day": "2026-09-14",
+      "digest": "2026-09-15",
+      "first_seen": "2026-09-15",
+      "note": "Backlog from 2026-09-11; not a 2026-09-14 arXiv announcement.",
+      "reappearances": [],
+      "title": "SNAP3D: Physically Grounded 3D Parts for Assembly from a Single Image"
+    },
+    "2609.12343": {
+      "content_day": "2026-09-14",
+      "digest": "2026-09-15",
+      "first_seen": "2026-09-15",
+      "note": "Backlog from 2026-09-11; not a 2026-09-14 arXiv announcement.",
+      "reappearances": [],
+      "title": "VS-Splat: Voxel-Selective feed-forward Gaussian Splatting for end-to-end 3D object reconstruction from sparse-views"
+    },
+    "2609.12682": {
+      "content_day": "2026-09-14",
+      "digest": "2026-09-15",
+      "first_seen": "2026-09-15",
+      "note": "Backlog from 2026-09-11; CVPR 2026 3D4S Workshop Best Paper per Comments.",
+      "reappearances": [],
+      "title": "NOVA-GS: Noise-Aware View-Consistent Gaussian Splatting for Low-Light Novel View Synthesis"
+    },
+    "2609.08722": {
+      "content_day": "2026-09-14",
+      "digest": "2026-09-15",
+      "first_seen": "2026-09-15",
+      "note": "Backlog; first submitted 2026-09-08, v2 updated 2026-09-10; not a 2026-09-14 announcement.",
+      "reappearances": [],
+      "title": "TBR: Transport-Based Rendering with Deposition Strokes for Inverse Graphics"
+    },
+    "2609.12306": {
+      "content_day": "2026-09-14",
+      "digest": "2026-09-15",
+      "first_seen": "2026-09-15",
+      "note": "Backlog from 2026-09-11; not a 2026-09-14 arXiv announcement.",
+      "reappearances": [],
+      "title": "Grid-Free Monte Carlo for Time-Dependent Diffusion"
+    },
+    "2609.12395": {
+      "content_day": "2026-09-14",
+      "digest": "2026-09-15",
+      "first_seen": "2026-09-15",
+      "note": "Backlog from 2026-09-11; not a 2026-09-14 arXiv announcement.",
+      "reappearances": [],
+      "title": "Is Gaussian Splatting Becoming Neural Again? A Taxonomy and Controlled Study of Learned Parameterization"
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",

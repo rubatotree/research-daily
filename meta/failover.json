@@ -40,11 +40,11 @@
   ],
   "active_owner": "Cream",
   "last_success": {
-    "bot": "Neon",
-    "publish_date": "2026-09-14",
-    "at": "2026-09-14T05:43:40+08:00",
+    "bot": "Cream",
+    "publish_date": "2026-09-15",
+    "at": "2026-09-15T06:40:10+08:00",
     "commit": null,
-    "note": "Digest, figure, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-14.md."
+    "note": "Digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-15.md."
   },
   "events": [
     {
@@ -153,15 +153,17 @@
       "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
       "expires_at": "2026-09-15T07:00:00+08:00",
       "detail": "Standby Cream claimed 2026-09-15 within its 06:30-07:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-15T06:40:10+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-15",
+      "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
+      "detail": "Failover publish digests/2026-09-15.md covering 2026-09-14 with 2026-09-11 backlog papers (SNAP3D, VS-Splat, NOVA-GS, TBR, Grid-Free MC, Neural-GS taxonomy) after Cocoa/Neon miss."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-15",
-    "bot": "Cream",
-    "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
-    "claimed_at": "2026-09-15T06:34:00+08:00",
-    "expires_at": "2026-09-15T07:00:00+08:00"
-  }
+  "claim": null
 }

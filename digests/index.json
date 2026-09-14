@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "content_day": "2026-09-14",
+      "date": "2026-09-15",
+      "figs": "digests/2026-09-15/figs/",
+      "path": "digests/2026-09-15.md",
+      "title": "零件要能站得住，前馈要知道把高斯花在哪"
+    },
+    {
       "content_day": "2026-09-13",
       "date": "2026-09-14",
       "figs": "digests/2026-09-14/figs/",
