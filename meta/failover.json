@@ -128,9 +128,24 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Rule: failover takeover digests must append a bottom-of-page 故障说明 naming prior bots that missed their publish window; normal on-time primary publishes skip this note. Specs: digest-spec.md / failover.md."
+    },
+    {
+      "at": "2026-09-15T05:31:38+08:00",
+      "type": "claim",
+      "bot": "Cocoa",
+      "publish_date": "2026-09-15",
+      "claim_id": "67c5d7ca-7426-448f-a84f-6d094a3de83a",
+      "expires_at": "2026-09-15T06:00:00+08:00",
+      "detail": "Primary Cocoa claimed 2026-09-15 within its 05:30-06:00 HKT window; lease expires at window end."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null
+  "claim": {
+    "publish_date": "2026-09-15",
+    "bot": "Cocoa",
+    "claim_id": "67c5d7ca-7426-448f-a84f-6d094a3de83a",
+    "claimed_at": "2026-09-15T05:31:38+08:00",
+    "expires_at": "2026-09-15T06:00:00+08:00"
+  }
 }
