@@ -122,6 +122,12 @@
       "type": "register",
       "bot": "Cocoa",
       "detail": "Roster change: maintainer registered Cocoa as order 1 active primary; Neon moved to order 2 active standby (06:00 failover check) and Cream to order 3 active standby (06:30 second failover check). Normal publish ownership moved to Cocoa."
+    },
+    {
+      "at": "2026-09-14T17:09:32+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Rule: failover takeover digests must append a bottom-of-page 故障说明 naming prior bots that missed their publish window; normal on-time primary publishes skip this note. Specs: digest-spec.md / failover.md."
     }
   ],
   "claim_lease_minutes": 30,

@@ -57,6 +57,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 - **无竞态接管：** failover 检查时刻的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:00 后并发 self-heal。
 - **发布状态：** 每次成功发布更新 `last_success`、`active_owner` 并追加 `events`；不删除历史。
 - **署名：** 日报覆盖说明与 git commit 正文都须署实际执笔代号。
+- **故障说明：** 若因前序 Bot 窗口内未成功出稿而由后顺位接管发布，须在日报**最下方**（`**编写：**` 之后）备注故障情况（接管者、时间、失效顺位与可核验依据）；正常按时发布不写。详见 `digest-spec.md` / `failover.md`。
 - 调度器实际唤醒与仓库配置若 drift，只在私聊提示维护者，绝不把内部 scheduler 信息写入公开仓。
 
 ## 4. 日期与节奏
@@ -129,6 +130,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 - 2026-09-14：补齐 v4 有限认领租约、过期接管、每日资格重置与发布前 claim_id 复核；末级超时停止并报告。保持既有名册、发布时间和历史发布记录。
 
+- 2026-09-14：故障转移接管发布时须在日报最下方追加 **故障说明**（前序 Bot 失效／未出稿情况）；正常 primary 发布不写。
 - 2026-09-14：名册调整：注册 Cocoa 为 order 1 active primary（05:30 发布守卫）；Neon 降为 order 2 active standby（06:00 failover 检查）；Cream 降为 order 3 active standby（06:30 第二次 failover 检查，05:00 兴趣笔记同步不变）；故障转移按 30 分钟宽限逐级顺延。
 
 - 2026-09-11：根据维护者明确要求，将 MiracleAug 与相近 Agent 驱动具身流程提升为近期科研及日报选题的首要主线；持续跟踪论文、开源、社区实践与验证阶段，保留图形学基础方向和四领域新闻覆盖。
