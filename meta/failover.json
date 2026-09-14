@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "timezone": "Asia/Hong_Kong",
   "scheduled_publish": "05:30",
   "scheduled_cron": "30 5 * * *",
@@ -15,21 +15,27 @@
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "At 05:30, perform the lightweight success guard; only if today is still missing, publish and update this table."
+      "duties": "At 05:30, perform the lightweight success guard; only if today is still missing, publish and update this table.",
+      "claim_window_start": "05:30",
+      "claim_window_end": "06:00"
     },
     {
       "code": "Neon",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work."
+      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work.",
+      "claim_window_start": "06:00",
+      "claim_window_end": "06:30"
     },
     {
       "code": "Cream",
       "order": 3,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:30, perform only the second failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00."
+      "duties": "At 06:30, perform only the second failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00.",
+      "claim_window_start": "06:30",
+      "claim_window_end": "07:00"
     }
   ],
   "active_owner": "Cocoa",
@@ -117,5 +123,8 @@
       "bot": "Cocoa",
       "detail": "Roster change: maintainer registered Cocoa as order 1 active primary; Neon moved to order 2 active standby (06:00 failover check) and Cream to order 3 active standby (06:30 second failover check). Normal publish ownership moved to Cocoa."
     }
-  ]
+  ],
+  "claim_lease_minutes": 30,
+  "claim_renewal_allowed": false,
+  "claim": null
 }

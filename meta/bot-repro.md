@@ -30,11 +30,11 @@
 
 ## 生成流水线（意图级）
 0. **轻量守卫（所有任务先做）**：读最新 `failover.json`、`digests/index.json`、当日 digest；综合核验今日是否成功。成功则立即结束。
-1. primary 确认自己是 active owner 且今日缺稿后，读完整长期记忆、blog/academic commits 与 `seen-papers.json`。
+1. primary 确认当前名册资格、窗口且今日缺稿，并按 v4 协议成功 CAS claim 后，读完整长期记忆、blog/academic commits 与 `seen-papers.json`。
 2. 扫 arXiv / Ke-Sen / 媒体 /（可选）X → 漏斗式策展。
 3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
 4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
-5. 以一个逻辑 commit 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
+5. 按 failover.md 复核当日租约、窗口和 claim_id，清空 claim；以最新已验证 main 为唯一父提交，将所有产物与成功状态用一个逻辑 commit 非强制 fast-forward 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
 6. standby 仅在名册规定的 failover 检查时刻（order 2 为 06:00，order 3 为 06:30）启动；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
 
 ## 新建 Bot 时
@@ -44,7 +44,7 @@
 4. 连接 GitHub（本仓写权限）；可选 X
 5. 用最近样例 digest 校验：标题栏会议/时间、速览锚点、方法概要、覆盖说明、编写署名、无隐私泄漏
 6. 阅读近几天**非本人**署名日报以学习文风（清晰易读、重点分明；允许创新）
-7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`；order 2 standby 使用 `0 6 * * *`；order 3 standby 使用 `30 6 * * *`，并实现 CAS claim
+7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`；order 2 standby 使用 `0 6 * * *`；order 3 standby 使用 `30 6 * * *`，并实现 failover.md v4 的有限租约、CAS claim 与发布前隔离检查
 
 ## 站点
 - https://rubatotree.github.io/research-daily/
