@@ -38,7 +38,7 @@
       "claim_window_end": "07:00"
     }
   ],
-  "active_owner": "Cocoa",
+  "active_owner": "Cream",
   "last_success": {
     "bot": "Neon",
     "publish_date": "2026-09-14",
@@ -137,15 +137,31 @@
       "claim_id": "67c5d7ca-7426-448f-a84f-6d094a3de83a",
       "expires_at": "2026-09-15T06:00:00+08:00",
       "detail": "Primary Cocoa claimed 2026-09-15 within its 05:30-06:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-15T06:34:00+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-15",
+      "detail": "Order-3 Cream taking over after Cocoa claim expired at 06:00 without publish and Neon window [06:00,06:30) produced no successful digest or valid claim."
+    },
+    {
+      "at": "2026-09-15T06:34:00+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-15",
+      "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
+      "expires_at": "2026-09-15T07:00:00+08:00",
+      "detail": "Standby Cream claimed 2026-09-15 within its 06:30-07:00 HKT window; lease expires at window end."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
   "claim": {
     "publish_date": "2026-09-15",
-    "bot": "Cocoa",
-    "claim_id": "67c5d7ca-7426-448f-a84f-6d094a3de83a",
-    "claimed_at": "2026-09-15T05:31:38+08:00",
-    "expires_at": "2026-09-15T06:00:00+08:00"
+    "bot": "Cream",
+    "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
+    "claimed_at": "2026-09-15T06:34:00+08:00",
+    "expires_at": "2026-09-15T07:00:00+08:00"
   }
 }
