@@ -48,8 +48,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 3b. 多 Bot 故障转移（自动维护）
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
-- **名册：** Cocoa = order 1 active primary；Neon = order 2 active standby；Cream = order 3 active standby。
-- **定时：** Cocoa 在 05:30 HKT 做主发布守卫；Neon 在 06:00 HKT 仅做 failover 检查；Cream 在 06:30 HKT 仅做第二次 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
+- **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
+- **定时：** Neon 在 05:30 HKT 做主发布守卫；Cream 在 06:00 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
 - **通知：** Cream 05:00 与各 standby 的 failover 检查任务结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
@@ -124,7 +124,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 1. 阅读并遵守：`digest-spec.md`、`privacy.md`、`failover.json`、`failover.md` 与本文件
 2. 将 `bot-handoff-prompt.md` 全文设为新 Bot 的系统/定时任务说明（或按其裁剪）
 3. 按 `bot-repro.md` 连接 GitHub（本仓写权限）
-4. 确认私有代号，并只按当前名册的角色安装任务：primary 05:30；第二顺位 standby 06:00；第三顺位 standby 06:30
+4. 确认私有代号，并只按当前名册的角色安装任务：primary 05:30；standby 06:00
 5. 用最近一篇 `digests/*.md` 做字段对照自检
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
@@ -134,6 +134,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 - 2026-09-14：故障转移接管发布时须在日报最下方追加 **故障说明**（前序 Bot 失效／未出稿情况）；正常 primary 发布不写。
 - 2026-09-14：对标仓 `hku-sail/Real2Sim_GPT6_ASTRA` 纳入各 Bot 写日报时的顺带检查；有更新则简短描述，不另设盯梢任务。
+- 2026-09-15：名册调整：取消 Cocoa；恢复 Neon = order 1 primary（05:30）、Cream = order 2 standby（06:00 failover；05:00 兴趣同步）；取消 06:30 第三级。
 - 2026-09-14：名册调整：注册 Cocoa 为 order 1 active primary（05:30 发布守卫）；Neon 降为 order 2 active standby（06:00 failover 检查）；Cream 降为 order 3 active standby（06:30 第二次 failover 检查，05:00 兴趣笔记同步不变）；故障转移按 30 分钟宽限逐级顺延。
 
 - 2026-09-11：根据维护者明确要求，将 MiracleAug 与相近 Agent 驱动具身流程提升为近期科研及日报选题的首要主线；持续跟踪论文、开源、社区实践与验证阶段，保留图形学基础方向和四领域新闻覆盖。

@@ -6,12 +6,10 @@
   "failover_grace_minutes": 30,
   "failover_check_time": "06:00",
   "failover_check_cron": "0 6 * * *",
-  "failover_check_time_2": "06:30",
-  "failover_check_cron_2": "30 6 * * *",
   "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
-      "code": "Cocoa",
+      "code": "Neon",
       "order": 1,
       "role": "primary",
       "status": "active",
@@ -20,25 +18,16 @@
       "claim_window_end": "06:00"
     },
     {
-      "code": "Neon",
+      "code": "Cream",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work.",
+      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00.",
       "claim_window_start": "06:00",
       "claim_window_end": "06:30"
-    },
-    {
-      "code": "Cream",
-      "order": 3,
-      "role": "standby",
-      "status": "active",
-      "duties": "At 06:30, perform only the second failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00.",
-      "claim_window_start": "06:30",
-      "claim_window_end": "07:00"
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Neon",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-09-15",
@@ -161,6 +150,12 @@
       "publish_date": "2026-09-15",
       "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
       "detail": "Failover publish digests/2026-09-15.md covering 2026-09-14 with 2026-09-11 backlog papers (SNAP3D, VS-Splat, NOVA-GS, TBR, Grid-Free MC, Neural-GS taxonomy) after Cocoa/Neon miss."
+    },
+    {
+      "at": "2026-09-15T16:00:56+08:00",
+      "type": "register",
+      "bot": "Cream",
+      "detail": "Roster change: maintainer removed Cocoa; Neon restored as order 1 active primary (05:30); Cream as order 2 active standby (06:00 failover check + 05:00 interest-notes sync). Second 06:30 rung retired."
     }
   ],
   "claim_lease_minutes": 30,

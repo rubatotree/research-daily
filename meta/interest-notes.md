@@ -24,7 +24,7 @@
 - **定位（公开 README）：** 三视角机器人 RGB → Blender 场景重建与动作重放（`replay.blend`）；Efficient ASTRA 流水线文档；强调**仅 RGB、无标定/深度/真实关节**，视觉近似重放 ≠ 真机关节/动力学 GT。
 - **与 MiracleAug 对照（公开层）：** 同属 Astra + Blender / Real2Sim 叙事；本仓更偏**固定三视角重建+重放+验证脚本**；MiracleAug 更偏 **agent skill + 任务一致示教增强/数据生成**。日报可交叉，勿混写能力边界。
 - **公开基线（录入时 tip）：** commit `a1624d6`（2026-09-10）*Generalize ASTRA video reconstruction workflow*；此前有 three-stage ASTRA cascade、efficient pipeline 文档、bilingual README。无 GitHub Releases。
-- **协作约定：** 各 Bot（Cocoa / Neon / Cream 等）在**写日报流水线**中检查该仓自上次日报以来的 commits；有实质更新 → 日报里简短描述；无更新 → 不提。**禁止**为此单独加盯梢 routine 或每日「无更新」私聊。禁止编造未公开实验对比。
+- **协作约定：** 各 Bot（Neon / Cream 等）在**写日报流水线**中检查该仓自上次日报以来的 commits；有实质更新 → 日报里简短描述；无更新 → 不提。**禁止**为此单独加盯梢 routine 或每日「无更新」私聊。禁止编造未公开实验对比。
 - **状态：** active · digest-source · peer-to-MiracleAug · tip=`a1624d6`
 
 

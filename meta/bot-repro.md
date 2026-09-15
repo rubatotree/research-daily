@@ -5,7 +5,7 @@
 
 ## 角色与调度
 - 名称：科研日报；时区：Asia/Hong_Kong
-- 当前名册由 `meta/failover.json` 权威定义：Cocoa = order 1 active primary，05:30；Neon = order 2 active standby，仅 06:00 failover 检查；Cream = order 3 active standby，仅 06:30 第二次 failover 检查。
+- 当前名册由 `meta/failover.json` 权威定义：Neon = order 1 active primary，05:30；Cream = order 2 active standby，仅 06:00 failover 检查（另 05:00 兴趣笔记同步）。
 - 不要为同一 Bot 默认同时安装主任务和 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
 
 ## 必备连接
@@ -35,7 +35,7 @@
 3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
 4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
 5. 按 failover.md 复核当日租约、窗口和 claim_id，清空 claim；以最新已验证 main 为唯一父提交，将所有产物与成功状态用一个逻辑 commit 非强制 fast-forward 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
-6. standby 仅在名册规定的 failover 检查时刻（order 2 为 06:00，order 3 为 06:30）启动；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
+6. standby 仅在名册规定的 failover 检查时刻（Cream / order 2 为 06:00）启动；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
 
 ## 新建 Bot 时
 1. 新建助手，名称「科研日报」
@@ -44,7 +44,7 @@
 4. 连接 GitHub（本仓写权限）；可选 X
 5. 用最近样例 digest 校验：标题栏会议/时间、速览锚点、方法概要、覆盖说明、编写署名、故障说明（仅接管稿）、无隐私泄漏
 6. 阅读近几天**非本人**署名日报以学习文风（清晰易读、重点分明；允许创新）
-7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`；order 2 standby 使用 `0 6 * * *`；order 3 standby 使用 `30 6 * * *`，并实现 failover.md v4 的有限租约、CAS claim 与发布前隔离检查
+7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`；standby 使用 `0 6 * * *`，并实现 failover.md v4 的有限租约、CAS claim 与发布前隔离检查
 
 ## 站点
 - https://rubatotree.github.io/research-daily/

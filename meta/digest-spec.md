@@ -111,7 +111,7 @@
 - X：关键词检索（估成本；**过程与额度不写进正文或公开 meta**）
 
 ## 节奏
-- 正常 primary 只在每天 05:30（Asia/Hong_Kong）运行；名册以 `failover.json` 为准（当前：Cocoa primary → Neon 06:00 → Cream 06:30）。
+- 正常 primary 只在每天 05:30（Asia/Hong_Kong）运行；名册以 `failover.json` 为准（当前：Neon primary → Cream 06:00）。
 - standby 仅在本级 failover 检查时刻运行，且必须先按 `failover.md` 完成 CAS claim。
 - 两类任务均先做成功守卫；今日已成功则不启动检索/全文阅读/写作。
 - 自 2026-09-08 起须稳定执行
@@ -146,7 +146,7 @@
 当且仅当本篇是因**先前顺位 Bot 失效／超时未发布**而由更后顺位 standby（或等价接管者）写就并推送时，必须在全文**最下方**（紧接 `**编写：**` 行之后）追加简短 **故障说明**，例如：
 
 ```markdown
-**故障说明：** 本日由 Cream 于 06:35 HKT 故障转移接管发布。先前顺位未在窗口内成功出稿：Cocoa（05:30–06:00）无当日 digest；Neon（06:00–06:30）无 claim／无发布。依据 `meta/failover.json` 当日 `failover`／`claim` 事件。
+**故障说明：** 本日由 Cream 于 06:05 HKT 故障转移接管发布。先前顺位未在窗口内成功出稿：Neon（05:30–06:00）无当日 digest。依据 `meta/failover.json` 当日 `failover`／`claim` 事件。
 ```
 
 约定：
