@@ -156,9 +156,24 @@
       "type": "register",
       "bot": "Cream",
       "detail": "Roster change: maintainer removed Cocoa; Neon restored as order 1 active primary (05:30); Cream as order 2 active standby (06:00 failover check + 05:00 interest-notes sync). Second 06:30 rung retired."
+    },
+    {
+      "at": "2026-09-16T05:33:31+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-16",
+      "claim_id": "8bb25fd5-2310-4f26-be7a-43d6fbbb8b63",
+      "expires_at": "2026-09-16T06:00:00+08:00",
+      "detail": "Primary Neon claimed 2026-09-16 within its 05:30-06:00 HKT window; lease expires at window end."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null
+  "claim": {
+    "publish_date": "2026-09-16",
+    "bot": "Neon",
+    "claim_id": "8bb25fd5-2310-4f26-be7a-43d6fbbb8b63",
+    "claimed_at": "2026-09-16T05:33:31+08:00",
+    "expires_at": "2026-09-16T06:00:00+08:00"
+  }
 }
