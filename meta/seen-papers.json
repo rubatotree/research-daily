@@ -414,9 +414,51 @@
       "note": "Backlog from 2026-09-11; not a 2026-09-14 arXiv announcement.",
       "reappearances": [],
       "title": "Is Gaussian Splatting Becoming Neural Again? A Taxonomy and Controlled Study of Learned Parameterization"
+    },
+    "2609.15659": {
+      "title": "Kaininja: Extending Native 3D Generators to the Part Level",
+      "digest": "2026-09-16",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "reappearances": []
+    },
+    "2609.15746": {
+      "title": "TopoRig: Topology-Agnostic Facial Rigging via Multi-Source Supervision",
+      "digest": "2026-09-16",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "reappearances": []
+    },
+    "2609.15392": {
+      "title": "ESG: Generating Physically Consistent Dynamic 3D Scenes from Text Descriptions",
+      "digest": "2026-09-16",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "reappearances": []
+    },
+    "2609.15735": {
+      "title": "Transforming harmonic coefficients for 3D splat compression",
+      "digest": "2026-09-16",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "reappearances": []
+    },
+    "2609.14899": {
+      "title": "What Makes a 3D Scene Editable? A Factorized Benchmark of Fidelity, Locality, Consistency, and Preservation",
+      "digest": "2026-09-16",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "reappearances": []
+    },
+    "2609.14971": {
+      "title": "Opacity Is Not Just Opacity",
+      "digest": "2026-09-16",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-16",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-13",
+  "updated": "2026-09-16",
   "version": 1
 }
