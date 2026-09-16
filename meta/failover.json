@@ -195,9 +195,24 @@
       "type": "register",
       "bot": "Neon",
       "detail": "Maintainer assigned Cream as order 1 primary at 06:00 Beijing time and Neon as order 2 standby at 06:30; final deadline 07:00; Cream interest sync remains 05:00."
+    },
+    {
+      "at": "2026-09-17T06:24:12+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+      "expires_at": "2026-09-17T06:30:00+08:00",
+      "detail": "Primary Cream claimed 2026-09-17 within its 06:00-06:30 HKT window; lease expires at window end."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null
+  "claim": {
+    "publish_date": "2026-09-17",
+    "bot": "Cream",
+    "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+    "claimed_at": "2026-09-17T06:24:12+08:00",
+    "expires_at": "2026-09-17T06:30:00+08:00"
+  }
 }
