@@ -1,30 +1,30 @@
 {
   "version": 4,
   "timezone": "Asia/Hong_Kong",
-  "scheduled_publish": "05:30",
-  "scheduled_cron": "30 5 * * *",
+  "scheduled_publish": "06:00",
+  "scheduled_cron": "0 6 * * *",
   "failover_grace_minutes": 30,
-  "failover_check_time": "06:00",
-  "failover_check_cron": "0 6 * * *",
+  "failover_check_time": "06:30",
+  "failover_check_cron": "30 6 * * *",
   "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
-      "code": "Neon",
+      "code": "Cream",
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "At 05:30, perform the lightweight success guard; only if today is still missing, publish and update this table.",
-      "claim_window_start": "05:30",
-      "claim_window_end": "06:00"
+      "duties": "At 06:00 Beijing time (UTC+8), perform the primary success guard and publish if missing. Interest-notes sync at 05:00.",
+      "claim_window_start": "06:00",
+      "claim_window_end": "06:30"
     },
     {
-      "code": "Cream",
+      "code": "Neon",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:00, perform only the failover check; claim ownership with compare-and-swap before any research or publishing work. Interest-notes sync at 05:00.",
-      "claim_window_start": "06:00",
-      "claim_window_end": "06:30"
+      "duties": "At 06:30 Beijing time (UTC+8), check failover and CAS claim before research or publishing; report the check result.",
+      "claim_window_start": "06:30",
+      "claim_window_end": "07:00"
     }
   ],
   "active_owner": "Cream",
@@ -189,6 +189,12 @@
       "publish_date": "2026-09-16",
       "claim_id": "cbbf21df-67fb-40d4-91f3-1c0ac8cb1ef4",
       "detail": "Failover publish digests/2026-09-16.md covering 2026-09-15 with KaiNinja, TopoRig, ESG, SH compression, EditBench3D, Opacity after Neon miss."
+    },
+    {
+      "at": "2026-09-16T09:09:32.309Z",
+      "type": "register",
+      "bot": "Neon",
+      "detail": "Maintainer assigned Cream as order 1 primary at 06:00 Beijing time and Neon as order 2 standby at 06:30; final deadline 07:00; Cream interest sync remains 05:00."
     }
   ],
   "claim_lease_minutes": 30,

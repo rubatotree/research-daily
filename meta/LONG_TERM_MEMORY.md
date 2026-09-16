@@ -48,13 +48,13 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 3b. 多 Bot 故障转移（自动维护）
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
-- **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
-- **定时：** Neon 在 05:30 HKT 做主发布守卫；Cream 在 06:00 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
+- **名册：** Cream = order 1 active primary；Neon = order 2 active standby。
+- **定时：** Cream 在 06:00 HKT 做主发布守卫；Neon 在 06:30 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
 - **通知：** Cream 05:00 与各 standby 的 failover 检查任务结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
 - **有限租约：** 所有发布者先 CAS claim（日期、代号、随机 claim_id、认领与过期时间）；最长 30 分钟且截断到本级窗口末端，不续租。过期不阻止下一级；发布前复核租约，并将全部产物和成功状态原子提交。详见 failover.md v4。
-- **无竞态接管：** failover 检查时刻的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:00 后并发 self-heal。
+- **无竞态接管：** failover 检查时刻的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:30 后并发 self-heal。
 - **发布状态：** 每次成功发布更新 `last_success`、`active_owner` 并追加 `events`；不删除历史。
 - **署名：** 日报覆盖说明与 git commit 正文都须署实际执笔代号。
 - **故障说明：** 若因前序 Bot 窗口内未成功出稿而由后顺位接管发布，须在日报**最下方**（`**编写：**` 之后）备注故障情况（接管者、时间、失效顺位与可核验依据）；正常按时发布不写。详见 `digest-spec.md` / `failover.md`。
@@ -62,7 +62,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 4. 日期与节奏
 
-- **定时：** 每天 `05:30`，cron `30 5 * * *`，时区 Asia/Hong_Kong
+- **定时：** 每天 `06:00`，cron `0 6 * * *`，时区 Asia/Hong_Kong
 - **自 2026-09-08 起**须每日执行
 - **发布日** = 文件名日期 = 站点选日 = 早上跑任务的「今天」
 - **内容覆盖日** = **前一自然日**（例：`2026-09-07.md` 写 2026-09-06 的新稿）
@@ -124,11 +124,14 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 1. 阅读并遵守：`digest-spec.md`、`privacy.md`、`failover.json`、`failover.md` 与本文件
 2. 将 `bot-handoff-prompt.md` 全文设为新 Bot 的系统/定时任务说明（或按其裁剪）
 3. 按 `bot-repro.md` 连接 GitHub（本仓写权限）
-4. 确认私有代号，并只按当前名册的角色安装任务：primary 05:30；standby 06:00
+4. 确认私有代号，并只按当前名册的角色安装任务：primary 06:00；standby 06:30
 5. 用最近一篇 `digests/*.md` 做字段对照自检
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
 ## 11. 变更日志（公开记忆）
+
+- 2026-09-16：维护者指定 Cream 主发布 06:00、Neon 备用 06:30（北京时间，UTC+8）；末级窗口到 07:00；Cream 05:00 兴趣同步保留。
+
 
 - 2026-09-14：补齐 v4 有限认领租约、过期接管、每日资格重置与发布前 claim_id 复核；末级超时停止并报告。保持既有名册、发布时间和历史发布记录。
 
