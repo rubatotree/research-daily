@@ -204,15 +204,25 @@
       "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
       "expires_at": "2026-09-17T06:30:00+08:00",
       "detail": "Primary Cream claimed 2026-09-17 within its 06:00-06:30 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-17T06:25:06+08:00",
+      "type": "fail",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+      "detail": "Primary Cream released claim after late wake (~06:23 HKT); remaining window before 06:30 insufficient for full digest publish."
+    },
+    {
+      "at": "2026-09-17T06:25:06+08:00",
+      "type": "release",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+      "detail": "Released 2026-09-17 claim; standby Neon may claim in its 06:30-07:00 window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-17",
-    "bot": "Cream",
-    "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
-    "claimed_at": "2026-09-17T06:24:12+08:00",
-    "expires_at": "2026-09-17T06:30:00+08:00"
-  }
+  "claim": null
 }
