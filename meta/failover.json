@@ -252,6 +252,31 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-17."
+    },
+    {
+      "at": "2026-09-18T05:48:16+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
+      "expires_at": "2026-09-18T06:00:00+08:00",
+      "detail": "Primary Cream claimed 2026-09-18 within its 05:30-06:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-18T05:48:16+08:00",
+      "type": "fail",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
+      "detail": "Primary Cream released claim after late wake (~05:48 HKT); remaining window before 06:00 insufficient for full digest publish."
+    },
+    {
+      "at": "2026-09-18T05:48:16+08:00",
+      "type": "release",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
+      "detail": "Released 2026-09-18 claim; standby Neon may claim in its 06:00-06:30 window."
     }
   ],
   "claim_lease_minutes": 30,
