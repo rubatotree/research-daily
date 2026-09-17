@@ -49,7 +49,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
 - **名册：** Cream = order 1 active primary；Neon = order 2 active standby。
-- **定时：** Cream 在 06:00 HKT 做主发布守卫；Neon 在 06:30 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
+- **定时：** Cream 在 05:30 HKT 做主发布守卫；Neon 在 06:00 HKT 仅做 failover 检查；Cream 另于 **05:00** 同步兴趣笔记。
 - **通知：** Cream 05:00 与各 standby 的 failover 检查任务结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
@@ -62,7 +62,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 4. 日期与节奏
 
-- **定时：** 每天 `06:00`，cron `0 6 * * *`，时区 Asia/Hong_Kong
+- **定时：** 每天 `05:30`，cron `30 5 * * *`，时区 Asia/Hong_Kong
 - **自 2026-09-08 起**须每日执行
 - **发布日** = 文件名日期 = 站点选日 = 早上跑任务的「今天」
 - **内容覆盖日** = **前一自然日**（例：`2026-09-07.md` 写 2026-09-06 的新稿）
@@ -124,12 +124,13 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 1. 阅读并遵守：`digest-spec.md`、`privacy.md`、`failover.json`、`failover.md` 与本文件
 2. 将 `bot-handoff-prompt.md` 全文设为新 Bot 的系统/定时任务说明（或按其裁剪）
 3. 按 `bot-repro.md` 连接 GitHub（本仓写权限）
-4. 确认私有代号，并只按当前名册的角色安装任务：primary 06:00；standby 06:30
+4. 确认私有代号，并只按当前名册的角色安装任务：primary 05:30；standby 06:00
 5. 用最近一篇 `digests/*.md` 做字段对照自检
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
 ## 11. 变更日志（公开记忆）
 
+- 2026-09-17：维护者将 Cream 主发布改回 **05:30 HKT**（窗口 05:30–06:00），Neon standby **06:00**（窗口 06:00–06:30）；因当日 06:00 窗唤醒过晚且 Neon 未接管。
 - 2026-09-16：维护者指定 Cream 主发布 06:00、Neon 备用 06:30（北京时间，UTC+8）；末级窗口到 07:00；Cream 05:00 兴趣同步保留。
 
 

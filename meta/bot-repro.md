@@ -44,7 +44,7 @@
 4. 连接 GitHub（本仓写权限）；可选 X
 5. 用最近样例 digest 校验：标题栏会议/时间、速览锚点、方法概要、覆盖说明、编写署名、故障说明（仅接管稿）、无隐私泄漏
 6. 阅读近几天**非本人**署名日报以学习文风（清晰易读、重点分明；允许创新）
-7. 只按其名册角色启用一个任务：primary 使用 `0 6 * * *`；standby 使用 `30 6 * * *`，并实现 failover.md v4 的有限租约、CAS claim 与发布前隔离检查
+7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`；standby 使用 `0 6 * * *`，并实现 failover.md v4 的有限租约、CAS claim 与发布前隔离检查
 
 ## 站点
 - https://rubatotree.github.io/research-daily/

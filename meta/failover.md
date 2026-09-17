@@ -9,7 +9,7 @@
 1. **公开代号，私有认领**
    仓内只登记代号与顺位；「我是哪个代号」只存在该 Bot 的私有记忆。通用接管文案不得写死某个读者的代号。
 2. **名册与时间**
-   Cream 是 `order: 1` 的 active primary，正常任务仅在 **06:00 Asia/Hong_Kong** 启动；Neon 是 `order: 2` 的 active standby，仅在 **06:30** 做 failover 检查。计划字段以 `failover.json` 为准。Cream 另在 **05:00** 同步公开兴趣笔记（非发布任务）。
+   Cream 是 `order: 1` 的 active primary，正常任务仅在 **05:30 Asia/Hong_Kong** 启动；Neon 是 `order: 2` 的 active standby，仅在 **06:00** 做 failover 检查。计划字段以 `failover.json` 为准。Cream 另在 **05:00** 同步公开兴趣笔记（非发布任务）。
 3. **状态与日志**
    `active_owner` 表示当前应对「今日发布」负责的代号。每次成功发布必须更新 `last_success`、`active_owner` 并**追加** `events`；不删除历史。
 4. **公开安全**
@@ -26,17 +26,17 @@
 
 任一关键状态矛盾时视为**未确认成功**；先重新读取最新 main，不得凭单一信号重写日报。
 
-## 06:00 primary — Cream
+## 05:30 primary — Cream
 
 1. 任务启动后只做轻量守卫：读取最新 `failover.json`、`digests/index.json`，并检查当日 digest 是否存在。
 2. 若今天已经成功发布，立即结束。不得搜索论文、读 PDF、写稿、提交或做「确认正常」的无意义修改。
 3. 若 Cream 不再是 `order: 1` 的 active primary，立即结束。
 4. 仅当今天缺稿且 Cream 仍是 active primary 时，先按下述租约协议 CAS claim，成功后才进入完整日报流水线。
-5. 06:30 之后，只要存在 active standby，primary 不得与 standby 并发 self-heal。
+5. 06:00 之后，只要存在 active standby，primary 不得与 standby 并发 self-heal。
 
-## standby failover — Neon（06:30）
+## standby failover — Neon（06:00）
 
-standby 任务只做检查；若今日已成功，立即结束。Neon（order 2）仅在 **06:30** 启动。若仍缺稿，开始任何论文检索前必须取得 ownership：
+standby 任务只做检查；若今日已成功，立即结束。Neon（order 2）仅在 **06:00** 启动。若仍缺稿，开始任何论文检索前必须取得 ownership：
 
 1. 读取最新 `failover.json`、`digests/index.json`、当日 digest，记录所读版本/commit。
 2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby（当前时刻落在自己的认领窗口，且不存在当日有效租约；更早层级的过期 claim 不再阻止接管）。
@@ -56,8 +56,8 @@ standby 任务只做检查；若今日已成功，立即结束。Neon（order 2�
 
 | Bot | 可以认领和发布的窗口 |
 |---|---|
-| Cream | [06:00, 06:30) |
-| Neon | [06:30, 07:00) |
+| Cream | [05:30, 06:00) |
+| Neon | [06:00, 06:30) |
 
 机器可读窗口位于各 bot 的 `claim_window_start/end`。晚启动不会延长窗口；已错过窗口的 Bot 退出。禁用或移除的 Bot 不再有发布权。名册调整须同步这些窗口与调度器。
 
@@ -74,9 +74,9 @@ standby 任务只做检查；若今日已成功，立即结束。Neon（order 2�
 
 ### 超时、失败与逐级接管
 
-到窗口末端，当前 Bot 停止生成及发布；即使没有成功写入 release，时间到期也会解除占用。下一层在自己的窗口检查并 CAS 替换过期租约；例如 Cream 06:00 认领后卡死，Neon 06:30 可接管。
+到窗口末端，当前 Bot 停止生成及发布；即使没有成功写入 release，时间到期也会解除占用。下一层在自己的窗口检查并 CAS 替换过期租约；例如 Cream 05:30 认领后卡死，Neon 06:00 可接管。
 当前持有者可在有效期内 CAS 追加 fail/release 并清空 claim；不得清除其他 claim_id。主动失败也不提前唤醒下一层。
-最后一级到 07:00 仍未成功则停止自动尝试并向维护者报告，等待人工安排恢复，不无限重试。
+最后一级到 06:30 仍未成功则停止自动尝试并向维护者报告，等待人工安排恢复，不无限重试。
 跨过 HKT 午夜的进程必须退出，不得把昨日草稿改作今日稿发布。
 
 ### 发布前复核与原子提交

@@ -1,11 +1,11 @@
 {
   "version": 4,
   "timezone": "Asia/Hong_Kong",
-  "scheduled_publish": "06:00",
-  "scheduled_cron": "0 6 * * *",
+  "scheduled_publish": "05:30",
+  "scheduled_cron": "30 5 * * *",
   "failover_grace_minutes": 30,
-  "failover_check_time": "06:30",
-  "failover_check_cron": "30 6 * * *",
+  "failover_check_time": "06:00",
+  "failover_check_cron": "0 6 * * *",
   "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
   "bots": [
     {
@@ -13,18 +13,18 @@
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "At 06:00 Beijing time (UTC+8), perform the primary success guard and publish if missing. Interest-notes sync at 05:00.",
-      "claim_window_start": "06:00",
-      "claim_window_end": "06:30"
+      "duties": "At 05:30 Asia/Hong_Kong, perform the primary success guard and publish if missing. Interest-notes sync at 05:00.",
+      "claim_window_start": "05:30",
+      "claim_window_end": "06:00"
     },
     {
       "code": "Neon",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:30 Beijing time (UTC+8), check failover and CAS claim before research or publishing; report the check result.",
-      "claim_window_start": "06:30",
-      "claim_window_end": "07:00"
+      "duties": "At 06:00 Asia/Hong_Kong, check failover and CAS claim before research or publishing; report the check result.",
+      "claim_window_start": "06:00",
+      "claim_window_end": "06:30"
     }
   ],
   "active_owner": "Cream",
@@ -220,6 +220,12 @@
       "publish_date": "2026-09-17",
       "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
       "detail": "Released 2026-09-17 claim; standby Neon may claim in its 06:30-07:00 window."
+    },
+    {
+      "at": "2026-09-17T11:45:15+08:00",
+      "type": "register",
+      "bot": "Cream",
+      "detail": "Maintainer moved Cream primary wake/publish to 05:30 HKT (window 05:30–06:00); Neon standby failover check to 06:00 (window 06:00–06:30). Reason: 2026-09-17 late wake left insufficient time in the old 06:00–06:30 window and Neon did not take over. Cream interest sync remains 05:00."
     }
   ],
   "claim_lease_minutes": 30,
