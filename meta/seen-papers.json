@@ -456,9 +456,44 @@
       "content_day": "2026-09-15",
       "first_seen": "2026-09-16",
       "reappearances": []
+    },
+    "2609.18473": {
+      "title": "CADSplat: Sparse-View 3D Gaussian Splatting Aided by CAD Models for Robust, Photorealistic Digital-Twin Reconstruction",
+      "digest": "2026-09-17",
+      "content_day": "2026-09-16",
+      "first_seen": "2026-09-17",
+      "reappearances": []
+    },
+    "2609.18504": {
+      "title": "InterMASH: A Unified Geometric Representation for Grasp Synthesis",
+      "digest": "2026-09-17",
+      "content_day": "2026-09-16",
+      "first_seen": "2026-09-17",
+      "reappearances": []
+    },
+    "2609.17524": {
+      "title": "Modality-Autoregressive World-Action Models",
+      "digest": "2026-09-17",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-17",
+      "reappearances": []
+    },
+    "2609.17521": {
+      "title": "PhysStream: Streaming Physics-Grounded Video Generation with Structured Scene Memory and Fine-Grained Motion Control",
+      "digest": "2026-09-17",
+      "content_day": "2026-09-15",
+      "first_seen": "2026-09-17",
+      "reappearances": []
+    },
+    "2609.18624": {
+      "title": "MoQSplat: Adaptive Progressive Streaming of 3D Gaussian Splatting via MoQ",
+      "digest": "2026-09-17",
+      "content_day": "2026-09-16",
+      "first_seen": "2026-09-17",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-16",
+  "updated": "2026-09-17",
   "version": 1
 }

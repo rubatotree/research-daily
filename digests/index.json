@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "content_day": "2026-09-16",
+      "date": "2026-09-17",
+      "figs": "digests/2026-09-17/figs/",
+      "path": "digests/2026-09-17.md",
+      "title": "CAD 先验钉住孪生几何，交互 token 统一跨手抓取，世界-动作先预测几何与运动"
+    },
+    {
       "content_day": "2026-09-15",
       "date": "2026-09-16",
       "figs": "digests/2026-09-16/figs/",

@@ -30,10 +30,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-16",
-    "at": "2026-09-16T06:18:09+08:00",
+    "publish_date": "2026-09-17",
+    "at": "2026-09-17T11:55:00+08:00",
     "commit": null,
-    "note": "Digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-16.md."
+    "note": "Maintainer-authorized delayed recovery publish after morning miss; digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-17.md."
   },
   "events": [
     {
@@ -232,6 +232,26 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Protocol fix: add claim_window_early_skew_minutes=2. Standby/primary may CAS claim from (start−2min) if today still missing and no valid prior lease; do not exit solely for waking ~1min early. Window end unchanged. Trigger: 2026-09-17 Neon woke ~06:29 under old 06:30 window and exited by strict left-closed rule."
+    },
+    {
+      "at": "2026-09-17T11:55:00+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "detail": "Maintainer-authorized out-of-window recovery: morning Cream claim released for insufficient window; Neon did not publish in standby window; digests/2026-09-17.md missing until this recovery."
+    },
+    {
+      "at": "2026-09-17T11:55:00+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "detail": "Recovery publish digests/2026-09-17.md covering 2026-09-16 with CADSplat, InterMASH, ModAR, PhysStream, MoQSplat after morning miss."
+    },
+    {
+      "at": "2026-09-17T11:55:00+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-17."
     }
   ],
   "claim_lease_minutes": 30,
