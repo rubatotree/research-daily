@@ -6,7 +6,7 @@
   "failover_grace_minutes": 30,
   "failover_check_time": "06:00",
   "failover_check_cron": "0 6 * * *",
-  "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order.",
+  "description": "Multi-bot maintainer roster + optimistic-concurrency failover for research-daily. Each bot knows its own code only in private agent memory; this file lists public codes and order. claim_window_early_skew_minutes allows CAS claim up to that many minutes before claim_window_start to absorb scheduler wake skew; lease still ends at claim_window_end (no extension).",
   "bots": [
     {
       "code": "Cream",
@@ -226,9 +226,16 @@
       "type": "register",
       "bot": "Cream",
       "detail": "Maintainer moved Cream primary wake/publish to 05:30 HKT (window 05:30–06:00); Neon standby failover check to 06:00 (window 06:00–06:30). Reason: 2026-09-17 late wake left insufficient time in the old 06:00–06:30 window and Neon did not take over. Cream interest sync remains 05:00."
+    },
+    {
+      "at": "2026-09-17T11:49:59+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Protocol fix: add claim_window_early_skew_minutes=2. Standby/primary may CAS claim from (start−2min) if today still missing and no valid prior lease; do not exit solely for waking ~1min early. Window end unchanged. Trigger: 2026-09-17 Neon woke ~06:29 under old 06:30 window and exited by strict left-closed rule."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null
+  "claim": null,
+  "claim_window_early_skew_minutes": 2
 }

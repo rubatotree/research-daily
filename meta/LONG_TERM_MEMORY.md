@@ -54,6 +54,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
 - **有限租约：** 所有发布者先 CAS claim（日期、代号、随机 claim_id、认领与过期时间）；最长 30 分钟且截断到本级窗口末端，不续租。过期不阻止下一级；发布前复核租约，并将全部产物和成功状态原子提交。详见 failover.md v4。
+- **提前唤醒宽限：** `claim_window_early_skew_minutes`（默认 2）允许在名义 `claim_window_start` 之前最多该分钟数内认领，避免 cron 早唤醒 1 分钟导致 standby 误退出；窗口结束时刻不延长。
 - **无竞态接管：** failover 检查时刻的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:30 后并发 self-heal。
 - **发布状态：** 每次成功发布更新 `last_success`、`active_owner` 并追加 `events`；不删除历史。
 - **署名：** 日报覆盖说明与 git commit 正文都须署实际执笔代号。

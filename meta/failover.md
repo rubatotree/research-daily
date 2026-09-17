@@ -39,7 +39,7 @@
 standby 任务只做检查；若今日已成功，立即结束。Neon（order 2）仅在 **06:00** 启动。若仍缺稿，开始任何论文检索前必须取得 ownership：
 
 1. 读取最新 `failover.json`、`digests/index.json`、当日 digest，记录所读版本/commit。
-2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby（当前时刻落在自己的认领窗口，且不存在当日有效租约；更早层级的过期 claim 不再阻止接管）。
+2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby（当前时刻落在自己的**可认领区间** `[start−early_skew, end)`，且不存在当日有效租约；更早层级的过期 / 已 release 的 claim 不再阻止接管）。
 3. 基于**刚读取**的版本，以 compare-and-swap / 乐观并发语义提交一个仅含 claim/failover 的状态更新：追加 `claim`（可同时追加 `failover`），并将 `active_owner` 设为自己的代号，写入下述完整 `claim`。
 4. 若版本已变而写入失败，必须重新读取、重新判断；**不得**直接继续重工作。
 5. 只有成功 claim 的 Bot 才能开始完整日报生成。发布成功后再追加 `publish` 并更新 `last_success`。
@@ -59,7 +59,20 @@ standby 任务只做检查；若今日已成功，立即结束。Neon（order 2�
 | Cream | [05:30, 06:00) |
 | Neon | [06:00, 06:30) |
 
-机器可读窗口位于各 bot 的 `claim_window_start/end`。晚启动不会延长窗口；已错过窗口的 Bot 退出。禁用或移除的 Bot 不再有发布权。名册调整须同步这些窗口与调度器。
+机器可读窗口位于各 bot 的 `claim_window_start/end`。晚启动不会延长窗口；**窗口结束后**才退出。禁用或移除的 Bot 不再有发布权。名册调整须同步这些窗口与调度器。
+
+### 调度提前唤醒（early skew）
+
+平台 cron 常会比名义时刻早几十秒到一两分钟唤醒。**不得**仅因「尚未到 `claim_window_start`」就退出，否则会出现「差一分钟、今日无人接管」的假性失败（2026-09-17：Neon 约 06:29 检查却因严格左闭窗口退出）。
+
+规则（字段：`failover.json` 的 `claim_window_early_skew_minutes`，当前默认 **2**）：
+
+1. 记 `start` / `end` 为本级 `claim_window_start` / `claim_window_end`（发布日 HKT）。
+2. **可认领区间：** `[start − early_skew, end)`（仍与名义窗口一样，结束时刻右开、不延长）。
+3. 在可认领区间内，若今日仍缺稿、且不存在**有效**前序租约，即可 CAS claim；`expires_at` 仍截断到本级 `end`，**不**因提前唤醒而加长租约。
+4. 若 `now < start − early_skew`：才视为过早，结束本轮并在检查报告中写明「早于 early_skew，未认领」；可提示维护者核对调度，但**不要**把「早 1 分钟」写成协议禁止接管。
+5. 若 `now >= end`：已错过本级窗口，退出（由更后顺位或人工处理）。
+6. 前序 Bot 已 `release` / 租约过期且今日缺稿时，后序 Bot 只要落入自己的可认领区间（含 early skew）就必须尝试接管，不得以「名义 start 未到」为由放弃。
 
 认领成功时原子写入：
 - `claim.publish_date`：HKT 发布日。
