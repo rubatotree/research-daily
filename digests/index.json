@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-19",
+      "content_day": "2026-09-18",
+      "path": "digests/2026-09-19.md",
+      "title": "稀疏观测估关节，生成潜空间解功能结构，人手视频成可仿真铰链",
+      "figs": "digests/2026-09-19/figs/"
+    },
+    {
       "content_day": "2026-09-17",
       "date": "2026-09-18",
       "figs": "digests/2026-09-18/figs/",

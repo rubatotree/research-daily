@@ -32,10 +32,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-18",
-    "at": "2026-09-18T09:06:15+08:00",
+    "publish_date": "2026-09-19",
+    "at": "2026-09-19T05:33:58+08:00",
     "commit": null,
-    "note": "Maintainer-authorized delayed recovery publish after morning late wake and Neon no takeover; digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-18.md."
+    "note": "Primary on-time publish for 2026-09-19 covering content day 2026-09-18."
   },
   "events": [
     {
@@ -314,17 +314,19 @@
       "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
       "expires_at": "2026-09-19T05:59:17+08:00",
       "detail": "Primary Cream claimed 2026-09-19 within early-skew of its 05:30-06:20 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-19T05:33:58+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-19",
+      "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
+      "detail": "Published digests/2026-09-19.md covering 2026-09-18; articulation/Real2Sim focus (FAMOS, FunArt, Track Articulate Act, StageGuard, RGS)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-19",
-    "bot": "Cream",
-    "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
-    "claimed_at": "2026-09-19T05:29:17+08:00",
-    "expires_at": "2026-09-19T05:59:17+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25

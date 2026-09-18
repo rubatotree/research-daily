@@ -520,9 +520,46 @@
       "first_seen": "2026-09-18",
       "note": "Backlog from 2026-09-16; first included on recovery publish 2026-09-18.",
       "reappearances": []
+    },
+    "2609.20817": {
+      "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+      "content_day": "2026-09-18",
+      "digest": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "reappearances": []
+    },
+    "2609.20673": {
+      "title": "FunArt: Decoding Functional Structure and Articulation from Generative 3D Latents",
+      "content_day": "2026-09-18",
+      "digest": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "reappearances": []
+    },
+    "2609.19119": {
+      "title": "Track, Articulate, Act: Generating Articulation from Casual Human Videos",
+      "content_day": "2026-09-18",
+      "digest": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "reappearances": [],
+      "note": "Neighbor-day backlog (arXiv 2026-09-16); first inclusion."
+    },
+    "2609.20791": {
+      "title": "StageGuard: Learning Stage Transitions for Long-Horizon Robot Tasks via Agentic Distillation",
+      "content_day": "2026-09-18",
+      "digest": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "reappearances": []
+    },
+    "2609.19421": {
+      "title": "RGS: Reflection-aware Gaussian Splatting via Learning Geometry Continuity for Reflective Objects",
+      "content_day": "2026-09-18",
+      "digest": "2026-09-19",
+      "first_seen": "2026-09-19",
+      "reappearances": [],
+      "note": "Neighbor-day backlog (arXiv 2026-09-16); ICRA 2026 per author comments."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "version": 1
 }
