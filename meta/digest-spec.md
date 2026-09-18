@@ -111,7 +111,7 @@
 - X：关键词检索（估成本；**过程与额度不写进正文或公开 meta**）
 
 ## 节奏
-- 正常 primary 只在每天 05:30（Asia/Hong_Kong）运行；名册以 `failover.json` 为准（当前：Cream primary 05:30 → Neon 06:00）。
+- 正常 primary 只在每天 05:30（Asia/Hong_Kong）运行；名册以 `failover.json` 为准（当前：Cream primary 名义 05:30／cron 05:10 → Neon 06:20）。
 - standby 仅在本级 failover 检查时刻运行，且必须先按 `failover.md` 完成 CAS claim。
 - 两类任务均先做成功守卫；今日已成功则不启动检索/全文阅读/写作。
 - 自 2026-09-08 起须稳定执行
