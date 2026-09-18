@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "content_day": "2026-09-17",
+      "date": "2026-09-18",
+      "figs": "digests/2026-09-18/figs/",
+      "path": "digests/2026-09-18.md",
+      "title": "零件库检索式装配，PBR 高斯脱光照，示教增强先保住接触面"
+    },
+    {
       "content_day": "2026-09-16",
       "date": "2026-09-17",
       "figs": "digests/2026-09-17/figs/",

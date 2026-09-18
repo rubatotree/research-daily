@@ -32,10 +32,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-17",
-    "at": "2026-09-17T11:55:00+08:00",
+    "publish_date": "2026-09-18",
+    "at": "2026-09-18T09:06:15+08:00",
     "commit": null,
-    "note": "Maintainer-authorized delayed recovery publish after morning miss; digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-17.md."
+    "note": "Maintainer-authorized delayed recovery publish after morning late wake and Neon no takeover; digest, figures, index, seen-papers and this publish event are recorded in one commit; resolve the publishing commit from the history of digests/2026-09-18.md."
   },
   "events": [
     {
@@ -285,6 +285,26 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Late-wake fix: primary platform cron advanced to 05:10 (nominal publish still 05:30); Cream claim window extended to [05:30,06:20); Neon standby [06:20,06:50) check cron 06:20; interest sync cron 04:45; document scheduler_lag_compensation_minutes=20 and min_remaining_minutes_to_start_full_publish=25. Evidence: 2026-09-17 wake~06:23 / 2026-09-18 wake~05:48 under prior schedules."
+    },
+    {
+      "at": "2026-09-18T09:06:15+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "detail": "Maintainer-authorized out-of-window recovery: morning Cream claim released for insufficient window (~05:48 HKT); Neon did not publish in standby window; digests/2026-09-18.md missing until this recovery."
+    },
+    {
+      "at": "2026-09-18T09:06:15+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "detail": "Recovery publish digests/2026-09-18.md covering 2026-09-17 with PART, GS-PI, FPSA (Sep-16 backlog), LYRIC after morning miss."
+    },
+    {
+      "at": "2026-09-18T09:06:15+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-18."
     }
   ],
   "claim_lease_minutes": 30,

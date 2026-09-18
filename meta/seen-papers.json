@@ -491,9 +491,38 @@
       "content_day": "2026-09-16",
       "first_seen": "2026-09-17",
       "reappearances": []
+    },
+    "2609.19872": {
+      "title": "PART: Learning 3D Part Assembly and Retrieval with Transformers",
+      "digest": "2026-09-18",
+      "content_day": "2026-09-17",
+      "first_seen": "2026-09-18",
+      "reappearances": []
+    },
+    "2609.19907": {
+      "title": "GS-PI: An Optimization-Decoupled Appearance Decomposition Approach for Generating PBR Gaussian Assets",
+      "digest": "2026-09-18",
+      "content_day": "2026-09-17",
+      "first_seen": "2026-09-18",
+      "reappearances": []
+    },
+    "2609.19688": {
+      "title": "LYRIC: Language-Driven Physics-Based Character Control for Contact-Rich Whole-Body Object Interaction",
+      "digest": "2026-09-18",
+      "content_day": "2026-09-17",
+      "first_seen": "2026-09-18",
+      "reappearances": []
+    },
+    "2609.18293": {
+      "title": "Function-Preserving Data Generation for Zero-Shot Real-to-Sim-to-Real Manipulation",
+      "digest": "2026-09-18",
+      "content_day": "2026-09-16",
+      "first_seen": "2026-09-18",
+      "note": "Backlog from 2026-09-16; first included on recovery publish 2026-09-18.",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-17",
+  "updated": "2026-09-18",
   "version": 1
 }
