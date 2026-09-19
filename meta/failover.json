@@ -32,10 +32,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-19",
-    "at": "2026-09-19T05:33:58+08:00",
+    "publish_date": "2026-09-20",
+    "at": "2026-09-20T05:31:46+08:00",
     "commit": null,
-    "note": "Primary on-time publish for 2026-09-19 covering content day 2026-09-18."
+    "note": "Primary on-time publish for 2026-09-20 covering content day 2026-09-19 (weekend neighbor backlog)."
   },
   "events": [
     {
@@ -331,17 +331,19 @@
       "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
       "expires_at": "2026-09-20T05:58:12+08:00",
       "detail": "Primary Cream claimed 2026-09-20 within early-skew of its 05:30-06:20 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-20T05:31:46+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-20",
+      "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
+      "detail": "Published digests/2026-09-20.md covering 2026-09-19 weekend backlog (PointZero, ParticleSplat, CoRef-GS, PhGS, Energy-IL)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-20",
-    "bot": "Cream",
-    "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
-    "claimed_at": "2026-09-20T05:28:12+08:00",
-    "expires_at": "2026-09-20T05:58:12+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25

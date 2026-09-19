@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-20",
+      "content_day": "2026-09-19",
+      "path": "digests/2026-09-20.md",
+      "title": "无动作标签也能学 3D 动力学，粒子潜空间拆可编辑物体，合作地图仍能指代",
+      "figs": "digests/2026-09-20/figs/"
+    },
+    {
       "date": "2026-09-19",
       "content_day": "2026-09-18",
       "path": "digests/2026-09-19.md",

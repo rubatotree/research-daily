@@ -557,9 +557,49 @@
       "first_seen": "2026-09-19",
       "reappearances": [],
       "note": "Neighbor-day backlog (arXiv 2026-09-16); ICRA 2026 per author comments."
+    },
+    "2609.19142": {
+      "title": "PointZero: 3D Point Track Completion for Learning Transferable 3D Dynamics",
+      "content_day": "2026-09-19",
+      "digest": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-16); first inclusion."
+    },
+    "2609.19463": {
+      "title": "ParticleSplat: Self-supervised Object-centric Latent Particle Splatting",
+      "content_day": "2026-09-19",
+      "digest": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-16); first inclusion."
+    },
+    "2609.20586": {
+      "title": "CoRef-GS: Cooperative Referring Gaussian Splatting for Multi-Agent Scene Understanding",
+      "content_day": "2026-09-19",
+      "digest": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-17); first inclusion."
+    },
+    "2609.20623": {
+      "title": "PhGS: Post-Hoc Pruning and Refinement of Single-View Feed-Forward 3D Gaussian Reconstructions",
+      "content_day": "2026-09-19",
+      "digest": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-17); first inclusion."
+    },
+    "2609.18164": {
+      "title": "Energy-Regularized Imitation Learning for Force- and Work-Aware Robotic Manipulation",
+      "content_day": "2026-09-19",
+      "digest": "2026-09-20",
+      "first_seen": "2026-09-20",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-16); ECCV 2026 Workshop per Comments."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "version": 1
 }
