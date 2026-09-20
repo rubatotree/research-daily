@@ -39,7 +39,7 @@
 standby 任务只做检查；若今日已成功，立即结束。Cream（order 2）在名义 **06:20** 启动（平台 cron 06:00；可用 early skew）。若仍缺稿，开始任何论文检索前必须取得 ownership：
 
 1. 读取最新 `failover.json`、`digests/index.json`、当日 digest，记录所读版本/commit。
-2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby（当前时刻落在自己的**可认领区间** `[start−early_skew, end)`，且不存在当日有效租约；更早层级的过期 / 已 release 的 claim 不再阻止接管）。
+2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby。若尚未进入可认领区间 `[start−early_skew, end)`，先 **等待到该区间**（见 early skew 第 4 条），再确认无当日有效租约；更早层级的过期 / 已 release 的 claim 不再阻止接管。
 3. 基于**刚读取**的版本，以 compare-and-swap / 乐观并发语义提交一个仅含 claim/failover 的状态更新：追加 `claim`（可同时追加 `failover`），并将 `active_owner` 设为自己的代号，写入下述完整 `claim`。
 4. 若版本已变而写入失败，必须重新读取、重新判断；**不得**直接继续重工作。
 5. 只有成功 claim 的 Bot 才能开始完整日报生成。发布成功后再追加 `publish` 并更新 `last_success`。
@@ -70,9 +70,13 @@ standby 任务只做检查；若今日已成功，立即结束。Cream（order 2
 1. 记 `start` / `end` 为本级 `claim_window_start` / `claim_window_end`（发布日 HKT）。
 2. **可认领区间：** `[start − early_skew, end)`（仍与名义窗口一样，结束时刻右开、不延长）。
 3. 在可认领区间内，若今日仍缺稿、且不存在**有效**前序租约，即可 CAS claim；`expires_at` 仍截断到本级 `end`，**不**因提前唤醒而加长租约。
-4. 若 `now < start − early_skew`：才视为过早，结束本轮并在检查报告中写明「早于 early_skew，未认领」；可提示维护者核对调度，但**不要**把「早 1 分钟」写成协议禁止接管。
+4. 若 `now < start − early_skew`：
+   - **不要直接退出。** 因平台 cron 常按 `scheduler_lag_compensation_minutes` 提前触发（例：名义 06:20、cron 06:00，实际可能 06:08 醒来），此时应 **等待到 `start − early_skew`（可用 sleep/短轮询）**，再重新做成功守卫；仍缺稿则进入认领。
+   - 等待期间若检测到今日已成功发布，立即结束并报告「仅确认」。
+   - 仅当本任务**并非**本级 `platform_cron` 唤醒、且明显早于 `start − scheduler_lag_compensation_minutes` 的无关误触时，才可结束并注明「过早误触」。
 5. 若 `now >= end`：已错过本级窗口，退出（由更后顺位或人工处理）。
-6. 前序 Bot 已 `release` / 租约过期且今日缺稿时，后序 Bot 只要落入自己的可认领区间（含 early skew）就必须尝试接管，不得以「名义 start 未到」为由放弃。
+6. 前序 Bot 已 `release` / 租约过期且今日缺稿时，后序 Bot 只要落入自己的可认领区间（含 early skew）就必须尝试接管，不得以「名义 start 未到」为由放弃；也不得在可认领起点之前因「再等几分钟」而整轮退出。
+7. **不得**为了「赶早」把 early_skew 扩到覆盖前序 Bot 的认领窗（避免与 primary 并发）；提前到点的正确动作是 **wait**，不是抢先 claim。
 
 ### 晚唤醒补偿与是否开写
 

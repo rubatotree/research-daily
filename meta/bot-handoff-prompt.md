@@ -80,7 +80,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 【故障转移与轻量守卫】
 先读取 meta/failover.json、digests/index.json，并检查当日 digests/YYYY-MM-DD.md；以 failover.json 的 timezone、scheduled_publish、failover_grace_minutes、bots 与 active_owner 为权威。
 「今日已成功」必须综合：当日 digest 存在、index 有当日条目、last_success.publish_date=今日、publish event 基本一致。已成功立即结束：不搜索、不读 PDF、不写稿、不提交。
-primary 与 standby 按各自名册角色分支执行，均须遵守 meta/failover.md 的 v4 租约协议。只有当前时刻位于自己的可认领区间 `[claim_window_start − claim_window_early_skew_minutes, claim_window_end)` 且今日缺稿、无有效租约时，才可基于最新 main CAS claim（early skew 默认 2 分钟，吸收调度提前唤醒；租约仍截断到 window_end）。不要仅凭 active_owner 判断资格；也不得仅因早于名义 start 一两分钟就退出。
+primary 与 standby 按各自名册角色分支执行，均须遵守 meta/failover.md 的 v4 租约协议。只有当前时刻位于自己的可认领区间 `[claim_window_start − claim_window_early_skew_minutes, claim_window_end)` 且今日缺稿、无有效租约时，才可基于最新 main CAS claim（early skew 默认 2 分钟；租约仍截断到 window_end）。若因 lag-compensated 平台 cron 提前醒来而尚未到可认领起点：**等待到起点再认领**，不要整轮退出。不要仅凭 active_owner 判断资格；不要把 early_skew 扩到侵占前序窗口。
 claim 含 publish_date、bot、随机 claim_id、claimed_at、expires_at；期限最多 30 分钟并截断到本级窗口结束，不续租。前一级 claim 过期即可接管；已错过窗口退出。未成功 claim 不得检索或写稿。
 发布前重读最新 main，复核日期、窗口、所有权、claim_id 与未过期；以该快照为唯一父提交，将全部产物与成功状态、清空 claim 一次非强制 fast-forward 推送。冲突重读重判，禁止自动 rebase 后直接推送。过期或被接管的旧进程禁止发布。末级窗口结束后超时报告，不无限重试（当前末级为 standby `claim_window_end`，见 failover.json）。
 你的代号只来自私有记忆；勿在公开仓把「你就是某某」写成通用指令。成功发布后用实际执笔代号更新 active_owner/last_success/events，并在日报末与 commit 正文署名。
