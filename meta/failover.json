@@ -29,7 +29,7 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Neon",
+  "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-09-20",
@@ -351,11 +351,33 @@
       "type": "heartbeat",
       "bot": "Cream",
       "detail": "Protocol fix: if platform cron wakes before claimable interval [start−early_skew, end), WAIT until that interval (re-check success), do not exit as too-early. Trigger: 2026-09-21 Cream standby woke ~06:08 (cron 06:00) but claimable from 06:18 only; exited and missed takeover chance while Neon still in primary window."
+    },
+    {
+      "at": "2026-09-21T06:19:31+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-21",
+      "detail": "Order-2 Cream taking over after Neon primary window [05:30,06:20) produced no digest; digests/2026-09-21.md and index entry missing; claim=null."
+    },
+    {
+      "at": "2026-09-21T06:19:31+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-21",
+      "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
+      "expires_at": "2026-09-21T06:49:31+08:00",
+      "detail": "Standby Cream claimed 2026-09-21 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-21",
+    "bot": "Cream",
+    "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
+    "claimed_at": "2026-09-21T06:19:31+08:00",
+    "expires_at": "2026-09-21T06:49:31+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
