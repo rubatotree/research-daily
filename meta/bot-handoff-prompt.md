@@ -37,7 +37,7 @@
 - 内容覆盖 = 前一自然日新稿（例：9/7 日报写 9/6）
 - 文末「覆盖说明」同时写：日报日期、内容覆盖日；周末无独立 arXiv 公告时可纳入相邻公告日积压，发布日仍用当天
 - digests/index.json 条目含 date 与 content_day
-- 每天按 failover.json 中自己的角色与窗口运行；primary 名义 05:30（平台 cron 05:10，窗至 06:20）、standby 06:20（Asia/Hong_Kong）；详见 failover.json 晚唤醒补偿。
+- 每天按 failover.json 中自己的角色与窗口运行；primary 名义 05:30（平台 cron 05:10，窗至 06:20）、standby 名义 06:20（平台 cron 06:00）（Asia/Hong_Kong）；详见 failover.json 晚唤醒补偿。当前名册 Neon primary → Cream standby。
 
 【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、interest-notes、failover、privacy、seen-papers；对照 blog/academic commits，有变则先更新 meta/ 再写日报。
 
@@ -107,7 +107,7 @@ claim 含 publish_date、bot、随机 claim_id、claimed_at、expires_at；期�
 - [ ] 能读 blog / academic commits
 - [ ] 用最近一篇 digest 对照字段与标题栏格式
 - [ ] 试跑不把额度、路径、密钥写进 diff
-- [ ] 按名册角色启用定时：primary `10 5 * * *`；standby `20 6 * * *`；兴趣同步 `45 4 * * *`
+- [ ] 按名册角色启用定时：primary `10 5 * * *`；standby `0 6 * * *`；兴趣同步 `45 4 * * *`
 
 
 ## 多 Bot 故障转移（接管时必读）
