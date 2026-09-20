@@ -597,9 +597,49 @@
       "first_seen": "2026-09-20",
       "reappearances": [],
       "note": "Weekend neighbor backlog (arXiv 2026-09-16); ECCV 2026 Workshop per Comments."
+    },
+    "2609.19661": {
+      "title": "ReShoot: Generative Visual Domain Randomization of Recorded Robot Demonstrations for Visuomotor Policy Learning",
+      "content_day": "2026-09-20",
+      "digest": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-17); first inclusion."
+    },
+    "2609.18004": {
+      "title": "Missing Bridges: Composition-Aware Active Imitation Learning",
+      "content_day": "2026-09-20",
+      "digest": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-16); first inclusion."
+    },
+    "2609.20524": {
+      "title": "S4R: Scaling for Rigid-Body Interpenetration Resolution",
+      "content_day": "2026-09-20",
+      "digest": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-17); SIGGRAPH Asia 2026 / TOG per manuscript."
+    },
+    "2609.20348": {
+      "title": "EliGSiR: Continual RGB-D Mapping with Gaussian Splatting under Bounded Compute",
+      "content_day": "2026-09-20",
+      "digest": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-17); first inclusion."
+    },
+    "2609.20477": {
+      "title": "Visual Sim-to-Real Learning for Robotic Insertion under Geometric Variations: Application to Rebar Installation",
+      "content_day": "2026-09-20",
+      "digest": "2026-09-21",
+      "first_seen": "2026-09-21",
+      "reappearances": [],
+      "note": "Weekend neighbor backlog (arXiv 2026-09-17); first inclusion."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-20",
+  "updated": "2026-09-21",
   "version": 1
 }

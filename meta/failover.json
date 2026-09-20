@@ -32,10 +32,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-20",
-    "at": "2026-09-20T05:31:46+08:00",
+    "publish_date": "2026-09-21",
+    "at": "2026-09-21T06:24:22+08:00",
     "commit": null,
-    "note": "Primary on-time publish for 2026-09-20 covering content day 2026-09-19 (weekend neighbor backlog)."
+    "note": "Failover publish for 2026-09-21 covering content day 2026-09-20 (weekend neighbor backlog); Neon primary window produced no digest."
   },
   "events": [
     {
@@ -367,17 +367,19 @@
       "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
       "expires_at": "2026-09-21T06:49:31+08:00",
       "detail": "Standby Cream claimed 2026-09-21 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-21T06:24:22+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-21",
+      "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
+      "detail": "Failover publish digests/2026-09-21.md covering 2026-09-20 with ReShoot, Missing Bridges, S4R, EliGSiR, RebarSim after Neon miss."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-21",
-    "bot": "Cream",
-    "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
-    "claimed_at": "2026-09-21T06:19:31+08:00",
-    "expires_at": "2026-09-21T06:49:31+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
