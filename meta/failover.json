@@ -6,7 +6,7 @@
   "failover_grace_minutes": 50,
   "failover_check_time": "06:20",
   "failover_check_cron": "0 6 * * *",
-  "description": "Multi-bot roster + CAS failover. scheduled_publish is the nominal wall-clock target; scheduled_cron / bots[].platform_cron fire earlier by scheduler_lag_compensation_minutes because the host often wakes agents ~15–20 minutes late. claim_window_early_skew_minutes allows claim shortly before start; min_remaining_minutes_to_start_full_publish gates late wakes that still have enough time.",
+  "description": "Multi-bot roster + CAS failover. scheduled_publish is the nominal wall-clock target; scheduled_cron / bots[].platform_cron fire earlier by scheduler_lag_compensation_minutes because the host often wakes agents ~15–20 minutes late. claim_window_early_skew_minutes allows claim shortly before start; min_remaining_minutes_to_start_full_publish gates late wakes that still have enough time. If a level wakes before its claimable interval due to lag-compensated early cron, it must wait until the interval begins rather than exiting.",
   "bots": [
     {
       "code": "Neon",
@@ -345,6 +345,12 @@
       "type": "register",
       "bot": "Cream",
       "detail": "Maintainer restored Neon as order 1 primary (nominal 05:30 / platform cron 05:10, window 05:30–06:20) and Cream as order 2 standby (failover check platform cron 06:00 for window 06:20–06:50). Cream interest sync remains 04:45. Late-wake compensation fields kept."
+    },
+    {
+      "at": "2026-09-21T06:09:57+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Protocol fix: if platform cron wakes before claimable interval [start−early_skew, end), WAIT until that interval (re-check success), do not exit as too-early. Trigger: 2026-09-21 Cream standby woke ~06:08 (cron 06:00) but claimable from 06:18 only; exited and missed takeover chance while Neon still in primary window."
     }
   ],
   "claim_lease_minutes": 30,
