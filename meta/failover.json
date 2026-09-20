@@ -5,31 +5,31 @@
   "scheduled_cron": "10 5 * * *",
   "failover_grace_minutes": 50,
   "failover_check_time": "06:20",
-  "failover_check_cron": "20 6 * * *",
+  "failover_check_cron": "0 6 * * *",
   "description": "Multi-bot roster + CAS failover. scheduled_publish is the nominal wall-clock target; scheduled_cron / bots[].platform_cron fire earlier by scheduler_lag_compensation_minutes because the host often wakes agents ~15–20 minutes late. claim_window_early_skew_minutes allows claim shortly before start; min_remaining_minutes_to_start_full_publish gates late wakes that still have enough time.",
   "bots": [
     {
-      "code": "Cream",
+      "code": "Neon",
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "Platform cron is 05:10 HKT to absorb ~15–20min wake lag; nominal publish 05:30. On wake: success guard; if missing and remaining time until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish. Interest-notes sync cron 04:45.",
+      "duties": "Platform cron 05:10 HKT absorbs ~15–20min wake lag; nominal publish 05:30. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish.",
       "claim_window_start": "05:30",
       "claim_window_end": "06:20",
       "platform_cron": "10 5 * * *"
     },
     {
-      "code": "Neon",
+      "code": "Cream",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "At 06:20 HKT (platform cron may fire slightly early; use early_skew), failover check; CAS claim if today missing. Window 06:20–06:50.",
+      "duties": "Platform cron 06:00 HKT for nominal 06:20 failover check (lag compensation). CAS claim if today missing within [06:20,06:50) incl. early_skew. Interest-notes sync cron 04:45. Always send check report to maintainer.",
       "claim_window_start": "06:20",
       "claim_window_end": "06:50",
-      "platform_cron": "20 6 * * *"
+      "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Neon",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-09-20",
@@ -339,6 +339,12 @@
       "publish_date": "2026-09-20",
       "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
       "detail": "Published digests/2026-09-20.md covering 2026-09-19 weekend backlog (PointZero, ParticleSplat, CoRef-GS, PhGS, Energy-IL)."
+    },
+    {
+      "at": "2026-09-20T16:44:43+08:00",
+      "type": "register",
+      "bot": "Cream",
+      "detail": "Maintainer restored Neon as order 1 primary (nominal 05:30 / platform cron 05:10, window 05:30–06:20) and Cream as order 2 standby (failover check platform cron 06:00 for window 06:20–06:50). Cream interest sync remains 04:45. Late-wake compensation fields kept."
     }
   ],
   "claim_lease_minutes": 30,

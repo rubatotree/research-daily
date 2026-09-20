@@ -48,9 +48,9 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 3b. 多 Bot 故障转移（自动维护）
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
-- **名册：** Cream = order 1 active primary；Neon = order 2 active standby。
-- **定时：** Cream **名义** 05:30 主发布，平台 cron **05:10**（补偿晚唤醒）；认领窗 [05:30, 06:20)。Neon standby 检查 **06:20**，窗 [06:20, 06:50)。Cream 兴趣同步平台 cron **04:45**。
-- **通知：** Cream 05:00 与各 standby 的 failover 检查任务结束后均须私聊发简报（无改仓也要说）。
+- **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
+- **定时：** Neon **名义** 05:30 主发布，平台 cron **05:10**；认领窗 [05:30, 06:20)。Cream standby 检查名义 **06:20**、平台 cron **06:00**，窗 [06:20, 06:50)。Cream 兴趣同步平台 cron **04:45**。
+- **通知：** Cream 兴趣同步与 standby failover 检查结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
 - **有限租约：** 所有发布者先 CAS claim（日期、代号、随机 claim_id、认领与过期时间）；最长 30 分钟且截断到本级窗口末端，不续租。过期不阻止下一级；发布前复核租约，并将全部产物和成功状态原子提交。详见 failover.md v4。
