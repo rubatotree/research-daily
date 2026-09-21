@@ -2,21 +2,22 @@
   "version": 4,
   "timezone": "Asia/Hong_Kong",
   "scheduled_publish": "05:30",
-  "scheduled_cron": "10 5 * * *",
+  "scheduled_cron": "30 5 * * *",
   "failover_grace_minutes": 50,
   "failover_check_time": "06:20",
   "failover_check_cron": "0 6 * * *",
-  "description": "Multi-bot roster + CAS failover. scheduled_publish is the nominal wall-clock target; scheduled_cron / bots[].platform_cron fire earlier by scheduler_lag_compensation_minutes because the host often wakes agents ~15–20 minutes late. claim_window_early_skew_minutes allows claim shortly before start; min_remaining_minutes_to_start_full_publish gates late wakes that still have enough time. If a level wakes before its claimable interval due to lag-compensated early cron, it must wait until the interval begins rather than exiting.",
+  "description": "Multi-bot roster + CAS failover. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Neon triggers at 05:30 with zero compensation, within its claimable interval; Cream retains its early trigger. Early wakes must wait and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish.",
   "bots": [
     {
       "code": "Neon",
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "Platform cron 05:10 HKT absorbs ~15–20min wake lag; nominal publish 05:30. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish.",
+      "duties": "Platform cron 05:30 HKT starts inside the claimable interval. A 20-minute wake delay still leaves 30 minutes before 06:20. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish. Early wakes wait and recheck; nominal 05:30 is not a guaranteed completion time.",
       "claim_window_start": "05:30",
       "claim_window_end": "06:20",
-      "platform_cron": "10 5 * * *"
+      "platform_cron": "30 5 * * *",
+      "scheduler_lag_compensation_minutes": 0
     },
     {
       "code": "Cream",
@@ -375,6 +376,12 @@
       "publish_date": "2026-09-21",
       "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
       "detail": "Failover publish digests/2026-09-21.md covering 2026-09-20 with ReShoot, Missing Bridges, S4R, EliGSiR, RebarSim after Neon miss."
+    },
+    {
+      "at": "2026-09-21T01:13:44.685Z",
+      "type": "heartbeat",
+      "bot": "Neon",
+      "detail": "Maintainer requested wake-time repair: Neon primary trigger moved from 05:10 to 05:30 HKT, with per-bot lag compensation 0. Existing 05:30–06:20 role window, early-wake wait, 25-minute start threshold and Cream standby schedule retained."
     }
   ],
   "claim_lease_minutes": 30,

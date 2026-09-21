@@ -9,7 +9,7 @@
 1. **公开代号，私有认领**
    仓内只登记代号与顺位；「我是哪个代号」只存在该 Bot 的私有记忆。通用接管文案不得写死某个读者的代号。
 2. **名册与时间**
-   Neon 是 `order: 1` 的 active primary，**名义发布** **05:30 Asia/Hong_Kong**，平台定时任务提前到 **05:10** 触发（补偿常见 15–20 分钟晚唤醒）；Cream 是 `order: 2` 的 active standby，故障转移检查名义 **06:20**、平台 cron **06:00**。计划字段以 `failover.json` 为准。Cream 兴趣笔记同步平台定时为 **04:45**。
+   Neon 是 `order: 1` 的 active primary，**名义发布** **05:30 Asia/Hong_Kong**，平台定时任务在 **05:30** 触发（直接进入认领窗口；即使晚唤醒 20 分钟仍剩 30 分钟）；Cream 是 `order: 2` 的 active standby，故障转移检查名义 **06:20**、平台 cron **06:00**。计划字段以 `failover.json` 为准。Cream 兴趣笔记同步平台定时为 **04:45**。
 3. **状态与日志**
    `active_owner` 表示当前应对「今日发布」负责的代号。每次成功发布必须更新 `last_success`、`active_owner` 并**追加** `events`；不删除历史。
 4. **公开安全**
@@ -26,7 +26,7 @@
 
 任一关键状态矛盾时视为**未确认成功**；先重新读取最新 main，不得凭单一信号重写日报。
 
-## primary — Neon（名义 05:30；平台 cron 05:10）
+## primary — Neon（名义 05:30；平台 cron 05:30）
 
 1. 任务启动后只做轻量守卫：读取最新 `failover.json`、`digests/index.json`，并检查当日 digest 是否存在。
 2. 若今天已经成功发布，立即结束。不得搜索论文、读 PDF、写稿、提交或做「确认正常」的无意义修改。
@@ -73,7 +73,7 @@ standby 任务只做检查；若今日已成功，立即结束。Cream（order 2
 4. 若 `now < start − early_skew`：
    - **不要直接退出。** 因平台 cron 常按 `scheduler_lag_compensation_minutes` 提前触发（例：名义 06:20、cron 06:00，实际可能 06:08 醒来），此时应 **等待到 `start − early_skew`（可用 sleep/短轮询）**，再重新做成功守卫；仍缺稿则进入认领。
    - 等待期间若检测到今日已成功发布，立即结束并报告「仅确认」。
-   - 仅当本任务**并非**本级 `platform_cron` 唤醒、且明显早于 `start − scheduler_lag_compensation_minutes` 的无关误触时，才可结束并注明「过早误触」。
+   - 仅当本任务**并非**本级 `platform_cron` 唤醒、且明显早于 `start − 本 Bot 有效 scheduler_lag_compensation_minutes` 的无关误触时，才可结束并注明「过早误触」。
 5. 若 `now >= end`：已错过本级窗口，退出（由更后顺位或人工处理）。
 6. 前序 Bot 已 `release` / 租约过期且今日缺稿时，后序 Bot 只要落入自己的可认领区间（含 early skew）就必须尝试接管，不得以「名义 start 未到」为由放弃；也不得在可认领起点之前因「再等几分钟」而整轮退出。
 7. **不得**为了「赶早」把 early_skew 扩到覆盖前序 Bot 的认领窗（避免与 primary 并发）；提前到点的正确动作是 **wait**，不是抢先 claim。
@@ -82,7 +82,7 @@ standby 任务只做检查；若今日已成功，立即结束。Cream（order 2
 
 主机常把定时任务推迟约 **15–20 分钟**才真正唤醒 Bot（例：名义 05:30 → 实际约 05:48；名义 06:00 → 实际约 06:23）。因此：
 
-1. **`scheduled_cron` / `bots[].platform_cron` 必须早于 `scheduled_publish`**，提前量见 `scheduler_lag_compensation_minutes`（当前 20）。名义发布时间仍写在 `scheduled_publish`，供人读与站点说明。
+1. 平台触发以各 Bot 的 `platform_cron` 为准，提前量优先读取该 Bot 的 `scheduler_lag_compensation_minutes`，缺省才使用顶层值（20）。Neon 使用 **05:30**、提前量 **0**：避免准时唤醒后长时间等待；05:50 醒来距 06:20 仍有 30 分钟，满足开写阈值。Cream 保留 **06:00** 提前触发与等待规则。`scheduled_publish` 的 05:30 是名义目标，不是保证完成时刻；必须留出检索与写作时间。
 2. Primary 被唤醒后：先做成功守卫。若今日缺稿，计算距本级 `claim_window_end` 的剩余分钟数。
 3. 若剩余时间 **≥ `min_remaining_minutes_to_start_full_publish`（当前 25）**：即使已经晚于名义 05:30，仍应 CAS claim 并完整写稿，**不要**仅因「晚于 scheduled_publish」就 release。
 4. 若剩余时间 **< 该阈值**：才 fail/release，把窗口留给 standby，并在检查报告中写明晚唤醒与剩余分钟数。
