@@ -30,7 +30,7 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Neon",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-09-21",
@@ -382,11 +382,26 @@
       "type": "heartbeat",
       "bot": "Neon",
       "detail": "Maintainer requested wake-time repair: Neon primary trigger moved from 05:10 to 05:30 HKT, with per-bot lag compensation 0. Existing 05:30–06:20 role window, early-wake wait, 25-minute start threshold and Cream standby schedule retained."
+    },
+    {
+      "at": "2026-09-21T21:29:05Z",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-22",
+      "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
+      "expires_at": "2026-09-21T21:59:05.000Z",
+      "detail": "Primary Neon claimed missing 2026-09-22 digest within its early-skew claimable interval; 30-minute lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-22",
+    "bot": "Neon",
+    "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
+    "claimed_at": "2026-09-21T21:29:05Z",
+    "expires_at": "2026-09-21T21:59:05.000Z"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
