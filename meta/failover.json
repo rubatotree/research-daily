@@ -32,11 +32,11 @@
   ],
   "active_owner": "Neon",
   "last_success": {
-    "bot": "Cream",
-    "publish_date": "2026-09-21",
-    "at": "2026-09-21T06:24:22+08:00",
+    "bot": "Neon",
+    "publish_date": "2026-09-22",
+    "at": "2026-09-21T21:46:35.000Z",
     "commit": null,
-    "note": "Failover publish for 2026-09-21 covering content day 2026-09-20 (weekend neighbor backlog); Neon primary window produced no digest."
+    "note": "Primary publication covering 2026-09-21: SynthDemo-RL, ForceTwin, chunk-based sim-to-real and latent rendering; three dated news/community items."
   },
   "events": [
     {
@@ -391,17 +391,19 @@
       "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
       "expires_at": "2026-09-21T21:59:05.000Z",
       "detail": "Primary Neon claimed missing 2026-09-22 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-21T21:46:35.000Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-22",
+      "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
+      "detail": "Published digests/2026-09-22.md with four papers, editorial pipeline figures and three news/community items; distinguishes privileged simulation, real open-loop replay and closed-loop policy evidence."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-22",
-    "bot": "Neon",
-    "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
-    "claimed_at": "2026-09-21T21:29:05Z",
-    "expires_at": "2026-09-21T21:59:05.000Z"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25

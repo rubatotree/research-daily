@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440" role="img" aria-labelledby="title desc">
+<title id="title">SynthDemo-RL: teacher generation, policy training, and evidence boundary</title>
+<desc id="desc">Privileged simulator state feeds a teacher and executor. Failure feedback revises demonstrations. Successful demonstrations train a VLA through SFT and PPO. Real open-loop replay does not establish closed-loop visual transfer.</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#46616e" stroke-width="1.5"/></marker></defs>
+<rect width="1120" height="440" rx="20" fill="#f3f6f8"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#173340">
+<text x="32" y="45" font-size="27" font-weight="bold">SynthDemo-RL / success before sparse-reward learning</text>
+<text x="32" y="75" font-size="17">Editorial diagram based on arXiv:2609.21650v1; not an author figure.</text>
+<g fill="#fff" stroke="#9cb6c2" stroke-width="2"><rect x="32" y="110" width="245" height="130" rx="12"/><rect x="310" y="110" width="245" height="130" rx="12"/><rect x="588" y="110" width="210" height="130" rx="12"/><rect x="830" y="110" width="258" height="130" rx="12"/></g>
+<g font-size="21" font-weight="bold"><text x="49" y="143">Privileged inputs</text><text x="327" y="143" font-size="19">Teacher + executor</text><text x="605" y="143">Valid demos</text><text x="847" y="143">VLA training</text></g>
+<g font-size="17"><text x="49" y="175">Object poses / depth</text><text x="49" y="204">Masks / calibration</text><text x="327" y="175">Grasps + waypoints</text><text x="327" y="204">LLM failure revisions</text><text x="605" y="175">Observations</text><text x="605" y="204">+ aligned actions</text><text x="847" y="175">SFT, then PPO</text><text x="847" y="204">Binary success rewards</text></g>
+<g fill="none" stroke="#46616e" stroke-width="2.5" marker-end="url(#a)"><path d="M278 172H306"/><path d="M556 172H584"/><path d="M799 172H826"/><path d="M529 240V272H336V244"/></g>
+<text x="322" y="298" font-size="17">Failed trials revise the teacher</text>
+<rect x="32" y="324" width="1056" height="83" rx="12" fill="#fff0dd"/>
+<text x="51" y="356" font-size="20" font-weight="bold">Evidence boundary: real open-loop replay is NOT closed-loop visual transfer.</text>
+<text x="51" y="385" font-size="17">The paper reports successful replay, but unsuccessful preliminary real-camera closed-loop tests.</text>
+</g></svg>

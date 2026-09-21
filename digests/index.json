@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-22",
+      "content_day": "2026-09-21",
+      "path": "digests/2026-09-22.md",
+      "title": "失败回流造示教，交互测力校准孪生，回放成功不等于闭环迁移",
+      "figs": "digests/2026-09-22/figs/"
+    },
+    {
       "date": "2026-09-21",
       "content_day": "2026-09-20",
       "path": "digests/2026-09-21.md",

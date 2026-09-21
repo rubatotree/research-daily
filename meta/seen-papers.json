@@ -637,9 +637,41 @@
       "first_seen": "2026-09-21",
       "reappearances": [],
       "note": "Weekend neighbor backlog (arXiv 2026-09-17); first inclusion."
+    },
+    "2609.21650": {
+      "title": "SynthDemo-RL: Breaking the Zero-Reward Barrier in VLA Adaptation with LLM-Guided Synthetic Demonstrations",
+      "content_day": "2026-09-21",
+      "digest": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "reappearances": [],
+      "note": "First inclusion from the 2026-09-21 arXiv announcement; first submission date is separately recorded in the digest."
+    },
+    "2609.21751": {
+      "title": "ForceTwin: Physics-informed Digital Twins for Robotic Manipulation from Instrumented Human Interaction",
+      "content_day": "2026-09-21",
+      "digest": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "reappearances": [],
+      "note": "First inclusion from the 2026-09-21 arXiv announcement; first submission date is separately recorded in the digest."
+    },
+    "2609.21817": {
+      "title": "A Sim-to-Real Integration Pipeline for Training and Deployment of Chunk-Based VLA Manipulation Policies",
+      "content_day": "2026-09-21",
+      "digest": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "reappearances": [],
+      "note": "First inclusion from the 2026-09-21 arXiv announcement; first submission date is separately recorded in the digest."
+    },
+    "2609.21054": {
+      "title": "Physically Based Rendering in the Latent Space",
+      "content_day": "2026-09-21",
+      "digest": "2026-09-22",
+      "first_seen": "2026-09-22",
+      "reappearances": [],
+      "note": "First inclusion from the 2026-09-21 arXiv announcement; first submission date is separately recorded in the digest."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "version": 1
 }
