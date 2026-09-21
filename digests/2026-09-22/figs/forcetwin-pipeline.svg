@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="490" viewBox="0 0 1120 490" role="img" aria-labelledby="title desc">
+<title id="title">ForceTwin: measured interaction to a physics-informed twin</title>
+<desc id="desc">Human probing with an instrumented gripper provides poses and contact wrenches. Identify articulation and dynamics, register them to geometry, then use the twin for control or simulation policy training and real deployment.</desc>
+<defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#46616e" stroke-width="1.5"/></marker></defs>
+<rect width="1120" height="490" rx="20" fill="#f3f6f8"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#173340">
+<text x="32" y="45" font-size="27" font-weight="bold">ForceTwin / measure the force, not just the motion</text>
+<text x="32" y="75" font-size="17">Editorial diagram based on arXiv:2609.21751v1; not an author figure.</text>
+<g fill="#fff" stroke="#9cb6c2" stroke-width="2"><rect x="32" y="115" width="305" height="140" rx="12"/><rect x="398" y="115" width="324" height="140" rx="12"/><rect x="784" y="115" width="304" height="140" rx="12"/></g>
+<g font-size="21" font-weight="bold"><text x="50" y="148">Instrumented probing</text><text x="416" y="148">Physics identification</text><text x="802" y="148">Twin assembly</text></g>
+<g font-size="17"><text x="50" y="184">Human effort + calibration</text><text x="50" y="213">Poses + contact wrenches</text><text x="416" y="184">Joint / inertia / friction</text><text x="416" y="213">Damping + mechanism residual</text><text x="802" y="184">Register with geometry</text><text x="802" y="213">Export to target backend</text></g>
+<g fill="none" stroke="#46616e" stroke-width="2.5" marker-end="url(#a)"><path d="M338 185H393"/><path d="M723 185H779"/><path d="M936 255V289H310V312"/><path d="M936 289H825V312"/></g>
+<g fill="#e2efeb"><rect x="80" y="317" width="460" height="70" rx="12"/><rect x="580" y="317" width="460" height="70" rx="12"/></g>
+<g font-size="19"><text x="99" y="345">Control: dynamics compensation</text><text x="99" y="372">Real Spot / Franka FR3 evaluation</text><text x="599" y="345">Learning: simulation policy training</text><text x="599" y="372">Real door-traversal deployment</text></g>
+<text x="32" y="433" font-size="19" font-weight="bold">Extra priors: force-sensing hardware; rigid grasp; single-DoF articulation.</text>
+<text x="32" y="464" font-size="17">Measurements, export fidelity and policy transfer require separate checks.</text>
+</g></svg>
