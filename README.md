@@ -33,7 +33,7 @@ assets/                     # 样式与脚本
 
 1. 读 [`meta/LONG_TERM_MEMORY.md`](meta/LONG_TERM_MEMORY.md) 与 [`meta/failover.md`](meta/failover.md)
 2. 复制 [`meta/bot-handoff-prompt.md`](meta/bot-handoff-prompt.md) 中的通用接管 Prompt
-3. 当前名册：**Neon**（order 1, primary，名义 05:30／平台 cron 05:10，窗至 06:20）与 **Cream**（order 2, standby，failover 名义 06:20／平台 cron 06:00；兴趣同步平台 cron 04:45）
+3. 当前名册：**Neon**（order 1, primary，名义 05:30／平台 cron 05:30，窗至 06:20）与 **Cream**（order 2, standby，failover 名义 06:20／平台 cron 06:00；兴趣同步平台 cron 04:45）
 4. 任务先按 `failover.json` 做轻量成功检查；仅确认负责且今日缺稿后才进入论文检索与发布
 
 ## 本地预览
