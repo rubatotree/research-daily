@@ -41,10 +41,13 @@
 兴趣漂移时，优先改本文件与 `LONG_TERM_MEMORY.md`，再改定时任务 prompt；勿把私人草稿直接贴进公开仓。
 
 ## 随手兴趣笔记
-轻度、易变的兴趣记在 [`interest-notes.md`](./interest-notes.md)（例如产品试用触发的扫描欲）。日报写作前应扫一眼；正式主线仍以上文课题焦点为准。Cream 于每日 **05:00 HKT** 汇总当天讨论并更新该文件。
+轻度、易变的兴趣记在 [`interest-notes.md`](./interest-notes.md)（例如产品试用触发的扫描欲）。日报写作前应扫一眼；正式主线仍以上文课题焦点为准。Cream 于每日兴趣同步（平台 cron **04:45**）汇总当天讨论并更新该文件。
 
 ## 近期博客校准
 - 2026-09-10：[MiracleAug 博文](https://rubatotree.github.io/blog/posts/miracle-aug-1/) — agentic 具身数据增强走通后的公开卡点（复杂几何建模成本、无示教轨迹校验、Mesh vs 3DGS 瑕疵感、**正向/批渲染开销**、防御性编程）；开放问题是图形学 ↔ LLM 互相替难点。批渲染项提高卡点②权重。细节见 [`interest-notes.md`](./interest-notes.md)。
+
+## 社区兴趣加权（2026-09-22 起）
+- **Blender 社区 · 原生 3DGS：** 跟 Blender 5.3+ 将 3D Gaussian Splats 作为 PointCloud 原生类型（导入 PLY/SPZ、Geometry Nodes、Workbench/EEVEE/Cycles）。写稿前核 [5.3 Rendering notes](https://developer.blender.org/docs/release_notes/5.3/rendering/)；关注导出、性能、颜色空间、变换/绑骨后续。与 MiracleAug / agentic Blender 管线交叉，但勿写成已解决 Real2Sim 资产问题。细节见 [`interest-notes.md`](./interest-notes.md)。
 
 ## 对标仓（公开 · 写日报时顺带扫）
 - [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA)：GPT-6 Astra 三视角 RGB→Blender Real2Sim／重放；与 MiracleAug 同族对照。**所有**日报 Bot 写稿时检查自上次日报以来的 commits；有实质更新则在日报中**简短描述**，无更新不提。**不另设盯梢任务。** 见 [`interest-notes.md`](./interest-notes.md)。
