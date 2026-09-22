@@ -8,9 +8,30 @@
 - 主课题仍以 `research-interests.md` 为准；本文件权重通常更低，除非条目写明「加权重」
 - 日报写作前应扫一眼本文件；有新笔记可在「新兴趣相关」收录前沿概览（不限昨日上新）
 - 每条建议带日期；过时可标 `archived` 或删掉
-- **同步节奏：** Cream 在每日 **05:00 HKT**（primary 05:30 日报前 30 分钟）汇总当天讨论并更新本文件；平时聊天可随时追加兴趣，不须等同步点。同步结束后**须私聊用户**简报主要新增；无新增也要说明「今日无新增」。
+- **同步节奏：** Cream 在每日兴趣同步（平台 cron **04:45**）汇总当天讨论并更新本文件；平时聊天可随时追加兴趣，不须等同步点。同步结束后**须私聊用户**简报主要新增；无新增也要说明「今日无新增」。
 
 ---
+
+## 2026-09-22 · 当日讨论摘要
+
+1. **新兴趣：Blender 社区动态，尤其 3DGS 原生表示接入** — 详见下方专题。维护者要求日报侧留意 Blender 社区最新动态，重点跟 **3D Gaussian Splatting 接入 Blender 原生表示 / 导入渲染管线**（不再只靠第三方插件）。
+
+---
+
+## 2026-09-22 · Blender 社区 · 原生 3DGS 表示（强兴趣 · 加权重）
+
+- **触发：** 维护者明确要求翻 Blender 社区最新动态，尤其最新 **3DGS → Blender 原生表示** 线。
+- **当前公开高信号（录入时快照，写稿前须再核官方 release notes）：**
+  - **Blender 5.3**（alpha；完整版计划约 **2026-11-10**）加入 **原生 3D Gaussian Splat 导入与渲染**（[开发者文档 · Rendering](https://developer.blender.org/docs/release_notes/5.3/rendering/)，PR#163102）。
+  - **表示：** PointCloud data-block 新增 `Type`：`Points` / **`3D Gaussian Splats`**；属性含 scale、quaternion、`radiance:base`、`radiance:sh_*` 等。
+  - **导入：** PLY（自动检测 splat）、SPZ（至 v4）；Geometry Nodes：`Set Point Cloud Type`、`Import SPZ`；Import PLY 输出改名为 Geometry。
+  - **渲染：** Workbench / EEVEE / Cycles 均可；默认 emissive。
+  - **已知限制（官方）：** 性能仍不理想；sRGB 训练假设 vs 线性渲染在低不透明度/高 radiance 处偏差；Apply Transform 尚未正确处理 scale/rotation/SH；**尚无导出**。
+  - 此前依赖 BlendSplat / KIRI 等插件；设计任务约 2026-06 由 Sergey 等推进（社区报道可参考，写稿时链回官方）。
+- **与主线关系：** 直接撞上 MiracleAug / Astra+Blender / Real2Sim 资产入口——原生 splat 公民化后，agentic DCC 与示教增强可少一层插件依赖；仍须区分「能导入渲染」≠「可编辑绑骨 / 可导出仿真资产」。对照主线卡点①拆分绑定与②正向效率时可用。
+- **日报怎么用：** 「新兴趣相关」或圈内可跟 **Blender 5.3 原生 3DGS**、官方 release notes / developer forum / 社区实测（性能、颜色、导出缺口）；有实质进展（beta、导出、rigging 行为落地）再升格速览。**勿压过** PTIR / MiracleAug 主菜；禁止编造未发布能力。
+- **状态：** active · strong · watch-blender-native-3dgs · 加权重
+
 
 ## 2026-09-14 · 当日讨论摘要（晚间）
 
