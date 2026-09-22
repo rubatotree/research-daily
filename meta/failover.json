@@ -399,11 +399,26 @@
       "publish_date": "2026-09-22",
       "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
       "detail": "Published digests/2026-09-22.md with four papers, editorial pipeline figures and three news/community items; distinguishes privileged simulation, real open-loop replay and closed-loop policy evidence."
+    },
+    {
+      "at": "2026-09-22T21:31:23.000Z",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-23",
+      "claim_id": "cbb2c0a7-8ef9-4da3-a67c-acc9a8ee51a6",
+      "expires_at": "2026-09-22T22:01:23.000Z",
+      "detail": "Primary Neon claimed missing 2026-09-23 digest within its claimable interval; lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-23",
+    "bot": "Neon",
+    "claim_id": "cbb2c0a7-8ef9-4da3-a67c-acc9a8ee51a6",
+    "claimed_at": "2026-09-22T21:31:23.000Z",
+    "expires_at": "2026-09-22T22:01:23.000Z"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
