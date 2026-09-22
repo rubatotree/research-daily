@@ -30,7 +30,7 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Neon",
+  "active_owner": "Cream",
   "last_success": {
     "bot": "Neon",
     "publish_date": "2026-09-22",
@@ -408,16 +408,32 @@
       "claim_id": "cbb2c0a7-8ef9-4da3-a67c-acc9a8ee51a6",
       "expires_at": "2026-09-22T22:01:23.000Z",
       "detail": "Primary Neon claimed missing 2026-09-23 digest within its claimable interval; lease capped by role window."
+    },
+    {
+      "at": "2026-09-23T06:19:26+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-23",
+      "detail": "Order-2 Cream taking over after Neon claim expired at 06:01 HKT without publish; digests/2026-09-23.md and index entry missing; primary window ended without successful digest."
+    },
+    {
+      "at": "2026-09-23T06:19:26+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-23",
+      "claim_id": "33ca5512-6753-4ace-bd55-7f7450912107",
+      "expires_at": "2026-09-22T22:49:26.000Z",
+      "detail": "Standby Cream claimed 2026-09-23 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
   "claim": {
     "publish_date": "2026-09-23",
-    "bot": "Neon",
-    "claim_id": "cbb2c0a7-8ef9-4da3-a67c-acc9a8ee51a6",
-    "claimed_at": "2026-09-22T21:31:23.000Z",
-    "expires_at": "2026-09-22T22:01:23.000Z"
+    "bot": "Cream",
+    "claim_id": "33ca5512-6753-4ace-bd55-7f7450912107",
+    "claimed_at": "2026-09-22T22:19:26.000Z",
+    "expires_at": "2026-09-22T22:49:26.000Z"
   },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
