@@ -3,6 +3,13 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-24",
+      "content_day": "2026-09-23",
+      "path": "digests/2026-09-24.md",
+      "title": "物体移走后怎样补场景，编程 Agent 真机测量执行，随机高斯快速降噪",
+      "figs": "digests/2026-09-24/figs/"
+    },
+    {
       "date": "2026-09-23",
       "content_day": "2026-09-22",
       "path": "digests/2026-09-23.md",
