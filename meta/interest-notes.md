@@ -12,6 +12,32 @@
 
 ---
 
+## 2026-09-23 · 当日校准摘要（notes · 无 Cream 私聊）
+
+自上次兴趣同步以来，**未**与 Cream 新增可公开兴趣讨论。按 `research-interests.md`「notes 与 blog 联合校准」扫到：
+
+1. **阅读加权：VLA 过程监督 / Agent 仿真示范中的显式语言中间量** — 详见下方专题。来自 notes 仓当日整理；概念层动机，未验证，不替换 MiracleAug 工程主线。
+2. **blog 草稿信号（未发布）：** `siga26-paper-notes-1.typ`（`draft: true`，commit `8d722e0`）在建 SIGGRAPH Asia 2026 论文阅读骨架。**不得**把草稿判断搬进公开日报；仅可把其中已公开的论文族当作「新兴趣相关」轻扫线索（见专题）。
+
+---
+
+## 2026-09-23 · VLA 过程监督与 Agent 仿真示范（阅读兴趣 · 轻加权）
+
+- **触发：** notes 仓 2026-09-23 记录维护者对一类问题的关注：把 VLA 的语言模态当作可读写的语义中间量；由较强 LLM Agent 在仿真中联合产生显式决策过程与动作轨迹，再蒸馏给 VLA；视频事后意图标注作为对照路线。
+- **性质：** 研究动机 / 阅读加权。**不是**已证实结论，**不**自动扩大毕设范围，也**不**写成已实现系统或「优于人类示范」。
+- **日报怎么用：** 「新兴趣相关」可轻扫公开文献族——[ECoT](https://embodied-cot.github.io/)（具身推理监督）、[pi0.5](https://www.pi.website/blog/pi05) / [MEM](https://www.pi.website/research/memory)、[Gemini Robotics-ER](https://deepmind.google/blog/gemini-robotics-er-1-6/)、[GenSim](https://gen-sim.github.io/)、[R&B-EnCoRe](https://milanganai.github.io/rnb-encore/) 等；点明与 agentic 示教增强 / 失败驱动造数主线的交叉。勿写「首次」、勿编造本地实验。
+- **禁止写入：** notes 正文、未公开实验设计与任务细节、资源额度、私人排期、草稿判断。
+- **状态：** active · reading · light-weight · from-notes-calibration
+
+---
+
+## 2026-09-22 · blog 草稿校准：SIGGRAPH Asia 2026 论文笔记 I（未发布）
+
+- **源：** [rubatotree/blog](https://github.com/rubatotree/blog) `content/posts/siga26-paper-notes-1.typ` · commit `8d722e0` · **`draft: true`（站点未公开发布）**
+- **公开可用的阅读线索（仅论文本身已公开，草稿正文勿抄）：** Neural Radiosity / glossy 实时（OctaOctree）、抓取几何表示（InterMASH）、部件装配与检索（PART）、可微 specular 渲染（Projected Specular Manifolds）、3DGS 光线追踪近似 splat 速度（GRay，I3D 2026，文中作补充）。
+- **日报怎么用：** 可在圈内或「新兴趣相关」跟上述已公开论文的社区讨论/开源；**禁止**引用或复述未发布博文中的个人判断、内部关系或未定稿表述。
+- **状态：** draft-blog · reading-list · do-not-quote-draft
+
 ## 2026-09-22 · 当日讨论摘要
 
 1. **新兴趣：Blender 社区动态，尤其 3DGS 原生表示接入** — 详见下方专题。维护者要求日报侧留意 Blender 社区最新动态，重点跟 **3D Gaussian Splatting 接入 Blender 原生表示 / 导入渲染管线**（不再只靠第三方插件）。
