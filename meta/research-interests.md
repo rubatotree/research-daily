@@ -56,6 +56,10 @@
 ## 社区兴趣加权（2026-09-22 起）
 - **Blender 社区 · 原生 3DGS：** 跟 Blender 5.3+ 将 3D Gaussian Splats 作为 PointCloud 原生类型（导入 PLY/SPZ、Geometry Nodes、Workbench/EEVEE/Cycles）。写稿前核 [5.3 Rendering notes](https://developer.blender.org/docs/release_notes/5.3/rendering/)；关注导出、性能、颜色空间、变换/绑骨后续。与 MiracleAug / agentic Blender 管线交叉，但勿写成已解决 Real2Sim 资产问题。细节见 [`interest-notes.md`](./interest-notes.md)。
 
+## notes / blog 校准摘要（2026-09-23 起）
+- **阅读加权（轻）：** VLA 过程监督与 Agent 仿真示范中的显式语言中间量（对照：视频后标注）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。概念层动机，未验证，不替换 MiracleAug 主线。
+- **blog 草稿（勿引用正文）：** 维护者在写 SIGGRAPH Asia 2026 论文笔记 I（`draft: true`）。日报只可跟文中已公开的论文本身，不得复述未发布草稿判断。
+
 ## 对标仓（公开 · 写日报时顺带扫）
 - [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA)：GPT-6 Astra 三视角 RGB→Blender Real2Sim／重放；与 MiracleAug 同族对照。**所有**日报 Bot 写稿时检查自上次日报以来的 commits；有实质更新则在日报中**简短描述**，无更新不提。**不另设盯梢任务。** 见 [`interest-notes.md`](./interest-notes.md)。
 
