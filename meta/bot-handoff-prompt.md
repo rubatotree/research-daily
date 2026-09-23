@@ -29,7 +29,7 @@
 - meta/interest-notes.md
 - meta/privacy.md
 - meta/seen-papers.json
-并用 GitHub 读取 rubatotree/blog、rubatotree/academic 的近期 commits 校准兴趣（不要只看网页）。
+并用 GitHub 每日读取 rubatotree/notes、rubatotree/blog、rubatotree/academic 的近期 commits 与相关变更正文校准兴趣。notes 是科研对话及科研零散想法整理仓，与 blog 同等重点；Neon、Cream 及后续维护者均按 research-interests.md「notes 与 blog 联合校准」执行，Cream 的既有每日兴趣同步也适用。区分观察、建议、假设和验证结果；不将具体研究设想、实验细节或笔记正文公开搬运。
 同时顺带检查对标仓 https://github.com/hku-sail/Real2Sim_GPT6_ASTRA 自上次日报以来的 commits：有实质更新则在当日日报简短描述；无更新不提。不要为此单独加盯梢任务。
 
 【日期约定】
@@ -39,7 +39,7 @@
 - digests/index.json 条目含 date 与 content_day
 - 每天按 failover.json 中自己的角色与窗口运行；primary 名义 05:30（平台 cron 05:30，窗至 06:20）、standby 名义 06:20（平台 cron 06:00）（Asia/Hong_Kong）；详见 failover.json 晚唤醒补偿。当前名册 Neon primary → Cream standby。
 
-【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、interest-notes、failover、privacy、seen-papers；对照 blog/academic commits，有变则先更新 meta/ 再写日报。
+【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、interest-notes、failover、privacy、seen-papers；对照 notes/blog/academic commits 与相关正文，有变则先更新 meta/ 再写日报。
 
 【文风学习】动笔前阅读近几天 digests/ 中 **编写署名不是自己** 的篇目（建议≥3），学习基本写法与优点；允许风格创新；目标：清晰易读、概括与重点分明，避免流水账。
 
@@ -110,7 +110,7 @@ claim 含 publish_date、bot、随机 claim_id、claimed_at、expires_at；期�
 ## 接管后自检
 
 - [ ] GitHub 对本仓有写权限；Pages 可访问
-- [ ] 能读 blog / academic commits
+- [ ] 能读 notes / blog / academic commits 与相关正文，并执行联合校准规则
 - [ ] 用最近一篇 digest 对照字段与标题栏格式
 - [ ] 试跑不把额度、路径、密钥写进 diff
 - [ ] 按名册角色启用定时：primary `30 5 * * *`；standby `0 6 * * *`；兴趣同步 `45 4 * * *`

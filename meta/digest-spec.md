@@ -28,7 +28,7 @@
 ## 写作前检查长期记忆（每日必做）
 动笔写当日日报**之前**必须：
 1. 阅读并核对 `meta/LONG_TERM_MEMORY.md`、`digest-spec.md`、`research-interests.md`、`interest-notes.md`、`failover.json`、`privacy.md`、`seen-papers.json`
-2. 对照 `interest-notes.md` 与 `rubatotree/blog` / `academic` 近期 commits：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报；随手笔记中的 active 条目可进入「新兴趣相关」做前沿扫描（勿压过主课题）；Cream 会在每日 05:00 HKT 把当天讨论摘要写入 `interest-notes.md`
+2. 对照 `interest-notes.md` 与 `rubatotree/notes` / `blog` / `academic` 近期 commits 与相关正文（notes 与 blog 同等重点，所有 Bot 按 `research-interests.md` 的联合校准规则执行）：若兴趣、规范、故障转移名册或流程有变，**先更新**相应 `meta/` 文档并提交，再写日报；随手笔记中的 active 条目可进入「新兴趣相关」做前沿扫描（勿压过主课题）；Cream 会在每日 05:00 HKT 把当天讨论摘要写入 `interest-notes.md`
 3. 无变更则不必空改；有变更须写进公开记忆（遵守 `privacy.md`），避免只改私聊、仓内过时
 
 ## 协同 Bot 文风学习（必做）
@@ -146,7 +146,7 @@
 - arXiv（cs.GR + 关键词漏斗）与 Ke-Sen
 - 新闻事实：官方公告、发布说明、开源仓库、作者原文
 - 社区反馈：X、Hacker News、Reddit、GitHub Issues/Discussions、Hugging Face 讨论与中文技术社区（须链接实际原帖）
-- GitHub：`rubatotree/blog`、`rubatotree/academic`（以 **commits** 校准兴趣，不只看 Pages）
+- GitHub：`rubatotree/notes` 与 `rubatotree/blog` 同等每日重点检查 **commits 与相关变更正文**；`academic` 核验公开身份与成果。仅用于兴趣校准，不公开搬运工作笔记。
 - GitHub 对标仓（写日报时顺带扫 commits，**不另设盯梢任务**）：[`hku-sail/Real2Sim_GPT6_ASTRA`](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA) — 与 MiracleAug 同族的 Astra Real2Sim／Blender 重建；自上次日报以来若有实质更新，在「圈内」或「新兴趣／主线追踪」**简短描述**即可；无更新则不提
 - 机器之心 / 量子位 / 新智元；PaperWeekly 类
 - 公开搜索（Scholar / 网页）

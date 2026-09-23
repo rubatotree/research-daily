@@ -88,7 +88,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 6. 信息源优先级
 
 1. arXiv（cs.GR 及关键词漏斗）+ [Ke-Sen](https://kesen.realtimerendering.com/) 类会议页
-2. `rubatotree/blog`、`rubatotree/academic` 的 **git commits**
+2. `rubatotree/notes` 与 `rubatotree/blog` 同等每日重点检查 **git commits 与相关变更正文**；`academic` 核验公开身份与成果。所有维护 Bot 执行 `research-interests.md`「notes 与 blog 联合校准」。
 3. 公开搜索 / Scholar
 4. 中文科技媒体（机器之心、量子位、新智元等）与 PaperWeekly 类
 5. X 关键词检索（可选；**额度与过程永不入库**）
@@ -106,7 +106,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 8. 发布流水线（意图级）
 
 0. **写作前检查长期记忆：** 读 `LONG_TERM_MEMORY` / `digest-spec` / `research-interests` / `interest-notes` / `failover` / `privacy` / `seen-papers`；有变先更新 `meta/` 再写稿
-1. 读兴趣文件 + `interest-notes.md` + 近几日 blog/academic commits
+1. 读兴趣文件 + `interest-notes.md` + 近几日 notes/blog/academic commits 与相关正文；按联合校准规则调整兴趣，遵守工作笔记的公开边界
 2. 读 `seen-papers.json` 去重
 3. 按覆盖窗口搜集候选；策展、下载公开配图
 4. 写 `digests/发布日.md`（标题栏含 venue·时间）
@@ -131,6 +131,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
 ## 11. 变更日志（公开记忆）
+
+- 2026-09-23：按维护者授权，将 notes 与 blog 同等每日重点关注写入共用规则，适用于 Neon、Cream 及后续 Bot；仅发布通用要求，不复制笔记内容。
 
 - 2026-09-23：明确原论文 pipeline 图优先；仅在无图或原图不清楚且有必要时补充中文自绘示意图，同步配图来源与接管规则。
 
