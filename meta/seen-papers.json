@@ -1,6 +1,30 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2609.26795": {
+      "content_day": "2026-09-23",
+      "digest": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "reappearances": [],
+      "title": "ϕ-RIE: From Photorealistic Reconstruction to Interactive Environments",
+      "note": "First submitted September 22; announced September 23. Full methods and key experiments read; original Figure 2 reproduced."
+    },
+    "2609.26499": {
+      "content_day": "2026-09-23",
+      "digest": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "reappearances": [],
+      "title": "Generalizing Manipulation Skills with a Local Coding Agent",
+      "note": "First submitted September 22; announced September 23. Full methods and key experiments read; original Figure 2 reproduced."
+    },
+    "2609.25604": {
+      "content_day": "2026-09-23",
+      "digest": "2026-09-24",
+      "first_seen": "2026-09-24",
+      "reappearances": [],
+      "title": "Ultra-fast Neural Inference for Stochastic Gaussian Splatting Denoising",
+      "note": "First submitted September 22; announced September 23. Full methods and key experiments read; original Figure 2 reproduced."
+    },
     "2603.21304": {
       "content_day": "2026-09-08",
       "digest": "2026-09-09",
@@ -696,6 +720,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "version": 1
 }
