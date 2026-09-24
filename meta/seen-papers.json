@@ -1,6 +1,30 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2609.27612": {
+      "content_day": "2026-09-24",
+      "digest": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "reappearances": [],
+      "title": "RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement",
+      "note": "First submitted September 23; announced September 24. Full methods and deployment cases read; original Figure 1 reproduced."
+    },
+    "2609.28314": {
+      "content_day": "2026-09-24",
+      "digest": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "reappearances": [],
+      "title": "TANDEM: Task and Motion Planning with As-Needed Demonstrations for Efficient Vision-Language-Action Model Fine-tuning",
+      "note": "First submitted September 23; announced September 24. Full methods and key real-robot experiments read; original Figure 2 reproduced."
+    },
+    "2609.27342": {
+      "content_day": "2026-09-24",
+      "digest": "2026-09-25",
+      "first_seen": "2026-09-25",
+      "reappearances": [],
+      "title": "BladeMaster: Real-Time Robotic Cutting Simulation with Online-Generated Persistent Discontinuities",
+      "note": "First submitted September 23; announced September 24. Full methods and experiments read; original Figure 1 reproduced because the paper has no single overall pipeline figure."
+    },
     "2609.26795": {
       "content_day": "2026-09-23",
       "digest": "2026-09-24",
@@ -720,6 +744,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "version": 1
 }

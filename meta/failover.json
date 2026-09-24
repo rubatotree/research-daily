@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-09-24",
-    "at": "2026-09-23T21:52:02Z",
+    "publish_date": "2026-09-25",
+    "at": "2026-09-24T21:47:04Z",
     "commit": null,
-    "note": "Primary publish covering 2026-09-23: Phi-RIE, local coding-agent manipulation and stochastic Gaussian denoising; three original pipeline figures and three dated news/community items."
+    "note": "Primary publish covering 2026-09-24: RegenHarness, TANDEM and BladeMaster; three original paper figures and two evidence-grounded news/community items."
   },
   "events": [
     {
@@ -458,17 +458,19 @@
       "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
       "expires_at": "2026-09-25T06:02:44+08:00",
       "detail": "Primary Neon claimed missing 2026-09-25 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-25T05:47:04+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-25",
+      "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
+      "detail": "Published digests/2026-09-25.md covering 2026-09-24 with RegenHarness, TANDEM and BladeMaster; method-first explanations, three original paper figures and two dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-25",
-    "bot": "Neon",
-    "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
-    "claimed_at": "2026-09-25T05:32:44+08:00",
-    "expires_at": "2026-09-25T06:02:44+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
