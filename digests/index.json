@@ -7,133 +7,152 @@
       "content_day": "2026-09-24",
       "path": "digests/2026-09-25.md",
       "title": "证据门控改机器人 Harness，按需示教补规划缺口，切割拓扑持久化",
-      "figs": "digests/2026-09-25/figs/"
+      "figs": "digests/2026-09-25/figs/",
+      "subtitle": "按需示教与证据门"
     },
     {
       "date": "2026-09-24",
       "content_day": "2026-09-23",
       "path": "digests/2026-09-24.md",
       "title": "物体移走后怎样补场景，编程 Agent 真机测量执行，随机高斯快速降噪",
-      "figs": "digests/2026-09-24/figs/"
+      "figs": "digests/2026-09-24/figs/",
+      "subtitle": "让重建场景可交互"
     },
     {
       "date": "2026-09-23",
       "content_day": "2026-09-22",
       "path": "digests/2026-09-23.md",
       "title": "单次扫描造示教，单图建可交互孪生，人视频迁移要对齐评测",
-      "figs": "digests/2026-09-23/figs/"
+      "figs": "digests/2026-09-23/figs/",
+      "subtitle": "从场景扫描到示教"
     },
     {
       "date": "2026-09-22",
       "content_day": "2026-09-21",
       "path": "digests/2026-09-22.md",
       "title": "失败回流造示教，交互测力校准孪生，回放成功不等于闭环迁移",
-      "figs": "digests/2026-09-22/figs/"
+      "figs": "digests/2026-09-22/figs/",
+      "subtitle": "失败回流与力学孪生"
     },
     {
       "date": "2026-09-21",
       "content_day": "2026-09-20",
       "path": "digests/2026-09-21.md",
       "title": "示教视频可「重拍」外观，主动要桥接演示，穿模修好再仿真",
-      "figs": "digests/2026-09-21/figs/"
+      "figs": "digests/2026-09-21/figs/",
+      "subtitle": "示教重拍与穿模修复"
     },
     {
       "date": "2026-09-20",
       "content_day": "2026-09-19",
       "path": "digests/2026-09-20.md",
       "title": "无动作标签也能学 3D 动力学，粒子潜空间拆可编辑物体，合作地图仍能指代",
-      "figs": "digests/2026-09-20/figs/"
+      "figs": "digests/2026-09-20/figs/",
+      "subtitle": "无标签学三维动力学"
     },
     {
       "date": "2026-09-19",
       "content_day": "2026-09-18",
       "path": "digests/2026-09-19.md",
       "title": "稀疏观测估关节，生成潜空间解功能结构，人手视频成可仿真铰链",
-      "figs": "digests/2026-09-19/figs/"
+      "figs": "digests/2026-09-19/figs/",
+      "subtitle": "从观测恢复关节运动"
     },
     {
       "content_day": "2026-09-17",
       "date": "2026-09-18",
       "figs": "digests/2026-09-18/figs/",
       "path": "digests/2026-09-18.md",
-      "title": "零件库检索式装配，PBR 高斯脱光照，示教增强先保住接触面"
+      "title": "零件库检索式装配，PBR 高斯脱光照，示教增强先保住接触面",
+      "subtitle": "装配、重光照与接触"
     },
     {
       "content_day": "2026-09-16",
       "date": "2026-09-17",
       "figs": "digests/2026-09-17/figs/",
       "path": "digests/2026-09-17.md",
-      "title": "CAD 先验钉住孪生几何，交互 token 统一跨手抓取，世界-动作先预测几何与运动"
+      "title": "CAD 先验钉住孪生几何，交互 token 统一跨手抓取，世界-动作先预测几何与运动",
+      "subtitle": "CAD 约束物理孪生"
     },
     {
       "content_day": "2026-09-15",
       "date": "2026-09-16",
       "figs": "digests/2026-09-16/figs/",
       "path": "digests/2026-09-16.md",
-      "title": "部件先在生成里长出来，可编辑性再拆成四个可测面"
+      "title": "部件先在生成里长出来，可编辑性再拆成四个可测面",
+      "subtitle": "生成部件与可编辑性"
     },
     {
       "content_day": "2026-09-14",
       "date": "2026-09-15",
       "figs": "digests/2026-09-15/figs/",
       "path": "digests/2026-09-15.md",
-      "title": "零件要能站得住，前馈要知道把高斯花在哪"
+      "title": "零件要能站得住，前馈要知道把高斯花在哪",
+      "subtitle": "可站稳的生成零件"
     },
     {
       "content_day": "2026-09-13",
       "date": "2026-09-14",
       "figs": "digests/2026-09-14/figs/",
       "path": "digests/2026-09-14.md",
-      "title": "把团队、子目标和接触写成可检查的结构"
+      "title": "把团队、子目标和接触写成可检查的结构",
+      "subtitle": "团队、目标与接触结构"
     },
     {
       "content_day": "2026-09-12",
       "date": "2026-09-13",
       "figs": "digests/2026-09-13/figs/",
       "path": "digests/2026-09-13.md",
-      "title": "失败反馈怎样真正回到生成与控制"
+      "title": "失败反馈怎样真正回到生成与控制",
+      "subtitle": "让失败反馈进入闭环"
     },
     {
       "content_day": "2026-09-11",
       "date": "2026-09-12",
       "figs": "digests/2026-09-12/figs/",
       "path": "digests/2026-09-12.md",
-      "title": "重建之后，怎样判断失败、约束动作与降低成本"
+      "title": "重建之后，怎样判断失败、约束动作与降低成本",
+      "subtitle": "重建后的动作验收"
     },
     {
       "content_day": "2026-09-10",
       "date": "2026-09-11",
       "figs": "digests/2026-09-11/figs/",
       "path": "digests/2026-09-11.md",
-      "title": "闭环接上以后，速度与可信度仍要分开验收"
+      "title": "闭环接上以后，速度与可信度仍要分开验收",
+      "subtitle": "闭环的速度与可信度"
     },
     {
       "content_day": "2026-09-09",
       "date": "2026-09-10",
       "figs": "digests/2026-09-10/figs/",
       "path": "digests/2026-09-10.md",
-      "title": "一分钟重建之后，瓶颈去了哪里"
+      "title": "一分钟重建之后，瓶颈去了哪里",
+      "subtitle": "分钟级重建后的瓶颈"
     },
     {
       "content_day": "2026-09-08",
       "date": "2026-09-09",
       "figs": "digests/2026-09-09/figs/",
       "path": "digests/2026-09-09.md",
-      "title": "修好渲染，还不等于修好资产"
+      "title": "修好渲染，还不等于修好资产",
+      "subtitle": "从渲染修复到资产修复"
     },
     {
       "content_day": "2026-09-07",
       "date": "2026-09-08",
       "figs": "digests/2026-09-08/figs/",
       "path": "digests/2026-09-08.md",
-      "title": "周末积压升格：变形 / 绑骨 / 可重光照"
+      "title": "周末积压升格：变形 / 绑骨 / 可重光照",
+      "subtitle": "变形、绑骨与重光照"
     },
     {
       "content_day": "2026-09-06",
       "date": "2026-09-07",
       "figs": "digests/2026-09-07/figs/",
       "path": "digests/2026-09-07.md",
-      "title": "Real2Sim / PTIR-GS 兴趣策展"
+      "title": "Real2Sim / PTIR-GS 兴趣策展",
+      "subtitle": "Real2Sim 与逆渲染"
     }
   ],
   "owner": "rubatotree",

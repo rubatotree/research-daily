@@ -36,7 +36,7 @@
 - 文件 digests/YYYY-MM-DD.md 与站点选日 = 发布日 = 定时任务当天（通常名义 05:30 HKT（平台可提前触发））
 - 内容覆盖 = 前一自然日新稿（例：9/7 日报写 9/6）
 - 文末「覆盖说明」同时写：日报日期、内容覆盖日；周末无独立 arXiv 公告时可纳入相邻公告日积压，发布日仍用当天
-- digests/index.json 条目含 date 与 content_day
+- digests/index.json 条目含 date、content_day 与 subtitle；subtitle 是显示在时间轴日期下方的概括性短标题，尽量 6–16 个汉字，准确概括当天主线；title 可继续写较完整的概述
 - 每天按 failover.json 中自己的角色与窗口运行；primary 名义 05:30（平台 cron 05:30，窗至 06:20）、standby 名义 06:20（平台 cron 06:00）（Asia/Hong_Kong）；详见 failover.json 晚唤醒补偿。当前名册 Neon primary → Cream standby。
 
 【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、interest-notes、failover、privacy、seen-papers；对照 notes/blog/academic commits 与相关正文，有变则先更新 meta/ 再写日报。
