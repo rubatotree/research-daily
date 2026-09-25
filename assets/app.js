@@ -268,20 +268,32 @@ function buildArticleToc(content) {
   return wrap;
 }
 
-function renderMath(el) {
-  if (typeof renderMathInElement !== 'function') return;
-  try {
-    renderMathInElement(el, {
-      delimiters: [
-        { left: '$$', right: '$$', display: true },
-        { left: '\\[', right: '\\]', display: true },
-        { left: '$', right: '$', display: false },
-        { left: '\\(', right: '\\)', display: false },
-      ],
-      throwOnError: false,
-    });
-  } catch (_) { /* ignore */ }
-}
+// Parse math before Marked handles Markdown escapes (including \\(, \\[ and
+// LaTeX commands such as \\,). KaTeX's DOM auto-render runs too late for those.
+marked.use({
+  extensions: [
+    {
+      name: 'mathBlock',
+      level: 'block',
+      start: src => src.search(/\$\$|\\\[/),
+      tokenizer(src) {
+        const match = /^(?:\$\$([\s\S]*?)\$\$|\\\[([\s\S]*?)\\\])(?=[ \t]*(?:\n|$))/.exec(src);
+        if (match) return { type: 'mathBlock', raw: match[0], latex: match[1] ?? match[2] };
+      },
+      renderer: token => katex.renderToString(token.latex.trim(), { displayMode: true, throwOnError: false }) + '\n',
+    },
+    {
+      name: 'mathInline',
+      level: 'inline',
+      start: src => src.search(/\\\(|\$/),
+      tokenizer(src) {
+        const match = /^(?:\\\(([^\n]*?)\\\)|\$(?!\$)([^\n$]+?)\$(?!\$))/.exec(src);
+        if (match) return { type: 'mathInline', raw: match[0], latex: match[1] ?? match[2] };
+      },
+      renderer: token => katex.renderToString(token.latex, { throwOnError: false }),
+    },
+  ],
+});
 
 function setLeftCollapsed(collapsed) {
   leftCollapsed = collapsed;
@@ -340,8 +352,6 @@ async function showDigest(entry) {
     if (h1) h1.insertAdjacentElement('afterend', toc);
     else content.insertAdjacentElement('afterbegin', toc);
   }
-
-  renderMath(content);
 
   if (requestedAnchor) {
     requestAnimationFrame(() => jumpToArticleAnchor(requestedAnchor, 'auto'));
