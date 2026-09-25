@@ -30,7 +30,7 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Neon",
+  "active_owner": "Cream",
   "last_success": {
     "bot": "Neon",
     "publish_date": "2026-09-25",
@@ -466,11 +466,33 @@
       "publish_date": "2026-09-25",
       "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
       "detail": "Published digests/2026-09-25.md covering 2026-09-24 with RegenHarness, TANDEM and BladeMaster; method-first explanations, three original paper figures and two dated news/community items."
+    },
+    {
+      "at": "2026-09-26T06:18:48+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-26",
+      "detail": "Neon primary window [05:30,06:20) produced no digest for 2026-09-26; Cream standby takeover within claimable interval."
+    },
+    {
+      "at": "2026-09-26T06:18:48+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-26",
+      "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
+      "expires_at": "2026-09-26T06:48:48+08:00",
+      "detail": "CAS claim for 2026-09-26 standby failover publish."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-26",
+    "bot": "Cream",
+    "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
+    "claimed_at": "2026-09-26T06:18:48+08:00",
+    "expires_at": "2026-09-26T06:48:48+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
