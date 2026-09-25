@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-26",
+      "content_day": "2026-09-25",
+      "path": "digests/2026-09-26.md",
+      "title": "有状态 CAD Agent，胶带放卷仿真加速，拓扑一致动态网格",
+      "figs": "digests/2026-09-26/figs/",
+      "subtitle": "有状态 CAD 与胶带仿真"
+    },
+    {
       "date": "2026-09-25",
       "content_day": "2026-09-24",
       "path": "digests/2026-09-25.md",
