@@ -100,7 +100,14 @@ function fillTimeline(list) {
     const btn = document.createElement('button');
     btn.type = 'button';
     btn.dataset.date = d.date;
-    btn.textContent = d.date;
+    const date = document.createElement('span');
+    date.className = 'timeline-date';
+    date.textContent = d.date;
+    const subtitle = document.createElement('span');
+    subtitle.className = 'timeline-subtitle';
+    subtitle.textContent = d.subtitle || d.title || '';
+    btn.append(date, subtitle);
+    btn.title = d.title || d.subtitle || d.date;
     if (d.date === currentDate) btn.classList.add('active');
     btn.onclick = () => {
       closeMobilePanel();
@@ -351,6 +358,13 @@ async function showDigest(entry) {
     const h1 = content.querySelector('h1');
     if (h1) h1.insertAdjacentElement('afterend', toc);
     else content.insertAdjacentElement('afterbegin', toc);
+  }
+  const h1 = content.querySelector('h1');
+  if (h1 && entry.subtitle) {
+    const subtitle = document.createElement('p');
+    subtitle.className = 'digest-subtitle';
+    subtitle.textContent = entry.subtitle;
+    h1.insertAdjacentElement('afterend', subtitle);
   }
 
   if (requestedAnchor) {

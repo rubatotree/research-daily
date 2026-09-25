@@ -197,7 +197,7 @@ a:hover { text-decoration: underline; }
   text-align: left;
   border: 0;
   background: transparent;
-  padding: .45rem .55rem .45rem .85rem;
+  padding: .55rem .55rem .55rem .85rem;
   cursor: pointer;
   color: var(--muted);
   font-size: .82rem;
@@ -208,7 +208,7 @@ a:hover { text-decoration: underline; }
   content: "";
   position: absolute;
   left: -.55rem;
-  top: 50%;
+  top: 1rem;
   transform: translate(-50%, -50%);
   width: 7px; height: 7px;
   border-radius: 50%;
@@ -218,6 +218,14 @@ a:hover { text-decoration: underline; }
 .timeline button:hover { color: var(--ink); }
 .timeline button.active { color: var(--ink); font-weight: 600; }
 .timeline button.active::before { background: var(--ink); }
+.timeline-date { display: block; font-size: .73rem; }
+.timeline-subtitle {
+  display: block;
+  margin-top: .12rem;
+  color: var(--ink);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
 
 .rail-foot {
   display: flex;
@@ -254,6 +262,11 @@ a:hover { text-decoration: underline; }
   letter-spacing: -.02em;
   margin: 0 0 .75rem;
   line-height: 1.25;
+}
+.content .digest-subtitle {
+  margin: -.25rem 0 1rem;
+  color: var(--muted);
+  font-size: 1rem;
 }
 .content h2 {
   font-size: 1.15rem;
@@ -427,7 +440,7 @@ a:hover { text-decoration: underline; }
     gap: .75rem;
   }
   .mobile-date-panel .timeline {
-    max-height: 160px;
+    max-height: 240px;
     overflow: auto;
     flex: none;
   }
