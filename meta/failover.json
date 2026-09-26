@@ -32,11 +32,11 @@
   ],
   "active_owner": "Neon",
   "last_success": {
-    "bot": "Cream",
-    "publish_date": "2026-09-26",
-    "at": "2026-09-25T22:21:48Z",
+    "bot": "Neon",
+    "publish_date": "2026-09-27",
+    "at": "2026-09-27T05:42:29+08:00",
     "commit": null,
-    "note": "Standby failover publish covering 2026-09-25: AgenticCADedit, TapeSim and ToCo-Mesh; original paper figures and three dated news/community items."
+    "note": "Primary publish covering 2026-09-26 with RAPID, Self-Adaptive VLA and SplatLabel; original paper figures and one dated robotics-toolchain news item."
   },
   "events": [
     {
@@ -499,17 +499,19 @@
       "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
       "expires_at": "2026-09-27T06:01:22+08:00",
       "detail": "Primary Neon claimed missing 2026-09-27 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-27T05:42:29+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-27",
+      "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
+      "detail": "Published digests/2026-09-27.md covering 2026-09-26 weekend backlog; RAPID, Self-Adaptive VLA and SplatLabel."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-27",
-    "bot": "Neon",
-    "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
-    "claimed_at": "2026-09-27T05:31:22+08:00",
-    "expires_at": "2026-09-27T06:01:22+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25

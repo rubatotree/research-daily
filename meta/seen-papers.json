@@ -765,9 +765,36 @@
       "digest": "2026-09-26",
       "content_day": "2026-09-25",
       "reappearances": []
+    },
+    "2609.30249": {
+      "title": "RAPID: Robot Agentic Programming from Demonstrations",
+      "short": "RAPID",
+      "first_seen": "2026-09-27",
+      "digest": "2026-09-27",
+      "content_day": "2026-09-26",
+      "reappearances": [],
+      "note": "First submission 2026-09-24; 2026-09-25 arXiv announcement batch; weekend backlog. Original methods and key experiments read."
+    },
+    "2609.30092": {
+      "title": "Self-Adaptive VLA for Robust Robot Deployment",
+      "short": "Self-Adaptive VLA",
+      "first_seen": "2026-09-27",
+      "digest": "2026-09-27",
+      "content_day": "2026-09-26",
+      "reappearances": [],
+      "note": "First submission 2026-09-24; 2026-09-25 arXiv announcement batch; weekend backlog. Original methods and key experiments read."
+    },
+    "2609.29836": {
+      "title": "SplatLabel: Pseudo-Labelling through 4D Gaussian Splatting",
+      "short": "SplatLabel",
+      "first_seen": "2026-09-27",
+      "digest": "2026-09-27",
+      "content_day": "2026-09-26",
+      "reappearances": [],
+      "note": "First submission 2026-09-24; 2026-09-25 arXiv announcement batch; weekend backlog. Original methods and key experiments read."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-26",
+  "updated": "2026-09-27",
   "version": 1
 }
