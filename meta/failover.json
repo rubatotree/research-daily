@@ -30,7 +30,7 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Neon",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-09-26",
@@ -490,11 +490,26 @@
       "publish_date": "2026-09-26",
       "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
       "detail": "Published digests/2026-09-26.md covering 2026-09-25 after Neon primary window miss; AgenticCADedit, TapeSim, ToCo-Mesh."
+    },
+    {
+      "at": "2026-09-27T05:31:22+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-27",
+      "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
+      "expires_at": "2026-09-27T06:01:22+08:00",
+      "detail": "Primary Neon claimed missing 2026-09-27 digest within its claimable interval; 30-minute lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-27",
+    "bot": "Neon",
+    "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
+    "claimed_at": "2026-09-27T05:31:22+08:00",
+    "expires_at": "2026-09-27T06:01:22+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
