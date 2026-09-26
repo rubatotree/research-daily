@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-27",
+      "content_day": "2026-09-26",
+      "path": "digests/2026-09-27.md",
+      "title": "示范变成关系程序，失败历史补偿硬件偏差，动态高斯补语义",
+      "figs": "digests/2026-09-27/figs/",
+      "subtitle": "示教编程与失败自适应"
+    },
+    {
       "date": "2026-09-26",
       "content_day": "2026-09-25",
       "path": "digests/2026-09-26.md",
