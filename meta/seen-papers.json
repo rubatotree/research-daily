@@ -1,6 +1,24 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2605.15536": {
+      "title": "SkiP: When to Skip and When to Refine for Efficient Robot Manipulation",
+      "short": "SkiP",
+      "first_seen": "2026-09-28",
+      "digest": "2026-09-28",
+      "content_day": "2026-09-27",
+      "reappearances": [],
+      "note": "Interest-driven Sunday background reading after the 2026-09-27 low-cost embodied-AI weighting update; full method and key experiments read; original Figure 2 reproduced. First submitted 2026-05-15."
+    },
+    "2604.10170": {
+      "title": "Device-Conditioned Neural Architecture Search for Efficient Robotic Manipulation",
+      "short": "DC-QFA",
+      "first_seen": "2026-09-28",
+      "digest": "2026-09-28",
+      "content_day": "2026-09-27",
+      "reappearances": [],
+      "note": "Interest-driven Sunday background reading after the 2026-09-27 low-cost embodied-AI weighting update; full method and key experiments read; original Figure 1 reproduced. First submitted 2026-04-11."
+    },
     "2609.27612": {
       "content_day": "2026-09-24",
       "digest": "2026-09-25",
@@ -795,6 +813,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-27",
+  "updated": "2026-09-28",
   "version": 1
 }
