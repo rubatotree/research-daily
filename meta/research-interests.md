@@ -56,6 +56,9 @@
 ## 社区兴趣加权（2026-09-22 起）
 - **Blender 社区 · 原生 3DGS：** 跟 Blender 5.3+ 将 3D Gaussian Splats 作为 PointCloud 原生类型（导入 PLY/SPZ、Geometry Nodes、Workbench/EEVEE/Cycles）。写稿前核 [5.3 Rendering notes](https://developer.blender.org/docs/release_notes/5.3/rendering/)；关注导出、性能、颜色空间、变换/绑骨后续。与 MiracleAug / agentic Blender 管线交叉，但勿写成已解决 Real2Sim 资产问题。细节见 [`interest-notes.md`](./interest-notes.md)。
 
+## Cream 私聊兴趣加权（2026-09-27）
+- **低成本 / 低端机具身 × 合成数据 demo（加权重）：** 跟 on-device VLA / edge robotics runtimes、弱算力合成数据管线、量化蒸馏、student/hobbyist robot stacks；对照 Jetson Thor / Cosmos Edge 时写明「工业边缘 ≠ 学生低端机」。可与 MiracleAug 合成示教交叉，勿压过主菜、勿写成已验证产品结论。细节见 [`interest-notes.md`](./interest-notes.md)。
+
 ## notes / blog 校准摘要（2026-09-23 起；2026-09-26 增补）
 - **阅读加权（轻）：** VLA 过程监督与 Agent 仿真示范中的显式语言中间量（对照：视频后标注）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。概念层动机，未验证，不替换 MiracleAug 主线。
 - **阅读加权（轻 · 2026-09-26）：** 已知运动学约束下、同轨迹动态高斯的新视角渲染与运动一致性（对照：新轨迹合成 / 静态编辑后重规划）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。来自 notes tip `0630f94` 校准，勿复制开题草稿。
