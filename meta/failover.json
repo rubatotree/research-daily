@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-09-27",
-    "at": "2026-09-27T05:42:29+08:00",
+    "publish_date": "2026-09-28",
+    "at": "2026-09-28T05:36:00+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-09-26 with RAPID, Self-Adaptive VLA and SplatLabel; original paper figures and one dated robotics-toolchain news item."
+    "note": "Primary publish covering 2026-09-27 with interest-driven weekend reading on SkiP and DC-QFA, original paper figures, and four dated engineering/community items."
   },
   "events": [
     {
@@ -516,17 +516,19 @@
       "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
       "expires_at": "2026-09-28T05:59:10+08:00",
       "detail": "Primary Neon claimed missing 2026-09-28 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-28T05:36:00+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-28",
+      "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
+      "detail": "Published digests/2026-09-28.md covering 2026-09-27 with interest-driven weekend reading on SkiP and DC-QFA."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-28",
-    "bot": "Neon",
-    "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
-    "claimed_at": "2026-09-28T05:29:10+08:00",
-    "expires_at": "2026-09-28T05:59:10+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25

@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-28",
+      "content_day": "2026-09-27",
+      "path": "digests/2026-09-28.md",
+      "title": "关键段精细控制，空程少算几步，低比特策略按设备部署",
+      "figs": "digests/2026-09-28/figs/",
+      "subtitle": "少算几步，少占显存"
+    },
+    {
       "date": "2026-09-27",
       "content_day": "2026-09-26",
       "path": "digests/2026-09-27.md",
