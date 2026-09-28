@@ -524,11 +524,26 @@
       "publish_date": "2026-09-28",
       "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
       "detail": "Published digests/2026-09-28.md covering 2026-09-27 with interest-driven weekend reading on SkiP and DC-QFA."
+    },
+    {
+      "at": "2026-09-29T05:32:01+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-29",
+      "claim_id": "fd9dad55-3138-4c70-b178-188c8124b42b",
+      "expires_at": "2026-09-29T06:02:01+08:00",
+      "detail": "Primary Neon claimed missing 2026-09-29 digest within its claimable interval; 30-minute lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-29",
+    "bot": "Neon",
+    "claim_id": "fd9dad55-3138-4c70-b178-188c8124b42b",
+    "claimed_at": "2026-09-29T05:32:01+08:00",
+    "expires_at": "2026-09-29T06:02:01+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
