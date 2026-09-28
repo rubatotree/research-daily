@@ -810,9 +810,45 @@
       "content_day": "2026-09-26",
       "reappearances": [],
       "note": "First submission 2026-09-24; 2026-09-25 arXiv announcement batch; weekend backlog. Original methods and key experiments read."
+    },
+    "2609.31418": {
+      "title": "CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation",
+      "short": "CognitiveReality",
+      "first_seen": "2026-09-29",
+      "digest": "2026-09-29",
+      "content_day": "2026-09-28",
+      "reappearances": [],
+      "note": "Monday 2026-09-28 arXiv announcement (submitted 2026-09-25); full HTML method+eval read; original architecture figure."
+    },
+    "2609.31337": {
+      "title": "Representation-Guided Generation and Integration of Executable Programs for Robot Manipulation",
+      "short": "RIVET",
+      "first_seen": "2026-09-29",
+      "digest": "2026-09-29",
+      "content_day": "2026-09-28",
+      "reappearances": [],
+      "note": "Monday announcement; RIVET framework; full HTML method read; original pipeline figure."
+    },
+    "2609.31339": {
+      "title": "ChronoFuseGS: Multi-Temporal Gaussian Fusion with Per-Splat Persistence and Change Visualization",
+      "short": "ChronoFuseGS",
+      "first_seen": "2026-09-29",
+      "digest": "2026-09-29",
+      "content_day": "2026-09-28",
+      "reappearances": [],
+      "note": "Pacific Graphics 2026; Monday announcement; full HTML method read; original pipeline figure."
+    },
+    "2609.31374": {
+      "title": "RECAST: From Log Replay to Closed-Loop Driving Simulation with View-Complete Actors",
+      "short": "RECAST",
+      "first_seen": "2026-09-29",
+      "digest": "2026-09-29",
+      "content_day": "2026-09-28",
+      "reappearances": [],
+      "note": "Monday announcement; closed-loop driving with view-complete actors; full HTML method+Q1 table read; original pipeline figure."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "version": 1
 }
