@@ -32,11 +32,11 @@
   ],
   "active_owner": "Cream",
   "last_success": {
-    "bot": "Neon",
-    "publish_date": "2026-09-28",
-    "at": "2026-09-28T05:36:00+08:00",
+    "bot": "Cream",
+    "publish_date": "2026-09-29",
+    "at": "2026-09-29T06:21:45+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-09-27 with interest-driven weekend reading on SkiP and DC-QFA, original paper figures, and four dated engineering/community items."
+    "note": "Failover publish covering 2026-09-28 with CognitiveReality, RIVET, ChronoFuseGS, RECAST after Neon primary window miss."
   },
   "events": [
     {
@@ -549,17 +549,19 @@
       "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
       "expires_at": "2026-09-29T06:48:32+08:00",
       "detail": "Standby Cream claimed 2026-09-29 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-29T06:21:45+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-29",
+      "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
+      "detail": "Failover publish digests/2026-09-29.md covering 2026-09-28 with CognitiveReality, RIVET, ChronoFuseGS, RECAST after Neon miss."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-09-29",
-    "bot": "Cream",
-    "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
-    "claimed_at": "2026-09-29T06:18:32+08:00",
-    "expires_at": "2026-09-29T06:48:32+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
