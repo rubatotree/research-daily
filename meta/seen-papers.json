@@ -846,9 +846,45 @@
       "content_day": "2026-09-28",
       "reappearances": [],
       "note": "Monday announcement; closed-loop driving with view-complete actors; full HTML method+Q1 table read; original pipeline figure."
+    },
+    "2609.35575": {
+      "title": "F4R: Failure-Driven Recognition, Reconstruction, Refinement, and Redeployment for Continual Robot Self-Improvement",
+      "short": "F4R",
+      "first_seen": "2026-09-30",
+      "digest": "2026-09-30",
+      "content_day": "2026-09-29",
+      "reappearances": [],
+      "note": "Failover digest; failure-driven Real2Sim2Real loop; full HTML method read; original pipeline figure."
+    },
+    "2609.34010": {
+      "title": "ZeroBot: Learning from Scratch in Minutes with Generative Real2Sim",
+      "short": "ZeroBot",
+      "first_seen": "2026-09-30",
+      "digest": "2026-09-30",
+      "content_day": "2026-09-29",
+      "reappearances": [],
+      "note": "IEEE RA-L 2026; generative Real2Sim zero-demo RL; full HTML method read; original pipeline figure."
+    },
+    "2609.33982": {
+      "title": "Test-Time Spatial Reasoning for Robot Manipulation Using Generative Real-to-Sim",
+      "short": "Simify",
+      "first_seen": "2026-09-30",
+      "digest": "2026-09-30",
+      "content_day": "2026-09-29",
+      "reappearances": [],
+      "note": "Comments mark IROS 2026; test-time parallel sim evolutionary search; full HTML method read; original teaser figure."
+    },
+    "2609.35311": {
+      "title": "RoGSW4RLD: Feed-Forward 4D Gaussian Lifting for Robot World Model Rollouts",
+      "short": "RoGSW4RLD",
+      "first_seen": "2026-09-30",
+      "digest": "2026-09-30",
+      "content_day": "2026-09-29",
+      "reappearances": [],
+      "note": "4D Gaussian lifting of world-model rollouts with robot kinematics; full HTML method read; original pipeline figure."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "version": 1
 }
