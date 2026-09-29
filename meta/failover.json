@@ -557,11 +557,33 @@
       "publish_date": "2026-09-29",
       "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
       "detail": "Failover publish digests/2026-09-29.md covering 2026-09-28 with CognitiveReality, RIVET, ChronoFuseGS, RECAST after Neon miss."
+    },
+    {
+      "at": "2026-09-30T06:18:19+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-30",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-09-30.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
+    },
+    {
+      "at": "2026-09-30T06:18:19+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-30",
+      "claim_id": "e7dcc915-4d50-42d4-a91d-92455cb473c8",
+      "expires_at": "2026-09-30T06:48:19+08:00",
+      "detail": "Standby Cream claimed 2026-09-30 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-09-30",
+    "bot": "Cream",
+    "claim_id": "e7dcc915-4d50-42d4-a91d-92455cb473c8",
+    "claimed_at": "2026-09-30T06:18:19+08:00",
+    "expires_at": "2026-09-30T06:48:19+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
