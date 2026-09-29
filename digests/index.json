@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-09-30",
+      "content_day": "2026-09-29",
+      "path": "digests/2026-09-30.md",
+      "title": "失败驱动补课，分钟级零示教，测试时并行仿真",
+      "figs": "digests/2026-09-30/figs/",
+      "subtitle": "把失败变成可仿真补课包"
+    },
+    {
       "date": "2026-09-29",
       "content_day": "2026-09-28",
       "path": "digests/2026-09-29.md",
