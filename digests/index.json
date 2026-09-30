@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-01",
+      "content_day": "2026-09-30",
+      "path": "digests/2026-10-01.md",
+      "title": "物理校验 gym，反事实视频放大，可变形 sim-ready",
+      "figs": "digests/2026-10-01/figs/",
+      "subtitle": "Astra 基线对照与接触锚定造数"
+    },
+    {
       "date": "2026-09-30",
       "content_day": "2026-09-29",
       "path": "digests/2026-09-30.md",

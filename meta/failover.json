@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-09-30",
-    "at": "2026-09-30T06:22:07+08:00",
+    "publish_date": "2026-10-01",
+    "at": "2026-10-01T06:20:58+08:00",
     "commit": null,
-    "note": "Failover publish covering 2026-09-29 with F4R, ZeroBot, Simify, RoGSW4RLD after Neon primary window miss."
+    "note": "Failover publish covering 2026-09-30 with Real2Gym, PRISM, CoDimRecon, DexAgent after Neon primary window miss."
   },
   "events": [
     {
@@ -597,17 +597,19 @@
       "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
       "expires_at": "2026-10-01T06:48:27+08:00",
       "detail": "Standby Cream claimed 2026-10-01 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-10-01T06:20:58+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-01",
+      "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
+      "detail": "Failover publish digests/2026-10-01.md covering 2026-09-30 with Real2Gym, PRISM, CoDimRecon, DexAgent after Neon miss."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-01",
-    "bot": "Cream",
-    "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
-    "claimed_at": "2026-10-01T06:18:27+08:00",
-    "expires_at": "2026-10-01T06:48:27+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
