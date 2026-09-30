@@ -882,9 +882,45 @@
       "content_day": "2026-09-29",
       "reappearances": [],
       "note": "4D Gaussian lifting of world-model rollouts with robot kinematics; full HTML method read; original pipeline figure."
+    },
+    "2609.37089": {
+      "title": "Real2Gym: Building Gyms from Videos, Bringing Skills to Robots",
+      "short": "Real2Gym",
+      "first_seen": "2026-10-01",
+      "digest": "2026-10-01",
+      "content_day": "2026-09-30",
+      "reappearances": [],
+      "note": "Agentic Real2Sim2Real gym construction with native physics validation and skill library; compares to GPT-6 Astra; full HTML method read; original pipeline figure."
+    },
+    "2609.38172": {
+      "title": "Counterfactual Video Generation Enables Scalable Humanoid Loco-Manipulation",
+      "short": "PRISM",
+      "first_seen": "2026-10-01",
+      "digest": "2026-10-01",
+      "content_day": "2026-09-30",
+      "reappearances": [],
+      "note": "CoRL 2026; V2V counterfactual videos + contact-anchored real2sim for humanoid loco-manipulation; full HTML method read; original method figure."
+    },
+    "2609.36024": {
+      "title": "CoDimRecon: Agentic Reconstruction of Sim-Ready 3D Scenes with Deformable Curves, Surfaces, and Volumes",
+      "short": "CoDimRecon",
+      "first_seen": "2026-10-01",
+      "digest": "2026-10-01",
+      "content_day": "2026-09-30",
+      "reappearances": [],
+      "note": "Agentic sim-ready reconstruction for rigid/articulated/deformable assets by curve/surface/volume; HTML+PDF affiliation read; original overview figure."
+    },
+    "2609.35318": {
+      "title": "DexAgent: An Agentic Human2Sim2Robot Framework for Dexterous Manipulation with Self-Evolving Tool Library",
+      "short": "DexAgent",
+      "first_seen": "2026-10-01",
+      "digest": "2026-10-01",
+      "content_day": "2026-09-30",
+      "reappearances": [],
+      "note": "Agentic Human2Sim2Robot with self-evolving tool library for dexterous tasks; HTML+PDF affiliation read; original method figure."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "version": 1
 }
