@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-02",
+      "content_day": "2026-10-01",
+      "path": "digests/2026-10-02.md",
+      "title": "失败银行自演化，文本成仿真，软触觉 MPM-GS",
+      "figs": "digests/2026-10-02/figs/",
+      "subtitle": "运行时反馈写进策略"
+    },
+    {
       "date": "2026-10-01",
       "content_day": "2026-09-30",
       "path": "digests/2026-10-01.md",

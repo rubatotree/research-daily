@@ -918,9 +918,45 @@
       "content_day": "2026-09-30",
       "reappearances": [],
       "note": "Agentic Human2Sim2Robot with self-evolving tool library for dexterous tasks; HTML+PDF affiliation read; original method figure."
+    },
+    "2609.39820": {
+      "title": "Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models",
+      "short": "FailBank",
+      "first_seen": "2026-10-02",
+      "digest": "2026-10-02",
+      "content_day": "2026-10-01",
+      "reappearances": [],
+      "note": "Failure-bank self-evolution from observe-only CBF runtime feedback for VLA; full HTML method read; original pipeline figure."
+    },
+    "2609.36593": {
+      "title": "Text2Sim: Agentic Physics-Based Simulation Generation with Distilled Expertise",
+      "short": "Text2Sim",
+      "first_seen": "2026-10-02",
+      "digest": "2026-10-02",
+      "content_day": "2026-10-01",
+      "reappearances": [],
+      "note": "Agentic text-to-executable physics sims on Genesis with Debug Cards; compares GPT-6 Astra; full HTML method read; original pipeline figure."
+    },
+    "2609.38418": {
+      "title": "PneuTac: Tactile Manipulation with Soft Pneumatic Robots via Unified MPM-Gaussian Splatting Simulation",
+      "short": "PneuTac",
+      "first_seen": "2026-10-02",
+      "digest": "2026-10-02",
+      "content_day": "2026-10-01",
+      "reappearances": [],
+      "note": "Unified MPM-3DGS sim for soft pneumatic robots and vision-based tactile; demo augmentation; full HTML method read; original pipeline figure."
+    },
+    "2609.39601": {
+      "title": "GroundingPI: A Grounding Foundation Model towards Physical Intelligence with Visual Primitives",
+      "short": "GroundingPI",
+      "first_seen": "2026-10-02",
+      "digest": "2026-10-02",
+      "content_day": "2026-10-01",
+      "reappearances": [],
+      "note": "4B grounding foundation with visual primitives; transfer to VLA/driving; full HTML method read; original architecture figure."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-01",
+  "updated": "2026-10-02",
   "version": 1
 }
