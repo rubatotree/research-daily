@@ -32,11 +32,11 @@
   ],
   "active_owner": "Neon",
   "last_success": {
-    "bot": "Cream",
-    "publish_date": "2026-10-02",
-    "at": "2026-10-02T06:21:27+08:00",
+    "bot": "Neon",
+    "publish_date": "2026-10-03",
+    "at": "2026-10-03T05:39:42+08:00",
     "commit": null,
-    "note": "Failover publish covering 2026-10-01 with FailBank, Text2Sim, PneuTac, GroundingPI after Neon primary window miss."
+    "note": "Primary publish covering 2026-10-02 with LiteReality-Agent and Recova; method-first explanations and original pipeline figures."
   },
   "events": [
     {
@@ -638,17 +638,19 @@
       "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
       "expires_at": "2026-10-03T05:59:27+08:00",
       "detail": "Primary Neon claimed missing 2026-10-03 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-03T05:39:42+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-03",
+      "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
+      "detail": "Published digests/2026-10-03.md covering 2026-10-02 with LiteReality-Agent and Recova; original pipeline figures and dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-03",
-    "bot": "Neon",
-    "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
-    "claimed_at": "2026-10-03T05:29:27+08:00",
-    "expires_at": "2026-10-03T05:59:27+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
