@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-03",
+      "content_day": "2026-10-02",
+      "path": "digests/2026-10-03.md",
+      "title": "可验证房间程序，失败恢复闭环，任务与恢复分账学习",
+      "figs": "digests/2026-10-03/figs/",
+      "subtitle": "可编辑孪生与恢复闭环"
+    },
+    {
       "date": "2026-10-02",
       "content_day": "2026-10-01",
       "path": "digests/2026-10-02.md",

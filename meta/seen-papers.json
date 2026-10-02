@@ -954,9 +954,27 @@
       "content_day": "2026-10-01",
       "reappearances": [],
       "note": "4B grounding foundation with visual primitives; transfer to VLA/driving; full HTML method read; original architecture figure."
+    },
+    "2610.01863": {
+      "title": "LiteReality-Agent: An Agentic System for Interactable 3D Indoor Scene Reconstruction",
+      "short": "LiteReality-Agent",
+      "first_seen": "2026-10-03",
+      "digest": "2026-10-03",
+      "content_day": "2026-10-02",
+      "reappearances": [],
+      "note": "Agentic RGB-D indoor reconstruction into executable Room.py with articulated assets, geometry/support gates and MuJoCo export; full HTML method read; original Figure 2 reproduced."
+    },
+    "2610.01178": {
+      "title": "Recova: Agent-Guided Failure Recovery for Autonomous Robotic Manipulation",
+      "short": "Recova",
+      "first_seen": "2026-10-03",
+      "digest": "2026-10-03",
+      "content_day": "2026-10-02",
+      "reappearances": [],
+      "note": "Digital-twin recovery discovery plus separate task/recovery policies and four-station real-robot DAgger loop; full HTML method and key experiments read; original Figure 2 reproduced."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-02",
+  "updated": "2026-10-03",
   "version": 1
 }
