@@ -1,6 +1,24 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2609.08449": {
+      "title": "GSComplete: Gaussian Splat Completion with 2D Diffusion Priors",
+      "short": "GSComplete",
+      "first_seen": "2026-10-04",
+      "digest": "2026-10-04",
+      "content_day": "2026-10-03",
+      "reappearances": [],
+      "note": "Interest-driven Sunday background reading after the 2026-10-04 constrained 3DGS repair calibration; full method and key experiments read; original Figure 2 reproduced. First submitted 2026-09-08."
+    },
+    "2607.28834": {
+      "title": "FocusGS: Spatial Delta Layers for Local Repair and Deterministic Editing of Trained 3D Gaussian Assets",
+      "short": "FocusGS",
+      "first_seen": "2026-10-04",
+      "digest": "2026-10-04",
+      "content_day": "2026-10-03",
+      "reappearances": [],
+      "note": "Interest-driven Sunday background reading on versioned local 3DGS repair; full method and key experiments read; original Figure 2 reproduced. First submitted 2026-07-30."
+    },
     "2605.15536": {
       "title": "SkiP: When to Skip and When to Refine for Efficient Robot Manipulation",
       "short": "SkiP",
@@ -975,6 +993,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-03",
+  "updated": "2026-10-04",
   "version": 1
 }
