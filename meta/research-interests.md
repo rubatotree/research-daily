@@ -59,9 +59,10 @@
 ## Cream 私聊兴趣加权（2026-09-27）
 - **低成本 / 低端机具身 × 合成数据 demo（加权重）：** 跟 on-device VLA / edge robotics runtimes、弱算力合成数据管线、量化蒸馏、student/hobbyist robot stacks；对照 Jetson Thor / Cosmos Edge 时写明「工业边缘 ≠ 学生低端机」。可与 MiracleAug 合成示教交叉，勿压过主菜、勿写成已验证产品结论。细节见 [`interest-notes.md`](./interest-notes.md)。
 
-## notes / blog 校准摘要（2026-09-23 起；2026-09-26 增补）
+## notes / blog 校准摘要（2026-09-23 起；2026-09-26 / 2026-10-04 增补）
 - **阅读加权（轻）：** VLA 过程监督与 Agent 仿真示范中的显式语言中间量（对照：视频后标注）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。概念层动机，未验证，不替换 MiracleAug 主线。
 - **阅读加权（轻 · 2026-09-26）：** 已知运动学约束下、同轨迹动态高斯的新视角渲染与运动一致性（对照：新轨迹合成 / 静态编辑后重规划）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。来自 notes tip `0630f94` 校准，勿复制开题草稿。
+- **阅读加权（轻 · 2026-10-04）：** notes tip `207a3b2` 校准——3DGS 部件修复在运动学/接触约束与完好参考条件生成上的文献缺口；批渲染（splat 栅格 vs Cycles/EEVEE）数量级对照加固卡点②；SO-101 公开 URDF 作低成本臂运动学入口。细节见 [`interest-notes.md`](./interest-notes.md)；勿复制 notes 正文或私有外推数字。
 - **blog 草稿（勿引用正文）：** 维护者在写 SIGGRAPH Asia 2026 论文笔记 I（`draft: true`，tip 仍 `8d722e0`）。日报只可跟文中已公开的论文本身，不得复述未发布草稿判断。
 
 ## 对标仓（公开 · 写日报时顺带扫）

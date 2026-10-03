@@ -12,7 +12,42 @@
 
 ---
 
+## 2026-10-04 · 当日校准摘要（notes · 无 Cream 私聊）
+
+自上次兴趣同步以来，**未**与 Cream 新增可公开兴趣讨论。按 `research-interests.md`「notes 与 blog 联合校准」扫到 notes tip `f5a747a`→`207a3b2`（Cream 夜间兴趣小实验汇总入 notes；**勿**复制私有 scratch 路径、本机测量或未公开外推数字）：
+
+1. **阅读加权（轻）：3DGS 部件修复文献缺口细化** — 详见下方专题。公开文献族（GSComplete / InFusion / FocusGS / GOC 等）覆盖残缺补全、场景 inpainting、局部 repair、几何表面补全；交叉缺口是**运动学/接触约束下的局部高斯修复**，以及**破损件相对完好示教/合成参考的条件生成**；评测多偏 NVS/CLIP/几何完整度，而非抓取/装配公差。与既有「3DGS 分割部件修复」思路条交叉，概念层，未验证。
+2. **阅读加权（轻）：批渲染代价数量级对照** — 详见下方专题。公开 Kerbl et al. 3DGS 栅格吞吐相对 Cycles / EEVEE 的数量级差距，继续加固 MiracleAug / PTIR 卡点②（正向批渲染）阅读权重；只写定性对照，不写本机外推帧时或云成本。
+3. **低端具身交叉：SO-101 作为公开低成本臂运动学参考** — 可并入既有「低成本 / 低端机具身 × 合成数据 demo」阅读加权：HF LeRobot SO-101 文档与 TheRobotStudio 公开 URDF 提供可核验的关节限位/运动学入口；概念层对照，勿写入本地可达域体积等私有复算数字。
+4. **Blender 5.3 原生 3DGS：** 经 [developer release notes · Rendering](https://developer.blender.org/docs/release_notes/5.3/rendering/) 再确认官方 Limitations（性能、sRGB 训练假设、线性空间偏差、Apply Transform 对 scale/rotation/SH）；细节仍见 2026-09-22 专题，此处不重复展开。
+5. **blog / academic / ASTRA：** blog tip 仍 `8d722e0`；academic 仍 `f19a697`；ASTRA 仍 `a1624d6`。无新公开发布增量。
+
+---
+
+## 2026-10-03 · 3DGS 部件修复 · 运动学/接触约束缺口（阅读兴趣 · 轻加权）
+
+- **触发：** notes 仓 tip `207a3b2`（2026-10-03 兴趣小实验汇总）对公开文献 Limitations 的交叉阅读；校准既有「3DGS 分割部件修复」思路条。
+- **公开阅读口径：** GSComplete / InFusion / FocusGS / GOC 等已覆盖残缺补全、场景 inpainting、局部 repair、几何表面补全；文献交叉后仍偏缺的是——在**运动学或接触约束**下做局部高斯修复，以及以**完好示教/合成参考**条件生成破损件；下游评测若只报 NVS/CLIP/几何完整度，对抓取/装配公差信号不足。
+- **性质：** 综述层阅读加权。**不是**已证实缺口结论，**不**声称本地已跑训练或设计了评测协议。
+- **日报怎么用：** 「新兴趣相关」可轻扫上述公开族的 Limitations / 评测设定，并与卡点①拆分绑定、MiracleAug 可编辑动态资产交叉；点明「约束修复 / 完好参考条件生成」是否仍空。勿写「首次」、勿编造本地实验。
+- **禁止写入：** notes / interest-lab 正文、本机路径、未公开外推数字、私人排期。
+- **状态：** active · reading · light-weight · from-notes-calibration · tip=`207a3b2`
+
+---
+
+## 2026-10-03 · 批渲染代价数量级（阅读兴趣 · 轻加权 · 加固卡点②）
+
+- **触发：** 同上 notes tip `207a3b2`；对照公开 3DGS 栅格吞吐与 Cycles / EEVEE 批渲成本叙事。
+- **公开对照口径：** Kerbl et al.（TOG 2023 / [arXiv:2308.04079](https://arxiv.org/abs/2308.04079)）报告的 CUDA 栅格吞吐，相对路径追踪级 Cycles（及通常更轻但仍远重于 splat 栅格的 EEVEE）在**大规模多视图 / 示教批渲**场景下可差多个数量级——与 MiracleAug 博文「正向 / Batch 渲染仍是重大开销」及 PTIR 卡点②同向。
+- **性质：** 公开文献与手册量级的阅读加固。**不是**本机 GPU/Blender 实测；**禁止**把私有帧时外推、云成本区间 或特定机型假设写成事实。
+- **日报怎么用：** 写卡点②或 MiracleAug 批渲交叉时，可用「splat 栅格 vs 路径追踪级批渲」的定性数量级对照；Blender 5.3 原生 splat 官方已称性能不理想，勿默认等同论文 CUDA rasterizer。勿压过主菜、勿编造本地 FPS。
+- **禁止写入：** 本机硬件状态、私有外推表、自动化内部路径。
+- **状态：** active · reading · light-weight · reinforces-batch-render · from-notes-calibration · tip=`207a3b2`
+
+---
+
 ## 2026-09-27 · 当日讨论摘要（Cream 私聊）
+
 
 1. **阅读+工程兴趣（加权重）：低成本 / 低端机具身 × 合成数据 demo** — 详见下方专题。GPT-6 Astra 抬高合成数据能力后，维护者计划本年度认真研究合成数据利用、加深具身学习，并做出能在本人这类低端机上跑通的 demo；假设行业对真实「学生机 / 弱消费卡 / 无机队」约束投入不足，可能有补缺口空间。调研结论见专题（工业边缘 ≠ 学生低端机）。
 
@@ -23,6 +58,7 @@
 - **触发：** Cream 私聊。GPT-6 Astra 抬高合成数据能力，但维护者缺少更好的真机与 GPU；计划本年度认真研究合成数据利用、加深具身学习，并交付能在本人这类低端机上运行的 demo。假设：行业对真实低端 / 学生机约束投入不足 → 可能有补缺口创新空间；请日报侧经兴趣笔记加权跟读。
 - **性质：** 阅读加权 + 工程兴趣 / 年度方向假设。**不是**已验证产品结论，**不**声称「业界完全不关心边缘」，也**不**自动扩大毕设范围。
 - **调研结论摘要（事实口径）：** 业界**确实关心** edge / on-device 部署，但主流靶点是 **机器人 SoC**（Jetson Orin / Thor、Cosmos 3 Edge、Agibot π0.5-on-Thor 工程帖、AWS Physical AI 工具链中的 Jetson 边缘阶段）——不是实验室级消费本或入门 GPU。**训练 / foundation 后训练**仍以大规模 GPU 集群为中心（如 NVIDIA 博客中 Cosmos Edge 后训练在多节点 GB200 级上验证）。真正的 **低端 / 学生机**栈（弱消费卡、无机队、真机有限）更多落在爱好者 / 开源边缘运行时 / 成本敏感 DIY，相对 foundation 竞赛仍偏被忽视。可补缺口：适配弱算力的合成数据管线、弱机载蒸馏/量化/运行时、无需 Thor 级硬件即可演示的 demo。口径：**主流工业边缘 ≠ 学生低端机**。
+- **公开低成本臂参考（2026-10-04 校准增补）：** [LeRobot SO-101](https://huggingface.co/docs/lerobot) 文档与 TheRobotStudio 公开 URDF 可作为学生/爱好者级机械臂运动学入口（关节限位可核验）；只作阅读对照，勿写入本地可达域复算数字。
 - **与 MiracleAug 主线关系：** 合成数据是主杠杆时，低端机上的训练 / 仿真 / 渲染预算成为硬约束；可与 agentic 合成示教增强交叉，但不替换 PTIR / MiracleAug 策展主菜。
 - **日报怎么用：** 「新兴趣相关」可轻扫：on-device VLA / edge robotics runtimes、量化蒸馏、synthetic data for weak compute、student/hobbyist robot stacks；对照 Jetson Thor / Cosmos Edge 工业边缘标准，点明「工业边缘 ≠ 学生低端机」缺口。可与 MiracleAug / agentic 合成示教增强交叉。**勿压过** PTIR / MiracleAug 主菜；勿写成已验证产品结论。
 - **禁止写入：** 私人吐槽原文、未公开实验细节与资源额度、私人排期、未验证「业界完全无视边缘」类断言。
