@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-04",
+      "content_day": "2026-10-03",
+      "path": "digests/2026-10-04.md",
+      "title": "生成补全保护旧资产，局部增量修复可回滚",
+      "figs": "digests/2026-10-04/figs/",
+      "subtitle": "补缺口，也要护住旧资产"
+    },
+    {
       "date": "2026-10-03",
       "content_day": "2026-10-02",
       "path": "digests/2026-10-03.md",
