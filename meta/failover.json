@@ -663,11 +663,26 @@
       "publish_date": "2026-10-04",
       "claim_id": "43dc7978-1b29-4b00-9ebc-23410a6e51b8",
       "detail": "Published digests/2026-10-04.md covering 2026-10-03 weekend background with GSComplete and FocusGS; original pipeline figures and dated news/community items."
+    },
+    {
+      "at": "2026-10-05T05:29:29+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-05",
+      "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
+      "expires_at": "2026-10-05T05:59:29+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-05 digest within its claimable interval; 30-minute lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-05",
+    "bot": "Neon",
+    "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
+    "claimed_at": "2026-10-05T05:29:29+08:00",
+    "expires_at": "2026-10-05T05:59:29+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
