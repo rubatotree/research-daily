@@ -1,6 +1,24 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2607.19190": {
+      "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
+      "short": "Agentic Real2Sim",
+      "first_seen": "2026-10-05",
+      "digest": "2026-10-05",
+      "content_day": "2026-10-04",
+      "reappearances": [],
+      "note": "Interest-driven weekend background; v4 revised 2026-09-16. Methods and key experiments read; original Figure 1 reproduced. Separate replay, simulation evaluation, and synthetic-training evidence."
+    },
+    "2610.00618": {
+      "title": "Dirichlet Splatting: Differentiable Rendering for Wave-Based Inverse Problems",
+      "short": "Dirichlet Splatting",
+      "first_seen": "2026-10-05",
+      "digest": "2026-10-05",
+      "content_day": "2026-10-04",
+      "reappearances": [],
+      "note": "Adjacent announcement batch first inclusion; v1 submitted 2026-09-30. Methods and key experiments read; original Figures 2 and 3 reproduced."
+    },
     "2609.08449": {
       "title": "GSComplete: Gaussian Splat Completion with 2D Diffusion Priors",
       "short": "GSComplete",
