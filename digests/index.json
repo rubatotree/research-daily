@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-05",
+      "content_day": "2026-10-04",
+      "path": "digests/2026-10-05.md",
+      "title": "可执行孪生的检查链，波动逆渲染的表示与求解",
+      "figs": "digests/2026-10-05/figs/",
+      "subtitle": "重建之后，还要执行验收"
+    },
+    {
       "date": "2026-10-04",
       "content_day": "2026-10-03",
       "path": "digests/2026-10-04.md",

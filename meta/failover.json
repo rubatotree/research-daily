@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-10-04",
-    "at": "2026-10-04T05:39:13+08:00",
+    "publish_date": "2026-10-05",
+    "at": "2026-10-05T05:47:07+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-10-03 weekend background with GSComplete and FocusGS; original pipeline figures and constrained-repair comparison."
+    "note": "Primary publish covering 2026-10-04 weekend background with Agentic Real2Sim and Dirichlet Splatting; original method figures and dated news/community items."
   },
   "events": [
     {
@@ -672,17 +672,19 @@
       "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
       "expires_at": "2026-10-05T05:59:29+08:00",
       "detail": "Primary Neon claimed missing 2026-10-05 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-05T05:47:07+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-05",
+      "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
+      "detail": "Published digests/2026-10-05.md covering 2026-10-04 with Agentic Real2Sim and Dirichlet Splatting; original Figures 1, 2 and 3; three dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-05",
-    "bot": "Neon",
-    "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
-    "claimed_at": "2026-10-05T05:29:29+08:00",
-    "expires_at": "2026-10-05T05:59:29+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
