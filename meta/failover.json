@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-10-05",
-    "at": "2026-10-05T05:47:07+08:00",
+    "publish_date": "2026-10-06",
+    "at": "2026-10-06T05:45:00+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-10-04 weekend background with Agentic Real2Sim and Dirichlet Splatting; original method figures and dated news/community items."
+    "note": "Primary publish covering 2026-10-05 with frontier-guided demonstration generation and dense language supervision plus I2CD direct collision geometry; original method figures and dated news/community items."
   },
   "events": [
     {
@@ -689,17 +689,19 @@
       "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
       "expires_at": "2026-10-06T06:05:22+08:00",
       "detail": "Primary Neon claimed missing 2026-10-06 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-06T05:45:00+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-06",
+      "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
+      "detail": "Published digests/2026-10-06.md covering 2026-10-05 with frontier-guided demonstration generation, dense language supervision, and I2CD direct collision geometry; original Figure 8, Table 1, and Figure 2; two dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-06",
-    "bot": "Neon",
-    "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
-    "claimed_at": "2026-10-06T05:35:22+08:00",
-    "expires_at": "2026-10-06T06:05:22+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
