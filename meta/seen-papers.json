@@ -1,6 +1,24 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2610.03615": {
+      "title": "Bridging Frontier Reasoning and Robot Execution: From Autonomous Demonstration Generation to Dense Language Supervision",
+      "short": "Frontier Reasoning ↔ Robot Execution",
+      "first_seen": "2026-10-06",
+      "digest": "2026-10-06",
+      "content_day": "2026-10-05",
+      "reappearances": [],
+      "note": "Autonomous physical demonstration generation, corrective segments, local π0.5 harness, and dense hierarchical multi-aspect language supervision; full method and key experiments read; original Figure 8 and Table 1 reproduced."
+    },
+    "2610.03453": {
+      "title": "I2CD: Direct Image-to-Convex Decomposition for Simulation-Ready Collision Geometry",
+      "short": "I2CD",
+      "first_seen": "2026-10-06",
+      "digest": "2026-10-06",
+      "content_day": "2026-10-05",
+      "reappearances": [],
+      "note": "Single-image direct convex collision geometry from a frozen Hunyuan3D-2 backbone; cross-engine and xArm7 evidence; full method and key experiments read; original Figure 2 reproduced."
+    },
     "2607.19190": {
       "title": "Agentic Real2Sim: Physics-based World Modeling with Vision-Language Agents",
       "short": "Agentic Real2Sim",
@@ -1011,6 +1029,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-04",
+  "updated": "2026-10-06",
   "version": 1
 }
