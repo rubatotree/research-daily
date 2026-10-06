@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-10-06",
-    "at": "2026-10-06T05:45:00+08:00",
+    "publish_date": "2026-10-07",
+    "at": "2026-10-07T05:36:07+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-10-05 with frontier-guided demonstration generation and dense language supervision plus I2CD direct collision geometry; original method figures and dated news/community items."
+    "note": "Primary publish covering 2026-10-06 with GOTT cross-embodiment contact acquisition and SUAVE unified video-action masked diffusion; original Figure 1 from both papers and dated news/community items."
   },
   "events": [
     {
@@ -706,17 +706,19 @@
       "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
       "expires_at": "2026-10-07T05:58:46+08:00",
       "detail": "Primary Neon claimed missing 2026-10-07 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-07T05:36:07+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-07",
+      "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
+      "detail": "Published digests/2026-10-07.md covering 2026-10-06 with GOTT cross-embodiment contact acquisition and SUAVE unified video-action masked diffusion; original Figure 1 from both papers and dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-07",
-    "bot": "Neon",
-    "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
-    "claimed_at": "2026-10-07T05:28:46+08:00",
-    "expires_at": "2026-10-07T05:58:46+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
