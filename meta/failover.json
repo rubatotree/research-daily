@@ -697,11 +697,26 @@
       "publish_date": "2026-10-06",
       "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
       "detail": "Published digests/2026-10-06.md covering 2026-10-05 with frontier-guided demonstration generation, dense language supervision, and I2CD direct collision geometry; original Figure 8, Table 1, and Figure 2; two dated news/community items."
+    },
+    {
+      "at": "2026-10-07T05:28:46+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-07",
+      "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
+      "expires_at": "2026-10-07T05:58:46+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-07 digest within its early-skew claimable interval; 30-minute lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-07",
+    "bot": "Neon",
+    "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
+    "claimed_at": "2026-10-07T05:28:46+08:00",
+    "expires_at": "2026-10-07T05:58:46+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
