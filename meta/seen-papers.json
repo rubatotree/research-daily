@@ -1,6 +1,33 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2610.06999": {
+      "title": "ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration",
+      "short": "ProactiveVLA",
+      "first_seen": "2026-10-08",
+      "digest": "2026-10-08",
+      "content_day": "2026-10-07",
+      "reappearances": [],
+      "note": "Budgeted three-level proactive exploration, visual verification, evidence-preserving memory consolidation and frozen-VLA deployment; full HTML method and key experiments read; original Figure 1 reproduced."
+    },
+    "2610.07116": {
+      "title": "AIM: Adaptive Interaction Modeling Networks for Real-to-Sim Soft-Body Simulation",
+      "short": "AIM",
+      "first_seen": "2026-10-08",
+      "digest": "2026-10-08",
+      "content_day": "2026-10-07",
+      "reappearances": [],
+      "note": "History-adaptive particle relations plus geometry-conditioned global communication for deformable Real-to-Sim prediction; full HTML method, experiments and limitations read; original Figure 2 reproduced."
+    },
+    "2610.06921": {
+      "title": "Does a Learned Corrector Beat a Simple Retreat? Evidence from a Frozen VLA",
+      "short": "Learned Corrector",
+      "first_seen": "2026-10-08",
+      "digest": "2026-10-08",
+      "content_day": "2026-10-07",
+      "reappearances": [],
+      "note": "Frozen-pi0.5 runtime recovery dissected with same-seed placebo, counterfactual admission and a matched scripted-retreat baseline; full HTML method and preregistered paired experiments read; original Figure 1 reproduced."
+    },
     "2610.03861": {
       "title": "GOTT: Object-centric Dexterous Manipulation with a Reusable Cross-Embodiment Primitive",
       "short": "GOTT",
@@ -1047,6 +1074,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-07",
+  "updated": "2026-10-08",
   "version": 1
 }
