@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-08",
+      "content_day": "2026-10-07",
+      "path": "digests/2026-10-08.md",
+      "title": "主动探索沉淀可审计记忆，软体孪生自适应传播，恢复先过安慰剂",
+      "figs": "digests/2026-10-08/figs/",
+      "subtitle": "主动记忆与软体仿真"
+    },
+    {
       "date": "2026-10-07",
       "content_day": "2026-10-06",
       "path": "digests/2026-10-07.md",
