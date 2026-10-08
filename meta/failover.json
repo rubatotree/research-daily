@@ -731,11 +731,26 @@
       "publish_date": "2026-10-08",
       "claim_id": "3b639c3a-7cc0-43d7-8e08-df1613a65c19",
       "detail": "Published digests/2026-10-08.md covering 2026-10-07 with ProactiveVLA proactive memory acquisition, AIM deformable Real-to-Sim dynamics, and placebo-controlled frozen-VLA recovery; original method figures and dated news/community items."
+    },
+    {
+      "at": "2026-10-09T05:29:26+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-09",
+      "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
+      "expires_at": "2026-10-09T05:59:26+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-09 digest within the current claimable interval; lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-09",
+    "bot": "Neon",
+    "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
+    "claimed_at": "2026-10-09T05:29:26+08:00",
+    "expires_at": "2026-10-09T05:59:26+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
