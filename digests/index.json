@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-09",
+      "content_day": "2026-10-08",
+      "path": "digests/2026-10-09.md",
+      "title": "换光前拆清辐射代理，预积分光源先锁定条件",
+      "figs": "digests/2026-10-09/figs/",
+      "subtitle": "辐射代理与光照预积分"
+    },
+    {
       "date": "2026-10-08",
       "content_day": "2026-10-07",
       "path": "digests/2026-10-08.md",

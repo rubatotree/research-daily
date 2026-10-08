@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-10-08",
-    "at": "2026-10-08T05:38:20+08:00",
+    "publish_date": "2026-10-09",
+    "at": "2026-10-09T05:42:20.000+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-10-07 with ProactiveVLA proactive memory acquisition, AIM deformable Real-to-Sim dynamics, and placebo-controlled frozen-VLA recovery; original method figures and dated news/community items."
+    "note": "Primary publish covering 2026-10-08 events with explicit full-method IRGS++ background reading and October 5 Neural Emission Fields backlog; original method figures and three dated news/community items."
   },
   "events": [
     {
@@ -740,17 +740,19 @@
       "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
       "expires_at": "2026-10-09T05:59:26+08:00",
       "detail": "Primary Neon claimed missing 2026-10-09 digest within the current claimable interval; lease capped by role window."
+    },
+    {
+      "at": "2026-10-09T05:42:20.000+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-09",
+      "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
+      "detail": "Primary publish covering 2026-10-08 events with explicit full-method IRGS++ background reading and October 5 Neural Emission Fields backlog; original method figures and three dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-09",
-    "bot": "Neon",
-    "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
-    "claimed_at": "2026-10-09T05:29:26+08:00",
-    "expires_at": "2026-10-09T05:59:26+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
