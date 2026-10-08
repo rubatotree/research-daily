@@ -1,6 +1,30 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2607.22780": {
+      "title": "Inter-Reflective Gaussian Splatting for Robust and Efficient Inverse Rendering",
+      "short": "IRGS++",
+      "first_seen": "2026-09-08",
+      "digest": "2026-09-08",
+      "content_day": "2026-09-07",
+      "reappearances": [
+        {
+          "digest": "2026-10-09",
+          "content_day": "2026-10-08",
+          "reason": "Full-method background reading for real-capture inverse rendering; initial September 8 mention was only an interest lead, not a daily new release."
+        }
+      ],
+      "note": "Full v1 methods and key experiments read. Training-light-conditioned radiance proxy distinguished from novel-light attribute tracing; original Figure 2 reproduced. No verified complete IRGS++ code release or independent reproduction."
+    },
+    "2610.06762": {
+      "title": "Real-time Rendering of Pre-integrated Neural Emitters",
+      "short": "Neural Emission Fields",
+      "first_seen": "2026-10-09",
+      "digest": "2026-10-09",
+      "content_day": "2026-10-08",
+      "reappearances": [],
+      "note": "Explicit October 5 backlog. Receiver-side direct illumination preintegration for known emitters; full methods and key experiments read. Local-frame portability, external visibility, material and motion restrictions, amortized cost distinguished. Original HTML Figure 1 / PDF Figure 2 reproduced."
+    },
     "2610.06999": {
       "title": "ProactiveVLA: Augmenting Embodied Memory through Proactive Environment Exploration",
       "short": "ProactiveVLA",
@@ -1074,6 +1098,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "version": 1
 }
