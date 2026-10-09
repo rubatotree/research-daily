@@ -1,6 +1,33 @@
 {
   "dating": "Digest filename/date is publish day (HKT); content covers previous day.",
   "entries": {
+    "2610.10847": {
+      "title": "Reservoir Light Replay Backpropagation",
+      "short": "ResLRB",
+      "first_seen": "2026-10-10",
+      "digest": "2026-10-10",
+      "content_day": "2026-10-09",
+      "reappearances": [],
+      "note": "Single weighted reservoir plus PRNG replay gives an unbiased light-path gradient estimator with path-depth-independent peak AD memory; full HTML methods, attached differentiation and experiments read; original Figure 3 reproduced."
+    },
+    "2610.11011": {
+      "title": "PCAsplat: Scene-Space PCA Regularization for Geometrically Consistent Gaussian Splatting",
+      "short": "PCAsplat",
+      "first_seen": "2026-10-10",
+      "digest": "2026-10-10",
+      "content_day": "2026-10-09",
+      "reappearances": [],
+      "note": "Differentiable KNN PCA regularizes Gaussian centers and shortest-axis normals in scene space on a PGSR base; full HTML methods, ablations and key experiments read; original Figure 2 reproduced."
+    },
+    "2610.11702": {
+      "title": "Real-time Specular Rendering with Prefiltered Neural Radiance Caching",
+      "short": "Prefiltered NRC",
+      "first_seen": "2026-10-10",
+      "digest": "2026-10-10",
+      "content_day": "2026-10-09",
+      "reappearances": [],
+      "note": "Online cache predicts prefiltered incident radiance conditioned on position, reflected view direction and roughness, then applies a split-sum BRDF LUT; full HTML methods and experiments read; original Figure 1 curve excerpt reproduced."
+    },
     "2607.22780": {
       "title": "Inter-Reflective Gaussian Splatting for Robust and Efficient Inverse Rendering",
       "short": "IRGS++",
@@ -1098,6 +1125,6 @@
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-09",
+  "updated": "2026-10-10",
   "version": 1
 }
