@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-10",
+      "content_day": "2026-10-09",
+      "path": "digests/2026-10-10.md",
+      "title": "随机压缩反传，场景空间约束几何，缓存镜面辐射",
+      "figs": "digests/2026-10-10/figs/",
+      "subtitle": "反传显存与几何正则"
+    },
+    {
       "date": "2026-10-09",
       "content_day": "2026-10-08",
       "path": "digests/2026-10-09.md",
