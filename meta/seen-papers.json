@@ -1122,9 +1122,27 @@
       "content_day": "2026-10-02",
       "reappearances": [],
       "note": "Digital-twin recovery discovery plus separate task/recovery policies and four-station real-robot DAgger loop; full HTML method and key experiments read; original Figure 2 reproduced."
+    },
+    "2610.10852": {
+      "title": "Sensitivity as an Arbitrary Output Variable for Differentiable Rendering",
+      "short": "Sensitivity AOV",
+      "first_seen": "2026-10-11",
+      "digest": "2026-10-11",
+      "content_day": "2026-10-10",
+      "reappearances": [],
+      "note": "Reverse-mode sensitivity buffer over parameter hierarchy with deferred views; HTML read; Figure 2 reproduced."
+    },
+    "2610.10554": {
+      "title": "GaussianBench: Physics-Fidelity Evaluation for Gaussian Scene Representations",
+      "short": "GaussianBench",
+      "first_seen": "2026-10-11",
+      "digest": "2026-10-11",
+      "content_day": "2026-10-10",
+      "reappearances": [],
+      "note": "Physics-fidelity benchmark (PASS/FAIL/NA/INVALID) over six physics-GS systems; HTML read; Figure 1 reproduced."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-10",
+  "updated": "2026-10-11",
   "version": 1
 }

@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-11",
+      "content_day": "2026-10-10",
+      "path": "digests/2026-10-11.md",
+      "title": "把梯度做成渲染输出，把物理高斯测到内部状态",
+      "figs": "digests/2026-10-11/figs/",
+      "subtitle": "梯度检视与物理高斯评测"
+    },
+    {
       "date": "2026-10-10",
       "content_day": "2026-10-09",
       "path": "digests/2026-10-10.md",

@@ -32,11 +32,11 @@
   ],
   "active_owner": "Cream",
   "last_success": {
-    "bot": "Neon",
-    "publish_date": "2026-10-10",
-    "at": "2026-10-10T05:44:55.000+08:00",
+    "bot": "Cream",
+    "publish_date": "2026-10-11",
+    "at": "2026-10-11T06:20:39+08:00",
     "commit": null,
-    "note": "Primary publish covering 2026-10-09 with ResLRB constant-memory differentiable path tracing, PCAsplat scene-space geometry regularization, and prefiltered neural radiance caching; original paper figures and three dated news/community items."
+    "note": "Standby failover publish after Neon lease expired 06:04: Sensitivity AOV (gradient inspection) and GaussianBench (physics-fidelity evaluation)."
   },
   "events": [
     {
@@ -790,20 +790,19 @@
       "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
       "expires_at": "2026-10-11T06:50:00+08:00",
       "detail": "Standby Cream claimed missing 2026-10-11 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-11T06:20:39+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-11",
+      "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
+      "detail": "Standby failover publish: Sensitivity AOV and GaussianBench (Saturday, no new arXiv announcement); original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "bot": "Cream",
-    "publish_date": "2026-10-11",
-    "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
-    "claimed_at": "2026-10-11T06:18:33+08:00",
-    "expires_at": "2026-10-11T06:50:00+08:00",
-    "role": "standby",
-    "window_start": "06:20",
-    "window_end": "06:50"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
