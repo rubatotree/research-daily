@@ -1140,6 +1140,24 @@
       "content_day": "2026-10-10",
       "reappearances": [],
       "note": "Physics-fidelity benchmark (PASS/FAIL/NA/INVALID) over six physics-GS systems; HTML read; Figure 1 reproduced."
+    },
+    "2610.05576": {
+      "title": "SteadySplats: Resampling of Low-Variance Gaussians for High-Fidelity Stochastic Rendering",
+      "short": "SteadySplats",
+      "first_seen": "2026-10-12",
+      "digest": "2026-10-12",
+      "content_day": "2026-10-11",
+      "reappearances": [],
+      "note": "Color-variance regularizer plus spatial/temporal SNIS resampling for stochastic OIT 3DGS; HTML method and limitations read; original Figure 1."
+    },
+    "2610.12333": {
+      "title": "RiCo: Neural Simulation of Rigid-Body Interactions via Local Contact Reasoning",
+      "short": "RiCo",
+      "first_seen": "2026-10-12",
+      "digest": "2026-10-12",
+      "content_day": "2026-10-11",
+      "reappearances": [],
+      "note": "Sparse local contact neighborhoods plus intra-object point transformer for passive rigid-body neural simulation; HTML method/experiments read; original Figure 2."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",

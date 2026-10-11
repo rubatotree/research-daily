@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-11",
-    "at": "2026-10-11T06:20:39+08:00",
+    "publish_date": "2026-10-12",
+    "at": "2026-10-12T06:19:47+08:00",
     "commit": null,
-    "note": "Standby failover publish after Neon lease expired 06:04: Sensitivity AOV (gradient inspection) and GaussianBench (physics-fidelity evaluation)."
+    "note": "Standby failover publish after Neon produced no claim or digest in [05:30,06:20): SteadySplats (stochastic 3DGS resampling) and RiCo (local-contact rigid-body neural simulation)."
   },
   "events": [
     {
@@ -814,17 +814,19 @@
       "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
       "expires_at": "2026-10-12T06:50:00+08:00",
       "detail": "Standby Cream claimed missing 2026-10-12 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-12T06:19:47+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-12",
+      "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
+      "detail": "Standby failover publish: SteadySplats and RiCo (Sunday, no new arXiv announcement); original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "bot": "Cream",
-    "publish_date": "2026-10-12",
-    "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
-    "claimed_at": "2026-10-12T06:18:12+08:00",
-    "expires_at": "2026-10-12T06:50:00+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
