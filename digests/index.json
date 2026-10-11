@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-12",
+      "content_day": "2026-10-11",
+      "path": "digests/2026-10-12.md",
+      "title": "随机透明也能低噪声，刚体接触只看局部",
+      "figs": "digests/2026-10-12/figs/",
+      "subtitle": "高斯随机渲染与接触神经仿真"
+    },
+    {
       "date": "2026-10-11",
       "content_day": "2026-10-10",
       "path": "digests/2026-10-11.md",
