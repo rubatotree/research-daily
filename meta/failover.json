@@ -822,11 +822,33 @@
       "publish_date": "2026-10-12",
       "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
       "detail": "Standby failover publish: SteadySplats and RiCo (Sunday, no new arXiv announcement); original figures."
+    },
+    {
+      "at": "2026-10-13T06:18:14+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-13",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-13.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-13T06:18:14+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-13",
+      "claim_id": "b6fa97c0-4870-49b2-b6ca-ec1f2029abd1",
+      "expires_at": "2026-10-13T06:48:14+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-13 digest; lease capped by role window end 06:50."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "bot": "Cream",
+    "publish_date": "2026-10-13",
+    "claim_id": "b6fa97c0-4870-49b2-b6ca-ec1f2029abd1",
+    "claimed_at": "2026-10-13T06:18:14+08:00",
+    "expires_at": "2026-10-13T06:48:14+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
