@@ -1158,9 +1158,27 @@
       "content_day": "2026-10-11",
       "reappearances": [],
       "note": "Sparse local contact neighborhoods plus intra-object point transformer for passive rigid-body neural simulation; HTML method/experiments read; original Figure 2."
+    },
+    "2610.13498": {
+      "title": "A Hybrid and Hierarchical Ray Tracing Method for Efficient 3D Gaussian Rendering",
+      "short": "H2-Ray",
+      "first_seen": "2026-10-13",
+      "digest": "2026-10-13",
+      "content_day": "2026-10-12",
+      "reappearances": [],
+      "note": "Load-balanced spatial BVH, ray-cluster path reuse and unified Gaussian/triangle intersection engine for ray-traced 3DGS (modeled RT Core + measured CUDA); HTML method/evaluation read; original Fig. 1."
+    },
+    "2610.13757": {
+      "title": "Gaussian Splatting with Reflections Guided by What is Seen",
+      "short": "Reflections Guided by What is Seen",
+      "first_seen": "2026-10-13",
+      "digest": "2026-10-13",
+      "content_day": "2026-10-12",
+      "reappearances": [],
+      "note": "ICIP 2026. 2DGS with primary+secondary Gaussians traced in the reflection pass for near-field reflections; NearRef dataset; HTML method/ablation read; original Figure 1."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-11",
+  "updated": "2026-10-13",
   "version": 1
 }

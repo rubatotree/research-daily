@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-13",
+      "content_day": "2026-10-12",
+      "path": "digests/2026-10-13.md",
+      "title": "把高斯光追的账拆开算，从看得见处借反射几何",
+      "figs": "digests/2026-10-13/figs/",
+      "subtitle": "高斯光追效率与近场反射"
+    },
+    {
       "date": "2026-10-12",
       "content_day": "2026-10-11",
       "path": "digests/2026-10-12.md",
