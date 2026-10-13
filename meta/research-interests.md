@@ -65,6 +65,7 @@
 - **阅读加权（轻）：** VLA 过程监督与 Agent 仿真示范中的显式语言中间量（对照：视频后标注）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。概念层动机，未验证，不替换当前逆渲染主线。
 - **阅读加权（轻 · 2026-09-26）：** 已知运动学约束下、同轨迹动态高斯的新视角渲染与运动一致性（对照：新轨迹合成 / 静态编辑后重规划）；公开文献入口见 [`interest-notes.md`](./interest-notes.md)。来自 notes tip `0630f94` 校准，勿复制开题草稿。
 - **阅读加权（轻 · 2026-10-04）：** notes tip `207a3b2` 校准——3DGS 部件修复在运动学/接触约束与完好参考条件生成上的文献缺口；批渲染（splat 栅格 vs Cycles/EEVEE）数量级对照加固卡点②；SO-101 公开 URDF 作低成本臂运动学入口。细节见 [`interest-notes.md`](./interest-notes.md)；勿复制 notes 正文或私有外推数字。
+- **阅读加权（2026-10-14）：** notes tip `82e3952` 校准——可微路径追踪 × Radiance Cache（Zhang et al. TOG 2026）、高斯光追效率与免排序梯度（GRay / Stoch3DGS）、室内困难场景平面几何先验（PGSR 族）、批渲染光传输复用（残差路径积分 / 控制变量 / 神经缓存）；圈内跟 LLM/Agent 重建 vs 3DGS 讨论。细节见 [`interest-notes.md`](./interest-notes.md)；勿复制 notes 正文、实验指标或投稿排期。
 - **blog 草稿（勿引用正文）：** 维护者在写 SIGGRAPH Asia 2026 论文笔记 I（`draft: true`，tip 仍 `8d722e0`）。日报只可跟文中已公开的论文本身，不得复述未发布草稿判断。
 
 ## 对标仓（公开 · 写日报时顺带扫）
