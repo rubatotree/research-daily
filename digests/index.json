@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-14",
+      "content_day": "2026-10-12",
+      "path": "digests/2026-10-14.md",
+      "title": "新基元放到误差大处，可见性只学一个半径",
+      "figs": "digests/2026-10-14/figs/",
+      "subtitle": "误差驱动致密化与可微环境遮蔽"
+    },
+    {
       "date": "2026-10-13",
       "content_day": "2026-10-12",
       "path": "digests/2026-10-13.md",
