@@ -12,6 +12,23 @@
 
 ---
 
+## 2026-10-14 · 当日校准摘要（notes · 无 Cream 私聊）
+
+自上次兴趣同步以来，**未**与 Cream 新增可公开兴趣讨论。按 `research-interests.md`「notes 与 blog 联合校准」扫到 notes tip `207a3b2`→`82e3952`（2026-10-11 周报与逆渲染/批渲染阅读整理）。只提炼**已公开文献与公开讨论**层面的阅读加权，与 2026-10-08「真实场景 3DGS 逆渲染、效率与鲁棒性」主线同向；**不**复制 notes 正文、实验观察、指标、排期或投稿计划。
+
+1. **阅读加权（中）：可微路径追踪 × Radiance Cache** — [Radiance Caching for Differentiable Path Tracing](https://rgl.epfl.ch/publications/Zhang2026Cache)（Zhang, Vicini, Winberg, Garbin, Jakob · ACM TOG 45, 2026-07 / SIGGRAPH 2026）：用空间 blending field 在 cache 估计与无偏 BSDF 续追之间局部插值，报告相对 PRB 等的速度与鲁棒性提升，且光照不可唯一辨识时仍能恢复材质。日报可重点跟：此类 cache 思路迁移到 3DGS / 高斯光追逆渲染的公开工作，以及「重建出的辐射场哪部分可信、可当缓存」的讨论。
+2. **阅读加权（中）：高斯光追的效率与梯度一致性** — [GRay](https://repo-sam.inria.fr/nerphys/gray/)（Poirier-Ginter, Lalonde, Drettakis · I3D 2026 / PACMCGIT；[arXiv:2606.30869](https://arxiv.org/abs/2606.30869)）：稠密初始化 + 小高斯，使光追优化/渲染接近 3DGS 速度；[Stochastic Ray Tracing for the Reconstruction of 3DGS](https://xupaya.github.io/stoch3DGS/)（Xu et al. · CVPR 2026；[arXiv:2603.23637](https://arxiv.org/abs/2603.23637)）：免排序、无偏 MC 梯度估计，并延伸到可重光照 3DGS 的光追阴影。两者分别从「减少相交」与「免排序」两侧降低光追代价，是卡点②（正向/逆向效率）的直接对照族。
+3. **阅读加权（轻）：困难室内场景的平面/表面几何先验** — [PGSR](https://arxiv.org/abs/2406.06521)（arXiv 2024-06 首次挂出）等平面约束高斯表面重建，对照反光平面、视角覆盖不全、纹理稀少的室内采集；与 10-08「弱几何先验、室内不完整采集」同向。
+4. **阅读加权（轻）：批渲染中的光传输复用** — 公开文献族：[Residual Path Integrals for Re-rendering](https://iliyan.com/publications/ResidualPathIntegral/)（Xu et al. 2024）、图像空间/递归控制变量（Rousselle et al. 2016；[Nicolet et al. 2023](https://rgl.epfl.ch/publications/Nicolet2023Recursive)；[Imperfect Image-Space Control Variates](https://cglab.gist.ac.kr/siga25iicv/), SIGGRAPH Asia 2025）、Neural Radiosity / 神经辐射缓存、ReSTIR/GRIS 重采样。用于一批相近场景（局部编辑、材质/光照/相机变化）的渲染成本分摊；与既有卡点②与 MiracleAug 批渲交叉。只作阅读入口，不写任何未公开推导结论或算法设想。
+5. **圈内讨论（轻）：LLM/Agent 驱动重建 vs 3DGS** — [kaloyan.blog：AI 模型在 Blender 中重建照片](https://kaloyan.blog/ai-models-rebuild-a-photo-in-blender) 横向比较多模型的场景重建；[4DCodeBench](https://4dcodebench.com/) 让 Agent 写代码重建物理视频，直指 Real2Sim，但多数 Agent 偏运动学还原而非物理还原。日报可在「圈内动态」里跟这类比较，并对照「3DGS 高保真还原在大模型冲击下的独特价值」（影视/游戏资产质量门槛）这一开放问题。
+6. **具身（次要，维持 10-08 优先级）：** 继续精选 π0.5 等 VLA 基座在分布内/外泛化与换环境鲁棒性方面的**公开**评测；维护者公开仓 [rubatotree/lerobot-monitor](https://github.com/rubatotree/lerobot-monitor) 可作远程推理工具参考。
+7. **blog / academic：** blog tip 仍 `8d722e0`；academic 仍 `f19a697`。无新公开发布增量。
+
+- **禁止写入：** notes 周报/报告正文、内部实验现象与指标、项目内部命名、组会/投稿排期、本机路径。
+- **状态：** active · reading · from-notes-calibration · tip=`82e3952`
+
+---
+
 ## 2026-10-08 · 选题优先级调整
 
 - **当前主线：** 真实场景 3DGS 逆向渲染、可重光照资产质量与渲染效率；具体加权以 `research-interests.md` 为准。
