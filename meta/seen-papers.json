@@ -1176,9 +1176,27 @@
       "content_day": "2026-10-12",
       "reappearances": [],
       "note": "ICIP 2026. 2DGS with primary+secondary Gaussians traced in the reflection pass for near-field reflections; NearRef dataset; HTML method/ablation read; original Figure 1."
+    },
+    "2610.13541": {
+      "title": "Efficient Confidence-Aware Densification for 3DGS",
+      "short": "Confidence-Aware Densification",
+      "first_seen": "2026-10-14",
+      "digest": "2026-10-14",
+      "content_day": "2026-10-12",
+      "reappearances": [],
+      "note": "Error-driven densification inside fixed-budget 3DGS-MCMC: screen-space-gradient + low-confidence sampling and max-blend-weight relocation; HTML method/ablation read; original Fig. 1."
+    },
+    "2609.27600": {
+      "title": "ARS-Avatar: Animatable and Relightable Surfel Avatars with Learnable Ambient Occlusion",
+      "short": "ARS-Avatar",
+      "first_seen": "2026-10-14",
+      "digest": "2026-10-14",
+      "content_day": "2026-10-12",
+      "reappearances": [],
+      "note": "v1 2026-09-23, v3 2026-10-09 (10-12 replacement listing). Relightable surfel avatars with differentiable SSAO via finite-difference per-part radius; HTML method read; original Fig. 2."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "version": 1
 }

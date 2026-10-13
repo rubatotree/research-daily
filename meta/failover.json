@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-13",
-    "at": "2026-10-13T06:18:22+08:00",
+    "publish_date": "2026-10-14",
+    "at": "2026-10-14T06:20:43+08:00",
     "commit": null,
-    "note": "Standby failover publish after Neon produced no claim or digest in [05:30,06:20): H2-Ray (ray-traced 3DGS efficiency) and Reflections Guided by What is Seen (near-field reflection 2DGS)."
+    "note": "Standby failover publish after Neon produced no claim or digest in [05:30,06:20): Confidence-Aware Densification (error-driven 3DGS-MCMC densification) and ARS-Avatar (relightable surfel avatars, differentiable SSAO)."
   },
   "events": [
     {
@@ -862,17 +862,19 @@
       "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
       "expires_at": "2026-10-14T06:48:59+08:00",
       "detail": "Standby Cream claimed missing 2026-10-14 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-14T06:20:43+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-14",
+      "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
+      "detail": "Standby failover publish: Confidence-Aware Densification and ARS-Avatar (unused remainder of Monday 10-12 arXiv announcement; no 10-13 listing yet); original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "bot": "Cream",
-    "publish_date": "2026-10-14",
-    "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
-    "claimed_at": "2026-10-14T06:18:59+08:00",
-    "expires_at": "2026-10-14T06:48:59+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
