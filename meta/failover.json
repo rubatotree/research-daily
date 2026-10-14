@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-14",
-    "at": "2026-10-14T06:20:43+08:00",
+    "publish_date": "2026-10-15",
+    "at": "2026-10-15T06:19:45+08:00",
     "commit": null,
-    "note": "Standby failover publish after Neon produced no claim or digest in [05:30,06:20): Confidence-Aware Densification (error-driven 3DGS-MCMC densification) and ARS-Avatar (relightable surfel avatars, differentiable SSAO)."
+    "note": "Standby failover publish after Neon produced no claim or digest in [05:30,06:20): Make It Flow (cinemagraph-style water animation on static 3DGS) and Walk-on-Ambient-Patch (solver-adapted isometric embeddings for projected WoS)."
   },
   "events": [
     {
@@ -886,17 +886,19 @@
       "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
       "expires_at": "2026-10-15T06:48:22+08:00",
       "detail": "Standby Cream claimed missing 2026-10-15 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-15T06:19:45+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-15",
+      "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
+      "detail": "Standby failover publish: Make It Flow and Walk-on-Ambient-Patch (Wednesday 10-14 arXiv announcement); original PDF page figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-15",
-    "bot": "Cream",
-    "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
-    "claimed_at": "2026-10-15T06:18:22+08:00",
-    "expires_at": "2026-10-15T06:48:22+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
