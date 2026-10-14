@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-15",
+      "content_day": "2026-10-14",
+      "path": "digests/2026-10-15.md",
+      "title": "静态高斯补水流，投影 Walk 改嵌入",
+      "figs": "digests/2026-10-15/figs/",
+      "subtitle": "可编辑流体与求解器适配嵌入"
+    },
+    {
       "date": "2026-10-14",
       "content_day": "2026-10-12",
       "path": "digests/2026-10-14.md",
