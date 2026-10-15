@@ -1210,6 +1210,24 @@
       "digest": "2026-10-15",
       "content_day": "2026-10-14",
       "arxiv": "2610.15573"
+    },
+    "2610.06035": {
+      "title": "Casual Flash Lighting for Gaussian Splat Inverse Rendering",
+      "short": "Casual Flash",
+      "note": "Full HTML methods, Tables I-II and limitations read. Explicit backlog from October 5. Requires flash observations and MVInverse priors; relighting evaluation uses predicted G-buffers and SSRT.",
+      "first_seen": "2026-10-15",
+      "digest": "2026-10-15",
+      "content_day": "2026-10-14",
+      "reappearances": []
+    },
+    "10.1109/OJSP.2026.3735472": {
+      "title": "Shadow-Aware Inverse Rendering in Gaussian Splatting",
+      "short": "Shadow-Aware GS",
+      "note": "Author manuscript methods and experiments read. Pixelwise directional visibility and segment-wise albedo constraints. Accepted month listed as September 2026; exact publication date unconfirmed. Relighting PSNR does not exceed IRGS.",
+      "first_seen": "2026-10-15",
+      "digest": "2026-10-15",
+      "content_day": "2026-10-14",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",

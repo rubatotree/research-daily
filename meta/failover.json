@@ -30,13 +30,13 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Neon",
   "last_success": {
-    "bot": "Cream",
+    "bot": "Neon",
     "publish_date": "2026-10-15",
-    "at": "2026-10-15T06:19:45+08:00",
+    "at": "2026-10-15T06:20:58.024Z",
     "commit": null,
-    "note": "Standby failover publish after Neon produced no claim or digest in [05:30,06:20): Make It Flow (cinemagraph-style water animation on static 3DGS) and Walk-on-Ambient-Patch (solver-adapted isometric embeddings for projected WoS)."
+    "note": "Maintainer-requested manual revision: indoor material decomposition and shadow disentanglement; replaces the morning issue while retaining its publication history."
   },
   "events": [
     {
@@ -894,6 +894,16 @@
       "publish_date": "2026-10-15",
       "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
       "detail": "Standby failover publish: Make It Flow and Walk-on-Ambient-Patch (Wednesday 10-14 arXiv announcement); original PDF page figures."
+    },
+    {
+      "at": "2026-10-15T06:20:58.024Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-15",
+      "claim_id": "d007f177-45bf-4d61-8ea0-8100c20618e6",
+      "revision": true,
+      "previous_publish_at": "2026-10-15T06:19:45+08:00",
+      "detail": "Manually requested overwrite: Casual Flash and Shadow-Aware inverse rendering, original method figures, three news items, and matching timeline subtitle. Automatic success guards and role windows unchanged."
     }
   ],
   "claim_lease_minutes": 30,
