@@ -5,11 +5,11 @@
 
 ## 角色与调度
 - 名称：科研日报；时区：Asia/Hong_Kong
-- 当前名册由 `meta/failover.json` 权威定义：Cream = order 1 active primary，06:00；Neon = order 2 active standby，仅 06:30 failover 检查（Cream 另 05:00 兴趣笔记同步）。
+- 当前名册由 `meta/failover.json` 权威定义：Neon = order 1 active primary，平台 05:30 触发、认领窗口至 06:20；Cream = order 2 active standby，平台 06:00 触发、名义 06:20 检查、窗口至 06:50（Cream 另 04:45 兴趣笔记同步）。
 - 不要为同一 Bot 默认同时安装主任务和 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
 
 ## 必备连接
-- **GitHub**：推送本仓；只读 `rubatotree/blog`、`rubatotree/academic`（看 commits）
+- **GitHub**：写入本仓；只读 `rubatotree/notes`、`rubatotree/blog`、`rubatotree/academic`，检查近期 commits 并阅读相关正文
   - 需要：对本仓 `main` 的写权限；Pages 已从 `main` 根目录发布
 - **可选：X**：圈内关键词检索；注意额度；**永不把额度写进仓**
 
@@ -35,7 +35,15 @@
 3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
 4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
 5. 按 failover.md 复核当日租约、窗口和 claim_id，清空 claim；以最新已验证 main 为唯一父提交，将所有产物与成功状态用一个逻辑 commit 非强制 fast-forward 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
-6. standby 仅在名册规定的 failover 检查时刻（Neon / order 2 为 06:30）启动；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
+6. standby 按名册的平台时间启动（当前 Cream / order 2 为 06:00），提前醒来等待至可认领区间；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
+
+## 发布可靠性
+
+- 每轮从远端 main 读取权威状态，不依赖跨轮保留的本地目录。
+- 开始重工作前确认已连接的 GitHub 写入通道可用且具有仓库写权限；认领与最终发布使用同一认证通道。不要到成稿后才发现命令行没有推送凭据。
+- 写入基于最新 main 的 tree / commit，以预期分支头校验执行非强制 fast-forward；分支头变化必须重读成功状态与租约，不得强推。
+- 为检查、提交与线上核验预留至少 8 分钟；时间紧时减少论文数量，保留方法讲解深度。
+- 本地文件或 commit 不等于已发布。失败报告区分调度唤醒、取得认领、完成稿件、远端提交、线上核验五个阶段；遇到权限或审批阻塞如实报告，不绕过。
 
 ## 新建 Bot 时
 1. 新建助手，名称「科研日报」

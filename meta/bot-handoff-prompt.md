@@ -84,6 +84,8 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 【发布】
 写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；git commit 的 **description（正文）** 须署 `编写：<你的代号>`（有代号时），与文末一致；推送到 main；向维护者发送简报并附 Pages 根链接。
 
+发布可靠性：每轮读取远端 main，不假定本地目录跨轮保留。开始重工作前确认已连接的 GitHub 认证写入通道及仓库写权限，认领和发布沿用该通道；不依赖尚未配置凭据的命令行推送。为检查、提交和线上核验预留至少 8 分钟。以最新 main 为父提交，使用预期分支头校验、非强制 fast-forward 原子写入；冲突重读状态。遇到权限或审批阻塞停止并报告，不绕过。本地文件或本地 commit 不算已发布，报告明确失败所在阶段。
+
 【故障转移与轻量守卫】
 先读取 meta/failover.json、digests/index.json，并检查当日 digests/YYYY-MM-DD.md；以 failover.json 的 timezone、scheduled_publish、failover_grace_minutes、bots 与 active_owner 为权威。
 「今日已成功」必须综合：当日 digest 存在、index 有当日条目、last_success.publish_date=今日、publish event 基本一致。已成功立即结束：不搜索、不读 PDF、不写稿、不提交。
