@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-16",
+      "content_day": "2026-10-15",
+      "path": "digests/2026-10-16.md",
+      "title": "稀疏光追补可见性，冻结几何学习高斯属性",
+      "figs": "digests/2026-10-16/figs/",
+      "subtitle": "可见性光追与几何冻结"
+    },
+    {
       "date": "2026-10-15",
       "content_day": "2026-10-14",
       "path": "digests/2026-10-15.md",

@@ -1228,9 +1228,27 @@
       "digest": "2026-10-15",
       "content_day": "2026-10-14",
       "reappearances": []
+    },
+    "2610.19847": {
+      "title": "VisibilitySplat: Ray-Traced Occlusion for Relighting with 3D Gaussian Splatting",
+      "short": "VisibilitySplat",
+      "first_seen": "2026-10-16",
+      "digest": "2026-10-16",
+      "content_day": "2026-10-15",
+      "reappearances": [],
+      "note": "WSCG 2026; sparse BVH ray-traced transmittance visibility for 3DGS inverse rendering; full HTML methods, tables and limitations read; original Figure 2."
+    },
+    "2610.20341": {
+      "title": "InfiniSplat v2: Analyzing and Improving Feed-Forward 3DGS from Any Views",
+      "short": "InfiniSplat v2",
+      "first_seen": "2026-10-16",
+      "digest": "2026-10-16",
+      "content_day": "2026-10-15",
+      "reappearances": [],
+      "note": "Multi-view feed-forward 3DGS; frozen DA3 geometry, scale-aligned cameras, large-angle supervision and learned refinement; full HTML methods and appendix read; original Figure 2."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "version": 1
 }
