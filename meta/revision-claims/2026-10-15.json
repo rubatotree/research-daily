@@ -6,8 +6,9 @@
   "claim_id": "d007f177-45bf-4d61-8ea0-8100c20618e6",
   "claimed_at": "2026-10-15T06:08:16.775Z",
   "expires_at": "2026-10-15T06:38:16.775Z",
-  "status": "claimed",
+  "status": "published",
   "base_commit": "a7d083b72f51de64e90d5814b8809465723871a6",
   "supersedes_expired_claim": "5996f16a-c729-4e33-bf0b-4dc41612398b",
-  "note": "New maintainer-requested revision after the previous separate revision lease expired without publication. Preserve the original publication history and all automatic role windows. Require an unchanged claim and expected-head non-forced fast-forward publication."
+  "note": "New maintainer-requested revision after the previous separate revision lease expired without publication. Preserve the original publication history and all automatic role windows. Require an unchanged claim and expected-head non-forced fast-forward publication.",
+  "published_at": "2026-10-15T06:20:58.024Z"
 }
