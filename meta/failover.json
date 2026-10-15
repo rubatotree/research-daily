@@ -33,10 +33,10 @@
   "active_owner": "Neon",
   "last_success": {
     "bot": "Neon",
-    "publish_date": "2026-10-15",
-    "at": "2026-10-15T06:20:58.024Z",
+    "publish_date": "2026-10-16",
+    "at": "2026-10-15T21:36:43.360Z",
     "commit": null,
-    "note": "Maintainer-requested manual revision: indoor material decomposition and shadow disentanglement; replaces the morning issue while retaining its publication history."
+    "note": "Published daily digest covering 2026-10-15: sparse ray-traced visibility for inverse rendering, frozen-geometry feed-forward 3DGS, and three dated news/community items."
   },
   "events": [
     {
@@ -913,20 +913,19 @@
       "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
       "expires_at": "2026-10-16T06:01:51.068+08:00",
       "detail": "Primary Neon claimed missing 2026-10-16 digest within the current claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-15T21:36:43.360Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-16",
+      "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
+      "detail": "Primary publish: VisibilitySplat and InfiniSplat v2 from the 2026-10-15 announcement; original Figure 2 pipelines and three dated news/community items."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "bot": "Neon",
-    "publish_date": "2026-10-16",
-    "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
-    "claimed_at": "2026-10-16T05:31:51.068+08:00",
-    "expires_at": "2026-10-16T06:01:51.068+08:00",
-    "role": "primary",
-    "window_start": "05:30",
-    "window_end": "06:20"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
