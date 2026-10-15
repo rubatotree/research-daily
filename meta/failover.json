@@ -904,11 +904,29 @@
       "revision": true,
       "previous_publish_at": "2026-10-15T06:19:45+08:00",
       "detail": "Manually requested overwrite: Casual Flash and Shadow-Aware inverse rendering, original method figures, three news items, and matching timeline subtitle. Automatic success guards and role windows unchanged."
+    },
+    {
+      "at": "2026-10-16T05:31:51.068+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-16",
+      "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
+      "expires_at": "2026-10-16T06:01:51.068+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-16 digest within the current claimable interval; 30-minute lease capped by role window."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "bot": "Neon",
+    "publish_date": "2026-10-16",
+    "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
+    "claimed_at": "2026-10-16T05:31:51.068+08:00",
+    "expires_at": "2026-10-16T06:01:51.068+08:00",
+    "role": "primary",
+    "window_start": "05:30",
+    "window_end": "06:20"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
