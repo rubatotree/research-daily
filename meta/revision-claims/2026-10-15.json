@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "kind": "maintainer-requested-manual-revision",
+  "publish_date": "2026-10-15",
+  "bot": "Neon",
+  "claim_id": "5996f16a-c729-4e33-bf0b-4dc41612398b",
+  "claimed_at": "2026-10-15T13:37:54+08:00",
+  "expires_at": "2026-10-15T14:07:54+08:00",
+  "status": "claimed",
+  "base_commit": "14760b3e2147a08ca3b67e1d33d8b6a2891130ae",
+  "note": "Explicit maintainer request to revise and republish the existing issue. This is not an automatic failover claim and does not change the bot roster, automatic role windows, or the original Cream publication history. Publication requires this revision claim to remain unchanged and an expected-head, non-forced fast-forward update."
+}
