@@ -1246,9 +1246,25 @@
       "content_day": "2026-10-15",
       "reappearances": [],
       "note": "Multi-view feed-forward 3DGS; frozen DA3 geometry, scale-aligned cameras, large-angle supervision and learned refinement; full HTML methods and appendix read; original Figure 2."
+    },
+    "2610.21584": {
+      "title": "Geometric Queries on Tessellation-Free Displaced Surfaces",
+      "short": "Displaced Surface Queries",
+      "first_seen": "2026-10-17",
+      "digest": "2026-10-17",
+      "content_day": "2026-10-16",
+      "arxiv": "2610.21584"
+    },
+    "2610.21090": {
+      "title": "RoboCloth: A Large-Scale Real Cloth Material Dataset for Neural Reflectance Reconstruction",
+      "short": "RoboCloth",
+      "first_seen": "2026-10-17",
+      "digest": "2026-10-17",
+      "content_day": "2026-10-16",
+      "arxiv": "2610.21090"
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-16",
+  "updated": "2026-10-17",
   "version": 1
 }
