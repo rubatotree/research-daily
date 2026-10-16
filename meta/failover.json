@@ -30,7 +30,7 @@
       "platform_cron": "0 6 * * *"
     }
   ],
-  "active_owner": "Neon",
+  "active_owner": "Cream",
   "last_success": {
     "bot": "Neon",
     "publish_date": "2026-10-16",
@@ -921,11 +921,33 @@
       "publish_date": "2026-10-16",
       "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
       "detail": "Primary publish: VisibilitySplat and InfiniSplat v2 from the 2026-10-15 announcement; original Figure 2 pipelines and three dated news/community items."
+    },
+    {
+      "at": "2026-10-17T06:18:29+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-17",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-17.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-17T06:18:29+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-17",
+      "claim_id": "126a522d-2705-4184-8f59-1d7886c3077d",
+      "expires_at": "2026-10-17T06:48:29+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-17 digest; lease capped by role window end 06:50."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-17",
+    "bot": "Cream",
+    "claim_id": "126a522d-2705-4184-8f59-1d7886c3077d",
+    "claimed_at": "2026-10-17T06:18:29+08:00",
+    "expires_at": "2026-10-17T06:48:29+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
