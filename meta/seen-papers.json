@@ -1262,9 +1262,25 @@
       "digest": "2026-10-17",
       "content_day": "2026-10-16",
       "arxiv": "2610.21090"
+    },
+    "2610.19520": {
+      "title": "Spectral World Renderer: Unified 3D Hyperspectral Unmixing",
+      "short": "Spectral World Renderer",
+      "first_seen": "2026-10-18",
+      "digest": "2026-10-18",
+      "content_day": "2026-10-17",
+      "arxiv": "2610.19520"
+    },
+    "2610.13503": {
+      "title": "SplatQ: Interaction-Aware Pruning of 3D Gaussian Splatting via Quadratic Selection",
+      "short": "SplatQ",
+      "first_seen": "2026-10-18",
+      "digest": "2026-10-18",
+      "content_day": "2026-10-17",
+      "arxiv": "2610.13503"
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-17",
+  "updated": "2026-10-18",
   "version": 1
 }
