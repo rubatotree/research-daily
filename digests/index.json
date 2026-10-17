@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-18",
+      "content_day": "2026-10-17",
+      "path": "digests/2026-10-18.md",
+      "title": "在交点处解混材料，把剪枝当联合删除",
+      "figs": "digests/2026-10-18/figs/",
+      "subtitle": "高斯光谱解混与交互感知剪枝"
+    },
+    {
       "date": "2026-10-17",
       "content_day": "2026-10-16",
       "path": "digests/2026-10-17.md",
