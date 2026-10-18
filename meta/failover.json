@@ -1,1002 +1,1004 @@
 {
- "version": 4,
- "timezone": "Asia/Hong_Kong",
- "scheduled_publish": "05:30",
- "scheduled_cron": "30 5 * * *",
- "failover_grace_minutes": 50,
- "failover_check_time": "06:20",
- "failover_check_cron": "0 6 * * *",
- "description": "Multi-bot roster + CAS failover. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Neon triggers at 05:30 with zero compensation, within its claimable interval; Cream retains its early trigger. Early wakes must wait and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish.",
- "bots": [
-  {
-   "code": "Neon",
-   "order": 1,
-   "role": "primary",
-   "status": "active",
-   "duties": "Platform cron 05:30 HKT starts inside the claimable interval. A 20-minute wake delay still leaves 30 minutes before 06:20. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish. Early wakes wait and recheck; nominal 05:30 is not a guaranteed completion time.",
-   "claim_window_start": "05:30",
-   "claim_window_end": "06:20",
-   "platform_cron": "30 5 * * *",
-   "scheduler_lag_compensation_minutes": 0
-  },
-  {
-   "code": "Cream",
-   "order": 2,
-   "role": "standby",
-   "status": "active",
-   "duties": "Platform cron 06:00 HKT for nominal 06:20 failover check (lag compensation). CAS claim if today missing within [06:20,06:50) incl. early_skew. Interest-notes sync cron 04:45. Always send check report to maintainer.",
-   "claim_window_start": "06:20",
-   "claim_window_end": "06:50",
-   "platform_cron": "0 6 * * *"
-  }
- ],
- "active_owner": "Cream",
- "last_success": {
-  "bot": "Cream",
-  "publish_date": "2026-10-18",
-  "at": "2026-10-18T06:21:12+08:00",
-  "commit": null,
-  "note": "Standby failover publish (weekend backfill from this week cs.GR): Spectral World Renderer and SplatQ; original figures."
- },
- "events": [
-  {
-   "at": "2026-09-08T01:12:29+08:00",
-   "type": "init",
-   "bot": "Cream",
-   "detail": "Failover table created; primary=Cream; grace=30min after 06:00 HKT"
-  },
-  {
-   "at": "2026-09-08T06:19:17+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "detail": "Published digests/2026-09-08.md covering 2026-09-07 backlog/promotions"
-  },
-  {
-   "at": "2026-09-08T07:31:08+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Schedule changed: publish 04:00 HKT; failover check 04:30; grace still 30min"
-  },
-  {
-   "at": "2026-09-08T07:50:53+08:00",
-   "type": "register",
-   "bot": "Neon",
-   "detail": "Roster change: maintainer set Neon as order 1 primary and Cream as order 2 active standby; normal publish ownership moved to Neon."
-  },
-  {
-   "at": "2026-09-09T04:00:00+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "detail": "Published digests/2026-09-09.md covering 2026-09-08 graphics and embodied-AI developments; adjacent early-September arXiv backlog included because no independent 2026-09-08 new listing."
-  },
-  {
-   "at": "2026-09-09T09:03:19+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Schedule changed: publish 05:30 HKT; interest sync 05:00; failover check 06:00; grace still 30min"
-  },
-  {
-   "at": "2026-09-10T05:39:04+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "detail": "Published digests/2026-09-10.md covering 2026-09-09 graphics and embodied-AI developments: five recent papers and an explicitly labeled Pose6DAug background reading."
-  },
-  {
-   "at": "2026-09-11T05:42:25+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-11",
-   "detail": "Published digests/2026-09-11.md covering 2026-09-10 graphics and embodied-AI papers, with four news/community items and explicitly dated early-morning follow-ups."
-  },
-  {
-   "at": "2026-09-12T05:43:09+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-12",
-   "detail": "Published digests/2026-09-12.md covering 2026-09-11 graphics and embodied-AI papers, focused on failure monitoring, agent-policy interfaces and contact-aware transfer, with four dated news/community items."
-  },
-  {
-   "at": "2026-09-13T05:42:18+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-13",
-   "detail": "Published digests/2026-09-13.md covering 2026-09-12 with an explicitly labeled weekend backlog, focused on failure-driven agent loops, differentiable hard contact, evidence-linked review, and three dated cross-day news items."
-  },
-  {
-   "at": "2026-09-14T05:43:40+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-14",
-   "detail": "Published digests/2026-09-14.md covering 2026-09-13 with an explicitly labeled Sunday backlog, focused on organizational structure, mechanism-invariant subgoals, contact-valid transfer, editable radar simulation, and two dated community signals."
-  },
-  {
-   "at": "2026-09-14T14:54:00+08:00",
-   "type": "register",
-   "bot": "Cocoa",
-   "detail": "Roster change: maintainer registered Cocoa as order 1 active primary; Neon moved to order 2 active standby (06:00 failover check) and Cream to order 3 active standby (06:30 second failover check). Normal publish ownership moved to Cocoa."
-  },
-  {
-   "at": "2026-09-14T17:09:32+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Rule: failover takeover digests must append a bottom-of-page 故障说明 naming prior bots that missed their publish window; normal on-time primary publishes skip this note. Specs: digest-spec.md / failover.md."
-  },
-  {
-   "at": "2026-09-15T05:31:38+08:00",
-   "type": "claim",
-   "bot": "Cocoa",
-   "publish_date": "2026-09-15",
-   "claim_id": "67c5d7ca-7426-448f-a84f-6d094a3de83a",
-   "expires_at": "2026-09-15T06:00:00+08:00",
-   "detail": "Primary Cocoa claimed 2026-09-15 within its 05:30-06:00 HKT window; lease expires at window end."
-  },
-  {
-   "at": "2026-09-15T06:34:00+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-15",
-   "detail": "Order-3 Cream taking over after Cocoa claim expired at 06:00 without publish and Neon window [06:00,06:30) produced no successful digest or valid claim."
-  },
-  {
-   "at": "2026-09-15T06:34:00+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-15",
-   "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
-   "expires_at": "2026-09-15T07:00:00+08:00",
-   "detail": "Standby Cream claimed 2026-09-15 within its 06:30-07:00 HKT window; lease expires at window end."
-  },
-  {
-   "at": "2026-09-15T06:40:10+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-15",
-   "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
-   "detail": "Failover publish digests/2026-09-15.md covering 2026-09-14 with 2026-09-11 backlog papers (SNAP3D, VS-Splat, NOVA-GS, TBR, Grid-Free MC, Neural-GS taxonomy) after Cocoa/Neon miss."
-  },
-  {
-   "at": "2026-09-15T16:00:56+08:00",
-   "type": "register",
-   "bot": "Cream",
-   "detail": "Roster change: maintainer removed Cocoa; Neon restored as order 1 active primary (05:30); Cream as order 2 active standby (06:00 failover check + 05:00 interest-notes sync). Second 06:30 rung retired."
-  },
-  {
-   "at": "2026-09-16T05:33:31+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-16",
-   "claim_id": "8bb25fd5-2310-4f26-be7a-43d6fbbb8b63",
-   "expires_at": "2026-09-16T06:00:00+08:00",
-   "detail": "Primary Neon claimed 2026-09-16 within its 05:30-06:00 HKT window; lease expires at window end."
-  },
-  {
-   "at": "2026-09-16T06:12:38+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-16",
-   "detail": "Order-2 Cream taking over after Neon claim expired at 06:00 without publish; digests/2026-09-16.md and index entry missing."
-  },
-  {
-   "at": "2026-09-16T06:12:38+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-16",
-   "claim_id": "cbbf21df-67fb-40d4-91f3-1c0ac8cb1ef4",
-   "expires_at": "2026-09-16T06:30:00+08:00",
-   "detail": "Standby Cream claimed 2026-09-16 within its 06:00-06:30 HKT window; lease expires at window end."
-  },
-  {
-   "at": "2026-09-16T06:18:09+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-16",
-   "claim_id": "cbbf21df-67fb-40d4-91f3-1c0ac8cb1ef4",
-   "detail": "Failover publish digests/2026-09-16.md covering 2026-09-15 with KaiNinja, TopoRig, ESG, SH compression, EditBench3D, Opacity after Neon miss."
-  },
-  {
-   "at": "2026-09-16T09:09:32.309Z",
-   "type": "register",
-   "bot": "Neon",
-   "detail": "Maintainer assigned Cream as order 1 primary at 06:00 Beijing time and Neon as order 2 standby at 06:30; final deadline 07:00; Cream interest sync remains 05:00."
-  },
-  {
-   "at": "2026-09-17T06:24:12+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-17",
-   "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
-   "expires_at": "2026-09-17T06:30:00+08:00",
-   "detail": "Primary Cream claimed 2026-09-17 within its 06:00-06:30 HKT window; lease expires at window end."
-  },
-  {
-   "at": "2026-09-17T06:25:06+08:00",
-   "type": "fail",
-   "bot": "Cream",
-   "publish_date": "2026-09-17",
-   "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
-   "detail": "Primary Cream released claim after late wake (~06:23 HKT); remaining window before 06:30 insufficient for full digest publish."
-  },
-  {
-   "at": "2026-09-17T06:25:06+08:00",
-   "type": "release",
-   "bot": "Cream",
-   "publish_date": "2026-09-17",
-   "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
-   "detail": "Released 2026-09-17 claim; standby Neon may claim in its 06:30-07:00 window."
-  },
-  {
-   "at": "2026-09-17T11:45:15+08:00",
-   "type": "register",
-   "bot": "Cream",
-   "detail": "Maintainer moved Cream primary wake/publish to 05:30 HKT (window 05:30–06:00); Neon standby failover check to 06:00 (window 06:00–06:30). Reason: 2026-09-17 late wake left insufficient time in the old 06:00–06:30 window and Neon did not take over. Cream interest sync remains 05:00."
-  },
-  {
-   "at": "2026-09-17T11:49:59+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Protocol fix: add claim_window_early_skew_minutes=2. Standby/primary may CAS claim from (start−2min) if today still missing and no valid prior lease; do not exit solely for waking ~1min early. Window end unchanged. Trigger: 2026-09-17 Neon woke ~06:29 under old 06:30 window and exited by strict left-closed rule."
-  },
-  {
-   "at": "2026-09-17T11:55:00+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-17",
-   "detail": "Maintainer-authorized out-of-window recovery: morning Cream claim released for insufficient window; Neon did not publish in standby window; digests/2026-09-17.md missing until this recovery."
-  },
-  {
-   "at": "2026-09-17T11:55:00+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-17",
-   "detail": "Recovery publish digests/2026-09-17.md covering 2026-09-16 with CADSplat, InterMASH, ModAR, PhysStream, MoQSplat after morning miss."
-  },
-  {
-   "at": "2026-09-17T11:55:00+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-17."
-  },
-  {
-   "at": "2026-09-18T05:48:16+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-18",
-   "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
-   "expires_at": "2026-09-18T06:00:00+08:00",
-   "detail": "Primary Cream claimed 2026-09-18 within its 05:30-06:00 HKT window; lease expires at window end."
-  },
-  {
-   "at": "2026-09-18T05:48:16+08:00",
-   "type": "fail",
-   "bot": "Cream",
-   "publish_date": "2026-09-18",
-   "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
-   "detail": "Primary Cream released claim after late wake (~05:48 HKT); remaining window before 06:00 insufficient for full digest publish."
-  },
-  {
-   "at": "2026-09-18T05:48:16+08:00",
-   "type": "release",
-   "bot": "Cream",
-   "publish_date": "2026-09-18",
-   "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
-   "detail": "Released 2026-09-18 claim; standby Neon may claim in its 06:00-06:30 window."
-  },
-  {
-   "at": "2026-09-18T08:54:44+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Late-wake fix: primary platform cron advanced to 05:10 (nominal publish still 05:30); Cream claim window extended to [05:30,06:20); Neon standby [06:20,06:50) check cron 06:20; interest sync cron 04:45; document scheduler_lag_compensation_minutes=20 and min_remaining_minutes_to_start_full_publish=25. Evidence: 2026-09-17 wake~06:23 / 2026-09-18 wake~05:48 under prior schedules."
-  },
-  {
-   "at": "2026-09-18T09:06:15+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-18",
-   "detail": "Maintainer-authorized out-of-window recovery: morning Cream claim released for insufficient window (~05:48 HKT); Neon did not publish in standby window; digests/2026-09-18.md missing until this recovery."
-  },
-  {
-   "at": "2026-09-18T09:06:15+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-18",
-   "detail": "Recovery publish digests/2026-09-18.md covering 2026-09-17 with PART, GS-PI, FPSA (Sep-16 backlog), LYRIC after morning miss."
-  },
-  {
-   "at": "2026-09-18T09:06:15+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-18."
-  },
-  {
-   "at": "2026-09-19T05:29:17+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-19",
-   "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
-   "expires_at": "2026-09-19T05:59:17+08:00",
-   "detail": "Primary Cream claimed 2026-09-19 within early-skew of its 05:30-06:20 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-09-19T05:33:58+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-19",
-   "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
-   "detail": "Published digests/2026-09-19.md covering 2026-09-18; articulation/Real2Sim focus (FAMOS, FunArt, Track Articulate Act, StageGuard, RGS)."
-  },
-  {
-   "at": "2026-09-20T05:28:12+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-20",
-   "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
-   "expires_at": "2026-09-20T05:58:12+08:00",
-   "detail": "Primary Cream claimed 2026-09-20 within early-skew of its 05:30-06:20 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-09-20T05:31:46+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-20",
-   "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
-   "detail": "Published digests/2026-09-20.md covering 2026-09-19 weekend backlog (PointZero, ParticleSplat, CoRef-GS, PhGS, Energy-IL)."
-  },
-  {
-   "at": "2026-09-20T16:44:43+08:00",
-   "type": "register",
-   "bot": "Cream",
-   "detail": "Maintainer restored Neon as order 1 primary (nominal 05:30 / platform cron 05:10, window 05:30–06:20) and Cream as order 2 standby (failover check platform cron 06:00 for window 06:20–06:50). Cream interest sync remains 04:45. Late-wake compensation fields kept."
-  },
-  {
-   "at": "2026-09-21T06:09:57+08:00",
-   "type": "heartbeat",
-   "bot": "Cream",
-   "detail": "Protocol fix: if platform cron wakes before claimable interval [start−early_skew, end), WAIT until that interval (re-check success), do not exit as too-early. Trigger: 2026-09-21 Cream standby woke ~06:08 (cron 06:00) but claimable from 06:18 only; exited and missed takeover chance while Neon still in primary window."
-  },
-  {
-   "at": "2026-09-21T06:19:31+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-21",
-   "detail": "Order-2 Cream taking over after Neon primary window [05:30,06:20) produced no digest; digests/2026-09-21.md and index entry missing; claim=null."
-  },
-  {
-   "at": "2026-09-21T06:19:31+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-21",
-   "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
-   "expires_at": "2026-09-21T06:49:31+08:00",
-   "detail": "Standby Cream claimed 2026-09-21 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-09-21T06:24:22+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-21",
-   "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
-   "detail": "Failover publish digests/2026-09-21.md covering 2026-09-20 with ReShoot, Missing Bridges, S4R, EliGSiR, RebarSim after Neon miss."
-  },
-  {
-   "at": "2026-09-21T01:13:44.685Z",
-   "type": "heartbeat",
-   "bot": "Neon",
-   "detail": "Maintainer requested wake-time repair: Neon primary trigger moved from 05:10 to 05:30 HKT, with per-bot lag compensation 0. Existing 05:30–06:20 role window, early-wake wait, 25-minute start threshold and Cream standby schedule retained."
-  },
-  {
-   "at": "2026-09-21T21:29:05Z",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-22",
-   "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
-   "expires_at": "2026-09-21T21:59:05.000Z",
-   "detail": "Primary Neon claimed missing 2026-09-22 digest within its early-skew claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-09-21T21:46:35.000Z",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-22",
-   "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
-   "detail": "Published digests/2026-09-22.md with four papers, editorial pipeline figures and three news/community items; distinguishes privileged simulation, real open-loop replay and closed-loop policy evidence."
-  },
-  {
-   "at": "2026-09-22T21:31:23.000Z",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-23",
-   "claim_id": "cbb2c0a7-8ef9-4da3-a67c-acc9a8ee51a6",
-   "expires_at": "2026-09-22T22:01:23.000Z",
-   "detail": "Primary Neon claimed missing 2026-09-23 digest within its claimable interval; lease capped by role window."
-  },
-  {
-   "at": "2026-09-23T06:19:26+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-23",
-   "detail": "Order-2 Cream taking over after Neon claim expired at 06:01 HKT without publish; digests/2026-09-23.md and index entry missing; primary window ended without successful digest."
-  },
-  {
-   "at": "2026-09-23T06:19:26+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-23",
-   "claim_id": "33ca5512-6753-4ace-bd55-7f7450912107",
-   "expires_at": "2026-09-22T22:49:26.000Z",
-   "detail": "Standby Cream claimed 2026-09-23 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-09-23T06:24:49+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-23",
-   "claim_id": "33ca5512-6753-4ace-bd55-7f7450912107",
-   "detail": "Failover publish digests/2026-09-23.md covering 2026-09-22 with GaussianFactory, DEXTERA, H2RBench after Neon miss."
-  },
-  {
-   "at": "2026-09-23T21:31:03.000Z",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-24",
-   "claim_id": "d2c71e06-b4f7-4c40-8c49-811f0fdd9ed2",
-   "expires_at": "2026-09-23T22:01:03.000Z",
-   "detail": "Primary Neon claimed missing 2026-09-24 digest within its claimable interval; lease capped by role window."
-  },
-  {
-   "at": "2026-09-23T21:52:02Z",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-24",
-   "claim_id": "d2c71e06-b4f7-4c40-8c49-811f0fdd9ed2",
-   "detail": "Published digests/2026-09-24.md covering 2026-09-23 with three method-focused papers, three original pipeline figures and three dated news/community items; distinguishes geometric quality, policy success, session reuse and model training."
-  },
-  {
-   "at": "2026-09-25T05:32:44+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-25",
-   "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
-   "expires_at": "2026-09-25T06:02:44+08:00",
-   "detail": "Primary Neon claimed missing 2026-09-25 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-09-25T05:47:04+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-25",
-   "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
-   "detail": "Published digests/2026-09-25.md covering 2026-09-24 with RegenHarness, TANDEM and BladeMaster; method-first explanations, three original paper figures and two dated news/community items."
-  },
-  {
-   "at": "2026-09-26T06:18:48+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-26",
-   "detail": "Neon primary window [05:30,06:20) produced no digest for 2026-09-26; Cream standby takeover within claimable interval."
-  },
-  {
-   "at": "2026-09-26T06:18:48+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-26",
-   "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
-   "expires_at": "2026-09-26T06:48:48+08:00",
-   "detail": "CAS claim for 2026-09-26 standby failover publish."
-  },
-  {
-   "at": "2026-09-26T06:21:48+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-26",
-   "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
-   "detail": "Published digests/2026-09-26.md covering 2026-09-25 after Neon primary window miss; AgenticCADedit, TapeSim, ToCo-Mesh."
-  },
-  {
-   "at": "2026-09-27T05:31:22+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-27",
-   "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
-   "expires_at": "2026-09-27T06:01:22+08:00",
-   "detail": "Primary Neon claimed missing 2026-09-27 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-09-27T05:42:29+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-27",
-   "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
-   "detail": "Published digests/2026-09-27.md covering 2026-09-26 weekend backlog; RAPID, Self-Adaptive VLA and SplatLabel."
-  },
-  {
-   "at": "2026-09-28T05:29:10+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-28",
-   "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
-   "expires_at": "2026-09-28T05:59:10+08:00",
-   "detail": "Primary Neon claimed missing 2026-09-28 digest within its early-skew claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-09-28T05:36:00+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-09-28",
-   "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
-   "detail": "Published digests/2026-09-28.md covering 2026-09-27 with interest-driven weekend reading on SkiP and DC-QFA."
-  },
-  {
-   "at": "2026-09-29T05:32:01+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-09-29",
-   "claim_id": "fd9dad55-3138-4c70-b178-188c8124b42b",
-   "expires_at": "2026-09-29T06:02:01+08:00",
-   "detail": "Primary Neon claimed missing 2026-09-29 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-09-29T06:18:32+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-29",
-   "detail": "Order-2 Cream taking over after Neon primary window [05:30,06:20) produced no digests/2026-09-29.md; Neon claim fd9dad55 expired at 06:02:01 HKT without publish; digests/2026-09-29.md and index entry missing."
-  },
-  {
-   "at": "2026-09-29T06:18:32+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-29",
-   "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
-   "expires_at": "2026-09-29T06:48:32+08:00",
-   "detail": "Standby Cream claimed 2026-09-29 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-09-29T06:21:45+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-29",
-   "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
-   "detail": "Failover publish digests/2026-09-29.md covering 2026-09-28 with CognitiveReality, RIVET, ChronoFuseGS, RECAST after Neon miss."
-  },
-  {
-   "at": "2026-09-30T06:18:19+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-09-30",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-09-30.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
-  },
-  {
-   "at": "2026-09-30T06:18:19+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-09-30",
-   "claim_id": "e7dcc915-4d50-42d4-a91d-92455cb473c8",
-   "expires_at": "2026-09-30T06:48:19+08:00",
-   "detail": "Standby Cream claimed 2026-09-30 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-09-30T06:22:07+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-09-30",
-   "claim_id": "e7dcc915-4d50-42d4-a91d-92455cb473c8",
-   "detail": "Failover publish digests/2026-09-30.md covering 2026-09-29 with F4R, ZeroBot, Simify, RoGSW4RLD after Neon miss."
-  },
-  {
-   "at": "2026-10-01T06:18:27+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-01",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-01.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
-  },
-  {
-   "at": "2026-10-01T06:18:27+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-01",
-   "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
-   "expires_at": "2026-10-01T06:48:27+08:00",
-   "detail": "Standby Cream claimed 2026-10-01 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-10-01T06:20:58+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-01",
-   "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
-   "detail": "Failover publish digests/2026-10-01.md covering 2026-09-30 with Real2Gym, PRISM, CoDimRecon, DexAgent after Neon miss."
-  },
-  {
-   "at": "2026-10-02T06:19:24+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-02",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-02.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
-  },
-  {
-   "at": "2026-10-02T06:19:24+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-02",
-   "claim_id": "d9ac057a-00e9-4a7e-a276-63e2b77b6af5",
-   "expires_at": "2026-10-02T06:49:24+08:00",
-   "detail": "Standby Cream claimed 2026-10-02 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
-  },
-  {
-   "at": "2026-10-02T06:21:27+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-02",
-   "claim_id": "d9ac057a-00e9-4a7e-a276-63e2b77b6af5",
-   "detail": "Failover publish digests/2026-10-02.md covering 2026-10-01 with FailBank, Text2Sim, PneuTac, GroundingPI after Neon miss."
-  },
-  {
-   "at": "2026-10-03T05:29:27+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-03",
-   "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
-   "expires_at": "2026-10-03T05:59:27+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-03 digest within its early-skew claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-03T05:39:42+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-03",
-   "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
-   "detail": "Published digests/2026-10-03.md covering 2026-10-02 with LiteReality-Agent and Recova; original pipeline figures and dated news/community items."
-  },
-  {
-   "at": "2026-10-04T05:30:01+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-04",
-   "claim_id": "43dc7978-1b29-4b00-9ebc-23410a6e51b8",
-   "expires_at": "2026-10-04T06:00:01+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-04 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-04T05:39:13+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-04",
-   "claim_id": "43dc7978-1b29-4b00-9ebc-23410a6e51b8",
-   "detail": "Published digests/2026-10-04.md covering 2026-10-03 weekend background with GSComplete and FocusGS; original pipeline figures and dated news/community items."
-  },
-  {
-   "at": "2026-10-05T05:29:29+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-05",
-   "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
-   "expires_at": "2026-10-05T05:59:29+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-05 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-05T05:47:07+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-05",
-   "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
-   "detail": "Published digests/2026-10-05.md covering 2026-10-04 with Agentic Real2Sim and Dirichlet Splatting; original Figures 1, 2 and 3; three dated news/community items."
-  },
-  {
-   "at": "2026-10-06T05:35:22+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-06",
-   "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
-   "expires_at": "2026-10-06T06:05:22+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-06 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-06T05:45:00+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-06",
-   "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
-   "detail": "Published digests/2026-10-06.md covering 2026-10-05 with frontier-guided demonstration generation, dense language supervision, and I2CD direct collision geometry; original Figure 8, Table 1, and Figure 2; two dated news/community items."
-  },
-  {
-   "at": "2026-10-07T05:28:46+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-07",
-   "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
-   "expires_at": "2026-10-07T05:58:46+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-07 digest within its early-skew claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-07T05:36:07+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-07",
-   "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
-   "detail": "Published digests/2026-10-07.md covering 2026-10-06 with GOTT cross-embodiment contact acquisition and SUAVE unified video-action masked diffusion; original Figure 1 from both papers and dated news/community items."
-  },
-  {
-   "at": "2026-10-08T05:31:56+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-08",
-   "claim_id": "3b639c3a-7cc0-43d7-8e08-df1613a65c19",
-   "expires_at": "2026-10-08T06:01:56+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-08 digest within its claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-08T05:38:20+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-08",
-   "claim_id": "3b639c3a-7cc0-43d7-8e08-df1613a65c19",
-   "detail": "Published digests/2026-10-08.md covering 2026-10-07 with ProactiveVLA proactive memory acquisition, AIM deformable Real-to-Sim dynamics, and placebo-controlled frozen-VLA recovery; original method figures and dated news/community items."
-  },
-  {
-   "at": "2026-10-09T05:29:26+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-09",
-   "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
-   "expires_at": "2026-10-09T05:59:26+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-09 digest within the current claimable interval; lease capped by role window."
-  },
-  {
-   "at": "2026-10-09T05:42:20.000+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-09",
-   "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
-   "detail": "Primary publish covering 2026-10-08 events with explicit full-method IRGS++ background reading and October 5 Neural Emission Fields backlog; original method figures and three dated news/community items."
-  },
-  {
-   "at": "2026-10-10T05:31:10.000+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-10",
-   "claim_id": "9c937c6c-282b-4393-bee0-1de1e36c3eff",
-   "expires_at": "2026-10-10T06:01:10.000+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-10 digest within the current claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-10T05:44:55.000+08:00",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-10",
-   "claim_id": "9c937c6c-282b-4393-bee0-1de1e36c3eff",
-   "detail": "Primary publish covering 2026-10-09 with ResLRB constant-memory differentiable path tracing, PCAsplat scene-space geometry regularization, and prefiltered neural radiance caching; original paper figures and three dated news/community items."
-  },
-  {
-   "at": "2026-10-11T05:34:26.000+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-11",
-   "claim_id": "016572ce-6e5c-4f3c-9e65-476f6d6bfdd6",
-   "expires_at": "2026-10-11T06:04:26.000+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-11 digest within the current claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-11T06:18:33+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-11",
-   "detail": "Neon primary lease (016572ce) expired at 06:04 without publish; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-11T06:18:33+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-11",
-   "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
-   "expires_at": "2026-10-11T06:50:00+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-11 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-11T06:20:39+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-11",
-   "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
-   "detail": "Standby failover publish: Sensitivity AOV and GaussianBench (Saturday, no new arXiv announcement); original figures."
-  },
-  {
-   "at": "2026-10-12T06:18:12+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-12",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-12.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-12T06:18:12+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-12",
-   "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
-   "expires_at": "2026-10-12T06:50:00+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-12 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-12T06:19:47+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-12",
-   "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
-   "detail": "Standby failover publish: SteadySplats and RiCo (Sunday, no new arXiv announcement); original figures."
-  },
-  {
-   "at": "2026-10-13T06:18:14+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-13",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-13.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-13T06:18:14+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-13",
-   "claim_id": "b6fa97c0-4870-49b2-b6ca-ec1f2029abd1",
-   "expires_at": "2026-10-13T06:48:14+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-13 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-13T06:18:22+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-13",
-   "claim_id": "b6fa97c0-4870-49b2-b6ca-ec1f2029abd1",
-   "detail": "Standby failover publish: H2-Ray and Reflections Guided by What is Seen (Monday arXiv announcement); original figures."
-  },
-  {
-   "at": "2026-10-14T06:18:59+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-14",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-14.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-14T06:18:59+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-14",
-   "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
-   "expires_at": "2026-10-14T06:48:59+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-14 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-14T06:20:43+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-14",
-   "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
-   "detail": "Standby failover publish: Confidence-Aware Densification and ARS-Avatar (unused remainder of Monday 10-12 arXiv announcement; no 10-13 listing yet); original figures."
-  },
-  {
-   "at": "2026-10-15T06:18:22+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-15",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-15.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-15T06:18:22+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-15",
-   "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
-   "expires_at": "2026-10-15T06:48:22+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-15 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-15T06:19:45+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-15",
-   "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
-   "detail": "Standby failover publish: Make It Flow and Walk-on-Ambient-Patch (Wednesday 10-14 arXiv announcement); original PDF page figures."
-  },
-  {
-   "at": "2026-10-15T06:20:58.024Z",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-15",
-   "claim_id": "d007f177-45bf-4d61-8ea0-8100c20618e6",
-   "revision": true,
-   "previous_publish_at": "2026-10-15T06:19:45+08:00",
-   "detail": "Manually requested overwrite: Casual Flash and Shadow-Aware inverse rendering, original method figures, three news items, and matching timeline subtitle. Automatic success guards and role windows unchanged."
-  },
-  {
-   "at": "2026-10-16T05:31:51.068+08:00",
-   "type": "claim",
-   "bot": "Neon",
-   "publish_date": "2026-10-16",
-   "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
-   "expires_at": "2026-10-16T06:01:51.068+08:00",
-   "detail": "Primary Neon claimed missing 2026-10-16 digest within the current claimable interval; 30-minute lease capped by role window."
-  },
-  {
-   "at": "2026-10-15T21:36:43.360Z",
-   "type": "publish",
-   "bot": "Neon",
-   "publish_date": "2026-10-16",
-   "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
-   "detail": "Primary publish: VisibilitySplat and InfiniSplat v2 from the 2026-10-15 announcement; original Figure 2 pipelines and three dated news/community items."
-  },
-  {
-   "at": "2026-10-17T06:18:29+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-17",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-17.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-17T06:18:29+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-17",
-   "claim_id": "126a522d-2705-4184-8f59-1d7886c3077d",
-   "expires_at": "2026-10-17T06:48:29+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-17 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-17T06:20:49+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-17",
-   "claim_id": "126a522d-2705-4184-8f59-1d7886c3077d",
-   "detail": "Standby failover publish: Displaced Surface Queries (tessellation-free displaced-surface geometric queries) and RoboCloth (real cloth neural reflectance dataset) from Friday 10-16 arXiv announcement; original figures."
-  },
-  {
-   "at": "2026-10-18T06:18:53+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-18",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-18.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-18T06:18:53+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-18",
-   "claim_id": "9080918c-651a-4a15-8ad8-3bbb72ad58b1",
-   "expires_at": "2026-10-18T06:48:53+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-18 digest; lease capped by role window end 06:50."
-  },
-  {
-   "at": "2026-10-18T06:21:12+08:00",
-   "type": "publish",
-   "bot": "Cream",
-   "publish_date": "2026-10-18",
-   "claim_id": "9080918c-651a-4a15-8ad8-3bbb72ad58b1",
-   "detail": "Standby failover publish: Spectral World Renderer (per-intersection hyperspectral unmixing in Gaussian rendering) and SplatQ (interaction-aware QUBO pruning of 3DGS), weekend backfill from this week cs.GR; original figures."
-  },
-  {
-   "at": "2026-10-19T06:18:17+08:00",
-   "type": "failover",
-   "bot": "Cream",
-   "publish_date": "2026-10-19",
-   "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-19.md and no claim; standby Cream takes over within [06:18,06:50)."
-  },
-  {
-   "at": "2026-10-19T06:18:17+08:00",
-   "type": "claim",
-   "bot": "Cream",
-   "publish_date": "2026-10-19",
-   "claim_id": "fbdad4f4-a032-47b2-9759-5978aa241080",
-   "expires_at": "2026-10-19T06:48:17+08:00",
-   "detail": "Standby Cream claimed missing 2026-10-19 digest; lease capped by role window end 06:50."
-  }
- ],
- "claim_lease_minutes": 30,
- "claim_renewal_allowed": false,
- "claim": {
-  "publish_date": "2026-10-19",
-  "bot": "Cream",
-  "claim_id": "fbdad4f4-a032-47b2-9759-5978aa241080",
-  "claimed_at": "2026-10-19T06:18:17+08:00",
-  "expires_at": "2026-10-19T06:48:17+08:00"
- },
- "claim_window_early_skew_minutes": 2,
- "scheduler_lag_compensation_minutes": 20,
- "min_remaining_minutes_to_start_full_publish": 25
+  "version": 4,
+  "timezone": "Asia/Hong_Kong",
+  "scheduled_publish": "05:30",
+  "scheduled_cron": "30 5 * * *",
+  "failover_grace_minutes": 50,
+  "failover_check_time": "06:20",
+  "failover_check_cron": "0 6 * * *",
+  "description": "Multi-bot roster + CAS failover. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Neon triggers at 05:30 with zero compensation, within its claimable interval; Cream retains its early trigger. Early wakes must wait and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish.",
+  "bots": [
+    {
+      "code": "Neon",
+      "order": 1,
+      "role": "primary",
+      "status": "active",
+      "duties": "Platform cron 05:30 HKT starts inside the claimable interval. A 20-minute wake delay still leaves 30 minutes before 06:20. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish. Early wakes wait and recheck; nominal 05:30 is not a guaranteed completion time.",
+      "claim_window_start": "05:30",
+      "claim_window_end": "06:20",
+      "platform_cron": "30 5 * * *",
+      "scheduler_lag_compensation_minutes": 0
+    },
+    {
+      "code": "Cream",
+      "order": 2,
+      "role": "standby",
+      "status": "active",
+      "duties": "Platform cron 06:00 HKT for nominal 06:20 failover check (lag compensation). CAS claim if today missing within [06:20,06:50) incl. early_skew. Interest-notes sync cron 04:45. Always send check report to maintainer.",
+      "claim_window_start": "06:20",
+      "claim_window_end": "06:50",
+      "platform_cron": "0 6 * * *"
+    }
+  ],
+  "active_owner": "Cream",
+  "last_success": {
+    "bot": "Cream",
+    "publish_date": "2026-10-19",
+    "at": "2026-10-19T06:20:39+08:00",
+    "commit": null,
+    "note": "Standby failover publish (Monday backfill from past-week cs.GR): Tabula Rasa and From Sketch to Scene; original figures."
+  },
+  "events": [
+    {
+      "at": "2026-09-08T01:12:29+08:00",
+      "type": "init",
+      "bot": "Cream",
+      "detail": "Failover table created; primary=Cream; grace=30min after 06:00 HKT"
+    },
+    {
+      "at": "2026-09-08T06:19:17+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "detail": "Published digests/2026-09-08.md covering 2026-09-07 backlog/promotions"
+    },
+    {
+      "at": "2026-09-08T07:31:08+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Schedule changed: publish 04:00 HKT; failover check 04:30; grace still 30min"
+    },
+    {
+      "at": "2026-09-08T07:50:53+08:00",
+      "type": "register",
+      "bot": "Neon",
+      "detail": "Roster change: maintainer set Neon as order 1 primary and Cream as order 2 active standby; normal publish ownership moved to Neon."
+    },
+    {
+      "at": "2026-09-09T04:00:00+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "detail": "Published digests/2026-09-09.md covering 2026-09-08 graphics and embodied-AI developments; adjacent early-September arXiv backlog included because no independent 2026-09-08 new listing."
+    },
+    {
+      "at": "2026-09-09T09:03:19+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Schedule changed: publish 05:30 HKT; interest sync 05:00; failover check 06:00; grace still 30min"
+    },
+    {
+      "at": "2026-09-10T05:39:04+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "detail": "Published digests/2026-09-10.md covering 2026-09-09 graphics and embodied-AI developments: five recent papers and an explicitly labeled Pose6DAug background reading."
+    },
+    {
+      "at": "2026-09-11T05:42:25+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-11",
+      "detail": "Published digests/2026-09-11.md covering 2026-09-10 graphics and embodied-AI papers, with four news/community items and explicitly dated early-morning follow-ups."
+    },
+    {
+      "at": "2026-09-12T05:43:09+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-12",
+      "detail": "Published digests/2026-09-12.md covering 2026-09-11 graphics and embodied-AI papers, focused on failure monitoring, agent-policy interfaces and contact-aware transfer, with four dated news/community items."
+    },
+    {
+      "at": "2026-09-13T05:42:18+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-13",
+      "detail": "Published digests/2026-09-13.md covering 2026-09-12 with an explicitly labeled weekend backlog, focused on failure-driven agent loops, differentiable hard contact, evidence-linked review, and three dated cross-day news items."
+    },
+    {
+      "at": "2026-09-14T05:43:40+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-14",
+      "detail": "Published digests/2026-09-14.md covering 2026-09-13 with an explicitly labeled Sunday backlog, focused on organizational structure, mechanism-invariant subgoals, contact-valid transfer, editable radar simulation, and two dated community signals."
+    },
+    {
+      "at": "2026-09-14T14:54:00+08:00",
+      "type": "register",
+      "bot": "Cocoa",
+      "detail": "Roster change: maintainer registered Cocoa as order 1 active primary; Neon moved to order 2 active standby (06:00 failover check) and Cream to order 3 active standby (06:30 second failover check). Normal publish ownership moved to Cocoa."
+    },
+    {
+      "at": "2026-09-14T17:09:32+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Rule: failover takeover digests must append a bottom-of-page 故障说明 naming prior bots that missed their publish window; normal on-time primary publishes skip this note. Specs: digest-spec.md / failover.md."
+    },
+    {
+      "at": "2026-09-15T05:31:38+08:00",
+      "type": "claim",
+      "bot": "Cocoa",
+      "publish_date": "2026-09-15",
+      "claim_id": "67c5d7ca-7426-448f-a84f-6d094a3de83a",
+      "expires_at": "2026-09-15T06:00:00+08:00",
+      "detail": "Primary Cocoa claimed 2026-09-15 within its 05:30-06:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-15T06:34:00+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-15",
+      "detail": "Order-3 Cream taking over after Cocoa claim expired at 06:00 without publish and Neon window [06:00,06:30) produced no successful digest or valid claim."
+    },
+    {
+      "at": "2026-09-15T06:34:00+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-15",
+      "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
+      "expires_at": "2026-09-15T07:00:00+08:00",
+      "detail": "Standby Cream claimed 2026-09-15 within its 06:30-07:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-15T06:40:10+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-15",
+      "claim_id": "73585906-1727-4776-95cf-5ae54abc31d6",
+      "detail": "Failover publish digests/2026-09-15.md covering 2026-09-14 with 2026-09-11 backlog papers (SNAP3D, VS-Splat, NOVA-GS, TBR, Grid-Free MC, Neural-GS taxonomy) after Cocoa/Neon miss."
+    },
+    {
+      "at": "2026-09-15T16:00:56+08:00",
+      "type": "register",
+      "bot": "Cream",
+      "detail": "Roster change: maintainer removed Cocoa; Neon restored as order 1 active primary (05:30); Cream as order 2 active standby (06:00 failover check + 05:00 interest-notes sync). Second 06:30 rung retired."
+    },
+    {
+      "at": "2026-09-16T05:33:31+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-16",
+      "claim_id": "8bb25fd5-2310-4f26-be7a-43d6fbbb8b63",
+      "expires_at": "2026-09-16T06:00:00+08:00",
+      "detail": "Primary Neon claimed 2026-09-16 within its 05:30-06:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-16T06:12:38+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-16",
+      "detail": "Order-2 Cream taking over after Neon claim expired at 06:00 without publish; digests/2026-09-16.md and index entry missing."
+    },
+    {
+      "at": "2026-09-16T06:12:38+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-16",
+      "claim_id": "cbbf21df-67fb-40d4-91f3-1c0ac8cb1ef4",
+      "expires_at": "2026-09-16T06:30:00+08:00",
+      "detail": "Standby Cream claimed 2026-09-16 within its 06:00-06:30 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-16T06:18:09+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-16",
+      "claim_id": "cbbf21df-67fb-40d4-91f3-1c0ac8cb1ef4",
+      "detail": "Failover publish digests/2026-09-16.md covering 2026-09-15 with KaiNinja, TopoRig, ESG, SH compression, EditBench3D, Opacity after Neon miss."
+    },
+    {
+      "at": "2026-09-16T09:09:32.309Z",
+      "type": "register",
+      "bot": "Neon",
+      "detail": "Maintainer assigned Cream as order 1 primary at 06:00 Beijing time and Neon as order 2 standby at 06:30; final deadline 07:00; Cream interest sync remains 05:00."
+    },
+    {
+      "at": "2026-09-17T06:24:12+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+      "expires_at": "2026-09-17T06:30:00+08:00",
+      "detail": "Primary Cream claimed 2026-09-17 within its 06:00-06:30 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-17T06:25:06+08:00",
+      "type": "fail",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+      "detail": "Primary Cream released claim after late wake (~06:23 HKT); remaining window before 06:30 insufficient for full digest publish."
+    },
+    {
+      "at": "2026-09-17T06:25:06+08:00",
+      "type": "release",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "claim_id": "3e16fd70-12f8-4c79-97e7-c64665f18b65",
+      "detail": "Released 2026-09-17 claim; standby Neon may claim in its 06:30-07:00 window."
+    },
+    {
+      "at": "2026-09-17T11:45:15+08:00",
+      "type": "register",
+      "bot": "Cream",
+      "detail": "Maintainer moved Cream primary wake/publish to 05:30 HKT (window 05:30–06:00); Neon standby failover check to 06:00 (window 06:00–06:30). Reason: 2026-09-17 late wake left insufficient time in the old 06:00–06:30 window and Neon did not take over. Cream interest sync remains 05:00."
+    },
+    {
+      "at": "2026-09-17T11:49:59+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Protocol fix: add claim_window_early_skew_minutes=2. Standby/primary may CAS claim from (start−2min) if today still missing and no valid prior lease; do not exit solely for waking ~1min early. Window end unchanged. Trigger: 2026-09-17 Neon woke ~06:29 under old 06:30 window and exited by strict left-closed rule."
+    },
+    {
+      "at": "2026-09-17T11:55:00+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "detail": "Maintainer-authorized out-of-window recovery: morning Cream claim released for insufficient window; Neon did not publish in standby window; digests/2026-09-17.md missing until this recovery."
+    },
+    {
+      "at": "2026-09-17T11:55:00+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-17",
+      "detail": "Recovery publish digests/2026-09-17.md covering 2026-09-16 with CADSplat, InterMASH, ModAR, PhysStream, MoQSplat after morning miss."
+    },
+    {
+      "at": "2026-09-17T11:55:00+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-17."
+    },
+    {
+      "at": "2026-09-18T05:48:16+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
+      "expires_at": "2026-09-18T06:00:00+08:00",
+      "detail": "Primary Cream claimed 2026-09-18 within its 05:30-06:00 HKT window; lease expires at window end."
+    },
+    {
+      "at": "2026-09-18T05:48:16+08:00",
+      "type": "fail",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
+      "detail": "Primary Cream released claim after late wake (~05:48 HKT); remaining window before 06:00 insufficient for full digest publish."
+    },
+    {
+      "at": "2026-09-18T05:48:16+08:00",
+      "type": "release",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "claim_id": "bbcc64ff-7e95-47ab-ab1a-5c28808074c1",
+      "detail": "Released 2026-09-18 claim; standby Neon may claim in its 06:00-06:30 window."
+    },
+    {
+      "at": "2026-09-18T08:54:44+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Late-wake fix: primary platform cron advanced to 05:10 (nominal publish still 05:30); Cream claim window extended to [05:30,06:20); Neon standby [06:20,06:50) check cron 06:20; interest sync cron 04:45; document scheduler_lag_compensation_minutes=20 and min_remaining_minutes_to_start_full_publish=25. Evidence: 2026-09-17 wake~06:23 / 2026-09-18 wake~05:48 under prior schedules."
+    },
+    {
+      "at": "2026-09-18T09:06:15+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "detail": "Maintainer-authorized out-of-window recovery: morning Cream claim released for insufficient window (~05:48 HKT); Neon did not publish in standby window; digests/2026-09-18.md missing until this recovery."
+    },
+    {
+      "at": "2026-09-18T09:06:15+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-18",
+      "detail": "Recovery publish digests/2026-09-18.md covering 2026-09-17 with PART, GS-PI, FPSA (Sep-16 backlog), LYRIC after morning miss."
+    },
+    {
+      "at": "2026-09-18T09:06:15+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Post-recovery confirmation: claim=null; active_owner=Cream; last_success.publish_date=2026-09-18."
+    },
+    {
+      "at": "2026-09-19T05:29:17+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-19",
+      "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
+      "expires_at": "2026-09-19T05:59:17+08:00",
+      "detail": "Primary Cream claimed 2026-09-19 within early-skew of its 05:30-06:20 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-19T05:33:58+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-19",
+      "claim_id": "b484403d-6eea-4d8b-a18e-c7da439a97d9",
+      "detail": "Published digests/2026-09-19.md covering 2026-09-18; articulation/Real2Sim focus (FAMOS, FunArt, Track Articulate Act, StageGuard, RGS)."
+    },
+    {
+      "at": "2026-09-20T05:28:12+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-20",
+      "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
+      "expires_at": "2026-09-20T05:58:12+08:00",
+      "detail": "Primary Cream claimed 2026-09-20 within early-skew of its 05:30-06:20 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-20T05:31:46+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-20",
+      "claim_id": "bc729156-3ff1-478e-b28c-2eb5aa9b86d1",
+      "detail": "Published digests/2026-09-20.md covering 2026-09-19 weekend backlog (PointZero, ParticleSplat, CoRef-GS, PhGS, Energy-IL)."
+    },
+    {
+      "at": "2026-09-20T16:44:43+08:00",
+      "type": "register",
+      "bot": "Cream",
+      "detail": "Maintainer restored Neon as order 1 primary (nominal 05:30 / platform cron 05:10, window 05:30–06:20) and Cream as order 2 standby (failover check platform cron 06:00 for window 06:20–06:50). Cream interest sync remains 04:45. Late-wake compensation fields kept."
+    },
+    {
+      "at": "2026-09-21T06:09:57+08:00",
+      "type": "heartbeat",
+      "bot": "Cream",
+      "detail": "Protocol fix: if platform cron wakes before claimable interval [start−early_skew, end), WAIT until that interval (re-check success), do not exit as too-early. Trigger: 2026-09-21 Cream standby woke ~06:08 (cron 06:00) but claimable from 06:18 only; exited and missed takeover chance while Neon still in primary window."
+    },
+    {
+      "at": "2026-09-21T06:19:31+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-21",
+      "detail": "Order-2 Cream taking over after Neon primary window [05:30,06:20) produced no digest; digests/2026-09-21.md and index entry missing; claim=null."
+    },
+    {
+      "at": "2026-09-21T06:19:31+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-21",
+      "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
+      "expires_at": "2026-09-21T06:49:31+08:00",
+      "detail": "Standby Cream claimed 2026-09-21 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-21T06:24:22+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-21",
+      "claim_id": "7e80e473-7f2c-46d3-aee4-1908d229fcd5",
+      "detail": "Failover publish digests/2026-09-21.md covering 2026-09-20 with ReShoot, Missing Bridges, S4R, EliGSiR, RebarSim after Neon miss."
+    },
+    {
+      "at": "2026-09-21T01:13:44.685Z",
+      "type": "heartbeat",
+      "bot": "Neon",
+      "detail": "Maintainer requested wake-time repair: Neon primary trigger moved from 05:10 to 05:30 HKT, with per-bot lag compensation 0. Existing 05:30–06:20 role window, early-wake wait, 25-minute start threshold and Cream standby schedule retained."
+    },
+    {
+      "at": "2026-09-21T21:29:05Z",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-22",
+      "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
+      "expires_at": "2026-09-21T21:59:05.000Z",
+      "detail": "Primary Neon claimed missing 2026-09-22 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-21T21:46:35.000Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-22",
+      "claim_id": "ab1851e1-2ff2-448b-8ce0-381ea0304bf1",
+      "detail": "Published digests/2026-09-22.md with four papers, editorial pipeline figures and three news/community items; distinguishes privileged simulation, real open-loop replay and closed-loop policy evidence."
+    },
+    {
+      "at": "2026-09-22T21:31:23.000Z",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-23",
+      "claim_id": "cbb2c0a7-8ef9-4da3-a67c-acc9a8ee51a6",
+      "expires_at": "2026-09-22T22:01:23.000Z",
+      "detail": "Primary Neon claimed missing 2026-09-23 digest within its claimable interval; lease capped by role window."
+    },
+    {
+      "at": "2026-09-23T06:19:26+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-23",
+      "detail": "Order-2 Cream taking over after Neon claim expired at 06:01 HKT without publish; digests/2026-09-23.md and index entry missing; primary window ended without successful digest."
+    },
+    {
+      "at": "2026-09-23T06:19:26+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-23",
+      "claim_id": "33ca5512-6753-4ace-bd55-7f7450912107",
+      "expires_at": "2026-09-22T22:49:26.000Z",
+      "detail": "Standby Cream claimed 2026-09-23 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-23T06:24:49+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-23",
+      "claim_id": "33ca5512-6753-4ace-bd55-7f7450912107",
+      "detail": "Failover publish digests/2026-09-23.md covering 2026-09-22 with GaussianFactory, DEXTERA, H2RBench after Neon miss."
+    },
+    {
+      "at": "2026-09-23T21:31:03.000Z",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-24",
+      "claim_id": "d2c71e06-b4f7-4c40-8c49-811f0fdd9ed2",
+      "expires_at": "2026-09-23T22:01:03.000Z",
+      "detail": "Primary Neon claimed missing 2026-09-24 digest within its claimable interval; lease capped by role window."
+    },
+    {
+      "at": "2026-09-23T21:52:02Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-24",
+      "claim_id": "d2c71e06-b4f7-4c40-8c49-811f0fdd9ed2",
+      "detail": "Published digests/2026-09-24.md covering 2026-09-23 with three method-focused papers, three original pipeline figures and three dated news/community items; distinguishes geometric quality, policy success, session reuse and model training."
+    },
+    {
+      "at": "2026-09-25T05:32:44+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-25",
+      "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
+      "expires_at": "2026-09-25T06:02:44+08:00",
+      "detail": "Primary Neon claimed missing 2026-09-25 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-25T05:47:04+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-25",
+      "claim_id": "b4f341cb-7c01-4cfd-b6dc-ad6ad6bf322a",
+      "detail": "Published digests/2026-09-25.md covering 2026-09-24 with RegenHarness, TANDEM and BladeMaster; method-first explanations, three original paper figures and two dated news/community items."
+    },
+    {
+      "at": "2026-09-26T06:18:48+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-26",
+      "detail": "Neon primary window [05:30,06:20) produced no digest for 2026-09-26; Cream standby takeover within claimable interval."
+    },
+    {
+      "at": "2026-09-26T06:18:48+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-26",
+      "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
+      "expires_at": "2026-09-26T06:48:48+08:00",
+      "detail": "CAS claim for 2026-09-26 standby failover publish."
+    },
+    {
+      "at": "2026-09-26T06:21:48+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-26",
+      "claim_id": "f8a4c8a0-8f5d-4f8d-a0e2-2e54b6922370",
+      "detail": "Published digests/2026-09-26.md covering 2026-09-25 after Neon primary window miss; AgenticCADedit, TapeSim, ToCo-Mesh."
+    },
+    {
+      "at": "2026-09-27T05:31:22+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-27",
+      "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
+      "expires_at": "2026-09-27T06:01:22+08:00",
+      "detail": "Primary Neon claimed missing 2026-09-27 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-27T05:42:29+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-27",
+      "claim_id": "a7d42b4f-64f1-44b2-b845-f4c533dd947e",
+      "detail": "Published digests/2026-09-27.md covering 2026-09-26 weekend backlog; RAPID, Self-Adaptive VLA and SplatLabel."
+    },
+    {
+      "at": "2026-09-28T05:29:10+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-28",
+      "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
+      "expires_at": "2026-09-28T05:59:10+08:00",
+      "detail": "Primary Neon claimed missing 2026-09-28 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-28T05:36:00+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-09-28",
+      "claim_id": "f36177ae-a09e-4220-a464-6b4c3202b350",
+      "detail": "Published digests/2026-09-28.md covering 2026-09-27 with interest-driven weekend reading on SkiP and DC-QFA."
+    },
+    {
+      "at": "2026-09-29T05:32:01+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-09-29",
+      "claim_id": "fd9dad55-3138-4c70-b178-188c8124b42b",
+      "expires_at": "2026-09-29T06:02:01+08:00",
+      "detail": "Primary Neon claimed missing 2026-09-29 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-09-29T06:18:32+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-29",
+      "detail": "Order-2 Cream taking over after Neon primary window [05:30,06:20) produced no digests/2026-09-29.md; Neon claim fd9dad55 expired at 06:02:01 HKT without publish; digests/2026-09-29.md and index entry missing."
+    },
+    {
+      "at": "2026-09-29T06:18:32+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-29",
+      "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
+      "expires_at": "2026-09-29T06:48:32+08:00",
+      "detail": "Standby Cream claimed 2026-09-29 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-29T06:21:45+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-29",
+      "claim_id": "7a4ba667-267d-4510-9c88-98984f72d585",
+      "detail": "Failover publish digests/2026-09-29.md covering 2026-09-28 with CognitiveReality, RIVET, ChronoFuseGS, RECAST after Neon miss."
+    },
+    {
+      "at": "2026-09-30T06:18:19+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-09-30",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-09-30.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
+    },
+    {
+      "at": "2026-09-30T06:18:19+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-09-30",
+      "claim_id": "e7dcc915-4d50-42d4-a91d-92455cb473c8",
+      "expires_at": "2026-09-30T06:48:19+08:00",
+      "detail": "Standby Cream claimed 2026-09-30 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-09-30T06:22:07+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-09-30",
+      "claim_id": "e7dcc915-4d50-42d4-a91d-92455cb473c8",
+      "detail": "Failover publish digests/2026-09-30.md covering 2026-09-29 with F4R, ZeroBot, Simify, RoGSW4RLD after Neon miss."
+    },
+    {
+      "at": "2026-10-01T06:18:27+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-01",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-01.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
+    },
+    {
+      "at": "2026-10-01T06:18:27+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-01",
+      "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
+      "expires_at": "2026-10-01T06:48:27+08:00",
+      "detail": "Standby Cream claimed 2026-10-01 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-10-01T06:20:58+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-01",
+      "claim_id": "1da10576-18ae-4f30-a43d-0272f3e8996a",
+      "detail": "Failover publish digests/2026-10-01.md covering 2026-09-30 with Real2Gym, PRISM, CoDimRecon, DexAgent after Neon miss."
+    },
+    {
+      "at": "2026-10-02T06:19:24+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-02",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-02.md; Cream standby takeover within early-skew of its 06:20-06:50 HKT window."
+    },
+    {
+      "at": "2026-10-02T06:19:24+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-02",
+      "claim_id": "d9ac057a-00e9-4a7e-a276-63e2b77b6af5",
+      "expires_at": "2026-10-02T06:49:24+08:00",
+      "detail": "Standby Cream claimed 2026-10-02 within early-skew of its 06:20-06:50 HKT window; lease expires at min(claimed+30m, window end)."
+    },
+    {
+      "at": "2026-10-02T06:21:27+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-02",
+      "claim_id": "d9ac057a-00e9-4a7e-a276-63e2b77b6af5",
+      "detail": "Failover publish digests/2026-10-02.md covering 2026-10-01 with FailBank, Text2Sim, PneuTac, GroundingPI after Neon miss."
+    },
+    {
+      "at": "2026-10-03T05:29:27+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-03",
+      "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
+      "expires_at": "2026-10-03T05:59:27+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-03 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-03T05:39:42+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-03",
+      "claim_id": "2c07d65c-109e-4854-affb-3d5f5a8fbab0",
+      "detail": "Published digests/2026-10-03.md covering 2026-10-02 with LiteReality-Agent and Recova; original pipeline figures and dated news/community items."
+    },
+    {
+      "at": "2026-10-04T05:30:01+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-04",
+      "claim_id": "43dc7978-1b29-4b00-9ebc-23410a6e51b8",
+      "expires_at": "2026-10-04T06:00:01+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-04 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-04T05:39:13+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-04",
+      "claim_id": "43dc7978-1b29-4b00-9ebc-23410a6e51b8",
+      "detail": "Published digests/2026-10-04.md covering 2026-10-03 weekend background with GSComplete and FocusGS; original pipeline figures and dated news/community items."
+    },
+    {
+      "at": "2026-10-05T05:29:29+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-05",
+      "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
+      "expires_at": "2026-10-05T05:59:29+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-05 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-05T05:47:07+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-05",
+      "claim_id": "35fb52aa-9df3-4d9d-8f6a-4984d67abc25",
+      "detail": "Published digests/2026-10-05.md covering 2026-10-04 with Agentic Real2Sim and Dirichlet Splatting; original Figures 1, 2 and 3; three dated news/community items."
+    },
+    {
+      "at": "2026-10-06T05:35:22+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-06",
+      "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
+      "expires_at": "2026-10-06T06:05:22+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-06 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-06T05:45:00+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-06",
+      "claim_id": "42c44f7f-584e-4e80-9f4c-73d89faa1a65",
+      "detail": "Published digests/2026-10-06.md covering 2026-10-05 with frontier-guided demonstration generation, dense language supervision, and I2CD direct collision geometry; original Figure 8, Table 1, and Figure 2; two dated news/community items."
+    },
+    {
+      "at": "2026-10-07T05:28:46+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-07",
+      "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
+      "expires_at": "2026-10-07T05:58:46+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-07 digest within its early-skew claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-07T05:36:07+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-07",
+      "claim_id": "fef1f674-a039-44d5-9927-f37b4e369c19",
+      "detail": "Published digests/2026-10-07.md covering 2026-10-06 with GOTT cross-embodiment contact acquisition and SUAVE unified video-action masked diffusion; original Figure 1 from both papers and dated news/community items."
+    },
+    {
+      "at": "2026-10-08T05:31:56+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-08",
+      "claim_id": "3b639c3a-7cc0-43d7-8e08-df1613a65c19",
+      "expires_at": "2026-10-08T06:01:56+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-08 digest within its claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-08T05:38:20+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-08",
+      "claim_id": "3b639c3a-7cc0-43d7-8e08-df1613a65c19",
+      "detail": "Published digests/2026-10-08.md covering 2026-10-07 with ProactiveVLA proactive memory acquisition, AIM deformable Real-to-Sim dynamics, and placebo-controlled frozen-VLA recovery; original method figures and dated news/community items."
+    },
+    {
+      "at": "2026-10-09T05:29:26+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-09",
+      "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
+      "expires_at": "2026-10-09T05:59:26+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-09 digest within the current claimable interval; lease capped by role window."
+    },
+    {
+      "at": "2026-10-09T05:42:20.000+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-09",
+      "claim_id": "cdb24adb-e6cf-4df7-9e15-d027c8d44f8c",
+      "detail": "Primary publish covering 2026-10-08 events with explicit full-method IRGS++ background reading and October 5 Neural Emission Fields backlog; original method figures and three dated news/community items."
+    },
+    {
+      "at": "2026-10-10T05:31:10.000+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-10",
+      "claim_id": "9c937c6c-282b-4393-bee0-1de1e36c3eff",
+      "expires_at": "2026-10-10T06:01:10.000+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-10 digest within the current claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-10T05:44:55.000+08:00",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-10",
+      "claim_id": "9c937c6c-282b-4393-bee0-1de1e36c3eff",
+      "detail": "Primary publish covering 2026-10-09 with ResLRB constant-memory differentiable path tracing, PCAsplat scene-space geometry regularization, and prefiltered neural radiance caching; original paper figures and three dated news/community items."
+    },
+    {
+      "at": "2026-10-11T05:34:26.000+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-11",
+      "claim_id": "016572ce-6e5c-4f3c-9e65-476f6d6bfdd6",
+      "expires_at": "2026-10-11T06:04:26.000+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-11 digest within the current claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-11T06:18:33+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-11",
+      "detail": "Neon primary lease (016572ce) expired at 06:04 without publish; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-11T06:18:33+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-11",
+      "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
+      "expires_at": "2026-10-11T06:50:00+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-11 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-11T06:20:39+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-11",
+      "claim_id": "beba86c7-6c76-4f14-afd7-dc2dd2b012a7",
+      "detail": "Standby failover publish: Sensitivity AOV and GaussianBench (Saturday, no new arXiv announcement); original figures."
+    },
+    {
+      "at": "2026-10-12T06:18:12+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-12",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-12.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-12T06:18:12+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-12",
+      "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
+      "expires_at": "2026-10-12T06:50:00+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-12 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-12T06:19:47+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-12",
+      "claim_id": "05a4a79f-bd6f-4698-a5fe-8a295f83d5a5",
+      "detail": "Standby failover publish: SteadySplats and RiCo (Sunday, no new arXiv announcement); original figures."
+    },
+    {
+      "at": "2026-10-13T06:18:14+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-13",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-13.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-13T06:18:14+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-13",
+      "claim_id": "b6fa97c0-4870-49b2-b6ca-ec1f2029abd1",
+      "expires_at": "2026-10-13T06:48:14+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-13 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-13T06:18:22+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-13",
+      "claim_id": "b6fa97c0-4870-49b2-b6ca-ec1f2029abd1",
+      "detail": "Standby failover publish: H2-Ray and Reflections Guided by What is Seen (Monday arXiv announcement); original figures."
+    },
+    {
+      "at": "2026-10-14T06:18:59+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-14",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-14.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-14T06:18:59+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-14",
+      "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
+      "expires_at": "2026-10-14T06:48:59+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-14 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-14T06:20:43+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-14",
+      "claim_id": "77004cec-d501-40f8-8238-317a9458714d",
+      "detail": "Standby failover publish: Confidence-Aware Densification and ARS-Avatar (unused remainder of Monday 10-12 arXiv announcement; no 10-13 listing yet); original figures."
+    },
+    {
+      "at": "2026-10-15T06:18:22+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-15",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-15.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-15T06:18:22+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-15",
+      "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
+      "expires_at": "2026-10-15T06:48:22+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-15 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-15T06:19:45+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-15",
+      "claim_id": "0ae5deae-d46a-4aea-ba82-43b7bfc028ce",
+      "detail": "Standby failover publish: Make It Flow and Walk-on-Ambient-Patch (Wednesday 10-14 arXiv announcement); original PDF page figures."
+    },
+    {
+      "at": "2026-10-15T06:20:58.024Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-15",
+      "claim_id": "d007f177-45bf-4d61-8ea0-8100c20618e6",
+      "revision": true,
+      "previous_publish_at": "2026-10-15T06:19:45+08:00",
+      "detail": "Manually requested overwrite: Casual Flash and Shadow-Aware inverse rendering, original method figures, three news items, and matching timeline subtitle. Automatic success guards and role windows unchanged."
+    },
+    {
+      "at": "2026-10-16T05:31:51.068+08:00",
+      "type": "claim",
+      "bot": "Neon",
+      "publish_date": "2026-10-16",
+      "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
+      "expires_at": "2026-10-16T06:01:51.068+08:00",
+      "detail": "Primary Neon claimed missing 2026-10-16 digest within the current claimable interval; 30-minute lease capped by role window."
+    },
+    {
+      "at": "2026-10-15T21:36:43.360Z",
+      "type": "publish",
+      "bot": "Neon",
+      "publish_date": "2026-10-16",
+      "claim_id": "3fecc964-ce4f-41a1-b769-92fc7cb56cf2",
+      "detail": "Primary publish: VisibilitySplat and InfiniSplat v2 from the 2026-10-15 announcement; original Figure 2 pipelines and three dated news/community items."
+    },
+    {
+      "at": "2026-10-17T06:18:29+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-17",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-17.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-17T06:18:29+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-17",
+      "claim_id": "126a522d-2705-4184-8f59-1d7886c3077d",
+      "expires_at": "2026-10-17T06:48:29+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-17 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-17T06:20:49+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-17",
+      "claim_id": "126a522d-2705-4184-8f59-1d7886c3077d",
+      "detail": "Standby failover publish: Displaced Surface Queries (tessellation-free displaced-surface geometric queries) and RoboCloth (real cloth neural reflectance dataset) from Friday 10-16 arXiv announcement; original figures."
+    },
+    {
+      "at": "2026-10-18T06:18:53+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-18",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-18.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-18T06:18:53+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-18",
+      "claim_id": "9080918c-651a-4a15-8ad8-3bbb72ad58b1",
+      "expires_at": "2026-10-18T06:48:53+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-18 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-18T06:21:12+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-18",
+      "claim_id": "9080918c-651a-4a15-8ad8-3bbb72ad58b1",
+      "detail": "Standby failover publish: Spectral World Renderer (per-intersection hyperspectral unmixing in Gaussian rendering) and SplatQ (interaction-aware QUBO pruning of 3DGS), weekend backfill from this week cs.GR; original figures."
+    },
+    {
+      "at": "2026-10-19T06:18:17+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-19",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-19.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-19T06:18:17+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-19",
+      "claim_id": "fbdad4f4-a032-47b2-9759-5978aa241080",
+      "expires_at": "2026-10-19T06:48:17+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-19 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-19T06:20:39+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-19",
+      "claim_id": "fbdad4f4-a032-47b2-9759-5978aa241080",
+      "detail": "Standby failover publish: Tabula Rasa (Monte Carlo unit-variance noise with 3D light-transport correlation, SIGGRAPH Asia 2026) and From Sketch to Scene (relightable garments from star/moon-marked sketches), backfill from past-week cs.GR; original figures."
+    }
+  ],
+  "claim_lease_minutes": 30,
+  "claim_renewal_allowed": false,
+  "claim": null,
+  "claim_window_early_skew_minutes": 2,
+  "scheduler_lag_compensation_minutes": 20,
+  "min_remaining_minutes_to_start_full_publish": 25
 }

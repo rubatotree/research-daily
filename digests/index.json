@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-19",
+      "content_day": "2026-10-18",
+      "path": "digests/2026-10-19.md",
+      "title": "让噪声跟着光传输走，把阴影交给几何",
+      "figs": "digests/2026-10-19/figs/",
+      "subtitle": "单位方差相关噪声与可重照明草图服装"
+    },
+    {
       "date": "2026-10-18",
       "content_day": "2026-10-17",
       "path": "digests/2026-10-18.md",

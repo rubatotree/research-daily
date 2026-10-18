@@ -1278,9 +1278,25 @@
       "digest": "2026-10-18",
       "content_day": "2026-10-17",
       "arxiv": "2610.13503"
+    },
+    "2610.11653": {
+      "title": "Tabula Rasa: Monte Carlo estimation of unit-variance noise with controlled spatio-temporal correlation",
+      "short": "Tabula Rasa",
+      "first_seen": "2026-10-19",
+      "digest": "2026-10-19",
+      "content_day": "2026-10-18",
+      "arxiv": "2610.11653"
+    },
+    "2610.21865": {
+      "title": "From Sketch to Scene: Relightable Garment Reconstruction from Marked Sketches",
+      "short": "From Sketch to Scene",
+      "first_seen": "2026-10-19",
+      "digest": "2026-10-19",
+      "content_day": "2026-10-18",
+      "arxiv": "2610.21865"
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "version": 1
 }
