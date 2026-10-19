@@ -1294,9 +1294,27 @@
       "digest": "2026-10-19",
       "content_day": "2026-10-18",
       "arxiv": "2610.21865"
+    },
+    "2610.22778": {
+      "title": "Direct Conditional Parameterization for N-Dimensional Splatting",
+      "short": "dGS / dBS",
+      "first_seen": "2026-10-20",
+      "digest": "2026-10-20",
+      "content_day": "2026-10-19",
+      "reappearances": [],
+      "note": "Directly parameterizes conditional opacity precision (Cholesky) and factorized query-to-position regression with per-dimension coupling for N-D Gaussian/Beta splatting; NeurIPS 2026; full HTML methods and results read; original Figure 2 reproduced."
+    },
+    "2610.23237": {
+      "title": "X-Splat: Unified Gaussian Splatting for Joint RGB and X-ray 3D Reconstruction",
+      "short": "X-Splat",
+      "first_seen": "2026-10-20",
+      "digest": "2026-10-20",
+      "content_day": "2026-10-19",
+      "reappearances": [],
+      "note": "One Gaussian set with shared geometry, X-ray density on all primitives and RGB appearance only on a surface subset; proxy-based Sim(3) alignment and CT-guided depth loss; SIGGRAPH Asia 2026; full HTML read; original Figure 1 reproduced."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "version": 1
 }
