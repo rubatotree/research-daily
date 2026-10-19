@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-20",
+      "content_day": "2026-10-19",
+      "path": "digests/2026-10-20.md",
+      "title": "把条件切片改成直接参数化，让 X 光替外观定几何",
+      "figs": "digests/2026-10-20/figs/",
+      "subtitle": "N 维高斯直接条件化与 RGB–X 光统一高斯"
+    },
+    {
       "date": "2026-10-19",
       "content_day": "2026-10-18",
       "path": "digests/2026-10-19.md",

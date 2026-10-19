@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-19",
-    "at": "2026-10-19T06:20:39+08:00",
+    "publish_date": "2026-10-20",
+    "at": "2026-10-20T06:20:54+08:00",
     "commit": null,
-    "note": "Standby failover publish (Monday backfill from past-week cs.GR): Tabula Rasa and From Sketch to Scene; original figures."
+    "note": "Standby failover publish: dGS/dBS (direct conditional parameterization for N-D splatting, NeurIPS 2026) and X-Splat (unified RGB + X-ray Gaussians, SIGGRAPH Asia 2026); original figures."
   },
   "events": [
     {
@@ -1009,17 +1009,19 @@
       "claim_id": "133eb0d6-3965-406f-b9ed-7b7794f299c1",
       "expires_at": "2026-10-20T06:48:13+08:00",
       "detail": "Standby Cream claimed missing 2026-10-20 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-20T06:20:54+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-20",
+      "claim_id": "133eb0d6-3965-406f-b9ed-7b7794f299c1",
+      "detail": "Standby failover publish: dGS/dBS (direct conditional parameterization for N-dimensional splatting, NeurIPS 2026) and X-Splat (shared-geometry Gaussians for joint RGB and X-ray reconstruction, SIGGRAPH Asia 2026) from the Monday arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-20",
-    "bot": "Cream",
-    "claim_id": "133eb0d6-3965-406f-b9ed-7b7794f299c1",
-    "claimed_at": "2026-10-20T06:18:13+08:00",
-    "expires_at": "2026-10-20T06:48:13+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
