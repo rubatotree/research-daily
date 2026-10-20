@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-21",
+      "content_day": "2026-10-20",
+      "path": "digests/2026-10-21.md",
+      "title": "把开关状态从时间轴上拆出来，让分支游走少长枝",
+      "figs": "digests/2026-10-21/figs/",
+      "subtitle": "可组合状态的高斯场景与包络变换的分支 WoS"
+    },
+    {
       "date": "2026-10-20",
       "content_day": "2026-10-19",
       "path": "digests/2026-10-20.md",

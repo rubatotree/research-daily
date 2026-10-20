@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-20",
-    "at": "2026-10-20T06:20:54+08:00",
+    "publish_date": "2026-10-21",
+    "at": "2026-10-21T06:20:04+08:00",
     "commit": null,
-    "note": "Standby failover publish: dGS/dBS (direct conditional parameterization for N-D splatting, NeurIPS 2026) and X-Splat (unified RGB + X-ray Gaussians, SIGGRAPH Asia 2026); original figures."
+    "note": "Standby failover publish: SwitchSplat (static base + binary object-state slots, SIGGRAPH Asia 2026) and Walk in Envelopes (certified-envelope transform of branching WoS); original figures."
   },
   "events": [
     {
@@ -1033,17 +1033,19 @@
       "claim_id": "a9efc431-f91b-46c6-abd0-32307f4cb169",
       "expires_at": "2026-10-21T06:48:13+08:00",
       "detail": "Standby Cream claimed missing 2026-10-21 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-21T06:20:04+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-21",
+      "claim_id": "a9efc431-f91b-46c6-abd0-32307f4cb169",
+      "detail": "Standby failover publish: SwitchSplat (composable discrete object states for 3DGS, SIGGRAPH Asia 2026) and Walk in Envelopes (certified solution bounds transform branching Walk-on-Spheres) from the Tuesday arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-21",
-    "bot": "Cream",
-    "claim_id": "a9efc431-f91b-46c6-abd0-32307f4cb169",
-    "claimed_at": "2026-10-21T06:18:13+08:00",
-    "expires_at": "2026-10-21T06:48:13+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
