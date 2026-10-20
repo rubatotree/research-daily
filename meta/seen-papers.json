@@ -1312,6 +1312,24 @@
       "content_day": "2026-10-19",
       "reappearances": [],
       "note": "One Gaussian set with shared geometry, X-ray density on all primitives and RGB appearance only on a surface subset; proxy-based Sim(3) alignment and CT-guided depth loss; SIGGRAPH Asia 2026; full HTML read; original Figure 1 reproduced."
+    },
+    "2610.24812": {
+      "title": "SwitchSplat: Learning Discrete Object States from Casually Captured Scenes",
+      "short": "SwitchSplat",
+      "first_seen": "2026-10-21",
+      "digest": "2026-10-21",
+      "content_day": "2026-10-20",
+      "reappearances": [],
+      "note": "Static base plus per-object binary on/off Gaussian slots with differentiable softmax assignment and learnable temporal windows; SIGGRAPH Asia 2026; full HTML methods, Table 1 and limitations read; original pipeline figure reproduced."
+    },
+    "2610.25297": {
+      "title": "Walk in Envelopes: Efficient Branching Walk-on-Spheres via Certified Solution Bounds",
+      "short": "WiE",
+      "first_seen": "2026-10-21",
+      "digest": "2026-10-21",
+      "content_day": "2026-10-20",
+      "reappearances": [],
+      "note": "Certified lower/upper envelopes drive a generalized Doob transform of branching WoS into split/return-0/return-1 events, sampled exactly with screened WoS kernels; full HTML theory, Table 1 and limitations read; original Figure 1 reproduced."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
