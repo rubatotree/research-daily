@@ -1041,11 +1041,33 @@
       "publish_date": "2026-10-21",
       "claim_id": "a9efc431-f91b-46c6-abd0-32307f4cb169",
       "detail": "Standby failover publish: SwitchSplat (composable discrete object states for 3DGS, SIGGRAPH Asia 2026) and Walk in Envelopes (certified solution bounds transform branching Walk-on-Spheres) from the Tuesday arXiv announcement; original figures."
+    },
+    {
+      "at": "2026-10-22T06:18:14+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-22",
+      "detail": "Neon primary window [05:30,06:20) produced no digests/2026-10-22.md and no claim; standby Cream takes over within [06:18,06:50)."
+    },
+    {
+      "at": "2026-10-22T06:18:14+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-22",
+      "claim_id": "0a27cec0-a5d0-477a-8e19-8054a71513f9",
+      "expires_at": "2026-10-22T06:48:14+08:00",
+      "detail": "Standby Cream claimed missing 2026-10-22 digest; lease capped by role window end 06:50."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-22",
+    "bot": "Cream",
+    "claim_id": "0a27cec0-a5d0-477a-8e19-8054a71513f9",
+    "claimed_at": "2026-10-22T06:18:14+08:00",
+    "expires_at": "2026-10-22T06:48:14+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25
