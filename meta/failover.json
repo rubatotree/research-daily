@@ -33,10 +33,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-21",
-    "at": "2026-10-21T06:20:04+08:00",
+    "publish_date": "2026-10-22",
+    "at": "2026-10-22T06:19:56+08:00",
     "commit": null,
-    "note": "Standby failover publish: SwitchSplat (static base + binary object-state slots, SIGGRAPH Asia 2026) and Walk in Envelopes (certified-envelope transform of branching WoS); original figures."
+    "note": "Standby failover publish: Occlusion-Aware Densification (ACCV 2026 Oral) and Joints, Camera, Action! (video + 3D motion co-generation for arbitrary rigs); original figures."
   },
   "events": [
     {
@@ -1057,17 +1057,19 @@
       "claim_id": "0a27cec0-a5d0-477a-8e19-8054a71513f9",
       "expires_at": "2026-10-22T06:48:14+08:00",
       "detail": "Standby Cream claimed missing 2026-10-22 digest; lease capped by role window end 06:50."
+    },
+    {
+      "at": "2026-10-22T06:19:56+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-22",
+      "claim_id": "0a27cec0-a5d0-477a-8e19-8054a71513f9",
+      "detail": "Standby failover publish: Occlusion-Aware Densification (contribution-based 3DGS densification statistics, ACCV 2026 Oral) and Joints, Camera, Action! (co-generated video and 3D motion for arbitrary rigs) from the Wednesday arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-22",
-    "bot": "Cream",
-    "claim_id": "0a27cec0-a5d0-477a-8e19-8054a71513f9",
-    "claimed_at": "2026-10-22T06:18:14+08:00",
-    "expires_at": "2026-10-22T06:48:14+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25

@@ -1330,9 +1330,45 @@
       "content_day": "2026-10-20",
       "reappearances": [],
       "note": "Certified lower/upper envelopes drive a generalized Doob transform of branching WoS into split/return-0/return-1 events, sampled exactly with screened WoS kernels; full HTML theory, Table 1 and limitations read; original Figure 1 reproduced."
+    },
+    "2610.27108": {
+      "title": "Counting Contributions, Not Views: Occlusion-Aware Densification for 3D Gaussian Splatting",
+      "short": "Occlusion-Aware Densification",
+      "note": "ACCV 2026 Oral; occlusion-aware visibility filter plus average-contribution normalizer for 3DGS ADC; HTML method, results and limitations read; original Figure 1 reproduced.",
+      "first_seen": "2026-10-22",
+      "digest": "2026-10-22",
+      "content_day": "2026-10-21",
+      "reappearances": []
+    },
+    "2610.28632": {
+      "title": "Joints, Camera, Action! Co-Generating 3D Motion and Video for Arbitrary Rigs",
+      "short": "JCA",
+      "note": "Rig-conditioned motion DiT coupled to pretrained video model via cross-attention; joint localization head for camera fitting; ~200K video-motion pairs; original Figure 2 reproduced.",
+      "first_seen": "2026-10-22",
+      "digest": "2026-10-22",
+      "content_day": "2026-10-21",
+      "reappearances": []
+    },
+    "2610.28628": {
+      "title": "Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking",
+      "short": "AdaDex",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-22",
+      "digest": "2026-10-22",
+      "content_day": "2026-10-21",
+      "reappearances": []
+    },
+    "2610.28490": {
+      "title": "Learning from Automatic 3D Gaussian Splatting Edits for Online Bayesian Scene Change Detection",
+      "short": "3DGS-edit change detection",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-22",
+      "digest": "2026-10-22",
+      "content_day": "2026-10-21",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "version": 1
 }
