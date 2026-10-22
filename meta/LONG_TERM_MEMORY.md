@@ -48,8 +48,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 3b. 多 Bot 故障转移（自动维护）
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
-- **名册：** Neon = order 1 active primary；Cream = order 2 active standby。
-- **定时：** Neon **名义** 05:30 主发布，平台 cron **05:30**；认领窗 [05:30, 06:20)。Cream standby 检查名义 **06:20**、平台 cron **06:00**，窗 [06:20, 06:50)。Cream 兴趣同步平台 cron **04:45**。
+- **名册：** Cream = order 1 active primary；Neon = order 2 active standby（2026-10-22 调换）。
+- **定时：** Cream **名义** 05:30 主发布，平台 cron **05:10**（提前醒来等到 05:30）；认领窗 [05:30, 06:20)。Neon standby 检查名义 **06:20**、平台 cron **06:00**，窗 [06:20, 06:50)。Cream 兴趣同步平台 cron **04:45**。
 - **通知：** Cream 兴趣同步与 standby failover 检查结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
@@ -63,7 +63,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 4. 日期与节奏
 
-- **定时：** 名义每天 `05:30`，平台 cron `30 5 * * *`（在认领窗口内触发；保留晚唤醒余量），时区 Asia/Hong_Kong
+- **定时：** 名义每天 `05:30`，平台 cron `10 5 * * *`（提前 20 分钟触发，提前醒来须等到 05:30 认领窗；2026-10-22 起 primary 为 Cream），时区 Asia/Hong_Kong
 - **自 2026-09-08 起**须每日执行
 - **发布日** = 文件名日期 = 站点选日 = 早上跑任务的「今天」
 - **内容覆盖日** = **前一自然日**（例：`2026-09-07.md` 写 2026-09-06 的新稿）
@@ -126,7 +126,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 1. 阅读并遵守：`digest-spec.md`、`privacy.md`、`failover.json`、`failover.md` 与本文件
 2. 将 `bot-handoff-prompt.md` 全文设为新 Bot 的系统/定时任务说明（或按其裁剪）
 3. 按 `bot-repro.md` 连接 GitHub（本仓写权限）
-4. 确认私有代号，并只按当前名册的角色安装任务：primary 平台 05:30／窗至 06:20；standby 06:20
+4. 确认私有代号，并只按当前名册的角色安装任务：primary 平台 05:10／窗至 06:20；standby 06:20
 5. 用最近一篇 `digests/*.md` 做字段对照自检
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
@@ -142,6 +142,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 - 2026-09-24：兴趣同步（Cream）据 notes/blog 联合校准，公开写入 VLA 过程监督阅读加权与 SA 2026 论文笔记草稿（仅阅读线索，不复制 notes/草稿正文）。
 
+- 2026-10-22：维护者要求调换名册：Cream = order 1 primary（名义 05:30，cron 05:10，窗 [05:30,06:20)），Neon = order 2 standby（名义 06:20，cron 06:00，窗 [06:20,06:50)）；因 Neon 10-11–10-15、10-17–10-22 多次未出稿。Neon 修复后可换回。
 - 2026-09-23：按维护者授权，将 notes 与 blog 同等每日重点关注写入共用规则，适用于 Neon、Cream 及后续 Bot；仅发布通用要求，不复制笔记内容。
 
 - 2026-09-23：明确原论文 pipeline 图优先；仅在无图或原图不清楚且有必要时补充中文自绘示意图，同步配图来源与接管规则。
