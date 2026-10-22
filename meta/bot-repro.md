@@ -5,7 +5,7 @@
 
 ## 角色与调度
 - 名称：科研日报；时区：Asia/Hong_Kong
-- 当前名册由 `meta/failover.json` 权威定义：Neon = order 1 active primary，平台 05:30 触发、认领窗口至 06:20；Cream = order 2 active standby，平台 06:00 触发、名义 06:20 检查、窗口至 06:50（Cream 另 04:45 兴趣笔记同步）。
+- 当前名册由 `meta/failover.json` 权威定义（2026-10-22 起调换，Neon 修复后可换回）：Cream = order 1 active primary，平台 05:10 触发、名义 05:30、认领窗口 [05:30, 06:20)；Neon = order 2 active standby，平台 06:00 触发、名义 06:20 检查、窗口至 06:50，不得在 06:20 前发布（Cream 另 04:45 兴趣笔记同步）。
 - 不要为同一 Bot 默认同时安装主任务和 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
 
 ## 必备连接
@@ -52,7 +52,7 @@
 4. 连接 GitHub（本仓写权限）；可选 X
 5. 用最近样例 digest 校验：标题栏会议/时间、速览锚点、方法概要、覆盖说明、编写署名、故障说明（仅接管稿）、无隐私泄漏
 6. 阅读近几天**非本人**署名日报以学习文风（清晰易读、重点分明；允许创新）
-7. 只按其名册角色启用一个任务：primary 使用 `30 5 * * *`（名义 05:30）；standby 使用 `0 6 * * *`（名义 06:20）；兴趣同步 `45 4 * * *`，并实现 failover.md v4 的有限租约、CAS claim、early skew（提前唤醒宽限）与发布前隔离检查
+7. 只按其名册角色启用一个任务：primary 使用 `10 5 * * *`（名义 05:30）；standby 使用 `0 6 * * *`（名义 06:20）；兴趣同步 `45 4 * * *`，并实现 failover.md v4 的有限租约、CAS claim、early skew（提前唤醒宽限）与发布前隔离检查
 
 ## 站点
 - https://rubatotree.github.io/research-daily/

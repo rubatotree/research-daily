@@ -2,32 +2,33 @@
   "version": 4,
   "timezone": "Asia/Hong_Kong",
   "scheduled_publish": "05:30",
-  "scheduled_cron": "30 5 * * *",
+  "scheduled_cron": "10 5 * * *",
   "failover_grace_minutes": 50,
   "failover_check_time": "06:20",
   "failover_check_cron": "0 6 * * *",
-  "description": "Multi-bot roster + CAS failover. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Neon triggers at 05:30 with zero compensation, within its claimable interval; Cream retains its early trigger. Early wakes must wait and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish.",
+  "description": "Multi-bot roster + CAS failover. Roster swapped 2026-10-22 by maintainer request (Neon missed its primary window repeatedly): Cream is order1 primary, Neon is order2 standby; can be swapped back once Neon is fixed. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Early wakes must wait until claim_window_start and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish. A standby must not publish before its claim_window_start (minus early_skew).",
   "bots": [
     {
-      "code": "Neon",
+      "code": "Cream",
       "order": 1,
       "role": "primary",
       "status": "active",
-      "duties": "Platform cron 05:30 HKT starts inside the claimable interval. A 20-minute wake delay still leaves 30 minutes before 06:20. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish. Early wakes wait and recheck; nominal 05:30 is not a guaranteed completion time.",
+      "duties": "Platform cron 05:10 HKT (20-min lag compensation) for nominal 05:30 publish. Early wakes wait until 05:30 (minus early_skew) and recheck. Success guard; if missing and remaining until claim_window_end >= min_remaining_minutes_to_start_full_publish (25), CAS claim and full publish. Interest-notes sync cron 04:45. Report to maintainer.",
       "claim_window_start": "05:30",
       "claim_window_end": "06:20",
-      "platform_cron": "30 5 * * *",
-      "scheduler_lag_compensation_minutes": 0
+      "platform_cron": "10 5 * * *",
+      "scheduler_lag_compensation_minutes": 20
     },
     {
-      "code": "Cream",
+      "code": "Neon",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "Platform cron 06:00 HKT for nominal 06:20 failover check (lag compensation). CAS claim if today missing within [06:20,06:50) incl. early_skew. Interest-notes sync cron 04:45. Always send check report to maintainer.",
+      "duties": "Standby since 2026-10-22. Nominal 06:20 failover check. Must NOT publish before 06:20 (minus early_skew); early wakes wait and recheck success. CAS claim if today missing within [06:20,06:50) and min_remaining satisfied.",
       "claim_window_start": "06:20",
       "claim_window_end": "06:50",
-      "platform_cron": "0 6 * * *"
+      "platform_cron": "0 6 * * *",
+      "scheduler_lag_compensation_minutes": 20
     }
   ],
   "active_owner": "Cream",
@@ -1065,6 +1066,12 @@
       "publish_date": "2026-10-22",
       "claim_id": "0a27cec0-a5d0-477a-8e19-8054a71513f9",
       "detail": "Standby failover publish: Occlusion-Aware Densification (contribution-based 3DGS densification statistics, ACCV 2026 Oral) and Joints, Camera, Action! (co-generated video and 3D motion for arbitrary rigs) from the Wednesday arXiv announcement; original figures."
+    },
+    {
+      "at": "2026-10-22T11:40:00+08:00",
+      "type": "roster_change",
+      "bot": "Cream",
+      "detail": "Maintainer request: Cream order1 primary [05:30,06:20) cron 05:10; Neon order2 standby [06:20,06:50) cron 06:00. Reason: Neon missed primary window 10-11..10-15 and 10-17..10-22. Can be swapped back once Neon is fixed."
     }
   ],
   "claim_lease_minutes": 30,
@@ -1072,5 +1079,6 @@
   "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
-  "min_remaining_minutes_to_start_full_publish": 25
+  "min_remaining_minutes_to_start_full_publish": 25,
+  "roster_updated_at": "2026-10-22T11:40:00+08:00"
 }
