@@ -1072,11 +1072,26 @@
       "type": "roster_change",
       "bot": "Cream",
       "detail": "Maintainer request: Cream order1 primary [05:30,06:20) cron 05:10; Neon order2 standby [06:20,06:50) cron 06:00. Reason: Neon missed primary window 10-11..10-15 and 10-17..10-22. Can be swapped back once Neon is fixed."
+    },
+    {
+      "at": "2026-10-23T05:28:17+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-23",
+      "claim_id": "27f0b33c-94a4-4a58-b9aa-e563f549fa69",
+      "expires_at": "2026-10-23T05:58:17+08:00",
+      "detail": "Primary Cream claimed 2026-10-23 digest within its window [05:30,06:20) (early skew 2)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-23",
+    "bot": "Cream",
+    "claim_id": "27f0b33c-94a4-4a58-b9aa-e563f549fa69",
+    "claimed_at": "2026-10-23T05:28:17+08:00",
+    "expires_at": "2026-10-23T05:58:17+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
