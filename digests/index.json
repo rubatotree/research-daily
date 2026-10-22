@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-23",
+      "content_day": "2026-10-22",
+      "path": "digests/2026-10-23.md",
+      "title": "加噪的物理光照线索做视频重光照，跨光线密度一致性压稀疏视角漂浮物",
+      "figs": "digests/2026-10-23/figs/",
+      "subtitle": "弱几何先验下的重光照"
+    },
+    {
       "date": "2026-10-22",
       "content_day": "2026-10-21",
       "path": "digests/2026-10-22.md",
