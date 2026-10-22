@@ -1366,9 +1366,54 @@
       "digest": "2026-10-22",
       "content_day": "2026-10-21",
       "reappearances": []
+    },
+    "2610.29780": {
+      "title": "JointLight: Human-Centric Video Relighting with Asynchronous RGB-Irradiance Joint Modeling",
+      "short": "JointLight",
+      "note": "Must-read; SIGGRAPH Asia 2026 Conference Papers.",
+      "first_seen": "2026-10-23",
+      "digest": "2026-10-23",
+      "content_day": "2026-10-22",
+      "reappearances": []
+    },
+    "2610.29106": {
+      "title": "DriftNeRF: Cross-Ray Density Drifting for Sparse-View Neural Radiance Fields",
+      "short": "DriftNeRF",
+      "note": "Full entry.",
+      "first_seen": "2026-10-23",
+      "digest": "2026-10-23",
+      "content_day": "2026-10-22",
+      "reappearances": []
+    },
+    "2610.29517": {
+      "title": "AutoPhyX: Automatic Text-Condition Physics Property Generation",
+      "short": "AutoPhyX",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-23",
+      "digest": "2026-10-23",
+      "content_day": "2026-10-22",
+      "reappearances": []
+    },
+    "2610.30033": {
+      "title": "RLMuscle: Muscle-Driven Character Animation via Reinforcement Learning",
+      "short": "RLMuscle",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-23",
+      "digest": "2026-10-23",
+      "content_day": "2026-10-22",
+      "reappearances": []
+    },
+    "2610.28827": {
+      "title": "WorldStream: Streaming Interactive 3D Worlds with Hierarchical Planning and Persistent State",
+      "short": "WorldStream",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-23",
+      "digest": "2026-10-23",
+      "content_day": "2026-10-22",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-21",
+  "updated": "2026-10-23",
   "version": 1
 }

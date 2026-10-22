@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-22",
-    "at": "2026-10-22T06:19:56+08:00",
+    "publish_date": "2026-10-23",
+    "at": "2026-10-23T05:32:20+08:00",
     "commit": null,
-    "note": "Standby failover publish: Occlusion-Aware Densification (ACCV 2026 Oral) and Joints, Camera, Action! (video + 3D motion co-generation for arbitrary rigs); original figures."
+    "note": "Primary publish: JointLight (SIGGRAPH Asia 2026, noise-corrupted irradiance cues for video relighting) and DriftNeRF (cross-ray density consistency for sparse-view NeRF); original figures."
   },
   "events": [
     {
@@ -1081,17 +1081,19 @@
       "claim_id": "27f0b33c-94a4-4a58-b9aa-e563f549fa69",
       "expires_at": "2026-10-23T05:58:17+08:00",
       "detail": "Primary Cream claimed 2026-10-23 digest within its window [05:30,06:20) (early skew 2)."
+    },
+    {
+      "at": "2026-10-23T05:32:20+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-23",
+      "claim_id": "27f0b33c-94a4-4a58-b9aa-e563f549fa69",
+      "detail": "Primary publish within window: JointLight (asynchronous RGB-irradiance joint denoising for human-centric video relighting, SIGGRAPH Asia 2026) and DriftNeRF (stop-gradient cross-ray density consensus for sparse-view NeRF) from the Thursday arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-23",
-    "bot": "Cream",
-    "claim_id": "27f0b33c-94a4-4a58-b9aa-e563f549fa69",
-    "claimed_at": "2026-10-23T05:28:17+08:00",
-    "expires_at": "2026-10-23T05:58:17+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
