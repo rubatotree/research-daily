@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-24",
+      "content_day": "2026-10-23",
+      "path": "digests/2026-10-24.md",
+      "title": "线性辐射传输让生成式高斯人头实时换光，3DGS 自动科研系统把数字钉在日志上",
+      "figs": "digests/2026-10-24/figs/",
+      "subtitle": "高斯上的线性光传输"
+    },
+    {
       "date": "2026-10-23",
       "content_day": "2026-10-22",
       "path": "digests/2026-10-23.md",

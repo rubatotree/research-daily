@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-23",
-    "at": "2026-10-23T05:32:20+08:00",
+    "publish_date": "2026-10-24",
+    "at": "2026-10-24T05:28:16+08:00",
     "commit": null,
-    "note": "Primary publish: JointLight (SIGGRAPH Asia 2026, noise-corrupted irradiance cues for video relighting) and DriftNeRF (cross-ray density consistency for sparse-view NeRF); original figures."
+    "note": "Primary publish: GSHeadRelight (SIGGRAPH 2025, per-Gaussian linear radiance transfer for relightable 3DGS heads) and SplatLab (NeurIPS 2026, autonomous 3DGS research system); original figures."
   },
   "events": [
     {
@@ -1098,17 +1098,19 @@
       "claim_id": "c3ebc9e3-029e-4fb7-b3c7-098fb3611e13",
       "expires_at": "2026-10-24T05:58:00+08:00",
       "detail": "Primary Cream claimed 2026-10-24 digest within its window [05:30,06:20) (early skew 2)."
+    },
+    {
+      "at": "2026-10-24T05:28:16+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-24",
+      "claim_id": "c3ebc9e3-029e-4fb7-b3c7-098fb3611e13",
+      "detail": "Primary publish within window: GSHeadRelight (unified neural radiance transfer on generative 3D Gaussian heads) and SplatLab (verified-reproduction autonomous research for 3DGS) from the Friday arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-24",
-    "bot": "Cream",
-    "claim_id": "c3ebc9e3-029e-4fb7-b3c7-098fb3611e13",
-    "claimed_at": "2026-10-24T05:28:00+08:00",
-    "expires_at": "2026-10-24T05:58:00+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

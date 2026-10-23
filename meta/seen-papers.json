@@ -1411,9 +1411,45 @@
       "digest": "2026-10-23",
       "content_day": "2026-10-22",
       "reappearances": []
+    },
+    "2610.30619": {
+      "title": "GSHeadRelight: Fast Relightability for 3D Gaussian Head Synthesis",
+      "short": "GSHeadRelight",
+      "note": "Must-read; SIGGRAPH 2025 paper first posted to arXiv 2026-10-22.",
+      "first_seen": "2026-10-24",
+      "digest": "2026-10-24",
+      "content_day": "2026-10-23",
+      "reappearances": []
+    },
+    "2610.30468": {
+      "title": "SplatLab: Autonomous Scientific Discovery for 3DGS Research",
+      "short": "SplatLab",
+      "note": "Optional read; NeurIPS 2026.",
+      "first_seen": "2026-10-24",
+      "digest": "2026-10-24",
+      "content_day": "2026-10-23",
+      "reappearances": []
+    },
+    "2610.30910": {
+      "title": "H-2DGS: Height-Field Gaussian Splatting for Sharp and Deformable Neurosurgical Surface Reconstruction",
+      "short": "H-2DGS",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-24",
+      "digest": "2026-10-24",
+      "content_day": "2026-10-23",
+      "reappearances": []
+    },
+    "2610.30149": {
+      "title": "A Tutte-Like Theorem for Injective Flows on Meshes",
+      "short": "Tutte-like injective flows",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-24",
+      "digest": "2026-10-24",
+      "content_day": "2026-10-23",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "version": 1
 }
