@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-24",
-    "at": "2026-10-24T05:28:16+08:00",
+    "publish_date": "2026-10-25",
+    "at": "2026-10-25T05:28:15+08:00",
     "commit": null,
-    "note": "Primary publish: GSHeadRelight (SIGGRAPH 2025, per-Gaussian linear radiance transfer for relightable 3DGS heads) and SplatLab (NeurIPS 2026, autonomous 3DGS research system); original figures."
+    "note": "Primary publish: PhysSkin++ (self-supervised neural skinning fields with 3DGS binding) and Matrix-Game 4.0 (engine harness + distilled real-time video re-renderer); Sunday backfill of the week's cs.GR; original figures."
   },
   "events": [
     {
@@ -1115,17 +1115,19 @@
       "claim_id": "7f7f42d2-6e30-4bd6-9a9a-0685153eb8bf",
       "expires_at": "2026-10-25T05:58:04+08:00",
       "detail": "Primary Cream claimed 2026-10-25 digest within its window [05:30,06:20) (early skew 2)."
+    },
+    {
+      "at": "2026-10-25T05:28:15+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-25",
+      "claim_id": "7f7f42d2-6e30-4bd6-9a9a-0685153eb8bf",
+      "detail": "Primary publish within window: PhysSkin++ and Matrix-Game 4.0, Sunday backfill of the 10-19 to 10-23 arXiv announcements; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-25",
-    "bot": "Cream",
-    "claim_id": "7f7f42d2-6e30-4bd6-9a9a-0685153eb8bf",
-    "claimed_at": "2026-10-25T05:28:04+08:00",
-    "expires_at": "2026-10-25T05:58:04+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-25",
+      "content_day": "2026-10-24",
+      "path": "digests/2026-10-25.md",
+      "title": "只看几何就学出物理蒙皮场驱动高斯资产，引擎管规则、视频模型实时重绘游戏画面",
+      "figs": "digests/2026-10-25/figs/",
+      "subtitle": "物理蒙皮与神经重绘"
+    },
+    {
       "date": "2026-10-24",
       "content_day": "2026-10-23",
       "path": "digests/2026-10-24.md",
