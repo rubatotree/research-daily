@@ -1447,9 +1447,45 @@
       "digest": "2026-10-24",
       "content_day": "2026-10-23",
       "reappearances": []
+    },
+    "2610.26067": {
+      "title": "PhysSkin++: Real-Time and Generalizable Physics-Based Animation via Self-Supervised Neural Skinning",
+      "short": "PhysSkin++",
+      "note": "必读; extended version of CVPR 2026 PhysSkin; neural skinning fields bound to 3DGS.",
+      "first_seen": "2026-10-25",
+      "digest": "2026-10-25",
+      "content_day": "2026-10-24",
+      "reappearances": []
+    },
+    "2610.27999": {
+      "title": "Matrix-Game 4.0: Harnessing Video Models for Real-Time Playable Game Worlds",
+      "short": "Matrix-Game 4.0",
+      "note": "选读; engine harness + distilled causal video re-renderer, 60 FPS on RTX 5090.",
+      "first_seen": "2026-10-25",
+      "digest": "2026-10-25",
+      "content_day": "2026-10-24",
+      "reappearances": []
+    },
+    "2610.28131": {
+      "title": "OV-Foam: How 3D Representations Shape Semantic Feature Lifting",
+      "short": "OV-Foam",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-25",
+      "digest": "2026-10-25",
+      "content_day": "2026-10-24",
+      "reappearances": []
+    },
+    "2610.24075": {
+      "title": "OrTeN: Neural Inverse Graphics for Joint Terrain and Line-scan Camera Trajectory Reconstruction",
+      "short": "OrTeN",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-25",
+      "digest": "2026-10-25",
+      "content_day": "2026-10-24",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "version": 1
 }
