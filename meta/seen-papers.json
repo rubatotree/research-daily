@@ -1483,9 +1483,45 @@
       "digest": "2026-10-25",
       "content_day": "2026-10-24",
       "reappearances": []
+    },
+    "2610.30337": {
+      "title": "MoRE: Motion-Regularized Encoding for Articulated 3D Generation",
+      "short": "MoRE",
+      "note": "Must-read: joint-line encoding plus differentiable anchor-motion regularizer; rest-pose Gaussians articulated by part transforms.",
+      "first_seen": "2026-10-26",
+      "digest": "2026-10-26",
+      "content_day": "2026-10-25",
+      "reappearances": []
+    },
+    "2610.30326": {
+      "title": "R4DGS: Referring Segmentation in 4D Gaussian Splatting",
+      "short": "R4DGS",
+      "note": "Optional read (ACM MM 2026): training-free entity bank over 4DGS with MLLM constrained selection.",
+      "first_seen": "2026-10-26",
+      "digest": "2026-10-26",
+      "content_day": "2026-10-25",
+      "reappearances": []
+    },
+    "2608.29925": {
+      "title": "Dior: Drawing the Light of Image via Material-Decoupled Illumination Representation",
+      "short": "Dior",
+      "note": "Brief listing only in 其他值得一扫 (v2 2026-10-22).",
+      "first_seen": "2026-10-26",
+      "digest": "2026-10-26",
+      "content_day": "2026-10-25",
+      "reappearances": []
+    },
+    "2610.31293": {
+      "title": "RecallGS: Geometry-Grounded Recall for Online Semantic Gaussian Splatting",
+      "short": "RecallGS",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-26",
+      "digest": "2026-10-26",
+      "content_day": "2026-10-25",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "version": 1
 }
