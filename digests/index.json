@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-26",
+      "content_day": "2026-10-25",
+      "path": "digests/2026-10-26.md",
+      "title": "运动监督让单图生成的铰接高斯按对的关节开合，4D 高斯场景整理成可被语言点名的实体",
+      "figs": "digests/2026-10-26/figs/",
+      "subtitle": "可动资产与 4D 指代"
+    },
+    {
       "date": "2026-10-25",
       "content_day": "2026-10-24",
       "path": "digests/2026-10-25.md",
