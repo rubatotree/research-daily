@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-27",
+      "content_day": "2026-10-26",
+      "path": "digests/2026-10-27.md",
+      "title": "按物体而非三角形做前馈全局光照，智能体把机器人演示搭成可直接回放的仿真场景",
+      "figs": "digests/2026-10-27/figs/",
+      "subtitle": "前馈全局光照与智能体 Real→Sim"
+    },
+    {
       "date": "2026-10-26",
       "content_day": "2026-10-25",
       "path": "digests/2026-10-26.md",
