@@ -1519,9 +1519,54 @@
       "digest": "2026-10-26",
       "content_day": "2026-10-25",
       "reappearances": []
+    },
+    "2610.32075": {
+      "title": "RADIANT: Object-Centric Feed-Forward Global Illumination",
+      "short": "RADIANT",
+      "note": "Must-read: 32 patch tokens per object, invariant form-factor attention, point-splat primary visibility; +3.3 dB over RenderFormer.",
+      "first_seen": "2026-10-27",
+      "digest": "2026-10-27",
+      "content_day": "2026-10-26",
+      "reappearances": []
+    },
+    "2610.31834": {
+      "title": "WorldMirror: Agentic Real-to-Sim Generation of Interactive Worlds from In-the-Wild Robot Demonstrations",
+      "short": "WorldMirror",
+      "note": "Optional read: router agent over construction graph with verification rewinds; direct DROID trajectory replay vs GPT-6 Astra.",
+      "first_seen": "2026-10-27",
+      "digest": "2026-10-27",
+      "content_day": "2026-10-26",
+      "reappearances": []
+    },
+    "2610.32250": {
+      "title": "Easy-3Dfy: Object-Level Geometric Composition for Single-Image 3D Scene Construction",
+      "short": "Easy-3Dfy",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-27",
+      "digest": "2026-10-27",
+      "content_day": "2026-10-26",
+      "reappearances": []
+    },
+    "2610.32978": {
+      "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+      "short": "SceneBloom",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-27",
+      "digest": "2026-10-27",
+      "content_day": "2026-10-26",
+      "reappearances": []
+    },
+    "2610.25068": {
+      "title": "Localization and Neural Splatting on the Edge: An FPGA Scene Memory for Robots",
+      "short": "LENS",
+      "note": "Brief listing only in 其他值得一扫 (v2 2026-10-23).",
+      "first_seen": "2026-10-27",
+      "digest": "2026-10-27",
+      "content_day": "2026-10-26",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "version": 1
 }

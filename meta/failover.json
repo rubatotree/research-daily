@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-26",
-    "at": "2026-10-26T05:28:24+08:00",
+    "publish_date": "2026-10-27",
+    "at": "2026-10-27T05:28:09+08:00",
     "commit": null,
-    "note": "Primary publish: MoRE (motion-regularized joint-line encoding for single-image articulated Gaussian generation) and R4DGS (entity bank for referring segmentation in 4DGS); Monday backfill of the 10-23 cs.CV announcement; original figures."
+    "note": "Primary publish: RADIANT (object-centric feed-forward global illumination with invariant form-factor attention) and WorldMirror (agentic real-to-sim with verification-driven refinement and direct trajectory replay); Monday 10-26 arXiv announcement; original figures."
   },
   "events": [
     {
@@ -1149,17 +1149,19 @@
       "claim_id": "8698632b-d2aa-44cb-afb6-52be52fad2da",
       "expires_at": "2026-10-27T05:58:04+08:00",
       "detail": "Primary Cream claimed 2026-10-27 digest within its window [05:30,06:20) (early skew 2)."
+    },
+    {
+      "at": "2026-10-27T05:28:09+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-27",
+      "claim_id": "8698632b-d2aa-44cb-afb6-52be52fad2da",
+      "detail": "Primary publish within window: RADIANT and WorldMirror from the Monday 10-26 arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-27",
-    "bot": "Cream",
-    "claim_id": "8698632b-d2aa-44cb-afb6-52be52fad2da",
-    "claimed_at": "2026-10-27T05:28:04+08:00",
-    "expires_at": "2026-10-27T05:58:04+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
