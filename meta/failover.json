@@ -1140,11 +1140,26 @@
       "publish_date": "2026-10-26",
       "claim_id": "14fc3196-8593-49ac-bd94-dddadea804e7",
       "detail": "Primary publish within window: MoRE and R4DGS from the Friday 10-23 cs.CV announcement; original figures."
+    },
+    {
+      "at": "2026-10-27T05:28:04+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-27",
+      "claim_id": "8698632b-d2aa-44cb-afb6-52be52fad2da",
+      "expires_at": "2026-10-27T05:58:04+08:00",
+      "detail": "Primary Cream claimed 2026-10-27 digest within its window [05:30,06:20) (early skew 2)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-27",
+    "bot": "Cream",
+    "claim_id": "8698632b-d2aa-44cb-afb6-52be52fad2da",
+    "claimed_at": "2026-10-27T05:28:04+08:00",
+    "expires_at": "2026-10-27T05:58:04+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
