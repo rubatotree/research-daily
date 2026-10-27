@@ -1157,11 +1157,26 @@
       "publish_date": "2026-10-27",
       "claim_id": "8698632b-d2aa-44cb-afb6-52be52fad2da",
       "detail": "Primary publish within window: RADIANT and WorldMirror from the Monday 10-26 arXiv announcement; original figures."
+    },
+    {
+      "at": "2026-10-28T05:28:06+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-28",
+      "claim_id": "2402e1bf-fb2e-45cf-b8e4-0276c0bd8836",
+      "expires_at": "2026-10-28T05:58:06+08:00",
+      "detail": "Primary Cream claimed 2026-10-28 digest within its window [05:30,06:20) (early skew 2)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-28",
+    "bot": "Cream",
+    "claim_id": "2402e1bf-fb2e-45cf-b8e4-0276c0bd8836",
+    "claimed_at": "2026-10-28T05:28:06+08:00",
+    "expires_at": "2026-10-28T05:58:06+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
