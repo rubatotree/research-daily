@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-27",
-    "at": "2026-10-27T05:28:09+08:00",
+    "publish_date": "2026-10-28",
+    "at": "2026-10-28T05:28:11+08:00",
     "commit": null,
-    "note": "Primary publish: RADIANT (object-centric feed-forward global illumination with invariant form-factor attention) and WorldMirror (agentic real-to-sim with verification-driven refinement and direct trajectory replay); Monday 10-26 arXiv announcement; original figures."
+    "note": "Primary publish: SceneAgent (agentic conversion of 3D/4D captures into physics-ready simulation scenes) and PrecisionReach-GS (robot-aligned 3DGS data generation for wrist-camera VLA reaching); Tuesday 10-27 arXiv announcement; original figures."
   },
   "events": [
     {
@@ -1166,17 +1166,19 @@
       "claim_id": "2402e1bf-fb2e-45cf-b8e4-0276c0bd8836",
       "expires_at": "2026-10-28T05:58:06+08:00",
       "detail": "Primary Cream claimed 2026-10-28 digest within its window [05:30,06:20) (early skew 2)."
+    },
+    {
+      "at": "2026-10-28T05:28:11+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-28",
+      "claim_id": "2402e1bf-fb2e-45cf-b8e4-0276c0bd8836",
+      "detail": "Primary publish within window: SceneAgent and PrecisionReach-GS from the Tuesday 10-27 arXiv announcement; original figures."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-28",
-    "bot": "Cream",
-    "claim_id": "2402e1bf-fb2e-45cf-b8e4-0276c0bd8836",
-    "claimed_at": "2026-10-28T05:28:06+08:00",
-    "expires_at": "2026-10-28T05:58:06+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

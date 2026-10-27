@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-28",
+      "content_day": "2026-10-27",
+      "path": "digests/2026-10-28.md",
+      "title": "智能体把 3D/4D 采集转成带物理的仿真场景，对齐到机械臂的高斯场景为腕部相机 VLA 批量造数据",
+      "figs": "digests/2026-10-28/figs/",
+      "subtitle": "Real→Sim 智能体与 3DGS 造数据"
+    },
+    {
       "date": "2026-10-27",
       "content_day": "2026-10-26",
       "path": "digests/2026-10-27.md",
