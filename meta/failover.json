@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-28",
-    "at": "2026-10-28T05:28:11+08:00",
+    "publish_date": "2026-10-29",
+    "at": "2026-10-29T13:54:31+08:00",
     "commit": null,
-    "note": "Primary publish: SceneAgent (agentic conversion of 3D/4D captures into physics-ready simulation scenes) and PrecisionReach-GS (robot-aligned 3DGS data generation for wrist-camera VLA reaching); Tuesday 10-27 arXiv announcement; original figures."
+    "note": "Manual make-up publish at maintainer's request (primary scheduled run did not fire; standby did not publish): GraftRay (near-field area emitters + Gaussian path tracing for mesh insertion), Hexels (hexagonal surfels with linear color), SO-101 four-policy data-scaling study; Wednesday 10-28 arXiv announcement; original figures."
   },
   "events": [
     {
@@ -1183,19 +1183,27 @@
       "claim_id": "54a15c85-952e-463f-8823-bb94ae466ed6",
       "expires_at": "2026-10-29T16:18:32+08:00",
       "detail": "Manual make-up claim at maintainer's request (outside [05:30,06:20) primary and [06:20,06:50) standby windows): no 2026-10-29 digest, no valid claim, last_success=2026-10-28. Primary scheduled run did not fire; standby Neon did not publish. Lease extended to 150 min for the manual run."
+    },
+    {
+      "at": "2026-10-29T13:54:31+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-10-29",
+      "claim_id": "54a15c85-952e-463f-8823-bb94ae466ed6",
+      "detail": "Primary scheduled run did not fire; no claim or digest from Cream in [05:30,06:20) nor from standby Neon in [06:20,06:50). Maintainer reported the missing digest; Cream made it up manually outside the normal windows."
+    },
+    {
+      "at": "2026-10-29T13:54:31+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-29",
+      "claim_id": "54a15c85-952e-463f-8823-bb94ae466ed6",
+      "detail": "Manual make-up publish: GraftRay, Hexels and SO-101 data-scaling study from the Wednesday 10-28 arXiv announcement; original figures; 故障说明 appended."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-29",
-    "bot": "Cream",
-    "claim_id": "54a15c85-952e-463f-8823-bb94ae466ed6",
-    "claimed_at": "2026-10-29T13:48:32+08:00",
-    "expires_at": "2026-10-29T16:18:32+08:00",
-    "mode": "manual_makeup",
-    "note": "Manual make-up at maintainer's request outside normal windows; primary scheduled run did not fire and standby did not publish."
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
