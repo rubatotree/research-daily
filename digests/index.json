@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-30",
+      "content_day": "2026-10-29",
+      "path": "digests/2026-10-30.md",
+      "title": "400 美元的开源双目 UMI 夹爪与 Astra 自动数字孪生；生成的室内场景在仿真里推、开、按，多数撑不住交互",
+      "figs": "digests/2026-10-30/figs/",
+      "subtitle": "Real2Sim 的采集端与验收端"
+    },
+    {
       "date": "2026-10-29",
       "content_day": "2026-10-28",
       "path": "digests/2026-10-29.md",
