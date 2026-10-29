@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-10-29",
-    "at": "2026-10-29T13:54:31+08:00",
+    "publish_date": "2026-10-30",
+    "at": "2026-10-30T05:28:25+08:00",
     "commit": null,
-    "note": "Manual make-up publish at maintainer's request (primary scheduled run did not fire; standby did not publish): GraftRay (near-field area emitters + Gaussian path tracing for mesh insertion), Hexels (hexagonal surfels with linear color), SO-101 four-policy data-scaling study; Wednesday 10-28 arXiv announcement; original figures."
+    "note": "Primary publish: OpenJaws (open stereo UMI gripper + GPT-6 Astra real-to-sim, must-read), ScIntBench (interaction readiness of generated indoor scenes); remaining items of the 10-28 arXiv announcement; original figures."
   },
   "events": [
     {
@@ -1208,17 +1208,19 @@
       "claim_id": "42a77436-07f0-4018-a499-5e940b28cb8f",
       "expires_at": "2026-10-30T05:58:01+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-10-30T05:28:25+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-10-30",
+      "claim_id": "42a77436-07f0-4018-a499-5e940b28cb8f",
+      "detail": "Primary publish within window: OpenJaws, ScIntBench + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-10-30",
-    "bot": "Cream",
-    "claim_id": "42a77436-07f0-4018-a499-5e940b28cb8f",
-    "claimed_at": "2026-10-30T05:28:01+08:00",
-    "expires_at": "2026-10-30T05:58:01+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

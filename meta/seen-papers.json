@@ -1681,9 +1681,81 @@
       "digest": "2026-10-29",
       "content_day": "2026-10-28",
       "reappearances": []
+    },
+    "2610.36598": {
+      "title": "OpenJaws: An Open Hardware UMI Framework with Stereo Localization for Generalist Manipulation",
+      "short": "OpenJaws",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Must-read full section."
+    },
+    "2610.37326": {
+      "title": "ScIntBench: Physical Interaction Plausibility in 3D Scene Generation",
+      "short": "ScIntBench",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Select-read full section."
+    },
+    "2610.36098": {
+      "title": "Texture Consolidation of Generated Multi-View Renderings",
+      "short": "Texture Consolidation",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.34717": {
+      "title": "VLA-HWBench: Where the Time Goes When VLA Models Run on Edge Hardware",
+      "short": "VLA-HWBench",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.36853": {
+      "title": "LingGS: Decoupling Feed-Forward Geometry Prediction from Camera Tracking for High-Fidelity Gaussian SLAM",
+      "short": "LingGS",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.35902": {
+      "title": "StereoSplat: Metric-Scale Novel View Synthesis via Stereo-Grounded Gaussian Splatting",
+      "short": "StereoSplat",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.36371": {
+      "title": "BoxWorld: Let World Engines Control and Video Generators Render",
+      "short": "BoxWorld",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.37172": {
+      "title": "DomeGS: Perceptually Consistent Background Completion for Unbounded 3D Gaussian Splatting in Virtual Reality",
+      "short": "DomeGS",
+      "first_seen": "2026-10-30",
+      "digest": "2026-10-30",
+      "content_day": "2026-10-29",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "version": 1
 }
