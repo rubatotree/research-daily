@@ -1199,11 +1199,26 @@
       "publish_date": "2026-10-29",
       "claim_id": "54a15c85-952e-463f-8823-bb94ae466ed6",
       "detail": "Manual make-up publish: GraftRay, Hexels and SO-101 data-scaling study from the Wednesday 10-28 arXiv announcement; original figures; 故障说明 appended."
+    },
+    {
+      "at": "2026-10-30T05:28:01+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-30",
+      "claim_id": "42a77436-07f0-4018-a499-5e940b28cb8f",
+      "expires_at": "2026-10-30T05:58:01+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-30",
+    "bot": "Cream",
+    "claim_id": "42a77436-07f0-4018-a499-5e940b28cb8f",
+    "claimed_at": "2026-10-30T05:28:01+08:00",
+    "expires_at": "2026-10-30T05:58:01+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
