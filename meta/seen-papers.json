@@ -1627,9 +1627,63 @@
       "digest": "2026-10-28",
       "content_day": "2026-10-27",
       "reappearances": []
+    },
+    "2610.37036": {
+      "title": "GraftRay: Physically Based Mesh Insertion into Gaussian Splatting Scenes via Path Tracing",
+      "short": "GraftRay",
+      "note": "Must-read: per-Gaussian material priors, rectangular area emitters, censored-LDR radiance fit over path-traced basis images, stochastic-transparency OptiX path tracer, differential compositing.",
+      "first_seen": "2026-10-29",
+      "digest": "2026-10-29",
+      "content_day": "2026-10-28",
+      "reappearances": []
+    },
+    "2610.37668": {
+      "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
+      "short": "Hexels",
+      "note": "Optional: hexagonal surfels with first-order color field; memory-matched gains over 2DGS.",
+      "first_seen": "2026-10-29",
+      "digest": "2026-10-29",
+      "content_day": "2026-10-28",
+      "reappearances": []
+    },
+    "2610.37170": {
+      "title": "From 12 to 200 Demonstrations: How ACT, Diffusion Policy, SmolVLA and π0.5 Scale on a Low-Cost Arm",
+      "short": "SO-101 scaling",
+      "note": "Optional: real-robot data-scaling study on SO-101; π0.5 recipe sensitivity (LoRA vs action expert).",
+      "first_seen": "2026-10-29",
+      "digest": "2026-10-29",
+      "content_day": "2026-10-28",
+      "reappearances": []
+    },
+    "2610.36420": {
+      "title": "SO-101 Bench: Accessible Spatial Manipulation",
+      "short": "SO-101 Bench",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-29",
+      "digest": "2026-10-29",
+      "content_day": "2026-10-28",
+      "reappearances": []
+    },
+    "2610.36931": {
+      "title": "From Walks to Skeletons: A Reusable Transport Architecture for Interactive Monte Carlo PDE Solvers",
+      "short": "Transport Skeletons",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-29",
+      "digest": "2026-10-29",
+      "content_day": "2026-10-28",
+      "reappearances": []
+    },
+    "2610.35904": {
+      "title": "ObjectTwin: Measuring the Asset Correspondence Gap for Capture-Anchored Digital Twins",
+      "short": "ObjectTwin",
+      "note": "Brief listing only in 其他值得一扫.",
+      "first_seen": "2026-10-29",
+      "digest": "2026-10-29",
+      "content_day": "2026-10-28",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "version": 1
 }

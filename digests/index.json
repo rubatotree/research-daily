@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-29",
+      "content_day": "2026-10-28",
+      "path": "digests/2026-10-29.md",
+      "title": "固定材质只解近场面光源，把网格物体路径追踪进室内高斯场景；六边形线性色面片与 SO-101 上四种策略的数据效率",
+      "figs": "digests/2026-10-29/figs/",
+      "subtitle": "面光源插入与紧凑面片"
+    },
+    {
       "date": "2026-10-28",
       "content_day": "2026-10-27",
       "path": "digests/2026-10-28.md",
