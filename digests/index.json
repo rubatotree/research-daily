@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-10-31",
+      "content_day": "2026-10-30",
+      "path": "digests/2026-10-31.md",
+      "title": "把非均匀介质编译成可编辑的随机游走预制件；超过 180° 的鱼眼 3DGS 与对齐碰撞网格",
+      "figs": "digests/2026-10-31/figs/",
+      "subtitle": "MC PDE 的缓存重用与鱼眼 Real2Sim"
+    },
+    {
       "date": "2026-10-30",
       "content_day": "2026-10-29",
       "path": "digests/2026-10-30.md",
