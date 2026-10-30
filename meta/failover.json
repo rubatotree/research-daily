@@ -1216,11 +1216,26 @@
       "publish_date": "2026-10-30",
       "claim_id": "42a77436-07f0-4018-a499-5e940b28cb8f",
       "detail": "Primary publish within window: OpenJaws, ScIntBench + brief listings; claim cleared."
+    },
+    {
+      "at": "2026-10-31T05:28:01+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-10-31",
+      "claim_id": "3a5e121f-f328-45ae-9aa1-63e0590335c6",
+      "expires_at": "2026-10-31T05:58:01+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-10-31",
+    "bot": "Cream",
+    "claim_id": "3a5e121f-f328-45ae-9aa1-63e0590335c6",
+    "claimed_at": "2026-10-31T05:28:01+08:00",
+    "expires_at": "2026-10-31T05:58:01+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
