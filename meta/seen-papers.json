@@ -1753,9 +1753,72 @@
       "content_day": "2026-10-29",
       "reappearances": [],
       "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.35952": {
+      "title": "Walk on Multiscale Media: Compiling Editable and Composable Transport Medium Prefabs for Monte Carlo PDE Solvers",
+      "short": "WoMM",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Must-read full section."
+    },
+    "2610.37818": {
+      "title": "GOFish: Full Field-of-View Gaussian Splatting and Mesh Extraction",
+      "short": "GOFish",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Selected full section."
+    },
+    "2610.40565": {
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents",
+      "short": "Gym-Anything for Robotics",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.39385": {
+      "title": "UMI-Live for In-The-Wild Bimanual Robotics Data Collection",
+      "short": "UMI-Live",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.40599": {
+      "title": "HairDeck: Animation-Ready Stylized Hair Cards from a Single Image",
+      "short": "HairDeck",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
+    },
+    "2609.37115": {
+      "title": "NRF-GS: Neural Residual Fields for Expressive and Compact Gaussian Splatting",
+      "short": "NRF-GS",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Brief listing; replaced version notes NeurIPS 2026 acceptance."
+    },
+    "2610.39076": {
+      "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+      "short": "Tactus",
+      "first_seen": "2026-10-31",
+      "digest": "2026-10-31",
+      "content_day": "2026-10-30",
+      "reappearances": [],
+      "note": "Brief listing only in 其他值得一扫."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "version": 1
 }
