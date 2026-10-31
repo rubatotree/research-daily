@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-01",
+      "content_day": "2026-10-31",
+      "path": "digests/2026-11-01.md",
+      "title": "在高斯支撑上解可微扩散方程做次表面散射；直接预测光线交点的八叉树神经表示",
+      "figs": "digests/2026-11-01/figs/",
+      "subtitle": "高斯介质里的次表面输运"
+    },
+    {
       "date": "2026-10-31",
       "content_day": "2026-10-30",
       "path": "digests/2026-10-31.md",

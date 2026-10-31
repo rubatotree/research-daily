@@ -1816,9 +1816,72 @@
       "content_day": "2026-10-30",
       "reappearances": [],
       "note": "Brief listing only in 其他值得一扫."
+    },
+    "2610.04007": {
+      "title": "VolS-GS: Relightable Gaussian Splatting with Volumetric Subsurface Scattering",
+      "short": "VolS-GS",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Must-read (main-line backfill; first posted 2026-10-02)."
+    },
+    "2610.38441": {
+      "title": "Neural Explicit Shape Representation",
+      "short": "NeuOctree",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Selected read."
+    },
+    "2610.25681": {
+      "title": "RxGS: Relightable Gaussian Stylization via BRDF Decomposition",
+      "short": "RxGS",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.35347": {
+      "title": "CVTSplat: Multi-view Reconstruction Using an Adaptive Centroidal Voronoi Tessellation",
+      "short": "CVTSplat",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.39975": {
+      "title": "Mastering Multi-State Dynamics: Continuum Damage and Viscoplastic MPM for RL-Based Dexterous Manipulation",
+      "short": "MG-CD-MPM",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.34263": {
+      "title": "RacerGS: Residual-Autoregressive Context for 3D Gaussian Splatting Compression",
+      "short": "RacerGS",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.37406": {
+      "title": "CTBakeGS: training-free baking of photorealistic CT volume renderings into 3D Gaussian splats",
+      "short": "CTBakeGS",
+      "first_seen": "2026-11-01",
+      "digest": "2026-11-01",
+      "content_day": "2026-10-31",
+      "reappearances": [],
+      "note": "Brief listing only."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "version": 1
 }
