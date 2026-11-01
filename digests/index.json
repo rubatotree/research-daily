@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-02",
+      "content_day": "2026-11-01",
+      "path": "digests/2026-11-02.md",
+      "title": "智能体搭关节、绑表面、跑仿真的单图可交互资产；前馈预测逐体素物理参数的仿真就绪高斯",
+      "figs": "digests/2026-11-02/figs/",
+      "subtitle": "让生成的资产动起来"
+    },
+    {
       "date": "2026-11-01",
       "content_day": "2026-10-31",
       "path": "digests/2026-11-01.md",

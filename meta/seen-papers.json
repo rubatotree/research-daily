@@ -1879,9 +1879,72 @@
       "content_day": "2026-10-31",
       "reappearances": [],
       "note": "Brief listing only."
+    },
+    "2610.39924": {
+      "title": "PhysAg3D: Bridging 3D Generative and Agentic Models for High-Fidelity and Physically-Interactive Assets",
+      "short": "PhysAg3D",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Must-read."
+    },
+    "2610.34473": {
+      "title": "PhysCreator: Creating Physically-Attributed 3D Assets at Will",
+      "short": "PhysCreator",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Main entry (optional read)."
+    },
+    "2610.36011": {
+      "title": "E0.5: From Reconstructive to Future-Predictive 3D Foundations for Robotic World-Action Modeling",
+      "short": "E0.5",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.36840": {
+      "title": "Trace-WAM: Learning to Act via 3D Motion Prediction for World Action Models",
+      "short": "Trace-WAM",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.36945": {
+      "title": "Total Deformation-based MPM for Perfectly Elastic Solid Simulation with Strong Deformations",
+      "short": "Total Deformation MPM",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.33158": {
+      "title": "Gaussian Episodic Memory for Long-Term Spatiotemporal Reasoning",
+      "short": "GEMS",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.40453": {
+      "title": "PhysInsert: Physically Plausible Object Insertion with Geometric Priors and Bidirectional Object-Scene Interactions",
+      "short": "PhysInsert",
+      "first_seen": "2026-11-02",
+      "digest": "2026-11-02",
+      "content_day": "2026-11-01",
+      "reappearances": [],
+      "note": "Brief listing only."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "version": 1
 }
