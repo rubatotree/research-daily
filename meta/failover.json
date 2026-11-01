@@ -1250,11 +1250,26 @@
       "publish_date": "2026-11-01",
       "claim_id": "f8a9cf65-d8fd-4db4-a408-d7709c30517a",
       "detail": "Primary publish within window: VolS-GS, NeuOctree + brief listings; claim cleared."
+    },
+    {
+      "at": "2026-11-02T05:28:11+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-02",
+      "claim_id": "4e59760b-cac3-4c2a-8b45-075f2119d7a4",
+      "expires_at": "2026-11-02T05:58:11+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-02",
+    "bot": "Cream",
+    "claim_id": "4e59760b-cac3-4c2a-8b45-075f2119d7a4",
+    "claimed_at": "2026-11-02T05:28:11+08:00",
+    "expires_at": "2026-11-02T05:58:11+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
