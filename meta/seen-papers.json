@@ -2032,6 +2032,87 @@
       "content_day": "2026-11-02",
       "reappearances": [],
       "note": "Covered in 圈内 via media report and project page; CoRL 2026 per project BibTeX."
+    },
+    "2611.01534": {
+      "title": "AbacusGS: Gaussian Splatting without Per-Splat Sorting",
+      "short": "AbacusGS",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Must-read. Octree boxes (<=128 splats) with write-time in-box order along a camera-derived axis; per frame sort visible boxes and pick read direction; order-aware fine-tuning, -0.13 dB vs control, 4.5x faster CPU-sorted OpenGL viewer. Full HTML read; original Fig. 2/3."
+    },
+    "2611.02044": {
+      "title": "Unified Loss-Aware Density Control for 3D Gaussian Splatting",
+      "short": "Loss-Aware ADC",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Selected; NeurIPS 2026. Taylor surrogates for joint position-scale split, cloning strength and selective opacity decay. Full HTML read; original Fig. 1/2."
+    },
+    "2611.03114": {
+      "title": "3D Gaussian Splatting within Self-Learned Neural View-Dependent Color Fields",
+      "short": "Neural Color Fields 3DGS",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only)."
+    },
+    "2611.02767": {
+      "title": "GaussFlaw: Fine-Grained Perceptual Diagnosis for 3D Gaussian Splatting",
+      "short": "GaussFlaw",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only)."
+    },
+    "2611.03033": {
+      "title": "GPU-Native Real-Time Textured Mesh Reconstruction with Seam-Aware Multi-View Radiometric Correction",
+      "short": "GPU-Native Textured Mesh",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only); WACV 2027."
+    },
+    "2611.02658": {
+      "title": "OctreeSplat: Hierarchical Octree-Guided Feed-Forward Gaussian Splatting",
+      "short": "OctreeSplat",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only)."
+    },
+    "2611.01645": {
+      "title": "UA-Depth: Uncertainty-Aware Depth Restoration for Material-Agnostic Object Manipulation",
+      "short": "UA-Depth",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only)."
+    },
+    "2611.02999": {
+      "title": "SyncHeC: Markerless Spatio-Temporal Hand-Eye Calibration via Differentiable Rendering and Continuous-Time Joint Optimization",
+      "short": "SyncHeC",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only)."
+    },
+    "2611.01543": {
+      "title": "GSExplorer: Interactive World Generation with a Persistent 3D Gaussian World State",
+      "short": "GSExplorer",
+      "first_seen": "2026-11-04",
+      "digest": "2026-11-04",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Brief (abstract only)."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",

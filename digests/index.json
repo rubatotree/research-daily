@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-04",
+      "content_day": "2026-11-03",
+      "path": "digests/2026-11-04.md",
+      "title": "把混合顺序写进资产、免去逐高斯排序的 3DGS；按损失变化决定分裂、复制与衰减的密度控制",
+      "figs": "digests/2026-11-04/figs/",
+      "subtitle": "把高斯资产整理好"
+    },
+    {
       "date": "2026-11-03",
       "content_day": "2026-11-02",
       "path": "digests/2026-11-03.md",
