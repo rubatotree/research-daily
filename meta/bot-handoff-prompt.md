@@ -30,7 +30,6 @@
 - meta/privacy.md
 - meta/seen-papers.json
 并用 GitHub 每日读取 rubatotree/notes、rubatotree/blog、rubatotree/academic 的近期 commits 与相关变更正文校准兴趣。notes 是科研对话及科研零散想法整理仓，与 blog 同等重点；Neon、Cream 及后续维护者均按 research-interests.md「notes 与 blog 联合校准」执行，Cream 的既有每日兴趣同步也适用。区分观察、建议、假设和验证结果；不将具体研究设想、实验细节或笔记正文公开搬运。
-同时顺带检查对标仓 https://github.com/hku-sail/Real2Sim_GPT6_ASTRA 自上次日报以来的 commits：有实质更新则在当日日报简短描述；无更新不提。不要为此单独加盯梢任务。
 
 【日期约定】
 - 文件 digests/YYYY-MM-DD.md 与站点选日 = 发布日 = 定时任务当天（通常名义 05:30 HKT（平台可提前触发））

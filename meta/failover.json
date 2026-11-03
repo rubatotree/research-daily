@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-02",
-    "at": "2026-11-02T05:28:23+08:00",
+    "publish_date": "2026-11-03",
+    "at": "2026-11-03T14:40:54+08:00",
     "commit": null,
-    "note": "Primary publish: PhysAg3D (agentic single-image interactive asset construction with Blender/MuJoCo verification, must-read), PhysCreator (feed-forward Gaussians with voxel-wise physical fields); Sunday backfill of editable dynamic assets; original figures."
+    "note": "Manual make-up publish at maintainer's request (primary scheduled run did not fire; standby did not publish): DrawSplat (Atlanta World-guided implicit Gaussian SLAM, must-read), PriorGS (single-exposure HDR base-gain Gaussians); Monday 11-02 arXiv announcement; original figures."
   },
   "events": [
     {
@@ -1276,19 +1276,27 @@
       "claim_id": "cf9e5749-ffa6-4483-85bd-654fb39ee472",
       "expires_at": "2026-11-03T17:03:36+08:00",
       "detail": "Manual make-up claim at maintainer's request (outside [05:30,06:20) primary and [06:20,06:50) standby windows): no 2026-11-03 digest, no valid claim, last_success=2026-11-02. Primary scheduled run did not fire; standby Neon did not publish. Lease extended to 150 min for the manual run."
+    },
+    {
+      "at": "2026-11-03T14:40:54+08:00",
+      "type": "failover",
+      "bot": "Cream",
+      "publish_date": "2026-11-03",
+      "claim_id": "cf9e5749-ffa6-4483-85bd-654fb39ee472",
+      "detail": "Primary scheduled run did not fire; no claim or digest from Cream in [05:30,06:20) nor from standby Neon in [06:20,06:50). Maintainer requested a make-up; Cream made it up manually outside the normal windows."
+    },
+    {
+      "at": "2026-11-03T14:40:54+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-03",
+      "claim_id": "cf9e5749-ffa6-4483-85bd-654fb39ee472",
+      "detail": "Manual make-up publish: DrawSplat and PriorGS from the Monday 11-02 arXiv announcement; original figures; 故障说明 appended."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-03",
-    "bot": "Cream",
-    "claim_id": "cf9e5749-ffa6-4483-85bd-654fb39ee472",
-    "claimed_at": "2026-11-03T14:33:36+08:00",
-    "expires_at": "2026-11-03T17:03:36+08:00",
-    "mode": "manual_makeup",
-    "note": "Manual make-up at maintainer's request outside normal windows; primary scheduled run did not fire and standby did not publish."
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

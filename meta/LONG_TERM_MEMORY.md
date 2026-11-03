@@ -93,7 +93,6 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 4. 中文科技媒体（机器之心、量子位、新智元等）与 PaperWeekly 类
 5. X 关键词检索（可选；**额度与过程永不入库**）
 
-- 对标仓 `hku-sail/Real2Sim_GPT6_ASTRA`：写日报时顺带扫 commits；有实质更新则在日报简短描述；**不另设盯梢任务**
 
 ## 7. 站点 UX 约定（已实现）
 
@@ -156,7 +155,6 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 - 2026-09-14：补齐 v4 有限认领租约、过期接管、每日资格重置与发布前 claim_id 复核；末级超时停止并报告。保持既有名册、发布时间和历史发布记录。
 
 - 2026-09-14：故障转移接管发布时须在日报最下方追加 **故障说明**（前序 Bot 失效／未出稿情况）；正常 primary 发布不写。
-- 2026-09-14：对标仓 `hku-sail/Real2Sim_GPT6_ASTRA` 纳入各 Bot 写日报时的顺带检查；有更新则简短描述，不另设盯梢任务。
 - 2026-09-15：名册调整：取消 Cocoa；恢复 Neon = order 1 primary（05:30）、Cream = order 2 standby（06:00 failover；05:00 兴趣同步）；取消 06:30 第三级。
 - 2026-09-14：名册调整：注册 Cocoa 为 order 1 active primary（05:30 发布守卫）；Neon 降为 order 2 active standby（06:00 failover 检查）；Cream 降为 order 3 active standby（06:30 第二次 failover 检查，05:00 兴趣笔记同步不变）；故障转移按 30 分钟宽限逐级顺延。
 
