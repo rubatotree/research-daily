@@ -1292,11 +1292,26 @@
       "publish_date": "2026-11-03",
       "claim_id": "cf9e5749-ffa6-4483-85bd-654fb39ee472",
       "detail": "Manual make-up publish: DrawSplat and PriorGS from the Monday 11-02 arXiv announcement; original figures; 故障说明 appended."
+    },
+    {
+      "at": "2026-11-04T05:28:27+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-04",
+      "claim_id": "fafe44e4-37a8-4d16-b8c7-bb9d3058eddb",
+      "expires_at": "2026-11-04T05:58:27+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-04",
+    "bot": "Cream",
+    "claim_id": "fafe44e4-37a8-4d16-b8c7-bb9d3058eddb",
+    "claimed_at": "2026-11-04T05:28:27+08:00",
+    "expires_at": "2026-11-04T05:58:27+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
