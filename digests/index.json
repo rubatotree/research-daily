@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-03",
+      "content_day": "2026-11-02",
+      "path": "digests/2026-11-03.md",
+      "title": "Atlanta World 结构平面约束的室内高斯 SLAM；单曝光 LDR 恢复 HDR 辐射的基底—增益高斯",
+      "figs": "digests/2026-11-03/figs/",
+      "subtitle": "室内结构先验与单曝光 HDR"
+    },
+    {
       "date": "2026-11-02",
       "content_day": "2026-11-01",
       "path": "digests/2026-11-02.md",

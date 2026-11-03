@@ -25,7 +25,7 @@
 - 有实质更新时在速览优先提示：推进了什么，解决哪个逆渲染瓶颈，哪些机制可复用，已有公开方法重合在哪里，仍缺什么验证。区分作者自报、代码可核验与独立复现，不依流行程度判断技术有效性。
 - 同一工作按开源、复现、新评测或真机结果等进展继续跟踪，注明原始日期与更新日期；无新证据时不重复展开，不制造竞争焦虑，不为固定数量注水。
 
-**次要持续关注：** 已有策略训练相关的高信号方法、评测和部署进展，以及 MiracleAug、aDSL、SimFoundry 等公开 Agent / Real2Sim 工作；绑定、动态资产与具身数据增强不再占据首要论文位置。保留既有对标仓顺带检查，但仅在实质更新时简写。四领域新闻仍按重要性精选，不设数量配额。不据此次选题调整自动改变任何实验或训练任务。
+**次要持续关注：** 已有策略训练相关的高信号方法、评测和部署进展，以及 MiracleAug、aDSL、SimFoundry 等公开 Agent / Real2Sim 工作；绑定、动态资产与具身数据增强不再占据首要论文位置。四领域新闻仍按重要性精选，不设数量配额。不据此次选题调整自动改变任何实验或训练任务。
 
 ## 主线内部阅读加权
 围绕真实采集 → 几何与外观解耦 → 可重光照、可编辑的 3DGS 资产。
@@ -67,9 +67,6 @@
 - **阅读加权（轻 · 2026-10-04）：** notes tip `207a3b2` 校准——3DGS 部件修复在运动学/接触约束与完好参考条件生成上的文献缺口；批渲染（splat 栅格 vs Cycles/EEVEE）数量级对照加固卡点②；SO-101 公开 URDF 作低成本臂运动学入口。细节见 [`interest-notes.md`](./interest-notes.md)；勿复制 notes 正文或私有外推数字。
 - **阅读加权（2026-10-14）：** notes tip `82e3952` 校准——可微路径追踪 × Radiance Cache（Zhang et al. TOG 2026）、高斯光追效率与免排序梯度（GRay / Stoch3DGS）、室内困难场景平面几何先验（PGSR 族）、批渲染光传输复用（残差路径积分 / 控制变量 / 神经缓存）；圈内跟 LLM/Agent 重建 vs 3DGS 讨论。细节见 [`interest-notes.md`](./interest-notes.md)；勿复制 notes 正文、实验指标或投稿排期。
 - **blog 草稿（勿引用正文）：** 维护者在写 SIGGRAPH Asia 2026 论文笔记 I（`draft: true`，tip 仍 `8d722e0`）。日报只可跟文中已公开的论文本身，不得复述未发布草稿判断。
-
-## 对标仓（公开 · 写日报时顺带扫）
-- [hku-sail/Real2Sim_GPT6_ASTRA](https://github.com/hku-sail/Real2Sim_GPT6_ASTRA)：GPT-6 Astra 三视角 RGB→Blender Real2Sim／重放；与 MiracleAug 同族对照。**所有**日报 Bot 写稿时检查自上次日报以来的 commits；有实质更新则在日报中**简短描述**，无更新不提。**不另设盯梢任务。** 见 [`interest-notes.md`](./interest-notes.md)。
 
 ## 相关开源（维护者）
 - [MiracleAug skill](https://github.com/rubatotree/miracle-aug-skill)：GPT-6 Astra（或同级）驱动的机器人示教增强数据生成（Blender 重建 + 同步轨迹）；细节与试拍见 [`interest-notes.md`](./interest-notes.md)。

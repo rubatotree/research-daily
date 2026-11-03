@@ -1942,9 +1942,99 @@
       "content_day": "2026-11-01",
       "reappearances": [],
       "note": "Brief listing only."
+    },
+    "2610.41602": {
+      "title": "DrawSplat: Atlanta World-Guided Implicit Gaussian SLAM for Indoor Reconstruction",
+      "short": "DrawSplat",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Must-read: point-line tracking, line-induced Atlanta World planes as differentiable center/normal losses on anchor-based implicit Gaussians; full HTML read; original pipeline and ablation figures."
+    },
+    "2610.41011": {
+      "title": "Prior-Guided Single-Exposure HDR Novel View Synthesis via Base-Gain Representation",
+      "short": "PriorGS",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Optional read: pseudo-HDR supervision, LDR base + 3D gain field, DoRF-prior monotonic CRF closed loop; full HTML read; original pipeline figure."
+    },
+    "2610.41625": {
+      "title": "RTPolicy: Real-Time (32.9 Hz) Multi-View Visuomotor Policy for Robotic Manipulation on Edge Devices",
+      "short": "RTPolicy",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Low-end embodied interest; abstract only."
+    },
+    "2610.41408": {
+      "title": "SACQ: Structure-Aware Codebook Quantization for Ultra-Low-Bit Vision-Language-Action Models",
+      "short": "SACQ",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Low-end embodied interest; abstract only."
+    },
+    "2610.41651": {
+      "title": "When Depth Lies: Benchmarking Vision-Language Models on Mirror-Induced RGB-D Ambiguity",
+      "short": "MIRA-Bench",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.41190": {
+      "title": "FlowMoDE: Coarse-to-fine Flow Matching for Detail-aware Sim-to-Real Monocular Depth Estimation",
+      "short": "FlowMoDE",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.40976": {
+      "title": "Dynamic Skinning: Kinematics-Driven Cartoon Effects for Articulated Characters",
+      "short": "Dynamic Skinning",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Brief listing only; TVCG 2026 accepted."
+    },
+    "2610.40754": {
+      "title": "DyCraft: An Agentic System for Long-Horizon 4D Scene Generation",
+      "short": "DyCraft",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.41857": {
+      "title": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks",
+      "short": "SimuGuard",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Brief listing only."
+    },
+    "2610.20504": {
+      "title": "Graph-Reweighted Behavior Cloning with Human Interventions for Precise Robotic Manipulation",
+      "short": "GR-BC",
+      "first_seen": "2026-11-03",
+      "digest": "2026-11-03",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Covered in 圈内 via media report and project page; CoRL 2026 per project BibTeX."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "version": 1
 }
