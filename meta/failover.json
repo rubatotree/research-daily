@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-03",
-    "at": "2026-11-03T14:40:54+08:00",
+    "publish_date": "2026-11-04",
+    "at": "2026-11-04T05:28:52+08:00",
     "commit": null,
-    "note": "Manual make-up publish at maintainer's request (primary scheduled run did not fire; standby did not publish): DrawSplat (Atlanta World-guided implicit Gaussian SLAM, must-read), PriorGS (single-exposure HDR base-gain Gaussians); Monday 11-02 arXiv announcement; original figures."
+    "note": "Primary publish within window: AbacusGS (must-read), Loss-Aware ADC (NeurIPS 2026); Tuesday 11-03 arXiv announcement; original figures."
   },
   "events": [
     {
@@ -1301,17 +1301,19 @@
       "claim_id": "fafe44e4-37a8-4d16-b8c7-bb9d3058eddb",
       "expires_at": "2026-11-04T05:58:27+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-11-04T05:28:52+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-04",
+      "claim_id": "fafe44e4-37a8-4d16-b8c7-bb9d3058eddb",
+      "detail": "Primary publish within window: AbacusGS, Loss-Aware ADC + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-04",
-    "bot": "Cream",
-    "claim_id": "fafe44e4-37a8-4d16-b8c7-bb9d3058eddb",
-    "claimed_at": "2026-11-04T05:28:27+08:00",
-    "expires_at": "2026-11-04T05:58:27+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
