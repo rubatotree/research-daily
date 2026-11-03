@@ -47,7 +47,7 @@
 2. **阅读加权（轻）：批渲染代价数量级对照** — 详见下方专题。公开 Kerbl et al. 3DGS 栅格吞吐相对 Cycles / EEVEE 的数量级差距，继续加固 MiracleAug / PTIR 卡点②（正向批渲染）阅读权重；只写定性对照，不写本机外推帧时或云成本。
 3. **低端具身交叉：SO-101 作为公开低成本臂运动学参考** — 可并入既有「低成本 / 低端机具身 × 合成数据 demo」阅读加权：HF LeRobot SO-101 文档与 TheRobotStudio 公开 URDF 提供可核验的关节限位/运动学入口；概念层对照，勿写入本地可达域体积等私有复算数字。
 4. **Blender 5.3 原生 3DGS：** 经 [developer release notes · Rendering](https://developer.blender.org/docs/release_notes/5.3/rendering/) 再确认官方 Limitations（性能、sRGB 训练假设、线性空间偏差、Apply Transform 对 scale/rotation/SH）；细节仍见 2026-09-22 专题，此处不重复展开。
-5. **blog / academic / ASTRA：** blog tip 仍 `8d722e0`；academic 仍 `f19a697`；ASTRA 仍 `a1624d6`。无新公开发布增量。
+5. **blog / academic：** blog tip 仍 `8d722e0`；academic 仍 `f19a697`。无新公开发布增量。
 
 ---
 
