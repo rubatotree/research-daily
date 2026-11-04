@@ -2113,9 +2113,81 @@
       "content_day": "2026-11-03",
       "reappearances": [],
       "note": "Brief (abstract only)."
+    },
+    "2611.04493": {
+      "title": "Physical Diffusion Policy via MPM-Guided 3D Gaussian Simulation",
+      "short": "Physical Diffusion Policy",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Must-read. FF-3DGS bound 1:1 to MPM particles; video/Chamfer/Dirichlet-constrained inversion of E, nu, yield stress, viscosity with VLM init and material bounds; material-aware MoE diffusion policy; DINOv2 physics memory bank. Full HTML read; original Fig. 1/3."
+    },
+    "2611.04374": {
+      "title": "IGSW: Multi-Weather Urban Scene Reconstruction with Intrinsic-Decoupled Gaussian Splatting",
+      "short": "IGSW",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Selected. Weather-shared albedo/normal + weather-specific irradiance/residual heads on 4D Gaussians; diffusion inverse-renderer priors as feature-level soft supervision; structure-preservation gate. Full HTML read; original Fig. 2/6."
+    },
+    "2611.03775": {
+      "title": "FlowRig: Unified Skeleton Generation for 3D and 4D Meshes via Flow Matching",
+      "short": "FlowRig",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.04492": {
+      "title": "Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation",
+      "short": "3D World Simulator",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.04666": {
+      "title": "Phase-DGS: Phase-guided Dynamic Gaussian Splatting from Unsynchronized Multi-view Video",
+      "short": "Phase-DGS",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.04195": {
+      "title": "SettleSplat: Monocular Gaussian Mapping under In-View Scene Changes",
+      "short": "SettleSplat",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.04870": {
+      "title": "PrimeSim: A Generalist World Model Simulator from Large-Scale Cross-Embodiment Demonstrations",
+      "short": "PrimeSim",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.04498": {
+      "title": "3DGS-VBench+ and 3DGSV-Assessor",
+      "short": "3DGS-VBench+",
+      "first_seen": "2026-11-05",
+      "digest": "2026-11-05",
+      "content_day": "2026-11-04",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-03",
+  "updated": "2026-11-05",
   "version": 1
 }
