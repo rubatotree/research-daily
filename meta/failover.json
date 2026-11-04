@@ -1309,11 +1309,26 @@
       "publish_date": "2026-11-04",
       "claim_id": "fafe44e4-37a8-4d16-b8c7-bb9d3058eddb",
       "detail": "Primary publish within window: AbacusGS, Loss-Aware ADC + brief listings; claim cleared."
+    },
+    {
+      "at": "2026-11-05T05:28:05+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-05",
+      "claim_id": "e2fac99c-a83c-4cc6-aad3-0dfd74afab55",
+      "expires_at": "2026-11-05T05:58:05+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-05",
+    "bot": "Cream",
+    "claim_id": "e2fac99c-a83c-4cc6-aad3-0dfd74afab55",
+    "claimed_at": "2026-11-05T05:28:05+08:00",
+    "expires_at": "2026-11-05T05:58:05+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
