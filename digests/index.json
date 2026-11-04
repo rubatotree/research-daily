@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-05",
+      "content_day": "2026-11-04",
+      "path": "digests/2026-11-05.md",
+      "title": "从操作视频反推材质参数的 3DGS–MPM 物理扩散策略；本征解耦的多天气 4D 高斯",
+      "figs": "digests/2026-11-05/figs/",
+      "subtitle": "把物理和材质拆出来用"
+    },
+    {
       "date": "2026-11-04",
       "content_day": "2026-11-03",
       "path": "digests/2026-11-04.md",
