@@ -2185,9 +2185,81 @@
       "content_day": "2026-11-04",
       "reappearances": [],
       "note": "Brief listing (abstract only)."
+    },
+    "2611.06020": {
+      "title": "METRIC-GS: Selective Metric-Scale Estimation for 3D Gaussian Splatting",
+      "short": "METRIC-GS",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Must-read."
+    },
+    "2611.06593": {
+      "title": "BudgetSplat: Budget-Controllable Generalizable Gaussian Splatting",
+      "short": "BudgetSplat",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Optional full write-up."
+    },
+    "2611.05593": {
+      "title": "GaussianRenderFormer: Transformer-based Rendering of 3D Gaussian Splats",
+      "short": "GaussianRenderFormer",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief listing (abstract + HTML figures)."
+    },
+    "2611.06258": {
+      "title": "CrossPressor: Scalable Cross-View Fusion for Feed-Forward 3D Gaussian Splatting",
+      "short": "CrossPressor",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief listing (abstract only). WACV 2027."
+    },
+    "2611.06273": {
+      "title": "Quo Vadis, Driving Scene Reconstruction? Occlusion-Aware Gaussian Densification",
+      "short": "OccSplat",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief listing (abstract + HTML figure). ACCV 2026 CV4DC."
+    },
+    "2611.05802": {
+      "title": "GREP: Grounding Generated Room Evaluation in Principles",
+      "short": "GREP",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.05874": {
+      "title": "Feature Puzzles: Single-Image Supervision for Multi-View 3D-Aware Segmentation",
+      "short": "Feature Puzzles",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief listing (abstract only)."
+    },
+    "2611.05969": {
+      "title": "CLEAR: Color-Texture Latent Alignment for Single Image Reflection Removal",
+      "short": "CLEAR",
+      "first_seen": "2026-11-06",
+      "digest": "2026-11-06",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief listing (abstract only). WACV 2027."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "version": 1
 }
