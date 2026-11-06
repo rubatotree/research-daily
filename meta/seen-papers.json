@@ -2257,9 +2257,63 @@
       "content_day": "2026-11-05",
       "reappearances": [],
       "note": "Brief listing (abstract only). WACV 2027."
+    },
+    "2611.07979": {
+      "title": "Perception Over Geometry: Rethinking Gaussian Allocation in Mesh-based Splatting",
+      "short": "P-MGS",
+      "first_seen": "2026-11-07",
+      "digest": "2026-11-07",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Must-read: perception-complexity Gaussian allocation + post-hoc mesh binding for editable mesh–Gaussian assets."
+    },
+    "2611.08288": {
+      "title": "Hierarchical Incremental Beta Splatting for Online Reconstruction",
+      "short": "HIBS",
+      "first_seen": "2026-11-07",
+      "digest": "2026-11-07",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Optional: online beta-kernel confidence dial with relocation and closed-form LoD merge."
+    },
+    "2611.08264": {
+      "title": "SplatAnything: Gaussian Spacing Normalization for Feed-forward 3DGS across Arbitrary Scenes",
+      "short": "SplatAnything",
+      "first_seen": "2026-11-07",
+      "digest": "2026-11-07",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Brief: GSNorm median neighbor spacing for feed-forward 3DGS scale supervision."
+    },
+    "2611.08372": {
+      "title": "MOMASPLAT: Dynamic Novel-View Demonstration Augmentation for Mobile Manipulation",
+      "short": "MOMASPLAT",
+      "first_seen": "2026-11-07",
+      "digest": "2026-11-07",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Brief: separate scene/object 3DGS for mobile-manipulation novel-view demos with contact dynamics."
+    },
+    "2611.07049": {
+      "title": "Gaussians Can Subtract: Neural Dissolve Fields for Hybrid Scene Rendering",
+      "short": "Gaussolve",
+      "first_seen": "2026-11-07",
+      "digest": "2026-11-07",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Brief: Neural Dissolve Field before residual Gaussians for hybrid mesh–Gaussian conflicts."
+    },
+    "2611.06974": {
+      "title": "T²-Splat: Adaptive Topology Mesh Splatting with Texture Residuals",
+      "short": "T2-Splat",
+      "first_seen": "2026-11-07",
+      "digest": "2026-11-07",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Brief: Safe RDT + dynamic topology evolution + residual Mip textures for triangle splatting."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "version": 1
 }

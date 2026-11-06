@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-07",
+      "content_day": "2026-11-06",
+      "path": "digests/2026-11-07.md",
+      "title": "感知复杂度分配的可编辑网格—高斯；在线 beta 核置信度旋钮",
+      "figs": "digests/2026-11-07/figs/",
+      "subtitle": "外观要预算，在线要敢实心"
+    },
+    {
       "date": "2026-11-06",
       "content_day": "2026-11-05",
       "path": "digests/2026-11-06.md",
