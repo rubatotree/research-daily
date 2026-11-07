@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-07",
-    "at": "2026-11-07T05:29:22+08:00",
+    "publish_date": "2026-11-08",
+    "at": "2026-11-08T05:28:25+08:00",
     "commit": null,
-    "note": "Primary publish within window: P-MGS (must-read, perception-complexity Gaussian allocation + post-hoc mesh binding), HIBS (optional, online beta-kernel confidence); Friday 11-06 arXiv announcement; original figures."
+    "note": "Primary publish within window: Sunday inverse-rendering rescan; PRep-IR (must-read, prior-space lattice reparameterization), LUMEN (optional, geometry-conditioned diffusion for spatially-varying HDR lighting); original figures."
   },
   "events": [
     {
@@ -1369,17 +1369,19 @@
       "claim_id": "d00aed9f-34ed-4239-b34b-f6d97b913705",
       "expires_at": "2026-11-08T05:58:16+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-11-08T05:28:25+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-08",
+      "claim_id": "d00aed9f-34ed-4239-b34b-f6d97b913705",
+      "detail": "Primary publish within window: PRep-IR, LUMEN + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-08",
-    "bot": "Cream",
-    "claim_id": "d00aed9f-34ed-4239-b34b-f6d97b913705",
-    "claimed_at": "2026-11-08T05:28:16+08:00",
-    "expires_at": "2026-11-08T05:58:16+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
