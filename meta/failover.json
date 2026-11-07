@@ -1360,11 +1360,26 @@
       "publish_date": "2026-11-07",
       "claim_id": "6f3c7792-c3d4-46e1-8ce3-5806db53cfb0",
       "detail": "Primary publish within window: P-MGS, HIBS + brief listings; claim cleared."
+    },
+    {
+      "at": "2026-11-08T05:28:16+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-08",
+      "claim_id": "d00aed9f-34ed-4239-b34b-f6d97b913705",
+      "expires_at": "2026-11-08T05:58:16+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-08",
+    "bot": "Cream",
+    "claim_id": "d00aed9f-34ed-4239-b34b-f6d97b913705",
+    "claimed_at": "2026-11-08T05:28:16+08:00",
+    "expires_at": "2026-11-08T05:58:16+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
