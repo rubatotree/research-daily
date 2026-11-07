@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-08",
+      "content_day": "2026-11-07",
+      "path": "digests/2026-11-08.md",
+      "title": "先验约束材质变量的物理逆渲染；几何条件扩散补全空间变化 HDR 光照",
+      "figs": "digests/2026-11-08/figs/",
+      "subtitle": "先验划子空间，几何补光照"
+    },
+    {
       "date": "2026-11-07",
       "content_day": "2026-11-06",
       "path": "digests/2026-11-07.md",

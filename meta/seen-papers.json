@@ -2311,6 +2311,60 @@
       "content_day": "2026-11-06",
       "reappearances": [],
       "note": "Brief: Safe RDT + dynamic topology evolution + residual Mip textures for triangle splatting."
+    },
+    "2611.07573": {
+      "title": "Integrating Learned Priors through Prior-Space Reparameterization for Physically Based Inverse Rendering",
+      "short": "PRep-IR",
+      "first_seen": "2026-11-08",
+      "digest": "2026-11-08",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Must-read: permutohedral lattice over fused material priors as shared variables; pure photometric objective."
+    },
+    "2611.01823": {
+      "title": "LUMEN: Geometry-Guided Diffusion Model for Spatially-Varying HDR Illumination Estimation",
+      "short": "LUMEN",
+      "first_seen": "2026-11-08",
+      "digest": "2026-11-08",
+      "content_day": "2026-11-03",
+      "reappearances": [],
+      "note": "Optional: partial panorama from VGGT point cloud conditions DiT to generate HDR envmaps."
+    },
+    "2611.07354": {
+      "title": "MIKU: Material Invariance and Knowledge Unification for PBR Generation",
+      "short": "MIKU",
+      "first_seen": "2026-11-08",
+      "digest": "2026-11-08",
+      "content_day": "2026-11-06",
+      "reappearances": [],
+      "note": "Brief: SIGGRAPH Asia 2026 TOG; unified PBR parameterization + two-stage albedo/MR generation."
+    },
+    "2611.06442": {
+      "title": "TwinBridge: Digital Twin-Driven Policy and Reward Transfer for Real-World Reinforcement Learning in Laboratory Robotics",
+      "short": "TwinBridge",
+      "first_seen": "2026-11-08",
+      "digest": "2026-11-08",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief: 3DGS+physics twin for policy init and dense visual rewards."
+    },
+    "2611.06355": {
+      "title": "FlashRelight: Portrait Video Relighting with Dynamic Lighting",
+      "short": "FlashRelight",
+      "first_seen": "2026-11-08",
+      "digest": "2026-11-08",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief: NeurIPS 2026; delight-then-relight portrait video."
+    },
+    "2611.00551": {
+      "title": "RATR: Training-Free Material Rebinding via Role Assignment and Temporal Routing",
+      "short": "RATR",
+      "first_seen": "2026-11-08",
+      "digest": "2026-11-08",
+      "content_day": "2026-11-02",
+      "reappearances": [],
+      "note": "Brief: training-free material transfer via condition role assignment."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
