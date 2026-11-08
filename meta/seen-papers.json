@@ -2365,9 +2365,63 @@
       "content_day": "2026-11-02",
       "reappearances": [],
       "note": "Brief: training-free material transfer via condition role assignment."
+    },
+    "2611.07709": {
+      "title": "AffineGS: Unlocking Accurate Geometry in 3DGS via Spatially Varying Affine Rectification",
+      "short": "AffineGS",
+      "first_seen": "2026-11-09",
+      "digest": "2026-11-09",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Must-read: spatially varying affine rectification of monocular disparity + normal-aware gradient regularizer; NeurIPS 2026."
+    },
+    "2611.07867": {
+      "title": "PlayGen2: Learning Real-Time Playable Worlds with Explicit 3D State",
+      "short": "PlayGen2",
+      "first_seen": "2026-11-09",
+      "digest": "2026-11-09",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Must-read: explicit 3D world state decoupled from neural rendering; real-time on laptop."
+    },
+    "2611.07902": {
+      "title": "XM4D: 4D Reconstruction through Certifiable Geometric Optimization",
+      "short": "XM4D",
+      "first_seen": "2026-11-09",
+      "digest": "2026-11-09",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Optional: certifiable QCQP/SDP 4D reconstruction initializing dynamic GS."
+    },
+    "2611.08330": {
+      "title": "InstantHand: Feed-Forward 3D Gaussian Splatting for Animatable Hand Avatar Reconstruction from a Single Image",
+      "short": "InstantHand",
+      "first_seen": "2026-11-09",
+      "digest": "2026-11-09",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief: NeurIPS 2026; single-image feed-forward Gaussian hand."
+    },
+    "2611.07909": {
+      "title": "EDGAR: Efficient Diffusion-Driven Gaussian Avatar Refinement via Synthetic Failure",
+      "short": "EDGAR",
+      "first_seen": "2026-11-09",
+      "digest": "2026-11-09",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief: TOG; one-step diffusion refinement of Gaussian avatars."
+    },
+    "2611.08342": {
+      "title": "4D Point Splatting for mmWave Radar Micro-Doppler Differentiable Rendering",
+      "short": "4DPS",
+      "first_seen": "2026-11-09",
+      "digest": "2026-11-09",
+      "content_day": "2026-11-05",
+      "reappearances": [],
+      "note": "Brief: differentiable mmWave radar rendering via 4D point splatting."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-07",
+  "updated": "2026-11-09",
   "version": 1
 }
