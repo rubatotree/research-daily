@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-08",
-    "at": "2026-11-08T05:28:25+08:00",
+    "publish_date": "2026-11-09",
+    "at": "2026-11-09T05:28:32+08:00",
     "commit": null,
-    "note": "Primary publish within window: Sunday inverse-rendering rescan; PRep-IR (must-read, prior-space lattice reparameterization), LUMEN (optional, geometry-conditioned diffusion for spatially-varying HDR lighting); original figures."
+    "note": "Primary publish within window: AffineGS (must-read, spatially varying affine rectification of monocular depth priors for 3DGS geometry), PlayGen2 (must-read, explicit 3D state world model, real-time on laptop); original figures."
   },
   "events": [
     {
@@ -1386,17 +1386,19 @@
       "claim_id": "6e58e592-057b-458c-b166-5cbfb5a244cb",
       "expires_at": "2026-11-09T05:58:07+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-11-09T05:28:32+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-09",
+      "claim_id": "6e58e592-057b-458c-b166-5cbfb5a244cb",
+      "detail": "Primary publish within window: AffineGS, PlayGen2 + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-09",
-    "bot": "Cream",
-    "claim_id": "6e58e592-057b-458c-b166-5cbfb5a244cb",
-    "claimed_at": "2026-11-09T05:28:07+08:00",
-    "expires_at": "2026-11-09T05:58:07+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

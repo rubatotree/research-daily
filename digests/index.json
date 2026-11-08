@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-09",
+      "content_day": "2026-11-05",
+      "path": "digests/2026-11-09.md",
+      "title": "单目深度先验的局部仿射矫正提升 3DGS 几何；显式 3D 状态的实时可玩世界模型",
+      "figs": "digests/2026-11-09/figs/",
+      "subtitle": "先验分区对齐，状态与渲染解耦"
+    },
+    {
       "date": "2026-11-08",
       "content_day": "2026-11-07",
       "path": "digests/2026-11-08.md",
