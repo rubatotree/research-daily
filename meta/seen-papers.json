@@ -2419,9 +2419,54 @@
       "content_day": "2026-11-05",
       "reappearances": [],
       "note": "Brief: differentiable mmWave radar rendering via 4D point splatting."
+    },
+    "2611.08665": {
+      "title": "Dynamic GPU Voxel Grids and Voxel-sequential Processing in NanoVDB",
+      "short": "NanoVDB-Dynamic",
+      "first_seen": "2026-11-10",
+      "digest": "2026-11-10",
+      "content_day": "2026-11-09",
+      "reappearances": [],
+      "note": "Must-read: GPU-native dynamic topology ops and voxel-sequential access for NanoVDB (TOG 45(6))."
+    },
+    "2611.09145": {
+      "title": "Augmentron: Scalable Multi-View Visual Augmentation for Robot Learning",
+      "short": "Augmentron",
+      "first_seen": "2026-11-10",
+      "digest": "2026-11-10",
+      "content_day": "2026-11-09",
+      "reappearances": [],
+      "note": "Optional: generate reusable scene assets once and render via camera geometry for multi-view consistent robot data augmentation."
+    },
+    "2611.08577": {
+      "title": "Meituan-Robotics-0: A Vision-Language-Action Foundation Model for Desktop Manipulation",
+      "short": "MR0",
+      "first_seen": "2026-11-10",
+      "digest": "2026-11-10",
+      "content_day": "2026-11-09",
+      "reappearances": [],
+      "note": "Brief: Meituan desktop-manipulation VLA with Rollback CFG-DAgger."
+    },
+    "2611.08897": {
+      "title": "Segmenting Geometric Textures of 3D Meshes",
+      "short": "GeoTexSeg",
+      "first_seen": "2026-11-10",
+      "digest": "2026-11-10",
+      "content_day": "2026-11-09",
+      "reappearances": [],
+      "note": "Brief: mesh geometric-texture segmentation, Pacific Graphics 2026."
+    },
+    "2611.09693": {
+      "title": "Real-Time Self-Penetration Repair for Skinned Characters with Soft Contact Budgets",
+      "short": "SelfPenRepair",
+      "first_seen": "2026-11-10",
+      "digest": "2026-11-10",
+      "content_day": "2026-11-09",
+      "reappearances": [],
+      "note": "Brief: training-free pose QP + skin compression for self-penetration repair."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "version": 1
 }
