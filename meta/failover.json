@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-09",
-    "at": "2026-11-09T05:28:32+08:00",
+    "publish_date": "2026-11-10",
+    "at": "2026-11-10T05:28:21+08:00",
     "commit": null,
-    "note": "Primary publish within window: AffineGS (must-read, spatially varying affine rectification of monocular depth priors for 3DGS geometry), PlayGen2 (must-read, explicit 3D state world model, real-time on laptop); original figures."
+    "note": "Primary publish within window: NanoVDB dynamic topology (must-read, GPU-native dynamic sparse voxel grids, TOG), Augmentron (optional, geometry-consistent multi-view augmentation for robot learning); original figures."
   },
   "events": [
     {
@@ -1403,17 +1403,19 @@
       "claim_id": "798da448-8f9e-4d1e-85a1-7310e2bf3bdd",
       "expires_at": "2026-11-10T05:58:12+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-11-10T05:28:21+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-10",
+      "claim_id": "798da448-8f9e-4d1e-85a1-7310e2bf3bdd",
+      "detail": "Primary publish within window: NanoVDB dynamic topology, Augmentron + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-10",
-    "bot": "Cream",
-    "claim_id": "798da448-8f9e-4d1e-85a1-7310e2bf3bdd",
-    "claimed_at": "2026-11-10T05:28:12+08:00",
-    "expires_at": "2026-11-10T05:58:12+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

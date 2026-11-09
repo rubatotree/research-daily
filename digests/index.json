@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-10",
+      "content_day": "2026-11-09",
+      "path": "digests/2026-11-10.md",
+      "title": "GPU 原生的 NanoVDB 动态拓扑与按体素顺序处理；几何一致的机器人示教视觉增强",
+      "figs": "digests/2026-11-10/figs/",
+      "subtitle": "稀疏体素可动，增强按几何渲染"
+    },
+    {
       "date": "2026-11-09",
       "content_day": "2026-11-05",
       "path": "digests/2026-11-09.md",
