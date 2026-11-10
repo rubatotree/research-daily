@@ -1411,11 +1411,26 @@
       "publish_date": "2026-11-10",
       "claim_id": "798da448-8f9e-4d1e-85a1-7310e2bf3bdd",
       "detail": "Primary publish within window: NanoVDB dynamic topology, Augmentron + brief listings; claim cleared."
+    },
+    {
+      "at": "2026-11-11T05:28:17+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-11",
+      "claim_id": "14a451b1-d6b4-4db8-917f-86ce1fb968b9",
+      "expires_at": "2026-11-11T05:58:17+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-11",
+    "bot": "Cream",
+    "claim_id": "14a451b1-d6b4-4db8-917f-86ce1fb968b9",
+    "claimed_at": "2026-11-11T05:28:17+08:00",
+    "expires_at": "2026-11-11T05:58:17+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
