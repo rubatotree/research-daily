@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-11",
+      "content_day": "2026-11-10",
+      "path": "digests/2026-11-11.md",
+      "title": "OLAT 基视频预测实现可控的动态全身重光照；按 tile 负载调度缓解 3DGS 的 SM 长尾",
+      "figs": "digests/2026-11-11/figs/",
+      "subtitle": "光照留给线性叠加，负载留给调度"
+    },
+    {
       "date": "2026-11-10",
       "content_day": "2026-11-09",
       "path": "digests/2026-11-10.md",

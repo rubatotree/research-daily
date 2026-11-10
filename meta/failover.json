@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-10",
-    "at": "2026-11-10T05:28:21+08:00",
+    "publish_date": "2026-11-11",
+    "at": "2026-11-11T05:28:30+08:00",
     "commit": null,
-    "note": "Primary publish within window: NanoVDB dynamic topology (must-read, GPU-native dynamic sparse voxel grids, TOG), Augmentron (optional, geometry-consistent multi-view augmentation for robot learning); original figures."
+    "note": "Primary publish within window: DynOLAT (must-read, OLAT basis video prediction for controllable full-body relighting, SIGGRAPH Asia 2026), SM-level load imbalance in 3DGS (must-read, LPT scheduling + depth-wise tile chunking); original figures."
   },
   "events": [
     {
@@ -1420,17 +1420,19 @@
       "claim_id": "14a451b1-d6b4-4db8-917f-86ce1fb968b9",
       "expires_at": "2026-11-11T05:58:17+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-11-11T05:28:30+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-11",
+      "claim_id": "14a451b1-d6b4-4db8-917f-86ce1fb968b9",
+      "detail": "Primary publish within window: DynOLAT, SM-level 3DGS load balancing + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-11",
-    "bot": "Cream",
-    "claim_id": "14a451b1-d6b4-4db8-917f-86ce1fb968b9",
-    "claimed_at": "2026-11-11T05:28:17+08:00",
-    "expires_at": "2026-11-11T05:58:17+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
