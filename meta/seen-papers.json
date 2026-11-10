@@ -2464,9 +2464,99 @@
       "content_day": "2026-11-09",
       "reappearances": [],
       "note": "Brief: training-free pose QP + skin compression for self-penetration repair."
+    },
+    "2611.11210": {
+      "title": "DynOLAT: OLAT Video Prediction for Controllable Dynamic Full-Body Relighting",
+      "short": "DynOLAT",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Must-read: OLAT basis video prediction + linear env-map assembly; SIGGRAPH Asia 2026 / TOG."
+    },
+    "2611.12319": {
+      "title": "Mitigating SM-Level Load Imbalance in 3D Gaussian Splatting on GPUs",
+      "short": "SMBalance",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Must-read: LPT persistent kernel + depth-wise tile chunking for 3DGS alpha blending."
+    },
+    "2611.10370": {
+      "title": "ClearForm: Shared-Surface Gaussian Splatting for Transparent and Opaque Scenes",
+      "short": "ClearForm",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: dual-opacity planar Gaussians for transparent interfaces."
+    },
+    "2611.11586": {
+      "title": "FastGRT: Accelerating Training of 3D Gaussian Ray Tracing",
+      "short": "FastGRT",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: Vulkan Gaussian ray tracing training speedup."
+    },
+    "2611.10199": {
+      "title": "RigidGS: Geometry-Aware Object Decoupling for Rigid-Body Interaction in 3D Gaussian Splatting",
+      "short": "RigidGS",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: frozen upstream object identities, WACV 2027."
+    },
+    "2611.10562": {
+      "title": "ZARA: Zero-shot Animatable and Relightable 3D Avatar reconstruction from a single image",
+      "short": "ZARA",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: feed-forward relightable avatar Gaussians."
+    },
+    "2611.11304": {
+      "title": "TransArt3D: From Two States to Articulated 3D Reconstruction with Video Transition Priors",
+      "short": "TransArt3D",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: articulated asset from two endpoint images via video prior."
+    },
+    "2611.12103": {
+      "title": "Real-Time Volumetric Light Transport Inference without a Path",
+      "short": "VolLTInfer",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: infer volumetric radiance from cheap features."
+    },
+    "2611.12650": {
+      "title": "Explicit LOD-Conditioned Anisotropic Filtering for Neural Texture Compression",
+      "short": "AF-NTC",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: anisotropic filtering for NTC."
+    },
+    "2611.12162": {
+      "title": "Same Physics, Different Gradients: A State-of-the-Art Report on Differentiable Physics Simulation",
+      "short": "DiffSimSTAR",
+      "first_seen": "2026-11-11",
+      "digest": "2026-11-11",
+      "content_day": "2026-11-10",
+      "reappearances": [],
+      "note": "Brief: differentiable simulation survey."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "version": 1
 }
