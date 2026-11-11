@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-11",
-    "at": "2026-11-11T05:28:30+08:00",
+    "publish_date": "2026-11-12",
+    "at": "2026-11-12T05:28:14+08:00",
     "commit": null,
-    "note": "Primary publish within window: DynOLAT (must-read, OLAT basis video prediction for controllable full-body relighting, SIGGRAPH Asia 2026), SM-level load imbalance in 3DGS (must-read, LPT scheduling + depth-wise tile chunking); original figures."
+    "note": "Primary publish within window: differentiable SSSS skin digitization (must-read, real-time shader parameters), Deformable Texture Maps (must-read, cached deformation-conditioned neural intrinsic textures); Pygmalion recommended; original figures."
   },
   "events": [
     {
@@ -1437,17 +1437,19 @@
       "claim_id": "01b88d47-8403-4060-830e-b2b581cfbc4c",
       "expires_at": "2026-11-12T05:58:04+08:00",
       "detail": "Primary CAS claim within [05:28,06:20)."
+    },
+    {
+      "at": "2026-11-12T05:28:14+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-12",
+      "claim_id": "01b88d47-8403-4060-830e-b2b581cfbc4c",
+      "detail": "Primary publish within window: SkinSSSS, DTM, Pygmalion + brief listings; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-12",
-    "bot": "Cream",
-    "claim_id": "01b88d47-8403-4060-830e-b2b581cfbc4c",
-    "claimed_at": "2026-11-12T05:28:04+08:00",
-    "expires_at": "2026-11-12T05:58:04+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

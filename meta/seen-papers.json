@@ -2554,9 +2554,99 @@
       "content_day": "2026-11-10",
       "reappearances": [],
       "note": "Brief: differentiable simulation survey."
+    },
+    "2611.14451": {
+      "title": "A Lightweight Differentiable Method for Real-Time Skin Rendering and Digitization",
+      "short": "SkinSSSS",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Must-read: differentiable screen-space SSS for real-time skin parameters (Computers & Graphics)."
+    },
+    "2611.13677": {
+      "title": "Deformable Texture Maps: Compiling Dynamic Microgeometry into Neural Textures",
+      "short": "DTM",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Must-read: deformation-conditioned neural intrinsic textures with texture-space caching."
+    },
+    "2511.21098": {
+      "title": "Pygmalion Effect in Vision: Image-to-Clay Translation for Reflective Geometry Reconstruction",
+      "short": "Pygmalion",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Recommended: image-to-clay geometry prior for reflective GS (NeurIPS 2026, v2)."
+    },
+    "2611.13772": {
+      "title": "RF3DGS: Reflection-Free 3D Gaussian Splatting with Self-Priors",
+      "short": "RF3DGS",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: 3D reflection removal."
+    },
+    "2611.13808": {
+      "title": "FastWild-GS: Minutes-Scale In-the-Wild Gaussian Splatting via Compact Per-Image Appearance Adaptation",
+      "short": "FastWild-GS",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: fast in-the-wild GS."
+    },
+    "2611.13280": {
+      "title": "RetinexGS: Retinex-Inspired Gaussian Splatting for Low-Light RAW Reconstruction",
+      "short": "RetinexGS",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: low-light RAW GS (EMBC 2026)."
+    },
+    "2503.00868": {
+      "title": "Physics-Driven Extraction of Dynamic Fluid Asset from Monocular Video with Generative 3DGS",
+      "short": "FluidAsset",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: fluid asset via differentiable APIC (TVCG, v3)."
+    },
+    "2611.12716": {
+      "title": "Spaghetti Splatting: Differentiating Curvilinear Dirac Masses via Convolution",
+      "short": "SpaghettiSplatting",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: curve primitives superset of 3DGS (backfill)."
+    },
+    "2611.13810": {
+      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
+      "short": "SO101Lux",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: illuminance vs camera auto-exposure on SO-101."
+    },
+    "2611.12930": {
+      "title": "Topology-Aware Reinforcement Learning for CAD Decomposition toward All-Hexahedral Meshing",
+      "short": "DecompRL",
+      "first_seen": "2026-11-12",
+      "digest": "2026-11-12",
+      "content_day": "2026-11-11",
+      "reappearances": [],
+      "note": "Brief: RL CAD decomposition for hex meshing."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "version": 1
 }

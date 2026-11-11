@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-12",
+      "content_day": "2026-11-11",
+      "path": "digests/2026-11-12.md",
+      "title": "面向实时管线的可微皮肤次表面散射；与光照无关、可缓存的形变神经纹理",
+      "figs": "digests/2026-11-12/figs/",
+      "subtitle": "学到着色之前，光照留给管线"
+    },
+    {
       "date": "2026-11-11",
       "content_day": "2026-11-10",
       "path": "digests/2026-11-11.md",
