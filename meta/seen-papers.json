@@ -2644,6 +2644,78 @@
       "content_day": "2026-11-11",
       "reappearances": [],
       "note": "Brief: RL CAD decomposition for hex meshing."
+    },
+    "2611.11087": {
+      "title": "SoftPAT3D: Physics-Augmented Text-to-3D Scene Generation with Deformables",
+      "short": "SoftPAT3D",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Must-read: simulation-ready deformables in text-to-3D scenes (Stanford)."
+    },
+    "2611.11602": {
+      "title": "Martine: Benchmarking Multi-View 3D Surface Reconstruction Across Viewpoint Coverage, Resolution, and Lighting",
+      "short": "Martine",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Must-read: NeurIPS 2026 D&B benchmark; multi-light not better than single-light."
+    },
+    "2611.12077": {
+      "title": "Architectural Textured Proxy Generation",
+      "short": "ATP",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Recommended: image-guided architectural proxies (Shenzhen University, SIGGRAPH Asia 2026)."
+    },
+    "2611.10699": {
+      "title": "PLS-GS: Probabilistic Lidar Scaffolds for Compact, Surface-Aligned Gaussian Splatting",
+      "short": "PLS-GS",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Brief: LiDAR GMM scaffold for 3DGS (WACV 2027)."
+    },
+    "2611.07900": {
+      "title": "Structure from Collision via Hypothesis-Space Reasoning",
+      "short": "SfC-Hypothesis",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Brief: hidden cavities from collision via MPM (WACV 2027)."
+    },
+    "2611.07289": {
+      "title": "Patch-Based Generalized Neural Texture Upscaling",
+      "short": "NeuralTexUpscale",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Brief: generalized MLP texture upscaling at sampling time."
+    },
+    "2611.10013": {
+      "title": "From Video to Digital Twin: An Exploratory Study of World Models and Gaussian Splatting on In-the-Wild Video",
+      "short": "Video2Twin",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Brief: world model + 3DGS + OpenUSD from news video."
+    },
+    "2611.12686": {
+      "title": "Differentiable Inverse Rendering Recovers Intrinsic Properties from Intravascular Optical Coherence Tomography",
+      "short": "IVOCT-DiffIR",
+      "first_seen": "2026-11-13",
+      "digest": "2026-11-13",
+      "content_day": "2026-11-04..2026-11-10 backfill",
+      "reappearances": [],
+      "note": "Brief: differentiable inverse rendering for OCT attenuation."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
