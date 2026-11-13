@@ -2716,9 +2716,81 @@
       "content_day": "2026-11-04..2026-11-10 backfill",
       "reappearances": [],
       "note": "Brief: differentiable inverse rendering for OCT attenuation."
+    },
+    "2611.17185": {
+      "title": "Neural Render Proxies for Interactive and Differentiable Lighting",
+      "short": "NRP",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Must-read: EGSR 2026/CGF differentiable lighting proxy for production renderers (ETH Zurich, DisneyResearch|Studios)."
+    },
+    "2611.15153": {
+      "title": "MatrixSplat: Matrix-Parallel and Feature-Scalable 3D Gaussian Splatting Rendering on GPUs",
+      "short": "MatrixSplat",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Must-read: NeurIPS 2026 matrix-parallel 3DGS feature rendering on Tensor Cores."
+    },
+    "2611.16650": {
+      "title": "Learning the Missing Derivative: Neural Multiple-Scattering Operators for Inverse Volume Rendering",
+      "short": "MS-Operator",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Recommended: neural operator for multiple-scattering derivatives in inverse volume rendering (FSU)."
+    },
+    "2611.16673": {
+      "title": "PIM: A Physical Intuition Model for Low-Latency Prediction of Object Interaction Outcomes",
+      "short": "PIM",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Recommended: direct equilibrium prediction of object interactions (Zhejiang University)."
+    },
+    "2611.16012": {
+      "title": "Topology-Aware 4D Gaussian Splatting for Egocentric Videos",
+      "short": "Topo-4DGS",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Brief: topology-aware 4DGS for egocentric cutting/assembly/opening; TopoEgo benchmark."
+    },
+    "2611.16259": {
+      "title": "Reconstruct What You Can: Distractor-free 4D Gaussian Splatting",
+      "short": "ReCan-GS",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Brief: WACV 2027 distractor-free 4DGS via deformation-sensitivity (CMU, Fujitsu Research of America)."
+    },
+    "2611.16701": {
+      "title": "Sprint3D: Accelerating End-to-End 3D Asset Generation through Pipeline Optimization",
+      "short": "Sprint3D",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Brief: 33x end-to-end speedup of public Pixal3D pipeline; code released (Alaya Lab et al.)."
+    },
+    "2607.14203": {
+      "title": "Instant NuRec: Feed-Forward 3D Gaussian Reconstruction for Driving Scene Simulation",
+      "short": "Instant NuRec",
+      "first_seen": "2026-11-14",
+      "digest": "2026-11-14",
+      "content_day": "2026-11-13",
+      "reappearances": [],
+      "note": "Brief: first coverage of NVIDIA feed-forward driving 3DGS world model; v2 dated 2026-11-11."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-12",
+  "updated": "2026-11-14",
   "version": 1
 }
