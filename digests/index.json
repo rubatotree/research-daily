@@ -1,552 +1,560 @@
 {
-  "base": "/research-daily/",
-  "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
-  "digests": [
-    {
-      "date": "2026-11-13",
-      "content_day": "2026-11-04..2026-11-10 backfill",
-      "path": "digests/2026-11-13.md",
-      "title": "文本生成场景中的可仿真形变物体；分采集条件的表面重建基准",
-      "figs": "digests/2026-11-13/figs/",
-      "subtitle": "能用的三维资产，要先过下游约束"
-    },
-    {
-      "date": "2026-11-12",
-      "content_day": "2026-11-11",
-      "path": "digests/2026-11-12.md",
-      "title": "面向实时管线的可微皮肤次表面散射；与光照无关、可缓存的形变神经纹理",
-      "figs": "digests/2026-11-12/figs/",
-      "subtitle": "学到着色之前，光照留给管线"
-    },
-    {
-      "date": "2026-11-11",
-      "content_day": "2026-11-10",
-      "path": "digests/2026-11-11.md",
-      "title": "OLAT 基视频预测实现可控的动态全身重光照；按 tile 负载调度缓解 3DGS 的 SM 长尾",
-      "figs": "digests/2026-11-11/figs/",
-      "subtitle": "光照留给线性叠加，负载留给调度"
-    },
-    {
-      "date": "2026-11-10",
-      "content_day": "2026-11-09",
-      "path": "digests/2026-11-10.md",
-      "title": "GPU 原生的 NanoVDB 动态拓扑与按体素顺序处理；几何一致的机器人示教视觉增强",
-      "figs": "digests/2026-11-10/figs/",
-      "subtitle": "稀疏体素可动，增强按几何渲染"
-    },
-    {
-      "date": "2026-11-09",
-      "content_day": "2026-11-05",
-      "path": "digests/2026-11-09.md",
-      "title": "单目深度先验的局部仿射矫正提升 3DGS 几何；显式 3D 状态的实时可玩世界模型",
-      "figs": "digests/2026-11-09/figs/",
-      "subtitle": "先验分区对齐，状态与渲染解耦"
-    },
-    {
-      "date": "2026-11-08",
-      "content_day": "2026-11-07",
-      "path": "digests/2026-11-08.md",
-      "title": "先验约束材质变量的物理逆渲染；几何条件扩散补全空间变化 HDR 光照",
-      "figs": "digests/2026-11-08/figs/",
-      "subtitle": "先验划子空间，几何补光照"
-    },
-    {
-      "date": "2026-11-07",
-      "content_day": "2026-11-06",
-      "path": "digests/2026-11-07.md",
-      "title": "感知复杂度分配的可编辑网格—高斯；在线 beta 核置信度旋钮",
-      "figs": "digests/2026-11-07/figs/",
-      "subtitle": "外观要预算，在线要敢实心"
-    },
-    {
-      "date": "2026-11-06",
-      "content_day": "2026-11-05",
-      "path": "digests/2026-11-06.md",
-      "title": "室内 3DGS 的选择性米制尺度估计；按保留比例收缩的前馈高斯预算控制",
-      "figs": "digests/2026-11-06/figs/",
-      "subtitle": "能量的高斯，压得住的预算"
-    },
-    {
-      "date": "2026-11-05",
-      "content_day": "2026-11-04",
-      "path": "digests/2026-11-05.md",
-      "title": "从操作视频反推材质参数的 3DGS–MPM 物理扩散策略；本征解耦的多天气 4D 高斯",
-      "figs": "digests/2026-11-05/figs/",
-      "subtitle": "把物理和材质拆出来用"
-    },
-    {
-      "date": "2026-11-04",
-      "content_day": "2026-11-03",
-      "path": "digests/2026-11-04.md",
-      "title": "把混合顺序写进资产、免去逐高斯排序的 3DGS；按损失变化决定分裂、复制与衰减的密度控制",
-      "figs": "digests/2026-11-04/figs/",
-      "subtitle": "把高斯资产整理好"
-    },
-    {
-      "date": "2026-11-03",
-      "content_day": "2026-11-02",
-      "path": "digests/2026-11-03.md",
-      "title": "Atlanta World 结构平面约束的室内高斯 SLAM；单曝光 LDR 恢复 HDR 辐射的基底—增益高斯",
-      "figs": "digests/2026-11-03/figs/",
-      "subtitle": "室内结构先验与单曝光 HDR"
-    },
-    {
-      "date": "2026-11-02",
-      "content_day": "2026-11-01",
-      "path": "digests/2026-11-02.md",
-      "title": "智能体搭关节、绑表面、跑仿真的单图可交互资产；前馈预测逐体素物理参数的仿真就绪高斯",
-      "figs": "digests/2026-11-02/figs/",
-      "subtitle": "让生成的资产动起来"
-    },
-    {
-      "date": "2026-11-01",
-      "content_day": "2026-10-31",
-      "path": "digests/2026-11-01.md",
-      "title": "在高斯支撑上解可微扩散方程做次表面散射；直接预测光线交点的八叉树神经表示",
-      "figs": "digests/2026-11-01/figs/",
-      "subtitle": "高斯介质里的次表面输运"
-    },
-    {
-      "date": "2026-10-31",
-      "content_day": "2026-10-30",
-      "path": "digests/2026-10-31.md",
-      "title": "把非均匀介质编译成可编辑的随机游走预制件；超过 180° 的鱼眼 3DGS 与对齐碰撞网格",
-      "figs": "digests/2026-10-31/figs/",
-      "subtitle": "MC PDE 的缓存重用与鱼眼 Real2Sim"
-    },
-    {
-      "date": "2026-10-30",
-      "content_day": "2026-10-29",
-      "path": "digests/2026-10-30.md",
-      "title": "400 美元的开源双目 UMI 夹爪与 Astra 自动数字孪生；生成的室内场景在仿真里推、开、按，多数撑不住交互",
-      "figs": "digests/2026-10-30/figs/",
-      "subtitle": "Real2Sim 的采集端与验收端"
-    },
-    {
-      "date": "2026-10-29",
-      "content_day": "2026-10-28",
-      "path": "digests/2026-10-29.md",
-      "title": "固定材质只解近场面光源，把网格物体路径追踪进室内高斯场景；六边形线性色面片与 SO-101 上四种策略的数据效率",
-      "figs": "digests/2026-10-29/figs/",
-      "subtitle": "面光源插入与紧凑面片"
-    },
-    {
-      "date": "2026-10-28",
-      "content_day": "2026-10-27",
-      "path": "digests/2026-10-28.md",
-      "title": "智能体把 3D/4D 采集转成带物理的仿真场景，对齐到机械臂的高斯场景为腕部相机 VLA 批量造数据",
-      "figs": "digests/2026-10-28/figs/",
-      "subtitle": "Real→Sim 智能体与 3DGS 造数据"
-    },
-    {
-      "date": "2026-10-27",
-      "content_day": "2026-10-26",
-      "path": "digests/2026-10-27.md",
-      "title": "按物体而非三角形做前馈全局光照，智能体把机器人演示搭成可直接回放的仿真场景",
-      "figs": "digests/2026-10-27/figs/",
-      "subtitle": "前馈全局光照与智能体 Real→Sim"
-    },
-    {
-      "date": "2026-10-26",
-      "content_day": "2026-10-25",
-      "path": "digests/2026-10-26.md",
-      "title": "运动监督让单图生成的铰接高斯按对的关节开合，4D 高斯场景整理成可被语言点名的实体",
-      "figs": "digests/2026-10-26/figs/",
-      "subtitle": "可动资产与 4D 指代"
-    },
-    {
-      "date": "2026-10-25",
-      "content_day": "2026-10-24",
-      "path": "digests/2026-10-25.md",
-      "title": "只看几何就学出物理蒙皮场驱动高斯资产，引擎管规则、视频模型实时重绘游戏画面",
-      "figs": "digests/2026-10-25/figs/",
-      "subtitle": "物理蒙皮与神经重绘"
-    },
-    {
-      "date": "2026-10-24",
-      "content_day": "2026-10-23",
-      "path": "digests/2026-10-24.md",
-      "title": "线性辐射传输让生成式高斯人头实时换光，3DGS 自动科研系统把数字钉在日志上",
-      "figs": "digests/2026-10-24/figs/",
-      "subtitle": "高斯上的线性光传输"
-    },
-    {
-      "date": "2026-10-23",
-      "content_day": "2026-10-22",
-      "path": "digests/2026-10-23.md",
-      "title": "加噪的物理光照线索做视频重光照，跨光线密度一致性压稀疏视角漂浮物",
-      "figs": "digests/2026-10-23/figs/",
-      "subtitle": "弱几何先验下的重光照"
-    },
-    {
-      "date": "2026-10-22",
-      "content_day": "2026-10-21",
-      "path": "digests/2026-10-22.md",
-      "title": "被挡住的视角不该算数，让视频模型交出任意骨架的 3D 动作",
-      "figs": "digests/2026-10-22/figs/",
-      "subtitle": "遮挡感知致密化与视频—运动联合生成"
-    },
-    {
-      "date": "2026-10-21",
-      "content_day": "2026-10-20",
-      "path": "digests/2026-10-21.md",
-      "title": "把开关状态从时间轴上拆出来，让分支游走少长枝",
-      "figs": "digests/2026-10-21/figs/",
-      "subtitle": "可组合状态的高斯场景与包络变换的分支 WoS"
-    },
-    {
-      "date": "2026-10-20",
-      "content_day": "2026-10-19",
-      "path": "digests/2026-10-20.md",
-      "title": "把条件切片改成直接参数化，让 X 光替外观定几何",
-      "figs": "digests/2026-10-20/figs/",
-      "subtitle": "N 维高斯直接条件化与 RGB–X 光统一高斯"
-    },
-    {
-      "date": "2026-10-19",
-      "content_day": "2026-10-18",
-      "path": "digests/2026-10-19.md",
-      "title": "让噪声跟着光传输走，把阴影交给几何",
-      "figs": "digests/2026-10-19/figs/",
-      "subtitle": "单位方差相关噪声与可重照明草图服装"
-    },
-    {
-      "date": "2026-10-18",
-      "content_day": "2026-10-17",
-      "path": "digests/2026-10-18.md",
-      "title": "在交点处解混材料，把剪枝当联合删除",
-      "figs": "digests/2026-10-18/figs/",
-      "subtitle": "高斯光谱解混与交互感知剪枝"
-    },
-    {
-      "date": "2026-10-17",
-      "content_day": "2026-10-16",
-      "path": "digests/2026-10-17.md",
-      "title": "一阶高度界解锁位移曲面查询，真实布料数据学材质先验",
-      "figs": "digests/2026-10-17/figs/",
-      "subtitle": "位移曲面查询与布料材质先验"
-    },
-    {
-      "date": "2026-10-16",
-      "content_day": "2026-10-15",
-      "path": "digests/2026-10-16.md",
-      "title": "稀疏光追补可见性，冻结几何学习高斯属性",
-      "figs": "digests/2026-10-16/figs/",
-      "subtitle": "可见性光追与几何冻结"
-    },
-    {
-      "date": "2026-10-15",
-      "content_day": "2026-10-14",
-      "path": "digests/2026-10-15.md",
-      "title": "闪光观测约束材质，方向可见性解耦阴影",
-      "figs": "digests/2026-10-15/figs/",
-      "subtitle": "室内材质分解与阴影解耦"
-    },
-    {
-      "date": "2026-10-14",
-      "content_day": "2026-10-12",
-      "path": "digests/2026-10-14.md",
-      "title": "新基元放到误差大处，可见性只学一个半径",
-      "figs": "digests/2026-10-14/figs/",
-      "subtitle": "误差驱动致密化与可微环境遮蔽"
-    },
-    {
-      "date": "2026-10-13",
-      "content_day": "2026-10-12",
-      "path": "digests/2026-10-13.md",
-      "title": "把高斯光追的账拆开算，从看得见处借反射几何",
-      "figs": "digests/2026-10-13/figs/",
-      "subtitle": "高斯光追效率与近场反射"
-    },
-    {
-      "date": "2026-10-12",
-      "content_day": "2026-10-11",
-      "path": "digests/2026-10-12.md",
-      "title": "随机透明也能低噪声，刚体接触只看局部",
-      "figs": "digests/2026-10-12/figs/",
-      "subtitle": "高斯随机渲染与接触神经仿真"
-    },
-    {
-      "date": "2026-10-11",
-      "content_day": "2026-10-10",
-      "path": "digests/2026-10-11.md",
-      "title": "把梯度做成渲染输出，把物理高斯测到内部状态",
-      "figs": "digests/2026-10-11/figs/",
-      "subtitle": "梯度检视与物理高斯评测"
-    },
-    {
-      "date": "2026-10-10",
-      "content_day": "2026-10-09",
-      "path": "digests/2026-10-10.md",
-      "title": "随机压缩反传，场景空间约束几何，缓存镜面辐射",
-      "figs": "digests/2026-10-10/figs/",
-      "subtitle": "反传显存与几何正则"
-    },
-    {
-      "date": "2026-10-09",
-      "content_day": "2026-10-08",
-      "path": "digests/2026-10-09.md",
-      "title": "换光前拆清辐射代理，预积分光源先锁定条件",
-      "figs": "digests/2026-10-09/figs/",
-      "subtitle": "辐射代理与光照预积分"
-    },
-    {
-      "date": "2026-10-08",
-      "content_day": "2026-10-07",
-      "path": "digests/2026-10-08.md",
-      "title": "主动探索沉淀可审计记忆，软体孪生自适应传播，恢复先过安慰剂",
-      "figs": "digests/2026-10-08/figs/",
-      "subtitle": "主动记忆与软体仿真"
-    },
-    {
-      "date": "2026-10-07",
-      "content_day": "2026-10-06",
-      "path": "digests/2026-10-07.md",
-      "title": "物体轨迹接稳多指接触，统一扩散同时想象与行动",
-      "figs": "digests/2026-10-07/figs/",
-      "subtitle": "跨手型接触与视频—动作共训"
-    },
-    {
-      "date": "2026-10-06",
-      "content_day": "2026-10-05",
-      "path": "digests/2026-10-06.md",
-      "title": "前沿推理接本地策略，单图直出凸碰撞资产",
-      "figs": "digests/2026-10-06/figs/",
-      "subtitle": "示教补采与碰撞几何直出"
-    },
-    {
-      "date": "2026-10-05",
-      "content_day": "2026-10-04",
-      "path": "digests/2026-10-05.md",
-      "title": "可执行孪生的检查链，波动逆渲染的表示与求解",
-      "figs": "digests/2026-10-05/figs/",
-      "subtitle": "重建之后，还要执行验收"
-    },
-    {
-      "date": "2026-10-04",
-      "content_day": "2026-10-03",
-      "path": "digests/2026-10-04.md",
-      "title": "生成补全保护旧资产，局部增量修复可回滚",
-      "figs": "digests/2026-10-04/figs/",
-      "subtitle": "补缺口，也要护住旧资产"
-    },
-    {
-      "date": "2026-10-03",
-      "content_day": "2026-10-02",
-      "path": "digests/2026-10-03.md",
-      "title": "可验证房间程序，失败恢复闭环，任务与恢复分账学习",
-      "figs": "digests/2026-10-03/figs/",
-      "subtitle": "可编辑孪生与恢复闭环"
-    },
-    {
-      "date": "2026-10-02",
-      "content_day": "2026-10-01",
-      "path": "digests/2026-10-02.md",
-      "title": "失败银行自演化，文本成仿真，软触觉 MPM-GS",
-      "figs": "digests/2026-10-02/figs/",
-      "subtitle": "运行时反馈写进策略"
-    },
-    {
-      "date": "2026-10-01",
-      "content_day": "2026-09-30",
-      "path": "digests/2026-10-01.md",
-      "title": "物理校验 gym，反事实视频放大，可变形 sim-ready",
-      "figs": "digests/2026-10-01/figs/",
-      "subtitle": "Astra 基线对照与接触锚定造数"
-    },
-    {
-      "date": "2026-09-30",
-      "content_day": "2026-09-29",
-      "path": "digests/2026-09-30.md",
-      "title": "失败驱动补课，分钟级零示教，测试时并行仿真",
-      "figs": "digests/2026-09-30/figs/",
-      "subtitle": "把失败变成可仿真补课包"
-    },
-    {
-      "date": "2026-09-29",
-      "content_day": "2026-09-28",
-      "path": "digests/2026-09-29.md",
-      "title": "共享高斯状态合同，表示引导写程序，多时段变化高亮",
-      "figs": "digests/2026-09-29/figs/",
-      "subtitle": "地图合同与表示先行"
-    },
-    {
-      "date": "2026-09-28",
-      "content_day": "2026-09-27",
-      "path": "digests/2026-09-28.md",
-      "title": "关键段精细控制，空程少算几步，低比特策略按设备部署",
-      "figs": "digests/2026-09-28/figs/",
-      "subtitle": "少算几步，少占显存"
-    },
-    {
-      "date": "2026-09-27",
-      "content_day": "2026-09-26",
-      "path": "digests/2026-09-27.md",
-      "title": "示范变成关系程序，失败历史补偿硬件偏差，动态高斯补语义",
-      "figs": "digests/2026-09-27/figs/",
-      "subtitle": "示教编程与失败自适应"
-    },
-    {
-      "date": "2026-09-26",
-      "content_day": "2026-09-25",
-      "path": "digests/2026-09-26.md",
-      "title": "有状态 CAD Agent，胶带放卷仿真加速，拓扑一致动态网格",
-      "figs": "digests/2026-09-26/figs/",
-      "subtitle": "有状态 CAD 与胶带仿真"
-    },
-    {
-      "date": "2026-09-25",
-      "content_day": "2026-09-24",
-      "path": "digests/2026-09-25.md",
-      "title": "证据门控改机器人 Harness，按需示教补规划缺口，切割拓扑持久化",
-      "figs": "digests/2026-09-25/figs/",
-      "subtitle": "按需示教与证据门"
-    },
-    {
-      "date": "2026-09-24",
-      "content_day": "2026-09-23",
-      "path": "digests/2026-09-24.md",
-      "title": "物体移走后怎样补场景，编程 Agent 真机测量执行，随机高斯快速降噪",
-      "figs": "digests/2026-09-24/figs/",
-      "subtitle": "让重建场景可交互"
-    },
-    {
-      "date": "2026-09-23",
-      "content_day": "2026-09-22",
-      "path": "digests/2026-09-23.md",
-      "title": "单次扫描造示教，单图建可交互孪生，人视频迁移要对齐评测",
-      "figs": "digests/2026-09-23/figs/",
-      "subtitle": "从场景扫描到示教"
-    },
-    {
-      "date": "2026-09-22",
-      "content_day": "2026-09-21",
-      "path": "digests/2026-09-22.md",
-      "title": "失败回流造示教，交互测力校准孪生，回放成功不等于闭环迁移",
-      "figs": "digests/2026-09-22/figs/",
-      "subtitle": "失败回流与力学孪生"
-    },
-    {
-      "date": "2026-09-21",
-      "content_day": "2026-09-20",
-      "path": "digests/2026-09-21.md",
-      "title": "示教视频可「重拍」外观，主动要桥接演示，穿模修好再仿真",
-      "figs": "digests/2026-09-21/figs/",
-      "subtitle": "示教重拍与穿模修复"
-    },
-    {
-      "date": "2026-09-20",
-      "content_day": "2026-09-19",
-      "path": "digests/2026-09-20.md",
-      "title": "无动作标签也能学 3D 动力学，粒子潜空间拆可编辑物体，合作地图仍能指代",
-      "figs": "digests/2026-09-20/figs/",
-      "subtitle": "无标签学三维动力学"
-    },
-    {
-      "date": "2026-09-19",
-      "content_day": "2026-09-18",
-      "path": "digests/2026-09-19.md",
-      "title": "稀疏观测估关节，生成潜空间解功能结构，人手视频成可仿真铰链",
-      "figs": "digests/2026-09-19/figs/",
-      "subtitle": "从观测恢复关节运动"
-    },
-    {
-      "content_day": "2026-09-17",
-      "date": "2026-09-18",
-      "figs": "digests/2026-09-18/figs/",
-      "path": "digests/2026-09-18.md",
-      "title": "零件库检索式装配，PBR 高斯脱光照，示教增强先保住接触面",
-      "subtitle": "装配、重光照与接触"
-    },
-    {
-      "content_day": "2026-09-16",
-      "date": "2026-09-17",
-      "figs": "digests/2026-09-17/figs/",
-      "path": "digests/2026-09-17.md",
-      "title": "CAD 先验钉住孪生几何，交互 token 统一跨手抓取，世界-动作先预测几何与运动",
-      "subtitle": "CAD 约束物理孪生"
-    },
-    {
-      "content_day": "2026-09-15",
-      "date": "2026-09-16",
-      "figs": "digests/2026-09-16/figs/",
-      "path": "digests/2026-09-16.md",
-      "title": "部件先在生成里长出来，可编辑性再拆成四个可测面",
-      "subtitle": "生成部件与可编辑性"
-    },
-    {
-      "content_day": "2026-09-14",
-      "date": "2026-09-15",
-      "figs": "digests/2026-09-15/figs/",
-      "path": "digests/2026-09-15.md",
-      "title": "零件要能站得住，前馈要知道把高斯花在哪",
-      "subtitle": "可站稳的生成零件"
-    },
-    {
-      "content_day": "2026-09-13",
-      "date": "2026-09-14",
-      "figs": "digests/2026-09-14/figs/",
-      "path": "digests/2026-09-14.md",
-      "title": "把团队、子目标和接触写成可检查的结构",
-      "subtitle": "团队、目标与接触结构"
-    },
-    {
-      "content_day": "2026-09-12",
-      "date": "2026-09-13",
-      "figs": "digests/2026-09-13/figs/",
-      "path": "digests/2026-09-13.md",
-      "title": "失败反馈怎样真正回到生成与控制",
-      "subtitle": "让失败反馈进入闭环"
-    },
-    {
-      "content_day": "2026-09-11",
-      "date": "2026-09-12",
-      "figs": "digests/2026-09-12/figs/",
-      "path": "digests/2026-09-12.md",
-      "title": "重建之后，怎样判断失败、约束动作与降低成本",
-      "subtitle": "重建后的动作验收"
-    },
-    {
-      "content_day": "2026-09-10",
-      "date": "2026-09-11",
-      "figs": "digests/2026-09-11/figs/",
-      "path": "digests/2026-09-11.md",
-      "title": "闭环接上以后，速度与可信度仍要分开验收",
-      "subtitle": "闭环的速度与可信度"
-    },
-    {
-      "content_day": "2026-09-09",
-      "date": "2026-09-10",
-      "figs": "digests/2026-09-10/figs/",
-      "path": "digests/2026-09-10.md",
-      "title": "一分钟重建之后，瓶颈去了哪里",
-      "subtitle": "分钟级重建后的瓶颈"
-    },
-    {
-      "content_day": "2026-09-08",
-      "date": "2026-09-09",
-      "figs": "digests/2026-09-09/figs/",
-      "path": "digests/2026-09-09.md",
-      "title": "修好渲染，还不等于修好资产",
-      "subtitle": "从渲染修复到资产修复"
-    },
-    {
-      "content_day": "2026-09-07",
-      "date": "2026-09-08",
-      "figs": "digests/2026-09-08/figs/",
-      "path": "digests/2026-09-08.md",
-      "title": "周末积压升格：变形 / 绑骨 / 可重光照",
-      "subtitle": "变形、绑骨与重光照"
-    },
-    {
-      "content_day": "2026-09-06",
-      "date": "2026-09-07",
-      "figs": "digests/2026-09-07/figs/",
-      "path": "digests/2026-09-07.md",
-      "title": "Real2Sim / PTIR-GS 兴趣策展",
-      "subtitle": "Real2Sim 与逆渲染"
-    }
-  ],
-  "owner": "rubatotree",
-  "site": "科研日报"
+    "base": "/research-daily/",
+    "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
+    "digests": [
+        {
+            "date": "2026-11-14",
+            "content_day": "2026-11-13",
+            "path": "digests/2026-11-14.md",
+            "title": "生产级可微光照代理；矩阵并行的可扩展 3DGS 特征渲染",
+            "figs": "digests/2026-11-14/figs/",
+            "subtitle": "把光运输做成可反推的代理"
+        },
+        {
+            "date": "2026-11-13",
+            "content_day": "2026-11-04..2026-11-10 backfill",
+            "path": "digests/2026-11-13.md",
+            "title": "文本生成场景中的可仿真形变物体；分采集条件的表面重建基准",
+            "figs": "digests/2026-11-13/figs/",
+            "subtitle": "能用的三维资产，要先过下游约束"
+        },
+        {
+            "date": "2026-11-12",
+            "content_day": "2026-11-11",
+            "path": "digests/2026-11-12.md",
+            "title": "面向实时管线的可微皮肤次表面散射；与光照无关、可缓存的形变神经纹理",
+            "figs": "digests/2026-11-12/figs/",
+            "subtitle": "学到着色之前，光照留给管线"
+        },
+        {
+            "date": "2026-11-11",
+            "content_day": "2026-11-10",
+            "path": "digests/2026-11-11.md",
+            "title": "OLAT 基视频预测实现可控的动态全身重光照；按 tile 负载调度缓解 3DGS 的 SM 长尾",
+            "figs": "digests/2026-11-11/figs/",
+            "subtitle": "光照留给线性叠加，负载留给调度"
+        },
+        {
+            "date": "2026-11-10",
+            "content_day": "2026-11-09",
+            "path": "digests/2026-11-10.md",
+            "title": "GPU 原生的 NanoVDB 动态拓扑与按体素顺序处理；几何一致的机器人示教视觉增强",
+            "figs": "digests/2026-11-10/figs/",
+            "subtitle": "稀疏体素可动，增强按几何渲染"
+        },
+        {
+            "date": "2026-11-09",
+            "content_day": "2026-11-05",
+            "path": "digests/2026-11-09.md",
+            "title": "单目深度先验的局部仿射矫正提升 3DGS 几何；显式 3D 状态的实时可玩世界模型",
+            "figs": "digests/2026-11-09/figs/",
+            "subtitle": "先验分区对齐，状态与渲染解耦"
+        },
+        {
+            "date": "2026-11-08",
+            "content_day": "2026-11-07",
+            "path": "digests/2026-11-08.md",
+            "title": "先验约束材质变量的物理逆渲染；几何条件扩散补全空间变化 HDR 光照",
+            "figs": "digests/2026-11-08/figs/",
+            "subtitle": "先验划子空间，几何补光照"
+        },
+        {
+            "date": "2026-11-07",
+            "content_day": "2026-11-06",
+            "path": "digests/2026-11-07.md",
+            "title": "感知复杂度分配的可编辑网格—高斯；在线 beta 核置信度旋钮",
+            "figs": "digests/2026-11-07/figs/",
+            "subtitle": "外观要预算，在线要敢实心"
+        },
+        {
+            "date": "2026-11-06",
+            "content_day": "2026-11-05",
+            "path": "digests/2026-11-06.md",
+            "title": "室内 3DGS 的选择性米制尺度估计；按保留比例收缩的前馈高斯预算控制",
+            "figs": "digests/2026-11-06/figs/",
+            "subtitle": "能量的高斯，压得住的预算"
+        },
+        {
+            "date": "2026-11-05",
+            "content_day": "2026-11-04",
+            "path": "digests/2026-11-05.md",
+            "title": "从操作视频反推材质参数的 3DGS–MPM 物理扩散策略；本征解耦的多天气 4D 高斯",
+            "figs": "digests/2026-11-05/figs/",
+            "subtitle": "把物理和材质拆出来用"
+        },
+        {
+            "date": "2026-11-04",
+            "content_day": "2026-11-03",
+            "path": "digests/2026-11-04.md",
+            "title": "把混合顺序写进资产、免去逐高斯排序的 3DGS；按损失变化决定分裂、复制与衰减的密度控制",
+            "figs": "digests/2026-11-04/figs/",
+            "subtitle": "把高斯资产整理好"
+        },
+        {
+            "date": "2026-11-03",
+            "content_day": "2026-11-02",
+            "path": "digests/2026-11-03.md",
+            "title": "Atlanta World 结构平面约束的室内高斯 SLAM；单曝光 LDR 恢复 HDR 辐射的基底—增益高斯",
+            "figs": "digests/2026-11-03/figs/",
+            "subtitle": "室内结构先验与单曝光 HDR"
+        },
+        {
+            "date": "2026-11-02",
+            "content_day": "2026-11-01",
+            "path": "digests/2026-11-02.md",
+            "title": "智能体搭关节、绑表面、跑仿真的单图可交互资产；前馈预测逐体素物理参数的仿真就绪高斯",
+            "figs": "digests/2026-11-02/figs/",
+            "subtitle": "让生成的资产动起来"
+        },
+        {
+            "date": "2026-11-01",
+            "content_day": "2026-10-31",
+            "path": "digests/2026-11-01.md",
+            "title": "在高斯支撑上解可微扩散方程做次表面散射；直接预测光线交点的八叉树神经表示",
+            "figs": "digests/2026-11-01/figs/",
+            "subtitle": "高斯介质里的次表面输运"
+        },
+        {
+            "date": "2026-10-31",
+            "content_day": "2026-10-30",
+            "path": "digests/2026-10-31.md",
+            "title": "把非均匀介质编译成可编辑的随机游走预制件；超过 180° 的鱼眼 3DGS 与对齐碰撞网格",
+            "figs": "digests/2026-10-31/figs/",
+            "subtitle": "MC PDE 的缓存重用与鱼眼 Real2Sim"
+        },
+        {
+            "date": "2026-10-30",
+            "content_day": "2026-10-29",
+            "path": "digests/2026-10-30.md",
+            "title": "400 美元的开源双目 UMI 夹爪与 Astra 自动数字孪生；生成的室内场景在仿真里推、开、按，多数撑不住交互",
+            "figs": "digests/2026-10-30/figs/",
+            "subtitle": "Real2Sim 的采集端与验收端"
+        },
+        {
+            "date": "2026-10-29",
+            "content_day": "2026-10-28",
+            "path": "digests/2026-10-29.md",
+            "title": "固定材质只解近场面光源，把网格物体路径追踪进室内高斯场景；六边形线性色面片与 SO-101 上四种策略的数据效率",
+            "figs": "digests/2026-10-29/figs/",
+            "subtitle": "面光源插入与紧凑面片"
+        },
+        {
+            "date": "2026-10-28",
+            "content_day": "2026-10-27",
+            "path": "digests/2026-10-28.md",
+            "title": "智能体把 3D/4D 采集转成带物理的仿真场景，对齐到机械臂的高斯场景为腕部相机 VLA 批量造数据",
+            "figs": "digests/2026-10-28/figs/",
+            "subtitle": "Real→Sim 智能体与 3DGS 造数据"
+        },
+        {
+            "date": "2026-10-27",
+            "content_day": "2026-10-26",
+            "path": "digests/2026-10-27.md",
+            "title": "按物体而非三角形做前馈全局光照，智能体把机器人演示搭成可直接回放的仿真场景",
+            "figs": "digests/2026-10-27/figs/",
+            "subtitle": "前馈全局光照与智能体 Real→Sim"
+        },
+        {
+            "date": "2026-10-26",
+            "content_day": "2026-10-25",
+            "path": "digests/2026-10-26.md",
+            "title": "运动监督让单图生成的铰接高斯按对的关节开合，4D 高斯场景整理成可被语言点名的实体",
+            "figs": "digests/2026-10-26/figs/",
+            "subtitle": "可动资产与 4D 指代"
+        },
+        {
+            "date": "2026-10-25",
+            "content_day": "2026-10-24",
+            "path": "digests/2026-10-25.md",
+            "title": "只看几何就学出物理蒙皮场驱动高斯资产，引擎管规则、视频模型实时重绘游戏画面",
+            "figs": "digests/2026-10-25/figs/",
+            "subtitle": "物理蒙皮与神经重绘"
+        },
+        {
+            "date": "2026-10-24",
+            "content_day": "2026-10-23",
+            "path": "digests/2026-10-24.md",
+            "title": "线性辐射传输让生成式高斯人头实时换光，3DGS 自动科研系统把数字钉在日志上",
+            "figs": "digests/2026-10-24/figs/",
+            "subtitle": "高斯上的线性光传输"
+        },
+        {
+            "date": "2026-10-23",
+            "content_day": "2026-10-22",
+            "path": "digests/2026-10-23.md",
+            "title": "加噪的物理光照线索做视频重光照，跨光线密度一致性压稀疏视角漂浮物",
+            "figs": "digests/2026-10-23/figs/",
+            "subtitle": "弱几何先验下的重光照"
+        },
+        {
+            "date": "2026-10-22",
+            "content_day": "2026-10-21",
+            "path": "digests/2026-10-22.md",
+            "title": "被挡住的视角不该算数，让视频模型交出任意骨架的 3D 动作",
+            "figs": "digests/2026-10-22/figs/",
+            "subtitle": "遮挡感知致密化与视频—运动联合生成"
+        },
+        {
+            "date": "2026-10-21",
+            "content_day": "2026-10-20",
+            "path": "digests/2026-10-21.md",
+            "title": "把开关状态从时间轴上拆出来，让分支游走少长枝",
+            "figs": "digests/2026-10-21/figs/",
+            "subtitle": "可组合状态的高斯场景与包络变换的分支 WoS"
+        },
+        {
+            "date": "2026-10-20",
+            "content_day": "2026-10-19",
+            "path": "digests/2026-10-20.md",
+            "title": "把条件切片改成直接参数化，让 X 光替外观定几何",
+            "figs": "digests/2026-10-20/figs/",
+            "subtitle": "N 维高斯直接条件化与 RGB–X 光统一高斯"
+        },
+        {
+            "date": "2026-10-19",
+            "content_day": "2026-10-18",
+            "path": "digests/2026-10-19.md",
+            "title": "让噪声跟着光传输走，把阴影交给几何",
+            "figs": "digests/2026-10-19/figs/",
+            "subtitle": "单位方差相关噪声与可重照明草图服装"
+        },
+        {
+            "date": "2026-10-18",
+            "content_day": "2026-10-17",
+            "path": "digests/2026-10-18.md",
+            "title": "在交点处解混材料，把剪枝当联合删除",
+            "figs": "digests/2026-10-18/figs/",
+            "subtitle": "高斯光谱解混与交互感知剪枝"
+        },
+        {
+            "date": "2026-10-17",
+            "content_day": "2026-10-16",
+            "path": "digests/2026-10-17.md",
+            "title": "一阶高度界解锁位移曲面查询，真实布料数据学材质先验",
+            "figs": "digests/2026-10-17/figs/",
+            "subtitle": "位移曲面查询与布料材质先验"
+        },
+        {
+            "date": "2026-10-16",
+            "content_day": "2026-10-15",
+            "path": "digests/2026-10-16.md",
+            "title": "稀疏光追补可见性，冻结几何学习高斯属性",
+            "figs": "digests/2026-10-16/figs/",
+            "subtitle": "可见性光追与几何冻结"
+        },
+        {
+            "date": "2026-10-15",
+            "content_day": "2026-10-14",
+            "path": "digests/2026-10-15.md",
+            "title": "闪光观测约束材质，方向可见性解耦阴影",
+            "figs": "digests/2026-10-15/figs/",
+            "subtitle": "室内材质分解与阴影解耦"
+        },
+        {
+            "date": "2026-10-14",
+            "content_day": "2026-10-12",
+            "path": "digests/2026-10-14.md",
+            "title": "新基元放到误差大处，可见性只学一个半径",
+            "figs": "digests/2026-10-14/figs/",
+            "subtitle": "误差驱动致密化与可微环境遮蔽"
+        },
+        {
+            "date": "2026-10-13",
+            "content_day": "2026-10-12",
+            "path": "digests/2026-10-13.md",
+            "title": "把高斯光追的账拆开算，从看得见处借反射几何",
+            "figs": "digests/2026-10-13/figs/",
+            "subtitle": "高斯光追效率与近场反射"
+        },
+        {
+            "date": "2026-10-12",
+            "content_day": "2026-10-11",
+            "path": "digests/2026-10-12.md",
+            "title": "随机透明也能低噪声，刚体接触只看局部",
+            "figs": "digests/2026-10-12/figs/",
+            "subtitle": "高斯随机渲染与接触神经仿真"
+        },
+        {
+            "date": "2026-10-11",
+            "content_day": "2026-10-10",
+            "path": "digests/2026-10-11.md",
+            "title": "把梯度做成渲染输出，把物理高斯测到内部状态",
+            "figs": "digests/2026-10-11/figs/",
+            "subtitle": "梯度检视与物理高斯评测"
+        },
+        {
+            "date": "2026-10-10",
+            "content_day": "2026-10-09",
+            "path": "digests/2026-10-10.md",
+            "title": "随机压缩反传，场景空间约束几何，缓存镜面辐射",
+            "figs": "digests/2026-10-10/figs/",
+            "subtitle": "反传显存与几何正则"
+        },
+        {
+            "date": "2026-10-09",
+            "content_day": "2026-10-08",
+            "path": "digests/2026-10-09.md",
+            "title": "换光前拆清辐射代理，预积分光源先锁定条件",
+            "figs": "digests/2026-10-09/figs/",
+            "subtitle": "辐射代理与光照预积分"
+        },
+        {
+            "date": "2026-10-08",
+            "content_day": "2026-10-07",
+            "path": "digests/2026-10-08.md",
+            "title": "主动探索沉淀可审计记忆，软体孪生自适应传播，恢复先过安慰剂",
+            "figs": "digests/2026-10-08/figs/",
+            "subtitle": "主动记忆与软体仿真"
+        },
+        {
+            "date": "2026-10-07",
+            "content_day": "2026-10-06",
+            "path": "digests/2026-10-07.md",
+            "title": "物体轨迹接稳多指接触，统一扩散同时想象与行动",
+            "figs": "digests/2026-10-07/figs/",
+            "subtitle": "跨手型接触与视频—动作共训"
+        },
+        {
+            "date": "2026-10-06",
+            "content_day": "2026-10-05",
+            "path": "digests/2026-10-06.md",
+            "title": "前沿推理接本地策略，单图直出凸碰撞资产",
+            "figs": "digests/2026-10-06/figs/",
+            "subtitle": "示教补采与碰撞几何直出"
+        },
+        {
+            "date": "2026-10-05",
+            "content_day": "2026-10-04",
+            "path": "digests/2026-10-05.md",
+            "title": "可执行孪生的检查链，波动逆渲染的表示与求解",
+            "figs": "digests/2026-10-05/figs/",
+            "subtitle": "重建之后，还要执行验收"
+        },
+        {
+            "date": "2026-10-04",
+            "content_day": "2026-10-03",
+            "path": "digests/2026-10-04.md",
+            "title": "生成补全保护旧资产，局部增量修复可回滚",
+            "figs": "digests/2026-10-04/figs/",
+            "subtitle": "补缺口，也要护住旧资产"
+        },
+        {
+            "date": "2026-10-03",
+            "content_day": "2026-10-02",
+            "path": "digests/2026-10-03.md",
+            "title": "可验证房间程序，失败恢复闭环，任务与恢复分账学习",
+            "figs": "digests/2026-10-03/figs/",
+            "subtitle": "可编辑孪生与恢复闭环"
+        },
+        {
+            "date": "2026-10-02",
+            "content_day": "2026-10-01",
+            "path": "digests/2026-10-02.md",
+            "title": "失败银行自演化，文本成仿真，软触觉 MPM-GS",
+            "figs": "digests/2026-10-02/figs/",
+            "subtitle": "运行时反馈写进策略"
+        },
+        {
+            "date": "2026-10-01",
+            "content_day": "2026-09-30",
+            "path": "digests/2026-10-01.md",
+            "title": "物理校验 gym，反事实视频放大，可变形 sim-ready",
+            "figs": "digests/2026-10-01/figs/",
+            "subtitle": "Astra 基线对照与接触锚定造数"
+        },
+        {
+            "date": "2026-09-30",
+            "content_day": "2026-09-29",
+            "path": "digests/2026-09-30.md",
+            "title": "失败驱动补课，分钟级零示教，测试时并行仿真",
+            "figs": "digests/2026-09-30/figs/",
+            "subtitle": "把失败变成可仿真补课包"
+        },
+        {
+            "date": "2026-09-29",
+            "content_day": "2026-09-28",
+            "path": "digests/2026-09-29.md",
+            "title": "共享高斯状态合同，表示引导写程序，多时段变化高亮",
+            "figs": "digests/2026-09-29/figs/",
+            "subtitle": "地图合同与表示先行"
+        },
+        {
+            "date": "2026-09-28",
+            "content_day": "2026-09-27",
+            "path": "digests/2026-09-28.md",
+            "title": "关键段精细控制，空程少算几步，低比特策略按设备部署",
+            "figs": "digests/2026-09-28/figs/",
+            "subtitle": "少算几步，少占显存"
+        },
+        {
+            "date": "2026-09-27",
+            "content_day": "2026-09-26",
+            "path": "digests/2026-09-27.md",
+            "title": "示范变成关系程序，失败历史补偿硬件偏差，动态高斯补语义",
+            "figs": "digests/2026-09-27/figs/",
+            "subtitle": "示教编程与失败自适应"
+        },
+        {
+            "date": "2026-09-26",
+            "content_day": "2026-09-25",
+            "path": "digests/2026-09-26.md",
+            "title": "有状态 CAD Agent，胶带放卷仿真加速，拓扑一致动态网格",
+            "figs": "digests/2026-09-26/figs/",
+            "subtitle": "有状态 CAD 与胶带仿真"
+        },
+        {
+            "date": "2026-09-25",
+            "content_day": "2026-09-24",
+            "path": "digests/2026-09-25.md",
+            "title": "证据门控改机器人 Harness，按需示教补规划缺口，切割拓扑持久化",
+            "figs": "digests/2026-09-25/figs/",
+            "subtitle": "按需示教与证据门"
+        },
+        {
+            "date": "2026-09-24",
+            "content_day": "2026-09-23",
+            "path": "digests/2026-09-24.md",
+            "title": "物体移走后怎样补场景，编程 Agent 真机测量执行，随机高斯快速降噪",
+            "figs": "digests/2026-09-24/figs/",
+            "subtitle": "让重建场景可交互"
+        },
+        {
+            "date": "2026-09-23",
+            "content_day": "2026-09-22",
+            "path": "digests/2026-09-23.md",
+            "title": "单次扫描造示教，单图建可交互孪生，人视频迁移要对齐评测",
+            "figs": "digests/2026-09-23/figs/",
+            "subtitle": "从场景扫描到示教"
+        },
+        {
+            "date": "2026-09-22",
+            "content_day": "2026-09-21",
+            "path": "digests/2026-09-22.md",
+            "title": "失败回流造示教，交互测力校准孪生，回放成功不等于闭环迁移",
+            "figs": "digests/2026-09-22/figs/",
+            "subtitle": "失败回流与力学孪生"
+        },
+        {
+            "date": "2026-09-21",
+            "content_day": "2026-09-20",
+            "path": "digests/2026-09-21.md",
+            "title": "示教视频可「重拍」外观，主动要桥接演示，穿模修好再仿真",
+            "figs": "digests/2026-09-21/figs/",
+            "subtitle": "示教重拍与穿模修复"
+        },
+        {
+            "date": "2026-09-20",
+            "content_day": "2026-09-19",
+            "path": "digests/2026-09-20.md",
+            "title": "无动作标签也能学 3D 动力学，粒子潜空间拆可编辑物体，合作地图仍能指代",
+            "figs": "digests/2026-09-20/figs/",
+            "subtitle": "无标签学三维动力学"
+        },
+        {
+            "date": "2026-09-19",
+            "content_day": "2026-09-18",
+            "path": "digests/2026-09-19.md",
+            "title": "稀疏观测估关节，生成潜空间解功能结构，人手视频成可仿真铰链",
+            "figs": "digests/2026-09-19/figs/",
+            "subtitle": "从观测恢复关节运动"
+        },
+        {
+            "content_day": "2026-09-17",
+            "date": "2026-09-18",
+            "figs": "digests/2026-09-18/figs/",
+            "path": "digests/2026-09-18.md",
+            "title": "零件库检索式装配，PBR 高斯脱光照，示教增强先保住接触面",
+            "subtitle": "装配、重光照与接触"
+        },
+        {
+            "content_day": "2026-09-16",
+            "date": "2026-09-17",
+            "figs": "digests/2026-09-17/figs/",
+            "path": "digests/2026-09-17.md",
+            "title": "CAD 先验钉住孪生几何，交互 token 统一跨手抓取，世界-动作先预测几何与运动",
+            "subtitle": "CAD 约束物理孪生"
+        },
+        {
+            "content_day": "2026-09-15",
+            "date": "2026-09-16",
+            "figs": "digests/2026-09-16/figs/",
+            "path": "digests/2026-09-16.md",
+            "title": "部件先在生成里长出来，可编辑性再拆成四个可测面",
+            "subtitle": "生成部件与可编辑性"
+        },
+        {
+            "content_day": "2026-09-14",
+            "date": "2026-09-15",
+            "figs": "digests/2026-09-15/figs/",
+            "path": "digests/2026-09-15.md",
+            "title": "零件要能站得住，前馈要知道把高斯花在哪",
+            "subtitle": "可站稳的生成零件"
+        },
+        {
+            "content_day": "2026-09-13",
+            "date": "2026-09-14",
+            "figs": "digests/2026-09-14/figs/",
+            "path": "digests/2026-09-14.md",
+            "title": "把团队、子目标和接触写成可检查的结构",
+            "subtitle": "团队、目标与接触结构"
+        },
+        {
+            "content_day": "2026-09-12",
+            "date": "2026-09-13",
+            "figs": "digests/2026-09-13/figs/",
+            "path": "digests/2026-09-13.md",
+            "title": "失败反馈怎样真正回到生成与控制",
+            "subtitle": "让失败反馈进入闭环"
+        },
+        {
+            "content_day": "2026-09-11",
+            "date": "2026-09-12",
+            "figs": "digests/2026-09-12/figs/",
+            "path": "digests/2026-09-12.md",
+            "title": "重建之后，怎样判断失败、约束动作与降低成本",
+            "subtitle": "重建后的动作验收"
+        },
+        {
+            "content_day": "2026-09-10",
+            "date": "2026-09-11",
+            "figs": "digests/2026-09-11/figs/",
+            "path": "digests/2026-09-11.md",
+            "title": "闭环接上以后，速度与可信度仍要分开验收",
+            "subtitle": "闭环的速度与可信度"
+        },
+        {
+            "content_day": "2026-09-09",
+            "date": "2026-09-10",
+            "figs": "digests/2026-09-10/figs/",
+            "path": "digests/2026-09-10.md",
+            "title": "一分钟重建之后，瓶颈去了哪里",
+            "subtitle": "分钟级重建后的瓶颈"
+        },
+        {
+            "content_day": "2026-09-08",
+            "date": "2026-09-09",
+            "figs": "digests/2026-09-09/figs/",
+            "path": "digests/2026-09-09.md",
+            "title": "修好渲染，还不等于修好资产",
+            "subtitle": "从渲染修复到资产修复"
+        },
+        {
+            "content_day": "2026-09-07",
+            "date": "2026-09-08",
+            "figs": "digests/2026-09-08/figs/",
+            "path": "digests/2026-09-08.md",
+            "title": "周末积压升格：变形 / 绑骨 / 可重光照",
+            "subtitle": "变形、绑骨与重光照"
+        },
+        {
+            "content_day": "2026-09-06",
+            "date": "2026-09-07",
+            "figs": "digests/2026-09-07/figs/",
+            "path": "digests/2026-09-07.md",
+            "title": "Real2Sim / PTIR-GS 兴趣策展",
+            "subtitle": "Real2Sim 与逆渲染"
+        }
+    ],
+    "owner": "rubatotree",
+    "site": "科研日报"
 }
