@@ -2788,9 +2788,54 @@
       "content_day": "2026-11-13",
       "reappearances": [],
       "note": "Brief: first coverage of NVIDIA feed-forward driving 3DGS world model; v2 dated 2026-11-11."
+    },
+    "2611.13628": {
+      "title": "DepthGS: Depth-Guided Gaussian Splatting with Adaptive Regularization for High-Quality Surface Reconstruction",
+      "short": "DepthGS",
+      "first_seen": "2026-11-15",
+      "digest": "2026-11-15",
+      "content_day": "2026-11-10..2026-11-12 backfill",
+      "reappearances": [],
+      "note": "Must-read: TPAMI-accepted depth-difference-weighted normal regularization on PGSR (SUSTech, CCRI, XJTU, CityU HK); weekend backfill of 11-10 paper missed by 11-12 digest."
+    },
+    "2611.16840": {
+      "title": "Kosmo-GFM: A Production-Ready Geometry Foundation Model",
+      "short": "Kosmo-GFM",
+      "first_seen": "2026-11-15",
+      "digest": "2026-11-15",
+      "content_day": "2026-11-10..2026-11-12 backfill",
+      "reappearances": [],
+      "note": "Recommended: geometry foundation model + PoseEngine for 3DGS/4DGS (Kosmo Research); weekend backfill of 11-12 paper missed by 11-14 digest."
+    },
+    "2611.10652": {
+      "title": "SHIN: Scalable Hierarchy for INcremental 3D Gaussian Splatting",
+      "short": "SHIN",
+      "first_seen": "2026-11-15",
+      "digest": "2026-11-15",
+      "content_day": "2026-11-10..2026-11-12 backfill",
+      "reappearances": [],
+      "note": "Brief: incremental scalable 3DGS hierarchy with reusable base and enhancement layers."
+    },
+    "2611.05359": {
+      "title": "GSCV++: Lightweight 3D Gaussian Splatting Sequence Compression via Standard Video Codecs",
+      "short": "GSCV++",
+      "first_seen": "2026-11-15",
+      "digest": "2026-11-15",
+      "content_day": "2026-11-10..2026-11-12 backfill",
+      "reappearances": [],
+      "note": "Brief: 3DGS sequence compression via standard video codecs; first inclusion of 11-03/11-04 paper."
+    },
+    "2611.12932": {
+      "title": "URL-Sim: Unified and Regulated LiDAR Simulation for High-Fidelity Reconstruction of Dynamic Driving Scenes",
+      "short": "URL-Sim",
+      "first_seen": "2026-11-15",
+      "digest": "2026-11-15",
+      "content_day": "2026-11-10..2026-11-12 backfill",
+      "reappearances": [],
+      "note": "Brief: dynamic Gaussian scene-graph LiDAR simulation of vehicles, pedestrians, and cyclists."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "version": 1
 }
