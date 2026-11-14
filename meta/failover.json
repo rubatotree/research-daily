@@ -1479,11 +1479,26 @@
       "publish_date": "2026-11-14",
       "claim_id": "fdfc8c60-2edb-47b7-971a-8d4f6392ccd6",
       "detail": "Primary publish within window: NRP, MatrixSplat + MS-Operator, PIM and brief listings; claim cleared."
+    },
+    {
+      "at": "2026-11-15T05:28:01+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-15",
+      "claim_id": "b41e8109-ebfe-4194-a6af-d9b34ed6a41b",
+      "expires_at": "2026-11-15T05:58:01+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20)."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-15",
+    "bot": "Cream",
+    "claim_id": "b41e8109-ebfe-4194-a6af-d9b34ed6a41b",
+    "claimed_at": "2026-11-15T05:28:01+08:00",
+    "expires_at": "2026-11-15T05:58:01+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
