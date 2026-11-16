@@ -33,11 +33,11 @@
   ],
   "active_owner": "Cocoa",
   "last_success": {
-    "bot": "Cream",
-    "publish_date": "2026-11-15",
-    "at": "2026-11-15T05:28:40+08:00",
+    "bot": "Cocoa",
+    "publish_date": "2026-11-16",
+    "at": "2026-11-16T13:17:36+08:00",
     "commit": null,
-    "note": "Primary publish within window: weekend geometry backfill; DepthGS must-read, Kosmo-GFM recommended; original figures."
+    "note": "Maintainer-authorized manual make-up outside scheduled windows: Lineage Dropout must-read, DIRT recommended; MacroGS, Pose-based Neural Clothing, FOMOS briefs; original figures; 故障说明 appended."
   },
   "events": [
     {
@@ -1513,17 +1513,19 @@
       "publish_date": "2026-11-16",
       "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
       "detail": "Scheduled primary Cream and standby Neon produced no 2026-11-16 digest or valid claim; maintainer requested a one-off manual make-up by Cocoa outside the normal windows."
+    },
+    {
+      "at": "2026-11-16T13:17:36+08:00",
+      "type": "publish",
+      "bot": "Cocoa",
+      "publish_date": "2026-11-16",
+      "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
+      "detail": "Manual make-up publish: Lineage Dropout and DIRT from the 11-13 submission batch, plus MacroGS, Pose-based Neural Clothing and FOMOS brief listings; original figures; 故障说明 appended; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-16",
-    "bot": "Cocoa",
-    "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
-    "claimed_at": "2026-11-16T13:12:28+08:00",
-    "expires_at": "2026-11-16T15:42:28+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
