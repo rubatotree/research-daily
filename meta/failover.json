@@ -1527,11 +1527,26 @@
       "type": "register",
       "bot": "Cocoa",
       "detail": "Roster change: maintainer requested Cocoa replace Neon in the order 2 standby slot; Cream remains order 1 primary. Claim windows, cron schedule and lease protocol unchanged; historical events retained."
+    },
+    {
+      "at": "2026-11-17T06:18:29+08:00",
+      "type": "claim",
+      "bot": "Cocoa",
+      "publish_date": "2026-11-17",
+      "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
+      "expires_at": "2026-11-17T06:48:29+08:00",
+      "detail": "Standby CAS claim within [06:18,06:50): no 2026-11-17 digest, index entry or valid claim; last_success=2026-11-16."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-17",
+    "bot": "Cocoa",
+    "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
+    "claimed_at": "2026-11-17T06:18:29+08:00",
+    "expires_at": "2026-11-17T06:48:29+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
