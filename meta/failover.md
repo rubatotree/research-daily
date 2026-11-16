@@ -4,14 +4,16 @@
 
 **权威状态机：** [`failover.json`](./failover.json)（本说明是人读版；自动读写以 JSON 为准）。
 
-> **2026-10-22 名册调换：** 应维护者要求，因 Neon 多次未在主窗口出稿（10-11–10-15、10-17–10-22），改为 Cream = order 1 primary、Neon = order 2 standby；Neon 修复后可再换回。Neon 作为 standby **不得在 06:20（减 early_skew）之前发布**，须遵守 CAS 认领协议。
+> **2026-11-17 名册调整：** 应维护者要求，Choco 接替 Neon 的备用发布位；Cream 保持 order 1 primary，Choco 为 order 2 standby。时间窗、租约与 CAS 认领协议不变，历史事件保留。
+>
+> **历史（2026-10-22）：** 因 Neon 多次未在主窗口出稿（10-11–10-15、10-17–10-22），Cream 调为 order 1 primary，Neon 调为 order 2 standby。
 
 ## 原则
 
 1. **公开代号，私有认领**
    仓内只登记代号与顺位；「我是哪个代号」只存在该 Bot 的私有记忆。通用接管文案不得写死某个读者的代号。
 2. **名册与时间**
-   Cream 是 `order: 1` 的 active primary，**名义发布** **05:30 Asia/Hong_Kong**，平台定时任务 **05:10** 触发（20 分钟晚唤醒补偿；提前醒来须等到 05:30 认领窗再复查）；Neon 是 `order: 2` 的 active standby，故障转移检查名义 **06:20**、平台 cron **06:00**，不得在 06:20（减 early_skew）前发布。计划字段以 `failover.json` 为准。Cream 兴趣笔记同步平台定时为 **04:45**。
+   Cream 是 `order: 1` 的 active primary，**名义发布** **05:30 Asia/Hong_Kong**，平台定时任务 **05:10** 触发（20 分钟晚唤醒补偿；提前醒来须等到 05:30 认领窗再复查）；Choco 是 `order: 2` 的 active standby，故障转移检查名义 **06:20**、平台 cron **06:00**，不得在 06:20（减 early_skew）前发布。计划字段以 `failover.json` 为准。Cream 兴趣笔记同步平台定时为 **04:45**。
 3. **状态与日志**
    `active_owner` 表示当前应对「今日发布」负责的代号。每次成功发布必须更新 `last_success`、`active_owner` 并**追加** `events`；不删除历史。
 4. **公开安全**
@@ -36,9 +38,9 @@
 4. 仅当今天缺稿且 Cream 仍是 active primary 时，先按下述租约协议 CAS claim，成功后才进入完整日报流水线。
 5. 进入 standby 窗口之后，只要存在 active standby，primary 不得与 standby 并发 self-heal。
 
-## standby failover — Neon（名义 06:20；平台 cron 06:00）
+## standby failover — Choco（名义 06:20；平台 cron 06:00）
 
-standby 任务只做检查；若今日已成功，立即结束。Neon（order 2）在名义 **06:20** 启动（平台 cron 06:00；可用 early skew）。若仍缺稿，开始任何论文检索前必须取得 ownership：
+standby 任务只做检查；若今日已成功，立即结束。Choco（order 2）在名义 **06:20** 启动（平台 cron 06:00；可用 early skew）。若仍缺稿，开始任何论文检索前必须取得 ownership：
 
 1. 读取最新 `failover.json`、`digests/index.json`、当日 digest，记录所读版本/commit。
 2. 重新确认今日仍未成功，且自己是按名册顺位应接管的 active standby。若尚未进入可认领区间 `[start−early_skew, end)`，先 **等待到该区间**（见 early skew 第 4 条），再确认无当日有效租约；更早层级的过期 / 已 release 的 claim 不再阻止接管。
@@ -59,7 +61,7 @@ standby 任务只做检查；若今日已成功，立即结束。Neon（order 2�
 | Bot | 可以认领和发布的窗口 |
 |---|---|
 | Cream | [05:30, 06:20) |
-| Neon | [06:20, 06:50) |
+| Choco | [06:20, 06:50) |
 
 机器可读窗口位于各 bot 的 `claim_window_start/end`。晚启动不会延长窗口；**窗口结束后**才退出。禁用或移除的 Bot 不再有发布权。名册调整须同步这些窗口与调度器。
 
@@ -84,7 +86,7 @@ standby 任务只做检查；若今日已成功，立即结束。Neon（order 2�
 
 主机常把定时任务推迟约 **15–20 分钟**才真正唤醒 Bot（例：名义 05:30 → 实际约 05:48；名义 06:00 → 实际约 06:23）。因此：
 
-1. 平台触发以各 Bot 的 `platform_cron` 为准，提前量优先读取该 Bot 的 `scheduler_lag_compensation_minutes`，缺省才使用顶层值（20）。Cream（primary）使用 **05:10**、提前量 **20**：提前醒来须等待到 05:30（减 early_skew）再复查认领。Neon（standby）使用 **06:00** 提前触发，同样须等待到 06:20 窗口。`scheduled_publish` 的 05:30 是名义目标，不是保证完成时刻；必须留出检索与写作时间。
+1. 平台触发以各 Bot 的 `platform_cron` 为准，提前量优先读取该 Bot 的 `scheduler_lag_compensation_minutes`，缺省才使用顶层值（20）。Cream（primary）使用 **05:10**、提前量 **20**：提前醒来须等待到 05:30（减 early_skew）再复查认领。Choco（standby）使用 **06:00** 提前触发，同样须等待到 06:20 窗口。`scheduled_publish` 的 05:30 是名义目标，不是保证完成时刻；必须留出检索与写作时间。
 2. Primary 被唤醒后：先做成功守卫。若今日缺稿，计算距本级 `claim_window_end` 的剩余分钟数。
 3. 若剩余时间 **≥ `min_remaining_minutes_to_start_full_publish`（当前 25）**：即使已经晚于名义 05:30，仍应 CAS claim 并完整写稿，**不要**仅因「晚于 scheduled_publish」就 release。
 4. 若剩余时间 **< 该阈值**：才 fail/release，把窗口留给 standby，并在检查报告中写明晚唤醒与剩余分钟数。
@@ -103,7 +105,7 @@ standby 任务只做检查；若今日已成功，立即结束。Neon（order 2�
 
 ### 超时、失败与逐级接管
 
-到窗口末端，当前 Bot 停止生成及发布；即使没有成功写入 release，时间到期也会解除占用。下一层在自己的窗口检查并 CAS 替换过期租约；例如 Cream 在窗口内认领后卡死，Neon 06:20 可接管。
+到窗口末端，当前 Bot 停止生成及发布；即使没有成功写入 release，时间到期也会解除占用。下一层在自己的窗口检查并 CAS 替换过期租约；例如 Cream 在窗口内认领后卡死，Choco 06:20 可接管。
 当前持有者可在有效期内 CAS 追加 fail/release 并清空 claim；不得清除其他 claim_id。主动失败也不提前唤醒下一层。
 最后一级到 06:50 仍未成功则停止自动尝试并向维护者报告，等待人工安排恢复，不无限重试。
 跨过 HKT 午夜的进程必须退出，不得把昨日草稿改作今日稿发布。
