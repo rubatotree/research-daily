@@ -6,7 +6,7 @@
   "failover_grace_minutes": 50,
   "failover_check_time": "06:20",
   "failover_check_cron": "0 6 * * *",
-  "description": "Multi-bot roster + CAS failover. Roster swapped 2026-10-22 by maintainer request (Neon missed its primary window repeatedly): Cream is order1 primary, Neon is order2 standby; can be swapped back once Neon is fixed. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Early wakes must wait until claim_window_start and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish. A standby must not publish before its claim_window_start (minus early_skew).",
+  "description": "Multi-bot roster + CAS failover. Roster since 2026-11-17: Cream is order1 primary and Choco is order2 standby; Choco replaced Neon at maintainer request, with historical events retained. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Early wakes must wait until claim_window_start and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish. A standby must not publish before its claim_window_start (minus early_skew).",
   "bots": [
     {
       "code": "Cream",
@@ -20,11 +20,11 @@
       "scheduler_lag_compensation_minutes": 20
     },
     {
-      "code": "Neon",
+      "code": "Choco",
       "order": 2,
       "role": "standby",
       "status": "active",
-      "duties": "Standby since 2026-10-22. Nominal 06:20 failover check. Must NOT publish before 06:20 (minus early_skew); early wakes wait and recheck success. CAS claim if today missing within [06:20,06:50) and min_remaining satisfied.",
+      "duties": "Standby since 2026-11-17 after replacing Neon. Nominal 06:20 failover check. Must NOT publish before 06:20 (minus early_skew); early wakes wait and recheck success. CAS claim if today missing within [06:20,06:50) and min_remaining satisfied.",
       "claim_window_start": "06:20",
       "claim_window_end": "06:50",
       "platform_cron": "0 6 * * *",
@@ -1521,6 +1521,12 @@
       "publish_date": "2026-11-16",
       "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
       "detail": "Manual make-up publish: Lineage Dropout and DIRT from the 11-13 submission batch, plus MacroGS, Pose-based Neural Clothing and FOMOS brief listings; original figures; 故障说明 appended; claim cleared."
+    },
+    {
+      "at": "2026-11-17T01:40:00+08:00",
+      "type": "register",
+      "bot": "Choco",
+      "detail": "Roster change: maintainer requested Choco replace Neon in the order 2 standby slot; Cream remains order 1 primary. Claim windows, cron schedule and lease protocol unchanged; historical events retained."
     }
   ],
   "claim_lease_minutes": 30,
@@ -1529,5 +1535,5 @@
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
-  "roster_updated_at": "2026-10-22T11:40:00+08:00"
+  "roster_updated_at": "2026-11-17T01:40:00+08:00"
 }

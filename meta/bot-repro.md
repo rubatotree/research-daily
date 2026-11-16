@@ -5,7 +5,7 @@
 
 ## 角色与调度
 - 名称：科研日报；时区：Asia/Hong_Kong
-- 当前名册由 `meta/failover.json` 权威定义（2026-10-22 起调换，Neon 修复后可换回）：Cream = order 1 active primary，平台 05:10 触发、名义 05:30、认领窗口 [05:30, 06:20)；Neon = order 2 active standby，平台 06:00 触发、名义 06:20 检查、窗口至 06:50，不得在 06:20 前发布（Cream 另 04:45 兴趣笔记同步）。
+- 当前名册由 `meta/failover.json` 权威定义（2026-11-17 起）：Cream = order 1 active primary，平台 05:10 触发、名义 05:30、认领窗口 [05:30, 06:20)；Choco = order 2 active standby，平台 06:00 触发、名义 06:20 检查、窗口至 06:50，不得在 06:20 前发布（Cream 另 04:45 兴趣笔记同步）。
 - 不要为同一 Bot 默认同时安装主任务和 standby 任务。角色变更时先更新仓库名册，再同步该 Bot 的私有调度器。
 
 ## 必备连接
@@ -35,7 +35,7 @@
 3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
 4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
 5. 按 failover.md 复核当日租约、窗口和 claim_id，清空 claim；以最新已验证 main 为唯一父提交，将所有产物与成功状态用一个逻辑 commit 非强制 fast-forward 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
-6. standby 按名册的平台时间启动（当前 Cream / order 2 为 06:00），提前醒来等待至可认领区间；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
+6. standby 按名册的平台时间启动（当前 Choco / order 2 为 06:00），提前醒来等待至可认领区间；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
 
 ## 发布可靠性
 
