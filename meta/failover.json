@@ -34,10 +34,10 @@
   "active_owner": "Cocoa",
   "last_success": {
     "bot": "Cocoa",
-    "publish_date": "2026-11-16",
-    "at": "2026-11-16T13:17:36+08:00",
+    "publish_date": "2026-11-17",
+    "at": "2026-11-17T06:25:07+08:00",
     "commit": null,
-    "note": "Maintainer-authorized manual make-up outside scheduled windows: Lineage Dropout must-read, DIRT recommended; MacroGS, Pose-based Neural Clothing, FOMOS briefs; original figures; 故障说明 appended."
+    "note": "Standby takeover after the primary window: EcoVGGT and TelePhysica must-read, TetraCoder and RURL briefs; original figures; 故障说明 appended."
   },
   "events": [
     {
@@ -1536,17 +1536,27 @@
       "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
       "expires_at": "2026-11-17T06:48:29+08:00",
       "detail": "Standby CAS claim within [06:18,06:50): no 2026-11-17 digest, index entry or valid claim; last_success=2026-11-16."
+    },
+    {
+      "at": "2026-11-17T06:25:07+08:00",
+      "type": "failover",
+      "bot": "Cocoa",
+      "publish_date": "2026-11-17",
+      "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
+      "detail": "Primary Cream produced no 2026-11-17 digest, index entry, valid claim or success event by its 06:20 window end; Cocoa completed the standby takeover."
+    },
+    {
+      "at": "2026-11-17T06:25:07+08:00",
+      "type": "publish",
+      "bot": "Cocoa",
+      "publish_date": "2026-11-17",
+      "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
+      "detail": "Standby publish within the Cocoa window: EcoVGGT, TelePhysica, TetraCoder and RURL; original figures; 故障说明 appended; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-17",
-    "bot": "Cocoa",
-    "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
-    "claimed_at": "2026-11-17T06:18:29+08:00",
-    "expires_at": "2026-11-17T06:48:29+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
