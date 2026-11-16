@@ -2878,9 +2878,45 @@
       "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
       "reappearances": [],
       "note": "Brief: single-parameter SDF meshing with local feature size from a medial scaffold."
+    },
+    "2611.18099": {
+      "title": "EcoVGGT: Pinned-Key Inference for Efficient and Streamable Feed-Forward 3D Reconstruction from Long Videos",
+      "short": "EcoVGGT",
+      "first_seen": "2026-11-17",
+      "digest": "2026-11-17",
+      "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
+      "reappearances": [],
+      "note": "Must-read: 31 evenly spread pinned keys, exact cached decomposition, online streaming and alignment-band failure score; full HTML methods, main tables and limitations read; original Figure 2 reproduced."
+    },
+    "2611.18078": {
+      "title": "TelePhysica: Agentic Reconstruction of Physically Interactive Scenes",
+      "short": "TelePhysica",
+      "first_seen": "2026-11-17",
+      "digest": "2026-11-17",
+      "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
+      "reappearances": [],
+      "note": "Must-read: closed-loop silhouette plus zero-force equilibrium verification, unified rigid/articulated/cloth/tetrahedral solver and trajectory-conditioned video; full HTML methods, experiments and failure breakdown read; original Figure 1 reproduced."
+    },
+    "2611.18267": {
+      "title": "TetraCoder: Adaptive Tetrahedral Encoding for Neural Fields",
+      "short": "TetraCoder",
+      "first_seen": "2026-11-17",
+      "digest": "2026-11-17",
+      "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
+      "reappearances": [],
+      "note": "Brief: hash-free adaptive tetrahedral neural-field encoding with exact analytic mesh extraction and editing; methods and result tables read; original representation figure reproduced."
+    },
+    "2611.18562": {
+      "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+      "short": "RURL",
+      "first_seen": "2026-11-17",
+      "digest": "2026-11-17",
+      "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
+      "reappearances": [],
+      "note": "Brief: simulation-only robot-use RL for a 27B reasoning model, including real dual-arm trials and limitations; methods, main results and training cost read."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "version": 1
 }

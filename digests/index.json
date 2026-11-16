@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-17",
+      "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
+      "path": "digests/2026-11-17.md",
+      "title": "长视频共享固定几何上下文；单图先过重力平衡再生成视频",
+      "figs": "digests/2026-11-17/figs/",
+      "subtitle": "长序列共享几何，单图先过物理"
+    },
+    {
       "date": "2026-11-16",
       "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
       "path": "digests/2026-11-16.md",
