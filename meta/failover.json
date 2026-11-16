@@ -6,7 +6,7 @@
   "failover_grace_minutes": 50,
   "failover_check_time": "06:20",
   "failover_check_cron": "0 6 * * *",
-  "description": "Multi-bot roster + CAS failover. Roster since 2026-11-17: Cream is order1 primary and Choco is order2 standby; Choco replaced Neon at maintainer request, with historical events retained. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Early wakes must wait until claim_window_start and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish. A standby must not publish before its claim_window_start (minus early_skew).",
+  "description": "Multi-bot roster + CAS failover. Roster since 2026-11-17: Cream is order1 primary and Cocoa is order2 standby; Cocoa replaced Neon at maintainer request, with historical events retained. scheduled_publish is a nominal target, not a guaranteed completion time. Follow each bot's platform_cron; per-bot scheduler_lag_compensation_minutes overrides the top-level fallback. Early wakes must wait until claim_window_start and recheck success instead of exiting. Late wakes apply min_remaining_minutes_to_start_full_publish. A standby must not publish before its claim_window_start (minus early_skew).",
   "bots": [
     {
       "code": "Cream",
@@ -20,7 +20,7 @@
       "scheduler_lag_compensation_minutes": 20
     },
     {
-      "code": "Choco",
+      "code": "Cocoa",
       "order": 2,
       "role": "standby",
       "status": "active",
@@ -1525,8 +1525,8 @@
     {
       "at": "2026-11-17T01:40:00+08:00",
       "type": "register",
-      "bot": "Choco",
-      "detail": "Roster change: maintainer requested Choco replace Neon in the order 2 standby slot; Cream remains order 1 primary. Claim windows, cron schedule and lease protocol unchanged; historical events retained."
+      "bot": "Cocoa",
+      "detail": "Roster change: maintainer requested Cocoa replace Neon in the order 2 standby slot; Cream remains order 1 primary. Claim windows, cron schedule and lease protocol unchanged; historical events retained."
     }
   ],
   "claim_lease_minutes": 30,
