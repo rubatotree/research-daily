@@ -31,7 +31,7 @@
       "scheduler_lag_compensation_minutes": 20
     }
   ],
-  "active_owner": "Cream",
+  "active_owner": "Cocoa",
   "last_success": {
     "bot": "Cream",
     "publish_date": "2026-11-15",
@@ -1496,11 +1496,34 @@
       "publish_date": "2026-11-15",
       "claim_id": "b41e8109-ebfe-4194-a6af-d9b34ed6a41b",
       "detail": "Primary publish within window: DepthGS, Kosmo-GFM + SHIN, GSCV++, URL-Sim brief listings (backfill); claim cleared."
+    },
+    {
+      "at": "2026-11-16T13:12:28+08:00",
+      "type": "claim",
+      "bot": "Cocoa",
+      "publish_date": "2026-11-16",
+      "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
+      "expires_at": "2026-11-16T15:42:28+08:00",
+      "detail": "Maintainer-authorized manual make-up claim outside the scheduled windows: no 2026-11-16 digest, no valid claim, last_success=2026-11-15. Cocoa acts as a one-off proxy; scheduled roster unchanged. Lease extended to 150 minutes for the manual run."
+    },
+    {
+      "at": "2026-11-16T13:12:28+08:00",
+      "type": "failover",
+      "bot": "Cocoa",
+      "publish_date": "2026-11-16",
+      "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
+      "detail": "Scheduled primary Cream and standby Neon produced no 2026-11-16 digest or valid claim; maintainer requested a one-off manual make-up by Cocoa outside the normal windows."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-16",
+    "bot": "Cocoa",
+    "claim_id": "33bab8d5-8fd7-44eb-9a55-523bbd14316c",
+    "claimed_at": "2026-11-16T13:12:28+08:00",
+    "expires_at": "2026-11-16T15:42:28+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
