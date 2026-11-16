@@ -29,14 +29,14 @@
 - meta/interest-notes.md
 - meta/privacy.md
 - meta/seen-papers.json
-并用 GitHub 每日读取 rubatotree/notes、rubatotree/blog、rubatotree/academic 的近期 commits 与相关变更正文校准兴趣。notes 是科研对话及科研零散想法整理仓，与 blog 同等重点；Choco、Cream 及后续维护者均按 research-interests.md「notes 与 blog 联合校准」执行，Cream 的既有每日兴趣同步也适用。区分观察、建议、假设和验证结果；不将具体研究设想、实验细节或笔记正文公开搬运。
+并用 GitHub 每日读取 rubatotree/notes、rubatotree/blog、rubatotree/academic 的近期 commits 与相关变更正文校准兴趣。notes 是科研对话及科研零散想法整理仓，与 blog 同等重点；Cocoa、Cream 及后续维护者均按 research-interests.md「notes 与 blog 联合校准」执行，Cream 的既有每日兴趣同步也适用。区分观察、建议、假设和验证结果；不将具体研究设想、实验细节或笔记正文公开搬运。
 
 【日期约定】
 - 文件 digests/YYYY-MM-DD.md 与站点选日 = 发布日 = 定时任务当天（通常名义 05:30 HKT（平台可提前触发））
 - 内容覆盖 = 前一自然日新稿（例：9/7 日报写 9/6）
 - 文末「覆盖说明」同时写：日报日期、内容覆盖日；周末无独立 arXiv 公告时可纳入相邻公告日积压，发布日仍用当天
 - digests/index.json 条目含 date、content_day 与 subtitle；subtitle 是显示在时间轴日期下方的概括性短标题，尽量 6–16 个汉字，准确概括当天主线；title 可继续写较完整的概述
-- 每天按 failover.json 中自己的角色与窗口运行；primary 名义 05:30（平台 cron 05:10，窗至 06:20）、standby 名义 06:20（平台 cron 06:00）（Asia/Hong_Kong）；详见 failover.json 晚唤醒补偿。当前名册（2026-11-17 起）Cream primary → Choco standby；standby 不得在 06:20（减 early_skew）前发布。
+- 每天按 failover.json 中自己的角色与窗口运行；primary 名义 05:30（平台 cron 05:10，窗至 06:20）、standby 名义 06:20（平台 cron 06:00）（Asia/Hong_Kong）；详见 failover.json 晚唤醒补偿。当前名册（2026-11-17 起）Cream primary → Cocoa standby；standby 不得在 06:20（减 early_skew）前发布。
 
 【写作前检查长期记忆】动笔前读并核对 meta/LONG_TERM_MEMORY.md、digest-spec、research-interests、interest-notes、failover、privacy、seen-papers；对照 notes/blog/academic commits 与相关正文，有变则先更新 meta/ 再写日报。
 

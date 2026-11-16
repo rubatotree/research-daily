@@ -48,9 +48,9 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 ## 3b. 多 Bot 故障转移（自动维护）
 
 - **状态表：** `meta/failover.json`（人读说明：`meta/failover.md`）
-- **名册：** Cream = order 1 active primary；Choco = order 2 active standby（2026-11-17 起接替 Neon）。
-- **定时：** Cream **名义** 05:30 主发布，平台 cron **05:10**（提前醒来等到 05:30）；认领窗 [05:30, 06:20)。Choco standby 检查名义 **06:20**、平台 cron **06:00**，窗 [06:20, 06:50)。Cream 兴趣同步平台 cron **04:45**。
-- **通知：** Cream 兴趣同步与 Choco standby failover 检查结束后均须私聊发简报（无改仓也要说）。
+- **名册：** Cream = order 1 active primary；Cocoa = order 2 active standby（2026-11-17 起接替 Neon）。
+- **定时：** Cream **名义** 05:30 主发布，平台 cron **05:10**（提前醒来等到 05:30）；认领窗 [05:30, 06:20)。Cocoa standby 检查名义 **06:20**、平台 cron **06:00**，窗 [06:20, 06:50)。Cream 兴趣同步平台 cron **04:45**。
+- **通知：** Cream 兴趣同步与 Cocoa standby failover 检查结束后均须私聊发简报（无改仓也要说）。
 - **公开代号 / 私有认领：** 仓内只列代号与顺序；「我是谁」仅存在各 Bot 私有记忆。禁止在公开接管文案里写死某个读者的代号。
 - **轻量守卫：** 任何任务先综合核验当日 digest、索引、`last_success.publish_date`、publish event；已成功即安静结束，不做检索/读 PDF/重复提交。
 - **有限租约：** 所有发布者先 CAS claim（日期、代号、随机 claim_id、认领与过期时间）；最长 30 分钟且截断到本级窗口末端，不续租。过期不阻止下一级；发布前复核租约，并将全部产物和成功状态原子提交。详见 failover.md v4。
@@ -131,7 +131,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 
 ## 11. 变更日志（公开记忆）
 
-- 2026-11-17：维护者要求由 Choco 接替 Neon 的备用发布位。Cream 保持 order 1 primary；Choco 成为 order 2 standby（名义 06:20，平台 cron 06:00，窗 [06:20,06:50)）。认领、租约和发布规则不变，历史记录保留。
+- 2026-11-17：维护者要求由 Cocoa 接替 Neon 的备用发布位。Cream 保持 order 1 primary；Cocoa 成为 order 2 standby（名义 06:20，平台 cron 06:00，窗 [06:20,06:50)）。认领、租约和发布规则不变，历史记录保留。
 
 - 2026-10-14：兴趣同步（Cream）据 notes tip `82e3952` 联合校准，公开写入可微路径追踪 Radiance Cache、高斯光追效率/免排序梯度、室内平面几何先验、批渲染光传输复用与 LLM/Agent 重建讨论的阅读加权（无 Cream 私聊；不复制 notes 正文、实验或排期）。
 
