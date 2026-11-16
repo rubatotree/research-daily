@@ -2833,9 +2833,54 @@
       "content_day": "2026-11-10..2026-11-12 backfill",
       "reappearances": [],
       "note": "Brief: dynamic Gaussian scene-graph LiDAR simulation of vehicles, pedestrians, and cyclists."
+    },
+    "2611.17752": {
+      "title": "Stage-wise Lineage-aware Dropout for Sparse-View 3D Gaussian Splatting",
+      "short": "Lineage Dropout",
+      "first_seen": "2026-11-16",
+      "digest": "2026-11-16",
+      "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
+      "reappearances": [],
+      "note": "Must-read: lineage-family dropout plus lineage-balanced densification for sparse-view 3DGS; full HTML methods, ablations and cross-framework table read; original Figures 1 and 3 reproduced."
+    },
+    "2611.18340": {
+      "title": "DIRT: Depth-completed Image-based Rendering using Two-band Blending for Live Novel-view Synthesis",
+      "short": "DIRT",
+      "first_seen": "2026-11-16",
+      "digest": "2026-11-16",
+      "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
+      "reappearances": [],
+      "note": "Recommended: training-free live NVS with screen-space depth completion, disocclusion-aware warping and two-band blending; full HTML methods and live/offline tables read; original Figures 1 and 4 reproduced."
+    },
+    "2611.17957": {
+      "title": "MacroGS: Macro-Pixel Shared Gaussian Primitives for Arbitrary-Scale Light Field Super-Resolution",
+      "short": "MacroGS",
+      "first_seen": "2026-11-16",
+      "digest": "2026-11-16",
+      "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
+      "reappearances": [],
+      "note": "Brief: one shared Gaussian set per macro pixel for arbitrary-scale light-field SR."
+    },
+    "2611.18253": {
+      "title": "Pose-based Neural Clothing for Animated Characters",
+      "short": "Pose-based Neural Clothing",
+      "first_seen": "2026-11-16",
+      "digest": "2026-11-16",
+      "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
+      "reappearances": [],
+      "note": "Brief: SCA 2026 / CGF; VAE latent plus progressive pose-driven training and local gradient histogram loss for garment wrinkles."
+    },
+    "2611.17458": {
+      "title": "FOMOS: Feature-Oriented Meshing of SDFs",
+      "short": "FOMOS",
+      "first_seen": "2026-11-16",
+      "digest": "2026-11-16",
+      "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
+      "reappearances": [],
+      "note": "Brief: single-parameter SDF meshing with local feature size from a medial scaffold."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "version": 1
 }

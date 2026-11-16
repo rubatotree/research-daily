@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-16",
+      "content_day": "2026-11-15 (weekend backfill: 2026-11-13 submissions)",
+      "path": "digests/2026-11-16.md",
+      "title": "稀疏视角高斯的家谱式正则；深度补全驱动的实时新视角合成",
+      "figs": "digests/2026-11-16/figs/",
+      "subtitle": "稀疏视角按家谱正则"
+    },
+    {
       "date": "2026-11-15",
       "content_day": "2026-11-10..2026-11-12 backfill",
       "path": "digests/2026-11-15.md",
