@@ -2914,9 +2914,81 @@
       "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
       "reappearances": [],
       "note": "Brief: simulation-only robot-use RL for a 27B reasoning model, including real dual-arm trials and limitations; methods, main results and training cost read."
+    },
+    "2611.18708": {
+      "title": "TopSDF: Topological Signed Distance Field for High-Quality Triangle Mesh Extraction from 3D Gaussian Splatting",
+      "short": "TopSDF",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Must-read: topological SDF as multivariate GRF with closed-form RKHS covariance (20-DoF vs 4-DoF), ODT meshing energy and energy-driven densification; HTML methods, Tables 1-2 and limitations read; original Figures 2 and 1 reproduced."
+    },
+    "2611.21334": {
+      "title": "Real-world Polarimetric Environment Map Dataset",
+      "short": "Polarimetric Env Maps",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Must-read: SIGGRAPH Asia 2026 Conference Papers; 100 full-sphere HDR RGB-Stokes env maps; min-rotation perspective frame and S2L2 blending; HTML methods, assessment and limitations read; original Figures 1 and 2 reproduced; project page recorded."
+    },
+    "2611.20948": {
+      "title": "One Code per Material: Neural Representation and Generation of Measured BTFs",
+      "short": "One Code per Material",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Select: per-material Fourier MLP and 256-d global code with shared decoder plus class-conditional flow; HTML methods, reconstruction/generation results and limitations read; original relighting figure reproduced."
+    },
+    "2611.20283": {
+      "title": "CiGS: Conduction in Gaussian Splats for Interior Temperature Field from Thermal Images",
+      "short": "CiGS",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Select: RaDe-GS geometry plus thermal BIE on a point cloud, density subtraction, differentiable inverse for pipes/insulation/cracks; HTML methods, real capture and limitations read; original cutaway figure reproduced."
+    },
+    "2611.20546": {
+      "title": "A Gaussian Primitive Data Management Framework for Efficient 3DGS Trajectory Rendering",
+      "short": "GDM-GS",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Select: holed-frustum index, shared materialization, CPU-GPU hybrid selection for structured 3DGS trajectory rendering; HTML methods and Table 2 read; original index figure reproduced."
+    },
+    "2611.19429": {
+      "title": "Prepare Lighter and Faster for Open-Vocabulary Queries: A Query-Wise 3D Segmenter for Gaussian Splatting",
+      "short": "Query-Wise 3D Segmenter",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Brief: accepted at WACV 2027; query-wise open-vocabulary 3DGS segmentation. Comments and method headings checked."
+    },
+    "2611.21383": {
+      "title": "The Mask Is Not the Object: Volumetric Supervision for 3D Gaussian Segmentation",
+      "short": "The Mask Is Not the Object",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Brief: accepted at NeurIPS 2026; volumetric supervision for 3D Gaussian segmentation. Comments and method headings checked."
+    },
+    "2611.19773": {
+      "title": "SemLite-GS: Semantic-Selective Parallel Gaussian Splatting for Lightweight Building Reconstruction from UAV Oblique Imagery",
+      "short": "SemLite-GS",
+      "first_seen": "2026-11-18",
+      "digest": "2026-11-18",
+      "content_day": "2026-11-17",
+      "reappearances": [],
+      "note": "Brief: semantic-selective parallel PGSR and plane-guided SDF for lightweight UAV building meshes; code https://github.com/IRIS-LAB-whu/SemLite-GS. Abstract and method headings checked."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "version": 1
 }

@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-18",
+      "content_day": "2026-11-17",
+      "path": "digests/2026-11-18.md",
+      "title": "从 3DGS 抽出拓扑一致的三角网格；带偏振的真实环境光照",
+      "figs": "digests/2026-11-18/figs/",
+      "subtitle": "网格要解开顶点冲突，环境光要记下偏振"
+    },
+    {
       "date": "2026-11-17",
       "content_day": "2026-11-16 (no independent arXiv announcement; 2026-11-13 backfill)",
       "path": "digests/2026-11-17.md",
