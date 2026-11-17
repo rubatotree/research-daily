@@ -31,7 +31,7 @@
       "scheduler_lag_compensation_minutes": 20
     }
   ],
-  "active_owner": "Cocoa",
+  "active_owner": "Cream",
   "last_success": {
     "bot": "Cocoa",
     "publish_date": "2026-11-17",
@@ -1552,11 +1552,26 @@
       "publish_date": "2026-11-17",
       "claim_id": "1cadb836-253d-4b82-9388-2cde86ea1f9e",
       "detail": "Standby publish within the Cocoa window: EcoVGGT, TelePhysica, TetraCoder and RURL; original figures; 故障说明 appended; claim cleared."
+    },
+    {
+      "at": "2026-11-18T05:28:02+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-18",
+      "claim_id": "bb1dc79c-eb5b-4f03-a2a0-d42bae23572b",
+      "expires_at": "2026-11-18T05:58:02+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20): no 2026-11-18 digest, index entry or valid claim; last_success=2026-11-17."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-18",
+    "bot": "Cream",
+    "claim_id": "bb1dc79c-eb5b-4f03-a2a0-d42bae23572b",
+    "claimed_at": "2026-11-18T05:28:02+08:00",
+    "expires_at": "2026-11-18T05:58:02+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
