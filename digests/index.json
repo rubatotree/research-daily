@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-19",
+      "content_day": "2026-11-18",
+      "path": "digests/2026-11-19.md",
+      "title": "城市级动态高斯的核外训练；三角溅射的闭式抗锯齿",
+      "figs": "digests/2026-11-19/figs/",
+      "subtitle": "显存装不下，就按时空把块运进来"
+    },
+    {
       "date": "2026-11-18",
       "content_day": "2026-11-17",
       "path": "digests/2026-11-18.md",
