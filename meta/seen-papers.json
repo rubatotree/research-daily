@@ -2986,6 +2986,96 @@
       "content_day": "2026-11-17",
       "reappearances": [],
       "note": "Brief: semantic-selective parallel PGSR and plane-guided SDF for lightweight UAV building meshes; code https://github.com/IRIS-LAB-whu/SemLite-GS. Abstract and method headings checked."
+    },
+    "2611.22805": {
+      "title": "DOOM-GS: Dynamic Out-of-core Optimization for Massive Gaussian Splatting",
+      "short": "DOOM-GS",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Must-read: first out-of-core training for massive dynamic GS with space-time blocks, overlap-aware camera scheduling and learnable point splatting; DynamicMatrixCity; HTML methods, Table 1 and conclusion read; original Figures 1 and 3 reproduced."
+    },
+    "2611.22512": {
+      "title": "ATS: Anti-Aliased Triangle Splatting with Exact Per-Primitive Integrals",
+      "short": "ATS",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Must-read: closed-form pixel integral of the Triangle Splatting window via bisectors and Green's theorem, conservative culling; HTML methods, Tables 1-3 and limitations read; original Figures 3 and 4 reproduced."
+    },
+    "2611.22095": {
+      "title": "CueSplat: Learning to Schedule Sparse Deformation for Dynamic Gaussian Splatting on Edge Devices",
+      "short": "CueSplat",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Selected: post-training sparse deformation scheduling on frozen 4DGS backbones for edge devices; HTML methods, Technicolor ablation and limitations read; original Figure 4 reproduced."
+    },
+    "2611.21867": {
+      "title": "FaceRiff: Data-Efficient Unified Text-to-3D Face Asset Synthesis via Geometric Conditioning",
+      "short": "FaceRiff",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Selected: SIGGRAPH Asia 2026 Conference Papers; text-to-UV face assets (mesh, lighting-independent albedo, displacement) via SDXL LoRA; HTML methods and expert study read; original teaser and architecture figure reproduced."
+    },
+    "2611.22240": {
+      "title": "Cross3DGS: Unified Vulkan-Based 3D Gaussian Splatting Training from Workstations to Mobile Devices",
+      "short": "Cross3DGS",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Brief: WACV 2027 EOF workshop; Vulkan 3DGS trainer with per-device schedule selection across desktop and mobile GPUs."
+    },
+    "2611.22059": {
+      "title": "Accelerating 3D Gaussian Splatting Training through Selective Freezing and Computation Caching",
+      "short": "ElsaGS",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Brief: algorithm-hardware co-design with progressive Gaussian freezing and FGcache; custom architecture, not a drop-in CUDA speedup."
+    },
+    "2611.23054": {
+      "title": "ReTouchGS: Ultralight Render-free Aesthetic Color Enhancement and Transfer for 3D Gaussian Splatting",
+      "short": "ReTouchGS",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Brief: scene-level LUT for reference-free aesthetic color enhancement and reference-guided transfer on pretrained 3DGS."
+    },
+    "2611.22235": {
+      "title": "CoSphere-SLAM: Multi-Agent Panoramic Gaussian Splatting SLAM with Spherical Loop Closure",
+      "short": "CoSphere-SLAM",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Brief: first multi-agent panoramic Gaussian splatting SLAM with spherical loop closure."
+    },
+    "2607.05598": {
+      "title": "SSA-3DGS: Unsupervised Removal of Screen-Space Artifacts for 3D Gaussian Splatting",
+      "short": "SSA-3DGS",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Brief, first inclusion: WACV 2027; v3 revised 2026-11-17 of a 2026-07-06 preprint; unsupervised screen-space artifact overlay."
+    },
+    "2611.21890": {
+      "title": "Domain-Tuned Diffusion Super-Resolution for 4K Facial Asset Maps",
+      "short": "FaceAssetSR",
+      "first_seen": "2026-11-19",
+      "digest": "2026-11-19",
+      "content_day": "2026-11-18",
+      "reappearances": [],
+      "note": "Brief: SIGGRAPH Asia 2026 Technical Communications companion to FaceRiff; domain-tuned 1K-to-4K facial albedo/displacement upscaling."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
