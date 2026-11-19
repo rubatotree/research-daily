@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-20",
+      "content_day": "2026-11-19",
+      "path": "digests/2026-11-20.md",
+      "title": "水下高斯的三路径有界去水；偏振密表面加速的二维高斯",
+      "figs": "digests/2026-11-20/figs/",
+      "subtitle": "先写清成像，再按住反演"
+    },
+    {
       "date": "2026-11-19",
       "content_day": "2026-11-18",
       "path": "digests/2026-11-19.md",
