@@ -3076,9 +3076,90 @@
       "content_day": "2026-11-18",
       "reappearances": [],
       "note": "Brief: SIGGRAPH Asia 2026 Technical Communications companion to FaceRiff; domain-tuned 1K-to-4K facial albedo/displacement upscaling."
+    },
+    "2611.23450": {
+      "title": "NIRJALA: Draining the Sea out of Gaussian Splatting with Three-Path Optics and Reversible Physics",
+      "short": "NIRJALA",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Must-read: three-path underwater 3DGS with bounded inversion gain and reversible physics anchor; SAJALA Cycles suite; full HTML methods, tables and limits read; original Figures 1 and 2 reproduced; authors report best-of-several-runs numbers."
+    },
+    "2611.24404": {
+      "title": "RAPID: Reconstruction Accelerated by Polarization-Informed Depth for 2D Gaussian Splatting",
+      "short": "RAPID",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Must-read: Pol2DGS initializes oriented 2DGS from polarization-integrated dense depth, TSDF fusion and curvature-adaptive sampling; HTML/PDF methods and tables read; original Figures 2 and 1 reproduced."
+    },
+    "2611.24565": {
+      "title": "Beyond Appearance: Evidence-Guided Programmatic 3D Scene Reconstruction with Agentic Lighting Reasoning",
+      "short": "LightHarness",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Selected: VLM agentic image-to-code reconstruction with Lighting Reasoning Memory; no extra training or differentiable rendering; full HTML methods and limits read; original pipeline figure reproduced."
+    },
+    "2611.23736": {
+      "title": "GaussLearner: 3D Gaussian Primitives as Self-Regulating Continual Learners",
+      "short": "GaussLearner",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Selected: continual 3DGS attributes support/pressure via alpha-composition weights instead of 2D change masks; CL-3D dataset; HTML methods and main table read; original paradigm figure reproduced."
+    },
+    "2611.23416": {
+      "title": "OCLDA-GS: Object-Centric Local Deformation-Aware Gaussian Streaming",
+      "short": "OCLDA-GS",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Brief: object-centric streaming 3DGS with motion-aware anchors and local deformation correction; modest PSNR gains over IGS."
+    },
+    "2611.24521": {
+      "title": "RAID: Representation Autoencoder for Intrinsic Decomposition",
+      "short": "RAID",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Brief: 2D intrinsic decomposition via DINOv3 X-to-X teacher and RGB student, 165M params; PDF abstract and intro read, no HTML."
+    },
+    "2611.23554": {
+      "title": "Layer-Matched Sparse Attention for Low-Redundancy 3D Reconstruction",
+      "short": "LMSA",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Brief: training-free VGGT global-attention thinning that keeps matching layers exact and importance-samples hubs on diffuse layers."
+    },
+    "2611.24723": {
+      "title": "Multi-Band Galaxy Novel-View Synthesis with Radiative Gaussian Fields",
+      "short": "GalaxyGS",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Brief: physically inspired multi-band galaxy NVS with separate stellar/dust Gaussian fields; overlapping authorship with DOOM-GS."
+    },
+    "2611.24007": {
+      "title": "FreeForward4D: Annotation-Free Feed-Forward 4D Reconstruction of Driving Scenes",
+      "short": "FreeForward4D",
+      "first_seen": "2026-11-20",
+      "digest": "2026-11-20",
+      "content_day": "2026-11-19",
+      "reappearances": [],
+      "note": "Brief: RGB-only feed-forward 4D driving reconstruction by reconciling pretrained camera/depth/track priors into one metric frame."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "version": 1
 }
