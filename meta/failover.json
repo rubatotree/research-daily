@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-20",
-    "at": "2026-11-20T05:28:30+08:00",
+    "publish_date": "2026-11-21",
+    "at": "2026-11-21T05:32:38+08:00",
     "commit": null,
-    "note": "Primary publish within window: NIRJALA and RAPID/Pol2DGS must-read, plus LightHarness and GaussLearner; original figures."
+    "note": "Primary publish within window: VideoRNG and MergeableRF must-read, plus SceneAnything and PaveSplat; original figures."
   },
   "events": [
     {
@@ -1611,17 +1611,19 @@
       "claim_id": "8fd4c0b2-0d73-45a8-9482-785c38202b76",
       "expires_at": "2026-11-21T06:00:22+08:00",
       "detail": "Primary CAS claim within [05:28,06:20): no 2026-11-21 digest, index entry or valid claim; last_success=2026-11-20."
+    },
+    {
+      "at": "2026-11-21T05:32:38+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-21",
+      "claim_id": "8fd4c0b2-0d73-45a8-9482-785c38202b76",
+      "detail": "Primary publish within window: VideoRNG, MergeableRF + SceneAnything, PaveSplat; original figures; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-21",
-    "bot": "Cream",
-    "claim_id": "8fd4c0b2-0d73-45a8-9482-785c38202b76",
-    "claimed_at": "2026-11-21T05:30:22+08:00",
-    "expires_at": "2026-11-21T06:00:22+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

@@ -3157,9 +3157,72 @@
       "content_day": "2026-11-19",
       "reappearances": [],
       "note": "Brief: RGB-only feed-forward 4D driving reconstruction by reconciling pretrained camera/depth/track priors into one metric frame."
+    },
+    "2611.25338": {
+      "title": "VideoRNG: Relightable Neural Gaussians from Generative Video Models",
+      "short": "VideoRNG",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Must-read: text/image to RGBA turntable then feed-forward rtRNG with directional decoder and stochastic Gaussian ray tracing; HTML methods, Tables 2-4 and limits read; original Figures 2 and 1 reproduced."
+    },
+    "2611.25523": {
+      "title": "Multi-View Relighting with Mergeable Radiance Fields",
+      "short": "MergeableRF",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Must-read: shared-geometry per-basis appearance MLPs merged by coefficients for single-pass relighting of NeRF/3DGS; HTML methods, Tables 1-3 and limits read; original Figure 1 reproduced."
+    },
+    "2611.25340": {
+      "title": "SceneAnything: Agentic Reconstruction of Large-Scale Mesh Scenes from a Single Video",
+      "short": "SceneAnything",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Selected: agentic Blender mesh scene reconstruction from one video via owner/author/judge harness; HTML methods, Tables 1-2 and limits read; original Figures 2 and 5 reproduced."
+    },
+    "2611.26045": {
+      "title": "PaveSplat: Resolution-Robust Feed-Forward Gaussian Splatting with Residually Corrected Surface-Aligned Covariances",
+      "short": "PaveSplat",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Selected: ACCV 2026; residual quaternion on analytic surface-aligned covariance for high-res re-rendering; HTML methods and Table 1 read; original Figures 2 and 1 reproduced; project and code recorded."
+    },
+    "2611.25934": {
+      "title": "AGSR: Aperture-Guided Super-Resolution for Gaussian Splatting",
+      "short": "AGSR",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Brief: accepted at MMSP 2026 with Best Paper Award; inference-time multi-aperture covariance contraction for 3DGS super-resolution. Comments and method headings checked."
+    },
+    "2611.26431": {
+      "title": "FFGaussType: Feed-Forward Conversion of Glyph and SVG Geometry into Compact Gaussian Assets",
+      "short": "FFGaussType",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Brief: feed-forward glyph/SVG to normal-carrying Gaussian assets; project page recorded, code to be released after publication."
+    },
+    "2611.25838": {
+      "title": "ContextRenderer: Dynamic-Context Video Generation for Interactive Game Worlds",
+      "short": "ContextRenderer",
+      "first_seen": "2026-11-21",
+      "digest": "2026-11-21",
+      "content_day": "2026-11-20",
+      "reappearances": [],
+      "note": "Brief: USTC/SJTU/UBC/HIT autoregressive video renderer for interactive game-world proxies; project page recorded."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "version": 1
 }

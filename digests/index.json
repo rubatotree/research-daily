@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-21",
+      "content_day": "2026-11-20",
+      "path": "digests/2026-11-21.md",
+      "title": "从生成转台一次前馈出可追光的高斯；把各基光的外观网络直接合成新照明",
+      "figs": "digests/2026-11-21/figs/",
+      "subtitle": "可重光照不必先烤光照，也不必先拆材质"
+    },
+    {
       "date": "2026-11-20",
       "content_day": "2026-11-19",
       "path": "digests/2026-11-20.md",
