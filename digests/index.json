@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-22",
+      "content_day": "2026-11-21",
+      "path": "digests/2026-11-22.md",
+      "title": "单张参考图给网格长出可换光的 PBR；三角形溅射终于能在设备上实时做 SLAM",
+      "figs": "digests/2026-11-22/figs/",
+      "subtitle": "周末回扫：换光照先问金属与粗糙度"
+    },
+    {
       "date": "2026-11-21",
       "content_day": "2026-11-20",
       "path": "digests/2026-11-21.md",
