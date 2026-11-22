@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-23",
+      "content_day": "2026-11-22 (no independent arXiv announcement; CVPR 2026 and 2026-11-20 backfill)",
+      "path": "digests/2026-11-23.md",
+      "title": "用网格光追给高斯做可实时换光的混合路径追踪；弹簧图里把体积和剪切响应拆开",
+      "figs": "digests/2026-11-23/figs/",
+      "subtitle": "周末回扫：换光不必在高斯上直接追光"
+    },
+    {
       "date": "2026-11-22",
       "content_day": "2026-11-21",
       "path": "digests/2026-11-22.md",

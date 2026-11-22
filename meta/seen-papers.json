@@ -3247,9 +3247,27 @@
       "content_day": "2026-11-21 (no independent arXiv announcement; 2026-11-16 backfill)",
       "reappearances": [],
       "note": "Brief: IROS 2026; asynchronous diffusion relighting as a neural sensor for low-light detection; methods and main results read."
+    },
+    "cvpr2026-ghpt": {
+      "title": "GHPT: Real-Time Relightable Gaussian Splatting using Hybrid Path Tracing",
+      "short": "GHPT",
+      "first_seen": "2026-11-23",
+      "digest": "2026-11-23",
+      "content_day": "2026-11-22 (no independent arXiv announcement; CVPR 2026 and 2026-11-20 backfill)",
+      "reappearances": [],
+      "note": "Must-read: CVPR 2026; three-stage hybrid path tracing on PGSR mesh + FIPT on Gaussian G-buffer for real-time relighting; conference PDF methods, Tables 1-3 and implementation details read; original Figures 2, 1 and 5 reproduced. No arXiv id; keyed by venue+short name. Project page code link was not publicly available."
+    },
+    "2611.25963": {
+      "title": "MorphTwin: Enriching Deformable Material Responses from Videos for Morphable and Interactive Physical Twins",
+      "short": "MorphTwin",
+      "first_seen": "2026-11-23",
+      "digest": "2026-11-23",
+      "content_day": "2026-11-22 (no independent arXiv announcement; CVPR 2026 and 2026-11-20 backfill)",
+      "reappearances": [],
+      "note": "Selected: missed 2026-11-20 announcement; relaxable response carriers decouple bulk and shear in spring-graph physical twins; PDF/HTML methods, main tables and identification experiments read; original Figures 2, 3 and 5 reproduced. No public project page or code found."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "version": 1
 }
