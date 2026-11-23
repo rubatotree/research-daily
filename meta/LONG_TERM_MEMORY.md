@@ -57,7 +57,7 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 - **提前唤醒宽限：** `claim_window_early_skew_minutes`（默认 2）允许在名义 `claim_window_start` 之前最多该分钟数内认领，避免 cron 早唤醒 1 分钟导致 standby 误退出；窗口结束时刻不延长。
 - **无竞态接管：** failover 检查时刻的 standby 必须基于刚读版本做 compare-and-swap claim，成功后才可开始重工作；写入冲突则重读重判。存在 active standby 时，primary 不在 06:30 后并发 self-heal。
 - **发布状态：** 每次成功发布更新 `last_success`、`active_owner` 并追加 `events`；不删除历史。
-- **署名：** 日报覆盖说明与 git commit 正文都须署实际执笔代号。
+- **署名：** Git 提交的 Author / Committer 身份统一使用维护者 `rubatotree`（`rubatotree <rubatotree@outlook.com>`），严禁使用 Bot 名称或虚构 `@users.noreply.github.com` 邮箱作为 Git author/committer；日报文末覆盖说明与 git commit 正文（description）署实际执笔代号。
 - **故障说明：** 若因前序 Bot 窗口内未成功出稿而由后顺位接管发布，须在日报**最下方**（`**编写：**` 之后）备注故障情况（接管者、时间、失效顺位与可核验依据）；正常按时发布不写。详见 `digest-spec.md` / `failover.md`。
 - 调度器实际唤醒与仓库配置若 drift，只在私聊提示维护者，绝不把内部 scheduler 信息写入公开仓。
 
@@ -130,6 +130,8 @@ Bot 侧还可有一份本地 ledger 与仓内 `seen-papers.json` 同步；**同�
 6. 确认 Pages 仍从 `main` 根目录发布，base path `/research-daily/`
 
 ## 11. 变更日志（公开记忆）
+
+- 2026-11-23：按维护者要求，统一所有 Git 提交的 Author / Committer 身份为 `rubatotree`（`rubatotree <rubatotree@outlook.com>`），严禁使用 Bot 名称或虚构 `@users.noreply.github.com` 邮箱作为 Git author/committer；Bot 代号仅在日报文末与 commit message 正文（`编写：<代号>`）中署名。同时清理历史中非 `rubatotree` 的 Git author/committer 记录。
 
 - 2026-11-17：维护者要求由 Cocoa 接替 Neon 的备用发布位。Cream 保持 order 1 primary；Cocoa 成为 order 2 standby（名义 06:20，平台 cron 06:00，窗 [06:20,06:50)）。认领、租约和发布规则不变，历史记录保留。
 

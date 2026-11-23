@@ -129,7 +129,7 @@ v4 初始化的 claim=null 不回填旧租约，不改变已成功日期、历�
 
 - 日报文末「覆盖说明」署实际执笔者：`**编写：** <代号>`。
 - **故障转移接管发布时**：在全文最下方（`**编写：**` 之后）追加 **故障说明**，写明接管者、时间，以及先前哪些顺位 Bot 在各自窗口内未成功出稿（只写可核验事实）；细则见 `digest-spec.md`「故障说明」。正常 primary 按时发布不写此项。
-- 有代号时，git commit 的正文包含 `编写：<代号>`；接管稿建议在 commit description 中同步一行故障摘要（勿写密钥／额度）。
+- Git 提交的 Author / Committer 身份统一为维护者 `rubatotree`（`rubatotree <rubatotree@outlook.com>`），严禁使用 Bot 名称或虚构 `@users.noreply.github.com` 邮箱作为 Git author/committer；有代号时，仅在 git commit 的正文（description）包含 `编写：<代号>`；接管稿建议在 commit description 中同步一行故障摘要（勿写密钥／额度）。
 - 每个任务运行都以仓库当前 `failover.json` 为权威；若平台唤醒时间和仓库计划发生漂移，只私聊提醒维护者同步调度器，不写入公开仓。
 
 ## 事件类型

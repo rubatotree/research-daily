@@ -103,7 +103,7 @@
 
 重点论文默认用数个完整段落讲透；可附一条核心公式，逐一解释符号、每项作用和公式在流程中的位置。只有在表达关系确实更清楚时才加图或输入输出表，图后必须解读。类比或简化例子注明为帮助理解，不冒充论文实验；代码可读时可指向关键实现，但不把未经核实的实现猜测写成事实。
 
-公式用 `\(…\)` 或 `$…$` 写行内数学，用单独成行的 `\[…\]` 或 `$$…$$` 写展示公式；前后留空行。变量也要使用数学定界符，不能写成 `(H_j)` 这样的普通括号。发布前在网页正文检查行内和展示公式都已排版，LaTeX 命令没有作为原样文本显示；代码围栏与行内代码中的公式保持代码样式。
+公式用 `\(...\)` 或 `$...$` 写行内数学，用单独成行的 `\[...\]` 或 `$$...$$` 写展示公式；前后留空行。变量也要使用数学定界符，不能写成 `(H_j)` 这样的普通括号。发布前在网页正文检查行内和展示公式都已排版，LaTeX 命令没有作为原样文本显示；代码围栏与行内代码中的公式保持代码样式。
 
 **结果与局限后置且具体：** 先让读者理解方法，再集中给实验结果、比较条件、成本和未验证环节。指标首次出现时解释怎样算、越大还是越小越好；区分覆盖任务数、平均成功率、完成比例，说明加速的计时范围。避免每段都用同一句证据警告打断讲解。
 
@@ -200,7 +200,9 @@
 - 同步在 `failover.json` 写入对应 `failover`（及必要时 `fail`）事件；私聊维护者的检查报告亦应复述同一故障摘要
 
 ## Git 提交署名
-向 `rubatotree/research-daily` 提交时，若维护 Bot 有公开代号，须在 **commit message 的 description（正文，非仅 subject 一行）** 中署名，例如：
+向 `rubatotree/research-daily` 提交时：
+1. **Git Author / Committer 身份**：必须统一使用维护者身份 `rubatotree`（`user.name = rubatotree`，`user.email = rubatotree@outlook.com`）。**严禁**将 `git config user.name` / `user.email` 或 `--author` 设为 Bot 名称或虚构的 `@users.noreply.github.com` 邮箱（如 `cocoa@...`、`choco@...`、`cream-bot@...`、`bot@...`），以免在 GitHub Contributors 中关联到无关人员账号，并禁止添加未经授权的 `Co-authored-by` 尾注。
+2. **Commit Message 正文代号**：若维护 Bot 有公开代号，仅在 **commit message 的 description（正文，非仅 subject 一行）** 中注明执笔代号，例如：
 
 ```text
 Require viewpoint distillation for community digests

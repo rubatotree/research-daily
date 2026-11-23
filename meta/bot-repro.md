@@ -34,7 +34,7 @@
 2. 扫 arXiv / Ke-Sen / 媒体 /（可选）X → 漏斗式策展。
 3. 写完整 markdown（**`### 短名 · Venue/arXiv · 日期`**）+ 合法公开配图。
 4. 更新 `seen-papers.json`、`digests/index.json` 与 `failover.json`（`last_success`、`active_owner`、publish event）。
-5. 按 failover.md 复核当日租约、窗口和 claim_id，清空 claim；以最新已验证 main 为唯一父提交，将所有产物与成功状态用一个逻辑 commit 非强制 fast-forward 推送 main，commit 正文署 `编写：<代号>`；私聊通知维护者。
+5. 按 failover.md 复核当日租约、窗口和 claim_id，清空 claim；以最新已验证 main 为唯一父提交，将所有产物与成功状态用一个逻辑 commit 非强制 fast-forward 推送 main（Git author/committer 统一为维护者 `rubatotree <rubatotree@outlook.com>`，严禁设为 Bot 名或虚构 noreply 邮箱；commit 正文署 `编写：<代号>`）；私聊通知维护者。
 6. standby 按名册的平台时间启动（当前 Cocoa / order 2 为 06:00），提前醒来等待至可认领区间；若仍缺稿，必须基于刚读取的版本 CAS claim；未成功 claim 不得做检索/写作。
 
 ## 发布可靠性

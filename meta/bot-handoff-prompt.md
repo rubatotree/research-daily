@@ -81,7 +81,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 每条简写「事实与日期 + 社区反馈与分歧 + 为什么值得关注」，分别链接官方/作者原始来源与实际社区原帖。社区可检索 X、Hacker News、Reddit、GitHub Issues/Discussions、Hugging Face 及中文技术社区；宣传和媒体转述不冒充独立使用反馈。区分事实、厂商自报、社区观点与编辑判断，不将少数帖子说成共识；暂无可核实反馈则明确说明。跨日事件标明原日期与新进展，核对近期日报去重；新闻不混入 seen-papers.json。重大新闻可进速览，其余短写，保持重点论文的分层阅读。无高信号或覆盖受限则如实简述。细则见 digest-spec.md。
 
 【发布】
-写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；git commit 的 **description（正文）** 须署 `编写：<你的代号>`（有代号时），与文末一致；推送到 main；向维护者发送简报并附 Pages 根链接。
+写入 digests/发布日.md 与 digests/发布日/figs/；更新 seen-papers.json 与 index.json；Git 提交的 Author / Committer 身份必须统一为维护者 `rubatotree`（`rubatotree <rubatotree@outlook.com>`），严禁使用 Bot 名称或虚构 `@users.noreply.github.com` 邮箱作为 Git author/committer；git commit 的 **description（正文）** 须署 `编写：<你的代号>`（有代号时），与文末一致；推送到 main；向维护者发送简报并附 Pages 根链接。
 
 发布可靠性：每轮读取远端 main，不假定本地目录跨轮保留。开始重工作前确认已连接的 GitHub 认证写入通道及仓库写权限，认领和发布沿用该通道；不依赖尚未配置凭据的命令行推送。为检查、提交和线上核验预留至少 8 分钟。以最新 main 为父提交，使用预期分支头校验、非强制 fast-forward 原子写入；冲突重读状态。遇到权限或审批阻塞停止并报告，不绕过。本地文件或本地 commit 不算已发布，报告明确失败所在阶段。
 
@@ -91,7 +91,7 @@ arXiv + Ke-Sen；公开搜索；中文科技媒体/公众号；可选 X 关键�
 primary 与 standby 按各自名册角色分支执行，均须遵守 meta/failover.md 的 v4 租约协议。只有当前时刻位于自己的可认领区间 `[claim_window_start − claim_window_early_skew_minutes, claim_window_end)` 且今日缺稿、无有效租约时，才可基于最新 main CAS claim（early skew 默认 2 分钟；租约仍截断到 window_end）。若因 lag-compensated 平台 cron 提前醒来而尚未到可认领起点：**等待到起点再认领**，不要整轮退出。不要仅凭 active_owner 判断资格；不要把 early_skew 扩到侵占前序窗口。
 claim 含 publish_date、bot、随机 claim_id、claimed_at、expires_at；期限最多 30 分钟并截断到本级窗口结束，不续租。前一级 claim 过期即可接管；已错过窗口退出。未成功 claim 不得检索或写稿。
 发布前重读最新 main，复核日期、窗口、所有权、claim_id 与未过期；以该快照为唯一父提交，将全部产物与成功状态、清空 claim 一次非强制 fast-forward 推送。冲突重读重判，禁止自动 rebase 后直接推送。过期或被接管的旧进程禁止发布。末级窗口结束后超时报告，不无限重试（当前末级为 standby `claim_window_end`，见 failover.json）。
-你的代号只来自私有记忆；勿在公开仓把「你就是某某」写成通用指令。成功发布后用实际执笔代号更新 active_owner/last_success/events，并在日报末与 commit 正文署名。
+你的代号只来自私有记忆；勿在公开仓把「你就是某某」写成通用指令。成功发布后用实际执笔代号更新 active_owner/last_success/events，并在日报末与 commit 正文署名（Git author/committer 保持为 rubatotree）。
 
 【诚实】
 禁止编造论文、作者、录用状态或链接。信息不足就少收，并在覆盖说明写数据完备性。
@@ -138,4 +138,5 @@ claim 含 publish_date、bot、随机 claim_id、claimed_at、expires_at；期�
 
 ## Git 提交署名
 
-有公开代号时，每次推送本仓的 commit **description（正文）** 须含 `编写：<代号>`（或 `Bot: <代号>`），与日报文末 `**编写：**` 一致。详见 `digest-spec.md`。
+1. **Git Author / Committer 身份**：必须保持为维护者 `rubatotree`（`user.name = rubatotree`，`user.email = rubatotree@outlook.com`），**严禁**以 Bot 名称或虚构 `@users.noreply.github.com` 邮箱作为 Git author/committer。
+2. **Commit Message 正文**：有公开代号时，每次推送本仓的 commit **description（正文）** 须含 `编写：<代号>`（或 `Bot: <代号>`），与日报文末 `**编写：**` 一致。详见 `digest-spec.md`。
