@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-24",
+      "content_day": "2026-11-23",
+      "path": "digests/2026-11-24.md",
+      "title": "不透明三角形泼溅的直接光线追踪逆渲染；消费级显卡两千兆显存内数分钟训完 4K 高斯",
+      "figs": "digests/2026-11-24/figs/",
+      "subtitle": "退火成硬表面再追光；全链路砍掉像素与带宽冗余"
+    },
+    {
       "date": "2026-11-23",
       "content_day": "2026-11-22 (no independent arXiv announcement; CVPR 2026 and 2026-11-20 backfill)",
       "path": "digests/2026-11-23.md",

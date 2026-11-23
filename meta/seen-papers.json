@@ -3265,9 +3265,51 @@
       "content_day": "2026-11-22 (no independent arXiv announcement; CVPR 2026 and 2026-11-20 backfill)",
       "reappearances": [],
       "note": "Selected: missed 2026-11-20 announcement; relaxable response carriers decouple bulk and shear in spring-graph physical twins; PDF/HTML methods, main tables and identification experiments read; original Figures 2, 3 and 5 reproduced. No public project page or code found."
+    },
+    "2611.27030": {
+      "title": "TSIR: Ray-Traced Triangle Splats for Inverse Rendering",
+      "first_seen": "2026-11-24",
+      "digest": "2026-11-24",
+      "content_day": "2026-11-23",
+      "reappearances": []
+    },
+    "2611.27525": {
+      "title": "PennyGS: Full Resolution 3DGS Training in Minutes on Consumer GPUs",
+      "first_seen": "2026-11-24",
+      "digest": "2026-11-24",
+      "content_day": "2026-11-23",
+      "reappearances": []
+    },
+    "2611.27719": {
+      "title": "VeilGS: Solving Darkness as a Veil of 2D Basis Maps over Retinex 3DGS",
+      "first_seen": "2026-11-24",
+      "digest": "2026-11-24",
+      "content_day": "2026-11-23",
+      "reappearances": []
+    },
+    "2611.27224": {
+      "title": "EAST: Efficient Adaptive Splatting Television for Dynamic 3D Scenes",
+      "first_seen": "2026-11-24",
+      "digest": "2026-11-24",
+      "content_day": "2026-11-23",
+      "reappearances": []
+    },
+    "2611.27396": {
+      "title": "ParaBMG: Parallel B-Spline Mesh Generation on GPU",
+      "first_seen": "2026-11-24",
+      "digest": "2026-11-24",
+      "content_day": "2026-11-23",
+      "reappearances": []
+    },
+    "2611.27003": {
+      "title": "S2D-Splat: Sparse-to-Dense 3D Gaussian Splatting via Multi-View Geometric Consistency",
+      "first_seen": "2026-11-24",
+      "digest": "2026-11-24",
+      "content_day": "2026-11-23",
+      "reappearances": []
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "version": 1
 }
