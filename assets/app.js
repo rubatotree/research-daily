@@ -341,7 +341,7 @@ async function showDigest(entry) {
     return;
   }
   let md = await res.text();
-  md = md.replace(/\]\((20\d{2}-\d{2}-\d{2}\/figs\/[^)]+)\)/g, `](${BASE}digests/$1)`);
+  md = md.replace(/\]\((?:\.\/)?(20\d{2}-\d{2}-\d{2}\/figs\/[^)]+)\)/g, `](${BASE}digests/$1)`);
   content.innerHTML = marked.parse(md);
   qualifyDigestLinks(content, entry.date);
 
