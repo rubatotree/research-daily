@@ -3307,9 +3307,117 @@
       "digest": "2026-11-24",
       "content_day": "2026-11-23",
       "reappearances": []
+    },
+    "2611.31023": {
+      "title": "WildAnySplat: Feed-Forward 3D Gaussian Splatting in the Wild",
+      "short": "WildAnySplat",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Must-read: SIGGRAPH Asia 2026 Conference Papers; student-teacher feed-forward 3DGS for in-the-wild transients and appearance variation."
+    },
+    "2611.30351": {
+      "title": "NNS-GS: Non-Local Neural Scattering for Relightable Gaussian Splatting",
+      "short": "NNS-GS",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Must-read: dual-space non-local subsurface scattering for relightable 3DGS of translucent objects, Beihang and Nanjing University."
+    },
+    "2611.31018": {
+      "title": "DiffSimp: Differentiable Mesh Simplification for Gradient-Based Low-Poly Modeling",
+      "short": "DiffSimp",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Selected: training-free differentiable QEM edge-collapse layer for inverse rendering and low-poly optimization."
+    },
+    "2611.30102": {
+      "title": "LMnOP: Pruning 3D Gaussian Splatting via Leave-Many-Out Importance",
+      "short": "LMnOP",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Selected: leave-many-out importance and mu-sigma rendering for 3DGS pruning without fine-tuning."
+    },
+    "2611.28111": {
+      "title": "GC-GS: Optimizing 3D Gaussian Splatting with Gradient Conflict as a Geometry Signal",
+      "short": "GC-GS",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Brief: gradient conflict as geometry signal; Comments say WACV2027 without explicit Accepted."
+    },
+    "2611.29236": {
+      "title": "Complementary Geometry in Gaussian Splatting",
+      "short": "Reveal",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Brief: post-hoc selective replacement of rendered GS depth by multi-view depth candidates."
+    },
+    "2611.31140": {
+      "title": "HoloSplat: Real-Time Token Streaming for Feed-Forward Human Reconstruction",
+      "short": "HoloSplat",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Brief: ShanghaiTech feed-forward human reconstruction with token streaming."
+    },
+    "2611.28792": {
+      "title": "ArgsWorld: Unifying 3DGS Scene Reconstruction, Generation and Extrapolation with Autoregressive Diffusion Transformer",
+      "short": "ArgsWorld",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Brief: autoregressive diffusion world model that also emits explicit 3DGS scenes."
+    },
+    "2611.28793": {
+      "title": "STAC++: Plug-and-Play Adaptive Spatio-Temporal Aware Cache Compression for Streaming 3D Reconstruction",
+      "short": "STAC++",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "Brief: training-free spatial KV cache compression for streaming 3D reconstruction."
+    },
+    "2611.28802": {
+      "title": "Not All Directions Are Flat: Decomposed-Gradient Flatness for Sparse-View 3D Gaussian Splatting",
+      "short": "Decomposed-Gradient Flatness",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "One-line: decomposed-gradient flat minima for sparse-view 3DGS."
+    },
+    "2611.28191": {
+      "title": "BReD: BEV Residual Diffusion for Feed-Forward Road Gaussian Reconstruction",
+      "short": "BReD",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "One-line: BEV residual diffusion for feed-forward road elevation and Gaussians."
+    },
+    "2611.29920": {
+      "title": "Dynamic Gaussian Scene Reconstruction by Integrating Events and Structural Priors",
+      "short": "Event Structural Priors GS",
+      "first_seen": "2026-11-25",
+      "digest": "2026-11-25",
+      "content_day": "2026-11-24",
+      "reappearances": [],
+      "note": "One-line: event camera and structural priors for dynamic Gaussian reconstruction, Nankai University."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "version": 1
 }

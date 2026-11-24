@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-25",
+      "content_day": "2026-11-24",
+      "path": "digests/2026-11-25.md",
+      "title": "野外前馈高斯如何压住遮挡与曝光差；半透明换光学会非局部散射",
+      "figs": "digests/2026-11-25/figs/",
+      "subtitle": "先把不一致挡在规范外观之外"
+    },
+    {
       "date": "2026-11-24",
       "content_day": "2026-11-23",
       "path": "digests/2026-11-24.md",
