@@ -3083,8 +3083,14 @@
       "first_seen": "2026-11-20",
       "digest": "2026-11-20",
       "content_day": "2026-11-19",
-      "reappearances": [],
-      "note": "Must-read: three-path underwater 3DGS with bounded inversion gain and reversible physics anchor; SAJALA Cycles suite; full HTML methods, tables and limits read; original Figures 1 and 2 reproduced; authors report best-of-several-runs numbers."
+      "reappearances": [
+        {
+          "digest": "2026-11-26",
+          "content_day": "2026-11-25",
+          "reason": "Authors withdrew v2 on 2026-11-24 (announced 2026-11-25) citing unresolved data provenance and authorization issues in Sections 4-5; re-mentioned with why."
+        }
+      ],
+      "note": "Must-read: three-path underwater 3DGS with bounded inversion gain and reversible physics anchor; SAJALA Cycles suite; full HTML methods, tables and limits read; original Figures 1 and 2 reproduced; authors report best-of-several-runs numbers. Re-mentioned 2026-11-26 after author withdrawal of v2."
     },
     "2611.24404": {
       "title": "RAPID: Reconstruction Accelerated by Polarization-Informed Depth for 2D Gaussian Splatting",
@@ -3415,9 +3421,144 @@
       "content_day": "2026-11-24",
       "reappearances": [],
       "note": "One-line: event camera and structural priors for dynamic Gaussian reconstruction, Nankai University."
+    },
+    "2611.31918": {
+      "title": "HiGS: A Hierarchical Architecture for Fast Differentiable 3D Gaussian Splatting",
+      "short": "HiGS",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Must-read: NVIDIA hierarchical macro-tile / bounded-batch architecture for differentiable 3DGS rendering and reconstruction with exact front-to-back compositing; full HTML methods and key experiments read; original Figure 2 reproduced."
+    },
+    "2611.32202": {
+      "title": "SplatTok: Data-Driven Compression of 3D Gaussian Splats with Scene-Level Tokens",
+      "short": "SplatTok",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Must-read: UT Austin / Dolby / CU Boulder learned scene-resynthesis codec; decoder emits a new standard splat without primitive correspondence; full HTML methods and key experiments read; original Figure 2 reproduced."
+    },
+    "2611.32735": {
+      "title": "AnyPrune: Optimization-Free Pruning for Any Feedforward 3D Gaussian Splatting Pipeline",
+      "short": "AnyPrune",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Selected: University of Bologna and EPFL optimization-free transformer pruning for frozen feed-forward 3DGS pipelines; full HTML methods read; original Figure 2 reproduced from SVG."
+    },
+    "2611.31428": {
+      "title": "Enhancing Sparse-View Gaussian Splatting with Feed-Forward Priors via Spectral Fusion and Distillation",
+      "short": "Spectral Fusion GS",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Selected: University of Rochester frequency-domain fusion of a feed-forward prior and sparse-view Gaussians, then distillation; full HTML methods read; original Figure 6 reproduced."
+    },
+    "2611.32628": {
+      "title": "Completion-Aware Compression for Progressive 3D Gaussian Splatting",
+      "short": "Completion-Aware GS",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: Sungkyunkwan University progressive/streaming 3DGS compression optimizing partial-file quality."
+    },
+    "2611.32025": {
+      "title": "View Management with Gaussian Placement and Opacity Regularization for Online 3DGS",
+      "short": "View Management 3DGS",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: Seoul National University online 3DGS view management, edge-guided placement and opacity regularization."
+    },
+    "2611.32042": {
+      "title": "Instant LiDAR: Feed-Forward Gaussian Reconstruction for LiDAR Simulation",
+      "short": "Instant LiDAR",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: NVIDIA feed-forward Gaussian reconstruction for LiDAR simulation."
+    },
+    "2611.32335": {
+      "title": "GOLD-SLAM: Gaussian-splatting Omnidirectional LiDAR-Depth SLAM",
+      "short": "GOLD-SLAM",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: Hunan University, Tsinghua University and collaborators; panoramic LiDAR-depth Gaussian SLAM in the spherical domain, WHOLE UAV dataset."
+    },
+    "2611.32231": {
+      "title": "ST-SfM: Spatio-Temporal Structure-from-Motion for Initialising 4D Gaussian Splatting",
+      "short": "ST-SfM",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: IT University of Copenhagen spatio-temporal SfM initialization for 4DGS."
+    },
+    "2611.31435": {
+      "title": "Tornado4D: Physics-Guided 4D Gaussian Reconstruction of a Laboratory Tornado from Sparse One-Sided Videos",
+      "short": "Tornado4D",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: University of Maryland, College Park; physics-guided 4DGS of a laboratory tornado from sparse one-sided videos."
+    },
+    "2611.31844": {
+      "title": "BendGS: Observation-Conditioned Gaussian Self-Modeling for Continuum Robots",
+      "short": "BendGS",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: Kyung Hee University observation-conditioned Gaussian self-modeling for continuum robots."
+    },
+    "2611.31812": {
+      "title": "Generalizable Feed-Forward 3D Hand-Object Reconstruction with Coarse-to-Fine Contact Estimation",
+      "short": "Horcrux",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: KETI feed-forward hand-object reconstruction with coarse-to-fine contact estimation."
+    },
+    "2611.32491": {
+      "title": "X-3DComposer: Feed-Forward 3D Scene Composition with Any Assets from Any Views",
+      "short": "X-3DComposer",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief: Sun Yat-sen University feed-forward 3D scene composition from arbitrary assets and views."
+    },
+    "2512.12898": {
+      "title": "Beyond Primitive Bloat: High-Fidelity Gaussian Splatting via Coordinate-Convolution Neural Network",
+      "short": "CCNN-GS",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "Brief, first inclusion: Samsung Research CCNN residual on coarse Gaussian renders; v1 2025-12-15, v3 2026-11-24 appeared in the 2026-11-25 cs.GR replacements."
+    },
+    "2611.31766": {
+      "title": "RoMo Hands: A Large Scale Richly Organized Text to Hand Motion Dataset",
+      "short": "RoMo Hands",
+      "first_seen": "2026-11-26",
+      "digest": "2026-11-26",
+      "content_day": "2026-11-25",
+      "reappearances": [],
+      "note": "One-line: NeurIPS 2026 accepted large-scale text-to-hand motion dataset; mentioned only, not expanded."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "version": 1
 }

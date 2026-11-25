@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-26",
+      "content_day": "2026-11-25",
+      "path": "digests/2026-11-26.md",
+      "title": "让帧时间跟着工作量走；压缩时重生成一套高斯，不必保留原来的图元",
+      "figs": "digests/2026-11-26/figs/",
+      "subtitle": "宏瓦片分批光栅化，解码端直接出标准溅射场"
+    },
+    {
       "date": "2026-11-25",
       "content_day": "2026-11-24",
       "path": "digests/2026-11-25.md",
