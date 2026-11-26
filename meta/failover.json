@@ -1713,11 +1713,26 @@
       "publish_date": "2026-11-26",
       "claim_id": "ccf44ff7-d1e7-4c9f-b3ec-fb397abc40e4",
       "detail": "Primary publish within window: HiGS, SplatTok + AnyPrune, Spectral Fusion GS; original figures; NIRJALA withdrawal re-mentioned; claim cleared."
+    },
+    {
+      "at": "2026-11-27T05:31:12+08:00",
+      "type": "claim",
+      "bot": "Cream",
+      "publish_date": "2026-11-27",
+      "claim_id": "f27fb5ed-3214-492b-b0f0-ec0085a803ed",
+      "expires_at": "2026-11-27T06:01:12+08:00",
+      "detail": "Primary CAS claim within [05:28,06:20): no 2026-11-27 digest, index entry or valid claim; last_success=2026-11-26."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": null,
+  "claim": {
+    "publish_date": "2026-11-27",
+    "bot": "Cream",
+    "claim_id": "f27fb5ed-3214-492b-b0f0-ec0085a803ed",
+    "claimed_at": "2026-11-27T05:31:12+08:00",
+    "expires_at": "2026-11-27T06:01:12+08:00"
+  },
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,
