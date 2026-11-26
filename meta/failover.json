@@ -34,10 +34,10 @@
   "active_owner": "Cream",
   "last_success": {
     "bot": "Cream",
-    "publish_date": "2026-11-26",
-    "at": "2026-11-26T05:29:49+08:00",
+    "publish_date": "2026-11-27",
+    "at": "2026-11-27T05:32:19+08:00",
     "commit": null,
-    "note": "Primary Cream publish within [05:30,06:20) window: HiGS and SplatTok must-reads, AnyPrune and Spectral Fusion GS select, original figures."
+    "note": "Primary Cream publish within [05:30,06:20) window: LiveRelight and ReMeDi must-reads, SprintGS select, original figures."
   },
   "events": [
     {
@@ -1722,17 +1722,19 @@
       "claim_id": "f27fb5ed-3214-492b-b0f0-ec0085a803ed",
       "expires_at": "2026-11-27T06:01:12+08:00",
       "detail": "Primary CAS claim within [05:28,06:20): no 2026-11-27 digest, index entry or valid claim; last_success=2026-11-26."
+    },
+    {
+      "at": "2026-11-27T05:32:19+08:00",
+      "type": "publish",
+      "bot": "Cream",
+      "publish_date": "2026-11-27",
+      "claim_id": "f27fb5ed-3214-492b-b0f0-ec0085a803ed",
+      "detail": "Primary publish within window: LiveRelight, ReMeDi + SprintGS; original figures; 3DSS and Multi-GPU 3DGS first inclusion; claim cleared."
     }
   ],
   "claim_lease_minutes": 30,
   "claim_renewal_allowed": false,
-  "claim": {
-    "publish_date": "2026-11-27",
-    "bot": "Cream",
-    "claim_id": "f27fb5ed-3214-492b-b0f0-ec0085a803ed",
-    "claimed_at": "2026-11-27T05:31:12+08:00",
-    "expires_at": "2026-11-27T06:01:12+08:00"
-  },
+  "claim": null,
   "claim_window_early_skew_minutes": 2,
   "scheduler_lag_compensation_minutes": 20,
   "min_remaining_minutes_to_start_full_publish": 25,

@@ -3556,9 +3556,189 @@
       "content_day": "2026-11-25",
       "reappearances": [],
       "note": "One-line: NeurIPS 2026 accepted large-scale text-to-hand motion dataset; mentioned only, not expanded."
+    },
+    "2611.34226": {
+      "title": "LiveRelight: Sub-Second Global Illumination Editing for Gaussian Interiors",
+      "short": "LiveRelight",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Must-read: University of Copenhagen and Google DeepMind; precompute geometric light exchange for sub-second indoor GI edits on 2D Gaussians with sparse radiosity on a triangle proxy; full HTML methods and key experiments read; original Figure 1 reproduced."
+    },
+    "2611.34284": {
+      "title": "ReMeDi: Single-Image PBR Material Estimation via Reparameterization between Metal and Dielectric Hypotheses",
+      "short": "ReMeDi",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Must-read: Nanjing University, Peking University, and Tencent; reparameterize base color as a metalness-weighted blend of metal/dielectric hypotheses with two networks; full HTML methods read; original pipeline and Figure 1 reproduced."
+    },
+    "2611.33796": {
+      "title": "SprintGS: Eliminating Redundancy for Fast 3D Gaussian Splatting Training",
+      "short": "SprintGS",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Select: KDDI Research; FastGS-based training speedup via scheduled tile culling, convergence-aware pruning, shuffle-efficient backward, and fused loss; full HTML methods read; original Figure 3 reproduced."
+    },
+    "2611.34223": {
+      "title": "AnyCam4D: Ray-Based 4D Gaussian Rendering for Arbitrary Camera Models",
+      "short": "AnyCam4D",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: ray-based 4D Gaussian rendering for non-pinhole cameras."
+    },
+    "2611.34128": {
+      "title": "FoundSurface: Feedforward Ray-Based 3D Scene Surface Reconstruction from Unposed Images",
+      "short": "FoundSurface",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: NeurIPS 2026 feedforward continuous surface reconstruction from unposed images."
+    },
+    "2611.33374": {
+      "title": "VersionGS: Compact and Motion-Robust Dynamic Gaussian Splatting via Versioned Gaussians",
+      "short": "VersionGS",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: Purdue University; versioned Gaussians for fast-motion dynamic scenes."
+    },
+    "2611.33462": {
+      "title": "FoamSurf: A Voronoi-Surfel Representation for Differentiable Rendering",
+      "short": "FoamSurf",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: Voronoi-surfel differentiable rendering in scattering media."
+    },
+    "2605.05876": {
+      "title": "3DSS: 3D Surface Splatting for Inverse Rendering",
+      "short": "3DSS",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief, first inclusion: May 2026 inverse-rendering surface splatting paper appearing as v4 in the 2026-11-26 replacement list."
+    },
+    "2611.33698": {
+      "title": "Efficient Scene-Distribution-Aware Second-Order Optimization for 3D Gaussian Splatting",
+      "short": "Second-Order 3DGS",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: ACCV 2026; scene-distribution-aware second-order 3DGS optimization with multi-view batches."
+    },
+    "2611.33467": {
+      "title": "SplatWAM: Splatting World Action Models for Real-Time 3D Imagination",
+      "short": "SplatWAM",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: world action models over compact 3D Gaussian primitives."
+    },
+    "2611.33380": {
+      "title": "FOCI: Trajectory Optimization on Gaussian Splats for Gaussian Robots",
+      "short": "FOCI",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: ETH Zurich and Comillas; overlap-integral trajectory optimization on Gaussian scenes and robots."
+    },
+    "2611.34939": {
+      "title": "A Mesh for Every Moment",
+      "short": "MEMO",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: per-frame meshes for complete dynamic scenes from synchronized cameras."
+    },
+    "2611.34894": {
+      "title": "What a Drop Reveals: Sim-to-Real Material Estimation for Deformable Objects from Video",
+      "short": "What a Drop Reveals",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: sim-to-real stiffness / yield-stress estimation from a drop video."
+    },
+    "2611.34940": {
+      "title": "LuxAvatar: Real-Time Relightable Head Avatars via Causal Neural Shading of 3D Intrinsic Proxies",
+      "short": "LuxAvatar",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief: real-time relightable head avatars."
+    },
+    "2606.11390": {
+      "title": "Large-Scale Gaussian Splatting with a Multi-GPU PyTorch Backend",
+      "short": "Multi-GPU 3DGS",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "Brief, first inclusion: June 2026 multi-GPU PyTorch Gaussian splatting backend appearing as v2 in the 2026-11-26 replacement list."
+    },
+    "2611.33382": {
+      "title": "ArtTet: Watertight Part Meshes of Articulated Objects from Rigid-Body Rules and Partitioned Marching Tetrahedra",
+      "short": "ArtTet",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "One-line leftover: watertight per-part meshes of articulated objects."
+    },
+    "2611.34549": {
+      "title": "CADENCE: Sensor-Grounded World-Consistent Gaussian SLAM for Collaborative Mobile Reconstruction",
+      "short": "CADENCE",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "One-line leftover: collaborative mobile Gaussian SLAM."
+    },
+    "2611.34932": {
+      "title": "MERLoc: Robust Robot Localization in Dynamic Environments with Pose-Based Retrieval over 3D Gaussian Splatting References",
+      "short": "MERLoc",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "One-line leftover: robot localization with pose retrieval over 3DGS references."
+    },
+    "2611.33905": {
+      "title": "Tortho-Gaussian++: Suppressing Geometric Drift and Floaters for Robust Gravity-Aligned TDOM Generation in Large-Scale Aerial Scenes",
+      "short": "Tortho-Gaussian++",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "One-line leftover: large-scale aerial TDOM Gaussian reconstruction."
+    },
+    "2611.33824": {
+      "title": "Revisiting Monocular In-Hand Object Scanning: Dataset, Pose Estimation, and Surface Reconstruction",
+      "short": "ToysRUs IHOS",
+      "first_seen": "2026-11-27",
+      "digest": "2026-11-27",
+      "content_day": "2026-11-26",
+      "reappearances": [],
+      "note": "One-line leftover: ToysRUs in-hand object scanning dataset and SfM discussion."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "version": 1
 }

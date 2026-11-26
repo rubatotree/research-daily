@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-27",
+      "content_day": "2026-11-26",
+      "path": "digests/2026-11-27.md",
+      "title": "室内换光预计算的是几何交换，不是烤进去的光照响应；单图 PBR 先分开金属与电介质假设",
+      "figs": "digests/2026-11-27/figs/",
+      "subtitle": "亚秒级全局光照编辑；基色与金属度按设计对齐"
+    },
+    {
       "date": "2026-11-26",
       "content_day": "2026-11-25",
       "path": "digests/2026-11-26.md",
