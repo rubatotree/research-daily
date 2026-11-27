@@ -3736,9 +3736,27 @@
       "content_day": "2026-11-26",
       "reappearances": [],
       "note": "One-line leftover: ToysRUs in-hand object scanning dataset and SfM discussion."
+    },
+    "2606.09018": {
+      "title": "MaterialClusterGS: Palette-Based Material Decomposition and Physically-Based Relighting with 2D Gaussian Splatting",
+      "short": "MaterialClusterGS",
+      "first_seen": "2026-11-28",
+      "digest": "2026-11-28",
+      "content_day": "2026-11-27",
+      "reappearances": [],
+      "note": "Must-read backfill (no Friday arXiv announcement): Peking University and University of Science and Technology of China; shared BRDF palette plus spatial material field for 2DGS inverse rendering; full HTML methods and key experiments read; original Figure 3 and Figure 1 reproduced."
+    },
+    "2611.31516": {
+      "title": "InitFree-SfM: When Initialization-Free Bundle Adjustment Meets Learned Structure-from-Motion",
+      "short": "InitFree-SfM",
+      "first_seen": "2026-11-28",
+      "digest": "2026-11-28",
+      "content_day": "2026-11-27",
+      "reappearances": [],
+      "note": "Brief first inclusion of 2026-11-24 announcement miss: University of Oxford, TUM, Hanyang University, and Lund University; initialization-free BA with learned correspondences, metric depth, and depth-augmented OSE; abstract and reported ETH3D comparisons."
     }
   },
   "notes": "Papers already covered in digests. Re-include only if new version, new acceptance, or notable new community discussion; always state why.",
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "version": 1
 }

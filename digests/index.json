@@ -3,6 +3,14 @@
   "dating": "digest_date = publish date (HKT morning); content covers previous calendar day new items",
   "digests": [
     {
+      "date": "2026-11-28",
+      "content_day": "2026-11-27 (no independent arXiv announcement; MaterialClusterGS and InitFree-SfM backfill)",
+      "path": "digests/2026-11-28.md",
+      "title": "共享一套 BRDF 原型，比给每个高斯单独估材质更利于编辑和换光",
+      "figs": "digests/2026-11-28/figs/",
+      "subtitle": "回扫调色盘式材质分解"
+    },
+    {
       "date": "2026-11-27",
       "content_day": "2026-11-26",
       "path": "digests/2026-11-27.md",
